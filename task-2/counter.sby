@@ -1,0 +1,54 @@
+[tasks]
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+[options]
+mode prove
+
+[engines]
+aiger suprove
+
+[script]
+read -formal simcells.v
+read -formal tb_counter.sv
+0:  read -formal counter-0.v
+1:  read -formal counter-1.v
+2:  read -formal counter-2.v
+3:  read -formal counter-3.v
+4:  read -formal counter-4.v
+5:  read -formal counter-5.v
+6:  read -formal counter-6.v
+7:  read -formal counter-7.v
+8:  read -formal counter-8.v
+9:  read -formal counter-9.v
+10: read -formal counter-10.v
+verific -import tb_counter
+prep -top tb_counter
+
+[files]
+tb_counter.sv
+0: tests/counter-0.v
+1: tests/counter-1.v
+2: tests/counter-2.v
+3: tests/counter-3.v
+4: tests/counter-4.v
+5: tests/counter-5.v
+6: tests/counter-6.v
+7: tests/counter-7.v
+8: tests/counter-8.v
+9: tests/counter-9.v
+10: tests/counter-10.v
+--pycode-begin--
+import subprocess
+output(subprocess.run(["yosys-config", "--datdir/simcells.v"], capture_output=True).stdout.decode("utf-8"))
+--pycode-end--
+

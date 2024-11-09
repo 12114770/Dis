@@ -1,0 +1,8 @@
+read_verilog counter.v
+hierarchy -check -auto-top
+proc 
+clean 
+stat
+techmap -map map.v
+stat
+write_verilog counter-cla.v

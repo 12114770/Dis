@@ -1,0 +1,13 @@
+[options]
+mode prove
+expect pass
+
+[engines]
+aiger suprove
+
+[script]
+read_verilog -sv -formal counter.v
+prep -top counter
+
+[files]
+counter.v

@@ -1,0 +1,18 @@
+[options]
+mode prove
+
+[engines]
+aiger suprove
+
+[script]
+read -formal simcells.v
+read -formal tb_counter.sv
+read -formal counter-10.v
+verific -import tb_counter
+prep -top tb_counter
+
+[files]
+tb_counter.sv
+tests/counter-10.v
+/home/lukas/tabby-linux-x64-20240903/tabby/share/yosys/simcells.v
+

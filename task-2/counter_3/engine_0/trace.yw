@@ -1,0 +1,39 @@
+{
+  "format": "Yosys Witness Trace",
+  "generator": "smtbmc",
+  "clocks": [
+    {"path": ["\\clk"], "edge": "posedge", "offset": 0}
+  ],
+  "signals": [
+    {"path": ["\\clk"], "width": 1, "offset": 0, "init_only": false},
+    {"path": ["\\mode"], "width": 1, "offset": 0, "init_only": false},
+    {"path": ["\\rst"], "width": 1, "offset": 0, "init_only": false},
+    {"path": ["\\dut", "\\tb", "\\_witness_", "\\anyinit_verific_dff_37_tb_counter_sv_54_748"], "width": 10, "offset": 0, "init_only": true},
+    {"path": ["\\dut", "\\tb", "\\_witness_", "\\anyinit_verific_i35_tb_counter_sv_48_746"], "width": 1, "offset": 0, "init_only": true},
+    {"path": ["\\dut", "\\tb", "\\_witness_", "\\anyinit_verific_i52_tb_counter_sv_57_757"], "width": 1, "offset": 0, "init_only": true}
+  ],
+  "steps": [
+    {"bits": "000010001111100"},
+    {"bits": "010"},
+    {"bits": "010"},
+    {"bits": "010"},
+    {"bits": "010"},
+    {"bits": "010"},
+    {"bits": "010"},
+    {"bits": "010"},
+    {"bits": "010"},
+    {"bits": "010"},
+    {"bits": "010"},
+    {"bits": "010"},
+    {"bits": "010"},
+    {"bits": "000"},
+    {"bits": "000"},
+    {"bits": "000"},
+    {"bits": "010"},
+    {"bits": "000"},
+    {"bits": "010"},
+    {"bits": "010"},
+    {"bits": "000"},
+    {"bits": "000"}
+  ]
+}

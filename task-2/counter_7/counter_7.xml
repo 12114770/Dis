@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+<testsuite timestamp="2024-10-17T12:06:20" hostname="LukasDell" package="counter" id="0" name="7" tests="1" errors="0" failures="1" time="1" skipped="0">
+<properties>
+<property name="os" value="Linux"/>
+<property name="expect" value="PASS"/>
+<property name="status" value="FAIL"/>
+</properties>
+<testcase classname="7" name="7" time="1">
+<failure type="assert" message="FAIL" />
+</testcase>
+<system-out>SBY 12:06:18 [counter_7] Removing directory '/home/lukas/OneDrive/Dokumente/Uni/DIS/task-2/counter_7'.
+SBY 12:06:18 [counter_7] Copy '/home/lukas/OneDrive/Dokumente/Uni/DIS/task-2/tb_counter.sv' to '/home/lukas/OneDrive/Dokumente/Uni/DIS/task-2/counter_7/src/tb_counter.sv'.
+SBY 12:06:18 [counter_7] Copy '/home/lukas/OneDrive/Dokumente/Uni/DIS/task-2/tests/counter-7.v' to '/home/lukas/OneDrive/Dokumente/Uni/DIS/task-2/counter_7/src/counter-7.v'.
+SBY 12:06:18 [counter_7] Copy '/home/lukas/tabby-linux-x64-20240903/tabby/share/yosys/simcells.v' to '/home/lukas/OneDrive/Dokumente/Uni/DIS/task-2/counter_7/src/simcells.v'.
+SBY 12:06:18 [counter_7] engine_0: aiger suprove
+SBY 12:06:18 [counter_7] base: starting process &quot;cd counter_7/src; yosys -ql ../model/design.log ../model/design.ys&quot;
+SBY 12:06:19 [counter_7] base: Academic/educational license for ICT / TU-Vienna.
+SBY 12:06:19 [counter_7] base: Do not redistribute without permission.
+SBY 12:06:19 [counter_7] base: Do not use for commercial purposes.
+SBY 12:06:19 [counter_7] base: finished (returncode=0)
+SBY 12:06:19 [counter_7] prep: starting process &quot;cd counter_7/model; yosys -ql design_prep.log design_prep.ys&quot;
+SBY 12:06:19 [counter_7] prep: Academic/educational license for ICT / TU-Vienna.
+SBY 12:06:19 [counter_7] prep: Do not redistribute without permission.
+SBY 12:06:19 [counter_7] prep: Do not use for commercial purposes.
+SBY 12:06:19 [counter_7] prep: finished (returncode=0)
+SBY 12:06:19 [counter_7] aig: starting process &quot;cd counter_7/model; yosys -ql design_aiger.log design_aiger.ys&quot;
+SBY 12:06:19 [counter_7] aig: Academic/educational license for ICT / TU-Vienna.
+SBY 12:06:19 [counter_7] aig: Do not redistribute without permission.
+SBY 12:06:19 [counter_7] aig: Do not use for commercial purposes.
+SBY 12:06:19 [counter_7] aig: finished (returncode=0)
+SBY 12:06:19 [counter_7] engine_0: starting process &quot;cd counter_7; suprove model/design_aiger.aig&quot;
+SBY 12:06:19 [counter_7] engine_0: finished (returncode=0)
+SBY 12:06:19 [counter_7] engine_0: Status returned by engine: FAIL
+SBY 12:06:19 [counter_7] smt2: starting process &quot;cd counter_7/model; yosys -ql design_smt2.log design_smt2.ys&quot;
+SBY 12:06:19 [counter_7] engine_0: starting process &quot;cd counter_7; yosys-witness aiw2yw engine_0/trace.aiw model/design_aiger.ywa engine_0/trace_aiw.yw&quot;
+SBY 12:06:19 [counter_7] smt2: Academic/educational license for ICT / TU-Vienna.
+SBY 12:06:19 [counter_7] smt2: Do not redistribute without permission.
+SBY 12:06:19 [counter_7] smt2: Do not use for commercial purposes.
+SBY 12:06:19 [counter_7] smt2: finished (returncode=0)
+SBY 12:06:19 [counter_7] engine_0: Converting AIGER witness trace 'engine_0/trace.aiw' to Yosys witness trace 'engine_0/trace_aiw.yw'...
+SBY 12:06:19 [counter_7] engine_0: Using Yosys witness AIGER map file 'model/design_aiger.ywa'
+SBY 12:06:19 [counter_7] engine_0: Converted 5 time steps.
+SBY 12:06:19 [counter_7] engine_0: finished (returncode=0)
+SBY 12:06:19 [counter_7] engine_0: starting process &quot;cd counter_7; yosys-smtbmc -s yices --noprogress --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc --yw engine_0/trace_aiw.yw model/design_smt2.smt2&quot;
+SBY 12:06:19 [counter_7] engine_0: ##   0:00:00  Solver: yices
+SBY 12:06:19 [counter_7] engine_0: ##   0:00:00  Skipping step 0..
+SBY 12:06:19 [counter_7] engine_0: ##   0:00:00  Skipping step 1..
+SBY 12:06:19 [counter_7] engine_0: ##   0:00:00  Skipping step 2..
+SBY 12:06:19 [counter_7] engine_0: ##   0:00:00  Skipping step 3..
+SBY 12:06:19 [counter_7] engine_0: ##   0:00:00  Checking assertions in step 4..
+SBY 12:06:19 [counter_7] engine_0: ##   0:00:00  BMC failed!
+SBY 12:06:19 [counter_7] engine_0: ##   0:00:00  Assert failed in tb_counter.dut.tb: tb_counter.sv:72.6-72.38 (_witness_.assert_auto_verificsva_cc_1732_import_1355)
+SBY 12:06:19 [counter_7] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace.vcd
+SBY 12:06:20 [counter_7] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace_tb.v
+SBY 12:06:20 [counter_7] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace.smtc
+SBY 12:06:20 [counter_7] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace.yw
+SBY 12:06:20 [counter_7] engine_0: ##   0:00:00  Status: FAILED
+SBY 12:06:20 [counter_7] engine_0: finished (returncode=1)
+SBY 12:06:20 [counter_7] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:01 (1)
+SBY 12:06:20 [counter_7] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:01 (1)
+SBY 12:06:20 [counter_7] summary: engine_0 (aiger suprove) returned FAIL
+SBY 12:06:20 [counter_7] summary: counterexample trace: counter_7/engine_0/trace.vcd
+SBY 12:06:20 [counter_7] summary:   failed assertion tb_counter.dut.tb._witness_.assert_auto_verificsva_cc_1732_import_1355 at tb_counter.sv:72.6-72.38 in step 4
+SBY 12:06:20 [counter_7] DONE (FAIL, rc=2)
+</system-out>
+<system-err>
+</system-err>
+</testsuite>
+</testsuites>

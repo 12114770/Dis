@@ -1,0 +1,381 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite -- YosysHQ Edition [202409031137]     |
+ |  Copyright (C) 2012 - 2024 YosysHQ GmbH                                    |
+ |  For support, please contact support@yosyshq.com                           |
+ \----------------------------------------------------------------------------/
+ Yosys 0.45 (git sha1 9ed031ddd, clang++ 14.0.0-1ubuntu1.1 -fPIC -O3)
+
+-- Executing script file `../model/design.ys' --
+
+1. Executing VERIFIC (loading SystemVerilog and VHDL designs using Verific).
+Built with Verific Aug24_SW_Release, released at Thu Aug 29 19:14:57 2024.
+VERIFIC-COMMENT [VERI-1482] Analyzing Verilog file 'tb_counter.sv'
+VERIFIC-COMMENT [VERI-1482] Analyzing Verilog file 'counter-cla.v'
+
+2. Executing VERIFIC (loading SystemVerilog and VHDL designs using Verific).
+Built with Verific Aug24_SW_Release, released at Thu Aug 29 19:14:57 2024.
+Adding Verilog module 'tb_counter' to elaboration queue.
+Statically elaborating the Verific parse tree.
+Elaborating all modules in library 'work'
+VERIFIC-INFO [VERI-1018] tb_counter.sv:1: compiling module 'tb_counter'
+Running rewriter 'initial-assertions'.
+Clearing rewriter list.
+Adding Verilog module 'tb_counter' to elaboration queue.
+Running hier_tree::Elaborate().
+VERIFIC-INFO [VERI-1018] tb_counter.sv:1: compiling module 'tb_counter'
+VERIFIC-INFO [VERI-1018] counter-cla.v:5: compiling module 'counter_0'
+VERIFIC-INFO [VERI-1018] tb_counter.sv:22: compiling module 'assertions'
+Importing module tb_counter.
+Importing module counter_0.
+Importing module assertions.
+
+3. Executing PREP pass.
+
+3.1. Executing HIERARCHY pass (managing design hierarchy).
+
+3.1.1. Analyzing design hierarchy..
+Top module:  \tb_counter
+Used module:     \counter_0
+Used module:         \assertions
+
+3.1.2. Analyzing design hierarchy..
+Top module:  \tb_counter
+Used module:     \counter_0
+Used module:         \assertions
+Removed 0 unused modules.
+Module assertions directly or indirectly contains formal properties -> setting "keep" attribute.
+Module counter_0 directly or indirectly contains formal properties -> setting "keep" attribute.
+Module tb_counter directly or indirectly contains formal properties -> setting "keep" attribute.
+
+3.2. Executing PROC pass (convert processes to netlists).
+
+3.2.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+3.2.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+3.2.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 0 assignments to connections.
+
+3.2.4. Executing PROC_INIT pass (extract init attributes).
+
+3.2.5. Executing PROC_ARST pass (detect async resets in processes).
+
+3.2.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+
+3.2.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+
+3.2.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+3.2.9. Executing PROC_DFF pass (convert process syncs to FFs).
+
+3.2.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+3.2.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+3.2.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module assertions.
+<suppressed ~44 debug messages>
+Optimizing module counter_0.
+Optimizing module tb_counter.
+
+3.3. Executing FUTURE pass.
+
+3.4. Executing OPT_EXPR pass (perform const folding).
+Optimizing module assertions.
+Optimizing module counter_0.
+Optimizing module tb_counter.
+
+3.5. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \assertions..
+Finding unused cells or wires in module \counter_0..
+Finding unused cells or wires in module \tb_counter..
+Removed 2 unused cells and 215 unused wires.
+<suppressed ~146 debug messages>
+
+3.6. Executing CHECK pass (checking for obvious problems).
+Checking module assertions...
+Checking module counter_0...
+Checking module tb_counter...
+Found and reported 0 problems.
+
+3.7. Executing OPT pass (performing simple optimizations).
+
+3.7.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module assertions.
+Optimizing module counter_0.
+Optimizing module tb_counter.
+
+3.7.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\assertions'.
+Finding identical cells in module `\counter_0'.
+Finding identical cells in module `\tb_counter'.
+Removed a total of 0 cells.
+
+3.7.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \assertions..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \counter_0..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 1/2 on $mux $verific$mux_22$counter-cla.v:303$105.
+    dead port 1/2 on $mux $verific$mux_24$counter-cla.v:304$107.
+    dead port 2/2 on $mux $verific$mux_28$counter-cla.v:306$110.
+    dead port 1/2 on $mux $verific$mux_30$counter-cla.v:307$112.
+    dead port 1/2 on $mux $verific$mux_34$counter-cla.v:309$116.
+    dead port 1/2 on $mux $verific$mux_38$counter-cla.v:311$119.
+    dead port 2/2 on $mux $verific$mux_40$counter-cla.v:312$121.
+    dead port 2/2 on $mux $verific$mux_44$counter-cla.v:314$124.
+    dead port 2/2 on $mux $verific$mux_46$counter-cla.v:315$126.
+    dead port 2/2 on $mux $verific$mux_50$counter-cla.v:317$130.
+Running muxtree optimizer on module \tb_counter..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 10 multiplexer ports.
+<suppressed ~20 debug messages>
+
+3.7.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \assertions.
+  Optimizing cells in module \counter_0.
+  Optimizing cells in module \tb_counter.
+Performed a total of 0 changes.
+
+3.7.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\assertions'.
+Finding identical cells in module `\counter_0'.
+Finding identical cells in module `\tb_counter'.
+Removed a total of 0 cells.
+
+3.7.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \assertions..
+Finding unused cells or wires in module \counter_0..
+Finding unused cells or wires in module \tb_counter..
+Removed 0 unused cells and 10 unused wires.
+<suppressed ~1 debug messages>
+
+3.7.7. Executing OPT_EXPR pass (perform const folding).
+Optimizing module assertions.
+Optimizing module counter_0.
+Optimizing module tb_counter.
+
+3.7.8. Rerunning OPT passes. (Maybe there is more to do..)
+
+3.7.9. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \assertions..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \counter_0..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \tb_counter..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+<suppressed ~20 debug messages>
+
+3.7.10. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \assertions.
+  Optimizing cells in module \counter_0.
+  Optimizing cells in module \tb_counter.
+Performed a total of 0 changes.
+
+3.7.11. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\assertions'.
+Finding identical cells in module `\counter_0'.
+Finding identical cells in module `\tb_counter'.
+Removed a total of 0 cells.
+
+3.7.12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \assertions..
+Finding unused cells or wires in module \counter_0..
+Finding unused cells or wires in module \tb_counter..
+
+3.7.13. Executing OPT_EXPR pass (perform const folding).
+Optimizing module assertions.
+Optimizing module counter_0.
+Optimizing module tb_counter.
+
+3.7.14. Finished OPT passes. (There is nothing left to do.)
+
+3.8. Executing WREDUCE pass (reducing word size of cells).
+Removed top 1 bits (of 32) from port A of cell assertions.$verific$LessThan_22$tb_counter.sv:50$406 ($le).
+Removed top 7 bits (of 11) from port B of cell assertions.$verific$equal_41$tb_counter.sv:62$423 ($eq).
+Removed top 1 bits (of 32) from port A of cell assertions.$verific$LessThan_46$tb_counter.sv:63$427 ($le).
+Removed top 1 bits (of 32) from port B of cell assertions.$verific$LessThan_48$tb_counter.sv:63$428 ($lt).
+Removed top 8 bits (of 11) from port B of cell assertions.$verific$equal_58$tb_counter.sv:66$435 ($eq).
+Removed top 6 bits (of 11) from port B of cell assertions.$verific$equal_81$tb_counter.sv:74$451 ($eq).
+Removed top 7 bits (of 11) from port B of cell assertions.$verific$equal_98$tb_counter.sv:78$462 ($eq).
+Removed top 1 bits (of 10) from wire assertions.$verific$n40$386.
+Removed top 1 bits (of 10) from port A of cell counter_0.$verific$LessThan_7$counter-cla.v:294$92 ($le).
+Removed top 1 bits (of 10) from port A of cell counter_0.$verific$LessThan_9$counter-cla.v:295$94 ($le).
+Removed top 6 bits (of 10) from mux cell counter_0.$verific$mux_48$counter-cla.v:316$128 ($mux).
+Removed top 1 bits (of 10) from port Y of cell counter_0.$verific$and_54$counter-cla.v:319$134 ($and).
+Removed top 1 bits (of 10) from port A of cell counter_0.$verific$and_54$counter-cla.v:319$134 ($and).
+Removed top 1 bits (of 10) from port B of cell counter_0.$verific$and_54$counter-cla.v:319$134 ($and).
+Removed top 6 bits (of 10) from wire counter_0._001_.
+Removed top 1 bits (of 10) from wire counter_0._010_.
+
+3.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \assertions..
+Finding unused cells or wires in module \counter_0..
+Finding unused cells or wires in module \tb_counter..
+Removed 0 unused cells and 3 unused wires.
+<suppressed ~2 debug messages>
+
+3.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+3.11. Executing OPT pass (performing simple optimizations).
+
+3.11.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module assertions.
+Optimizing module counter_0.
+Optimizing module tb_counter.
+
+3.11.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\assertions'.
+Finding identical cells in module `\counter_0'.
+Finding identical cells in module `\tb_counter'.
+Removed a total of 0 cells.
+
+3.11.3. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \assertions..
+Finding unused cells or wires in module \counter_0..
+Finding unused cells or wires in module \tb_counter..
+
+3.11.4. Finished fast OPT passes.
+
+3.12. Printing statistics.
+
+=== assertions ===
+
+   Number of wires:                102
+   Number of wire bits:            140
+   Number of public wires:           5
+   Number of public wire bits:      14
+   Number of ports:                  4
+   Number of port bits:             13
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                109
+     $and                            2
+     $assert                        10
+     $assume                         2
+     $dff                           28
+     $eq                             7
+     $le                             4
+     $logic_not                      2
+     $lt                             2
+     $mux                           34
+     $ne                             1
+     $not                           15
+     $sub                            2
+
+=== counter_0 ===
+
+   Number of wires:                 61
+   Number of wire bits:            126
+   Number of public wires:          61
+   Number of public wire bits:     126
+   Number of ports:                  4
+   Number of port bits:             13
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 59
+     $and                            1
+     $dff                            1
+     $le                             4
+     $mux                            4
+     $ne                             2
+     $reduce_and                    36
+     $reduce_or                      8
+     $xor                            2
+     assertions                      1
+
+=== tb_counter ===
+
+   Number of wires:                  4
+   Number of wire bits:             13
+   Number of public wires:           4
+   Number of public wire bits:      13
+   Number of ports:                  4
+   Number of port bits:             13
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     counter_0                       1
+
+=== design hierarchy ===
+
+   tb_counter                        1
+     counter_0                       1
+       assertions                    1
+
+   Number of wires:                167
+   Number of wire bits:            279
+   Number of public wires:          70
+   Number of public wire bits:     153
+   Number of ports:                 12
+   Number of port bits:             39
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                167
+     $and                            3
+     $assert                        10
+     $assume                         2
+     $dff                           29
+     $eq                             7
+     $le                             8
+     $logic_not                      2
+     $lt                             2
+     $mux                           38
+     $ne                             3
+     $not                           15
+     $reduce_and                    36
+     $reduce_or                      8
+     $sub                            2
+     $xor                            2
+
+3.13. Executing CHECK pass (checking for obvious problems).
+Checking module assertions...
+Checking module counter_0...
+Checking module tb_counter...
+Found and reported 0 problems.
+
+4. Executing HIERARCHY pass (managing design hierarchy).
+
+4.1. Analyzing design hierarchy..
+Top module:  \tb_counter
+Used module:     \counter_0
+Used module:         \assertions
+
+4.2. Analyzing design hierarchy..
+Top module:  \tb_counter
+Used module:     \counter_0
+Used module:         \assertions
+Removed 0 unused modules.
+Module assertions directly or indirectly contains formal properties -> setting "keep" attribute.
+Module counter_0 directly or indirectly contains formal properties -> setting "keep" attribute.
+Module tb_counter directly or indirectly contains formal properties -> setting "keep" attribute.
+
+5. Executing jny backend.
+
+6. Executing RTLIL backend.
+Output filename: ../model/design.il
+
+End of script. Logfile hash: b02d2d9f5a, CPU: user 0.05s system 0.01s, MEM: 37.62 MB peak
+Yosys 0.45 (git sha1 9ed031ddd, clang++ 14.0.0-1ubuntu1.1 -fPIC -O3)
+Time spent: 43% 2x verific (0 sec), 14% 6x opt_expr (0 sec), ...

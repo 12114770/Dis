@@ -1,0 +1,9 @@
+# running in counter/src/
+read -formal tb_counter.sv counter-cla.v
+verific -import tb_counter
+prep -top tb_counter
+
+hierarchy -smtcheck
+rename -witness
+write_jny -no-connections ../model/design.json
+write_rtlil ../model/design.il

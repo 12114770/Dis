@@ -1,0 +1,9 @@
+read_verilog counter_opt.v
+proc
+clean
+rename counter_opt counter_buggy
+cd counter_buggy
+ls
+delete      $xor$counter_opt.v:67$3
+clean
+write_verilog -selected counter_buggy.v

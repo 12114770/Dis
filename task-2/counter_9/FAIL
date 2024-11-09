@@ -1,0 +1,5 @@
+Elapsed clock time [H:MM:SS (secs)]: 0:00:02 (2)
+Elapsed process time [H:MM:SS (secs)]: 0:00:04 (4)
+engine_0 (aiger suprove) returned FAIL
+counterexample trace: engine_0/trace.vcd
+  failed assertion tb_counter.dut.tb._witness_.assert_auto_verificsva_cc_1732_import_1464 at tb_counter.sv:78.6-78.35 in step 24

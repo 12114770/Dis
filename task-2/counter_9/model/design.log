@@ -1,0 +1,952 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite -- YosysHQ Edition [202409031137]     |
+ |  Copyright (C) 2012 - 2024 YosysHQ GmbH                                    |
+ |  For support, please contact support@yosyshq.com                           |
+ \----------------------------------------------------------------------------/
+ Yosys 0.45 (git sha1 9ed031ddd, clang++ 14.0.0-1ubuntu1.1 -fPIC -O3)
+
+-- Executing script file `../model/design.ys' --
+
+1. Executing VERIFIC (loading SystemVerilog and VHDL designs using Verific).
+Built with Verific Aug24_SW_Release, released at Thu Aug 29 19:14:57 2024.
+VERIFIC-COMMENT [VERI-1482] Analyzing Verilog file 'simcells.v'
+
+2. Executing VERIFIC (loading SystemVerilog and VHDL designs using Verific).
+Built with Verific Aug24_SW_Release, released at Thu Aug 29 19:14:57 2024.
+VERIFIC-COMMENT [VERI-1482] Analyzing Verilog file 'tb_counter.sv'
+
+3. Executing VERIFIC (loading SystemVerilog and VHDL designs using Verific).
+Built with Verific Aug24_SW_Release, released at Thu Aug 29 19:14:57 2024.
+VERIFIC-COMMENT [VERI-1482] Analyzing Verilog file 'counter-9.v'
+
+4. Executing VERIFIC (loading SystemVerilog and VHDL designs using Verific).
+Built with Verific Aug24_SW_Release, released at Thu Aug 29 19:14:57 2024.
+Adding Verilog module 'tb_counter' to elaboration queue.
+Statically elaborating the Verific parse tree.
+Elaborating all modules in library 'work'
+VERIFIC-INFO [VERI-1018] tb_counter.sv:1: compiling module 'tb_counter'
+Running rewriter 'initial-assertions'.
+Clearing rewriter list.
+Adding Verilog module 'tb_counter' to elaboration queue.
+Running hier_tree::Elaborate().
+VERIFIC-INFO [VERI-1018] tb_counter.sv:1: compiling module 'tb_counter'
+VERIFIC-INFO [VERI-1018] counter-9.v:3: compiling module 'counter_0'
+VERIFIC-INFO [VERI-1018] simcells.v:2696: compiling module '$_SDFFE_PP0P__1'
+VERIFIC-INFO [VERI-1018] simcells.v:2744: compiling module '$_SDFFE_PP1P__1'
+VERIFIC-INFO [VERI-1018] simcells.v:2744: compiling module '$_SDFFE_PP1P__2'
+VERIFIC-INFO [VERI-1018] simcells.v:2744: compiling module '$_SDFFE_PP1P__3'
+VERIFIC-INFO [VERI-1018] simcells.v:2696: compiling module '$_SDFFE_PP0P__2'
+VERIFIC-INFO [VERI-1018] simcells.v:2696: compiling module '$_SDFFE_PP0P__0'
+VERIFIC-INFO [VERI-1018] simcells.v:2744: compiling module '$_SDFFE_PP1P__4'
+VERIFIC-INFO [VERI-1018] simcells.v:2744: compiling module '$_SDFFE_PP1P__5'
+VERIFIC-INFO [VERI-1018] simcells.v:2744: compiling module '$_SDFFE_PP1P__6'
+VERIFIC-INFO [VERI-1018] simcells.v:2744: compiling module '$_SDFFE_PP1P__0'
+VERIFIC-INFO [VERI-1018] simcells.v:56: compiling module '$_NOT_'
+VERIFIC-INFO [VERI-1018] simcells.v:113: compiling module '$_OR_'
+VERIFIC-INFO [VERI-1018] simcells.v:75: compiling module '$_AND_'
+VERIFIC-INFO [VERI-1018] simcells.v:225: compiling module '$_MUX_'
+VERIFIC-INFO [VERI-1018] simcells.v:151: compiling module '$_XOR_'
+VERIFIC-INFO [VERI-1018] tb_counter.sv:22: compiling module 'assertions'
+VERIFIC-WARNING [VDB-1002] counter-9.v:149: net '_145_[2]' does not have a driver
+Importing module tb_counter.
+Importing module counter_0.
+Importing module \$_AND_.
+Importing module \$_MUX_.
+Importing module \$_NOT_.
+Importing module \$_OR_.
+Importing module \$_SDFFE_PP0P__0.
+Importing module \$_SDFFE_PP0P__1.
+Importing module \$_SDFFE_PP0P__2.
+Importing module \$_SDFFE_PP1P__0.
+Importing module \$_SDFFE_PP1P__1.
+Importing module \$_SDFFE_PP1P__2.
+Importing module \$_SDFFE_PP1P__3.
+Importing module \$_SDFFE_PP1P__4.
+Importing module \$_SDFFE_PP1P__5.
+Importing module \$_SDFFE_PP1P__6.
+Importing module \$_XOR_.
+Importing module assertions.
+
+5. Executing PREP pass.
+
+5.1. Executing HIERARCHY pass (managing design hierarchy).
+
+5.1.1. Analyzing design hierarchy..
+Top module:  \tb_counter
+Used module:     \counter_0
+Used module:         \assertions
+Used module:         \$_XOR_
+Used module:         \$_OR_
+Used module:         \$_AND_
+Used module:         \$_NOT_
+Used module:         \$_MUX_
+Used module:         \$_SDFFE_PP1P__0
+Used module:         \$_SDFFE_PP1P__6
+Used module:         \$_SDFFE_PP1P__5
+Used module:         \$_SDFFE_PP1P__4
+Used module:         \$_SDFFE_PP0P__0
+Used module:         \$_SDFFE_PP0P__2
+Used module:         \$_SDFFE_PP1P__3
+Used module:         \$_SDFFE_PP1P__2
+Used module:         \$_SDFFE_PP1P__1
+Used module:         \$_SDFFE_PP0P__1
+
+5.1.2. Analyzing design hierarchy..
+Top module:  \tb_counter
+Used module:     \counter_0
+Used module:         \assertions
+Used module:         \$_XOR_
+Used module:         \$_OR_
+Used module:         \$_AND_
+Used module:         \$_NOT_
+Used module:         \$_MUX_
+Used module:         \$_SDFFE_PP1P__0
+Used module:         \$_SDFFE_PP1P__6
+Used module:         \$_SDFFE_PP1P__5
+Used module:         \$_SDFFE_PP1P__4
+Used module:         \$_SDFFE_PP0P__0
+Used module:         \$_SDFFE_PP0P__2
+Used module:         \$_SDFFE_PP1P__3
+Used module:         \$_SDFFE_PP1P__2
+Used module:         \$_SDFFE_PP1P__1
+Used module:         \$_SDFFE_PP0P__1
+Removed 0 unused modules.
+Module assertions directly or indirectly contains formal properties -> setting "keep" attribute.
+Module counter_0 directly or indirectly contains formal properties -> setting "keep" attribute.
+Module tb_counter directly or indirectly contains formal properties -> setting "keep" attribute.
+
+5.2. Executing PROC pass (convert processes to netlists).
+
+5.2.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+5.2.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+5.2.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 0 assignments to connections.
+
+5.2.4. Executing PROC_INIT pass (extract init attributes).
+
+5.2.5. Executing PROC_ARST pass (detect async resets in processes).
+
+5.2.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+
+5.2.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+
+5.2.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+5.2.9. Executing PROC_DFF pass (convert process syncs to FFs).
+
+5.2.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+5.2.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+5.2.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module assertions.
+<suppressed ~37 debug messages>
+Optimizing module \$_XOR_.
+Optimizing module \$_SDFFE_PP1P__6.
+Optimizing module \$_SDFFE_PP1P__5.
+Optimizing module \$_SDFFE_PP1P__4.
+Optimizing module \$_SDFFE_PP1P__3.
+Optimizing module \$_SDFFE_PP1P__2.
+Optimizing module \$_SDFFE_PP1P__1.
+Optimizing module \$_SDFFE_PP1P__0.
+Optimizing module \$_SDFFE_PP0P__2.
+Optimizing module \$_SDFFE_PP0P__1.
+Optimizing module \$_SDFFE_PP0P__0.
+Optimizing module \$_OR_.
+Optimizing module \$_NOT_.
+Optimizing module \$_MUX_.
+Optimizing module \$_AND_.
+Optimizing module counter_0.
+<suppressed ~10 debug messages>
+Optimizing module tb_counter.
+
+5.3. Executing FUTURE pass.
+
+5.4. Executing OPT_EXPR pass (perform const folding).
+Optimizing module assertions.
+Optimizing module \$_XOR_.
+Optimizing module \$_SDFFE_PP1P__6.
+Optimizing module \$_SDFFE_PP1P__5.
+Optimizing module \$_SDFFE_PP1P__4.
+Optimizing module \$_SDFFE_PP1P__3.
+Optimizing module \$_SDFFE_PP1P__2.
+Optimizing module \$_SDFFE_PP1P__1.
+Optimizing module \$_SDFFE_PP1P__0.
+Optimizing module \$_SDFFE_PP0P__2.
+Optimizing module \$_SDFFE_PP0P__1.
+Optimizing module \$_SDFFE_PP0P__0.
+Optimizing module \$_OR_.
+Optimizing module \$_NOT_.
+Optimizing module \$_MUX_.
+Optimizing module \$_AND_.
+Optimizing module counter_0.
+Optimizing module tb_counter.
+
+5.5. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \assertions..
+Finding unused cells or wires in module \$_XOR_..
+Finding unused cells or wires in module \$_SDFFE_PP1P__6..
+Finding unused cells or wires in module \$_SDFFE_PP1P__5..
+Finding unused cells or wires in module \$_SDFFE_PP1P__4..
+Finding unused cells or wires in module \$_SDFFE_PP1P__3..
+Finding unused cells or wires in module \$_SDFFE_PP1P__2..
+Finding unused cells or wires in module \$_SDFFE_PP1P__1..
+Finding unused cells or wires in module \$_SDFFE_PP1P__0..
+Finding unused cells or wires in module \$_SDFFE_PP0P__2..
+Finding unused cells or wires in module \$_SDFFE_PP0P__1..
+Finding unused cells or wires in module \$_SDFFE_PP0P__0..
+Finding unused cells or wires in module \$_OR_..
+Finding unused cells or wires in module \$_NOT_..
+Finding unused cells or wires in module \$_MUX_..
+Finding unused cells or wires in module \$_AND_..
+Finding unused cells or wires in module \counter_0..
+Finding unused cells or wires in module \tb_counter..
+Removed 1 unused cells and 1189 unused wires.
+<suppressed ~82 debug messages>
+
+5.6. Executing CHECK pass (checking for obvious problems).
+Checking module \$_AND_...
+Checking module \$_MUX_...
+Checking module \$_NOT_...
+Checking module \$_OR_...
+Checking module \$_SDFFE_PP0P__0...
+Checking module \$_SDFFE_PP0P__1...
+Checking module \$_SDFFE_PP0P__2...
+Checking module \$_SDFFE_PP1P__0...
+Checking module \$_SDFFE_PP1P__1...
+Checking module \$_SDFFE_PP1P__2...
+Checking module \$_SDFFE_PP1P__3...
+Checking module \$_SDFFE_PP1P__4...
+Checking module \$_SDFFE_PP1P__5...
+Checking module \$_SDFFE_PP1P__6...
+Checking module \$_XOR_...
+Checking module assertions...
+Checking module counter_0...
+Checking module tb_counter...
+Found and reported 0 problems.
+
+5.7. Executing OPT pass (performing simple optimizations).
+
+5.7.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module \$_AND_.
+Optimizing module \$_MUX_.
+Optimizing module \$_NOT_.
+Optimizing module \$_OR_.
+Optimizing module \$_SDFFE_PP0P__0.
+Optimizing module \$_SDFFE_PP0P__1.
+Optimizing module \$_SDFFE_PP0P__2.
+Optimizing module \$_SDFFE_PP1P__0.
+Optimizing module \$_SDFFE_PP1P__1.
+Optimizing module \$_SDFFE_PP1P__2.
+Optimizing module \$_SDFFE_PP1P__3.
+Optimizing module \$_SDFFE_PP1P__4.
+Optimizing module \$_SDFFE_PP1P__5.
+Optimizing module \$_SDFFE_PP1P__6.
+Optimizing module \$_XOR_.
+Optimizing module assertions.
+Optimizing module counter_0.
+Optimizing module tb_counter.
+
+5.7.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\$_AND_'.
+Finding identical cells in module `\$_MUX_'.
+Finding identical cells in module `\$_NOT_'.
+Finding identical cells in module `\$_OR_'.
+Finding identical cells in module `\$_SDFFE_PP0P__0'.
+Finding identical cells in module `\$_SDFFE_PP0P__1'.
+Finding identical cells in module `\$_SDFFE_PP0P__2'.
+Finding identical cells in module `\$_SDFFE_PP1P__0'.
+Finding identical cells in module `\$_SDFFE_PP1P__1'.
+Finding identical cells in module `\$_SDFFE_PP1P__2'.
+Finding identical cells in module `\$_SDFFE_PP1P__3'.
+Finding identical cells in module `\$_SDFFE_PP1P__4'.
+Finding identical cells in module `\$_SDFFE_PP1P__5'.
+Finding identical cells in module `\$_SDFFE_PP1P__6'.
+Finding identical cells in module `\$_XOR_'.
+Finding identical cells in module `\assertions'.
+Finding identical cells in module `\counter_0'.
+Finding identical cells in module `\tb_counter'.
+Removed a total of 0 cells.
+
+5.7.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \$_AND_..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \$_MUX_..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \$_NOT_..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \$_OR_..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \$_SDFFE_PP0P__0..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \$_SDFFE_PP0P__1..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \$_SDFFE_PP0P__2..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \$_SDFFE_PP1P__0..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \$_SDFFE_PP1P__1..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \$_SDFFE_PP1P__2..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \$_SDFFE_PP1P__3..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \$_SDFFE_PP1P__4..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \$_SDFFE_PP1P__5..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \$_SDFFE_PP1P__6..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \$_XOR_..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \assertions..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \counter_0..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \tb_counter..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+<suppressed ~29 debug messages>
+
+5.7.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \$_AND_.
+  Optimizing cells in module \$_MUX_.
+  Optimizing cells in module \$_NOT_.
+  Optimizing cells in module \$_OR_.
+  Optimizing cells in module \$_SDFFE_PP0P__0.
+  Optimizing cells in module \$_SDFFE_PP0P__1.
+  Optimizing cells in module \$_SDFFE_PP0P__2.
+  Optimizing cells in module \$_SDFFE_PP1P__0.
+  Optimizing cells in module \$_SDFFE_PP1P__1.
+  Optimizing cells in module \$_SDFFE_PP1P__2.
+  Optimizing cells in module \$_SDFFE_PP1P__3.
+  Optimizing cells in module \$_SDFFE_PP1P__4.
+  Optimizing cells in module \$_SDFFE_PP1P__5.
+  Optimizing cells in module \$_SDFFE_PP1P__6.
+  Optimizing cells in module \$_XOR_.
+  Optimizing cells in module \assertions.
+  Optimizing cells in module \counter_0.
+  Optimizing cells in module \tb_counter.
+Performed a total of 0 changes.
+
+5.7.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\$_AND_'.
+Finding identical cells in module `\$_MUX_'.
+Finding identical cells in module `\$_NOT_'.
+Finding identical cells in module `\$_OR_'.
+Finding identical cells in module `\$_SDFFE_PP0P__0'.
+Finding identical cells in module `\$_SDFFE_PP0P__1'.
+Finding identical cells in module `\$_SDFFE_PP0P__2'.
+Finding identical cells in module `\$_SDFFE_PP1P__0'.
+Finding identical cells in module `\$_SDFFE_PP1P__1'.
+Finding identical cells in module `\$_SDFFE_PP1P__2'.
+Finding identical cells in module `\$_SDFFE_PP1P__3'.
+Finding identical cells in module `\$_SDFFE_PP1P__4'.
+Finding identical cells in module `\$_SDFFE_PP1P__5'.
+Finding identical cells in module `\$_SDFFE_PP1P__6'.
+Finding identical cells in module `\$_XOR_'.
+Finding identical cells in module `\assertions'.
+Finding identical cells in module `\counter_0'.
+Finding identical cells in module `\tb_counter'.
+Removed a total of 0 cells.
+
+5.7.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \$_AND_..
+Finding unused cells or wires in module \$_MUX_..
+Finding unused cells or wires in module \$_NOT_..
+Finding unused cells or wires in module \$_OR_..
+Finding unused cells or wires in module \$_SDFFE_PP0P__0..
+Finding unused cells or wires in module \$_SDFFE_PP0P__1..
+Finding unused cells or wires in module \$_SDFFE_PP0P__2..
+Finding unused cells or wires in module \$_SDFFE_PP1P__0..
+Finding unused cells or wires in module \$_SDFFE_PP1P__1..
+Finding unused cells or wires in module \$_SDFFE_PP1P__2..
+Finding unused cells or wires in module \$_SDFFE_PP1P__3..
+Finding unused cells or wires in module \$_SDFFE_PP1P__4..
+Finding unused cells or wires in module \$_SDFFE_PP1P__5..
+Finding unused cells or wires in module \$_SDFFE_PP1P__6..
+Finding unused cells or wires in module \$_XOR_..
+Finding unused cells or wires in module \assertions..
+Finding unused cells or wires in module \counter_0..
+Finding unused cells or wires in module \tb_counter..
+
+5.7.7. Executing OPT_EXPR pass (perform const folding).
+Optimizing module \$_AND_.
+Optimizing module \$_MUX_.
+Optimizing module \$_NOT_.
+Optimizing module \$_OR_.
+Optimizing module \$_SDFFE_PP0P__0.
+Optimizing module \$_SDFFE_PP0P__1.
+Optimizing module \$_SDFFE_PP0P__2.
+Optimizing module \$_SDFFE_PP1P__0.
+Optimizing module \$_SDFFE_PP1P__1.
+Optimizing module \$_SDFFE_PP1P__2.
+Optimizing module \$_SDFFE_PP1P__3.
+Optimizing module \$_SDFFE_PP1P__4.
+Optimizing module \$_SDFFE_PP1P__5.
+Optimizing module \$_SDFFE_PP1P__6.
+Optimizing module \$_XOR_.
+Optimizing module assertions.
+Optimizing module counter_0.
+Optimizing module tb_counter.
+
+5.7.8. Finished OPT passes. (There is nothing left to do.)
+
+5.8. Executing WREDUCE pass (reducing word size of cells).
+Removed top 1 bits (of 32) from port A of cell assertions.$verific$LessThan_22$tb_counter.sv:45$1395 ($le).
+Removed top 1 bits (of 32) from port A of cell assertions.$verific$LessThan_36$tb_counter.sv:54$1408 ($le).
+Removed top 8 bits (of 11) from port B of cell assertions.$verific$equal_45$tb_counter.sv:55$1413 ($eq).
+Removed top 7 bits (of 11) from port B of cell assertions.$verific$equal_54$tb_counter.sv:58$1419 ($eq).
+Removed top 1 bits (of 32) from port A of cell assertions.$verific$LessThan_60$tb_counter.sv:60$1423 ($le).
+Removed top 1 bits (of 32) from port B of cell assertions.$verific$LessThan_62$tb_counter.sv:60$1424 ($le).
+Removed top 1 bits (of 10) from wire assertions.$verific$n39$1376.
+Removed top 6 bits (of 10) from wire counter_0._132_.
+Removed top 1 bits (of 10) from wire counter_0._142_.
+Removed top 8 bits (of 10) from wire counter_0._147_.
+Removed top 1 bits (of 10) from wire counter_0._152_.
+Removed top 1 bits (of 10) from wire counter_0._161_.
+Removed top 1 bits (of 10) from wire counter_0._171_.
+Removed top 1 bits (of 10) from wire counter_0._172_.
+Removed top 1 bits (of 10) from wire counter_0._174_.
+Removed top 1 bits (of 10) from wire counter_0._176_.
+Removed top 1 bits (of 10) from wire counter_0._177_.
+Removed top 1 bits (of 10) from wire counter_0._178_.
+Removed top 1 bits (of 10) from wire counter_0._179_.
+
+5.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \$_AND_..
+Finding unused cells or wires in module \$_MUX_..
+Finding unused cells or wires in module \$_NOT_..
+Finding unused cells or wires in module \$_OR_..
+Finding unused cells or wires in module \$_SDFFE_PP0P__0..
+Finding unused cells or wires in module \$_SDFFE_PP0P__1..
+Finding unused cells or wires in module \$_SDFFE_PP0P__2..
+Finding unused cells or wires in module \$_SDFFE_PP1P__0..
+Finding unused cells or wires in module \$_SDFFE_PP1P__1..
+Finding unused cells or wires in module \$_SDFFE_PP1P__2..
+Finding unused cells or wires in module \$_SDFFE_PP1P__3..
+Finding unused cells or wires in module \$_SDFFE_PP1P__4..
+Finding unused cells or wires in module \$_SDFFE_PP1P__5..
+Finding unused cells or wires in module \$_SDFFE_PP1P__6..
+Finding unused cells or wires in module \$_XOR_..
+Finding unused cells or wires in module \assertions..
+Finding unused cells or wires in module \counter_0..
+Finding unused cells or wires in module \tb_counter..
+Removed 0 unused cells and 13 unused wires.
+<suppressed ~2 debug messages>
+
+5.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+5.11. Executing OPT pass (performing simple optimizations).
+
+5.11.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module \$_AND_.
+Optimizing module \$_MUX_.
+Optimizing module \$_NOT_.
+Optimizing module \$_OR_.
+Optimizing module \$_SDFFE_PP0P__0.
+Optimizing module \$_SDFFE_PP0P__1.
+Optimizing module \$_SDFFE_PP0P__2.
+Optimizing module \$_SDFFE_PP1P__0.
+Optimizing module \$_SDFFE_PP1P__1.
+Optimizing module \$_SDFFE_PP1P__2.
+Optimizing module \$_SDFFE_PP1P__3.
+Optimizing module \$_SDFFE_PP1P__4.
+Optimizing module \$_SDFFE_PP1P__5.
+Optimizing module \$_SDFFE_PP1P__6.
+Optimizing module \$_XOR_.
+Optimizing module assertions.
+Optimizing module counter_0.
+Optimizing module tb_counter.
+
+5.11.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\$_AND_'.
+Finding identical cells in module `\$_MUX_'.
+Finding identical cells in module `\$_NOT_'.
+Finding identical cells in module `\$_OR_'.
+Finding identical cells in module `\$_SDFFE_PP0P__0'.
+Finding identical cells in module `\$_SDFFE_PP0P__1'.
+Finding identical cells in module `\$_SDFFE_PP0P__2'.
+Finding identical cells in module `\$_SDFFE_PP1P__0'.
+Finding identical cells in module `\$_SDFFE_PP1P__1'.
+Finding identical cells in module `\$_SDFFE_PP1P__2'.
+Finding identical cells in module `\$_SDFFE_PP1P__3'.
+Finding identical cells in module `\$_SDFFE_PP1P__4'.
+Finding identical cells in module `\$_SDFFE_PP1P__5'.
+Finding identical cells in module `\$_SDFFE_PP1P__6'.
+Finding identical cells in module `\$_XOR_'.
+Finding identical cells in module `\assertions'.
+Finding identical cells in module `\counter_0'.
+Finding identical cells in module `\tb_counter'.
+Removed a total of 0 cells.
+
+5.11.3. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \$_AND_..
+Finding unused cells or wires in module \$_MUX_..
+Finding unused cells or wires in module \$_NOT_..
+Finding unused cells or wires in module \$_OR_..
+Finding unused cells or wires in module \$_SDFFE_PP0P__0..
+Finding unused cells or wires in module \$_SDFFE_PP0P__1..
+Finding unused cells or wires in module \$_SDFFE_PP0P__2..
+Finding unused cells or wires in module \$_SDFFE_PP1P__0..
+Finding unused cells or wires in module \$_SDFFE_PP1P__1..
+Finding unused cells or wires in module \$_SDFFE_PP1P__2..
+Finding unused cells or wires in module \$_SDFFE_PP1P__3..
+Finding unused cells or wires in module \$_SDFFE_PP1P__4..
+Finding unused cells or wires in module \$_SDFFE_PP1P__5..
+Finding unused cells or wires in module \$_SDFFE_PP1P__6..
+Finding unused cells or wires in module \$_XOR_..
+Finding unused cells or wires in module \assertions..
+Finding unused cells or wires in module \counter_0..
+Finding unused cells or wires in module \tb_counter..
+
+5.11.4. Finished fast OPT passes.
+
+5.12. Printing statistics.
+
+=== \$_AND_ ===
+
+   Number of wires:                  3
+   Number of wire bits:              3
+   Number of public wires:           3
+   Number of public wire bits:       3
+   Number of ports:                  3
+   Number of port bits:              3
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     $and                            1
+
+=== \$_MUX_ ===
+
+   Number of wires:                  4
+   Number of wire bits:              4
+   Number of public wires:           4
+   Number of public wire bits:       4
+   Number of ports:                  4
+   Number of port bits:              4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     $mux                            1
+
+=== \$_NOT_ ===
+
+   Number of wires:                  2
+   Number of wire bits:              2
+   Number of public wires:           2
+   Number of public wire bits:       2
+   Number of ports:                  2
+   Number of port bits:              2
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     $not                            1
+
+=== \$_OR_ ===
+
+   Number of wires:                  3
+   Number of wire bits:              3
+   Number of public wires:           3
+   Number of public wire bits:       3
+   Number of ports:                  3
+   Number of port bits:              3
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     $or                             1
+
+=== \$_SDFFE_PP0P__0 ===
+
+   Number of wires:                  7
+   Number of wire bits:              7
+   Number of public wires:           5
+   Number of public wire bits:       5
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $dff                            1
+     $mux                            2
+
+=== \$_SDFFE_PP0P__1 ===
+
+   Number of wires:                  7
+   Number of wire bits:              7
+   Number of public wires:           5
+   Number of public wire bits:       5
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $dff                            1
+     $mux                            2
+
+=== \$_SDFFE_PP0P__2 ===
+
+   Number of wires:                  7
+   Number of wire bits:              7
+   Number of public wires:           5
+   Number of public wire bits:       5
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $dff                            1
+     $mux                            2
+
+=== \$_SDFFE_PP1P__0 ===
+
+   Number of wires:                  7
+   Number of wire bits:              7
+   Number of public wires:           5
+   Number of public wire bits:       5
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $dff                            1
+     $mux                            2
+
+=== \$_SDFFE_PP1P__1 ===
+
+   Number of wires:                  7
+   Number of wire bits:              7
+   Number of public wires:           5
+   Number of public wire bits:       5
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $dff                            1
+     $mux                            2
+
+=== \$_SDFFE_PP1P__2 ===
+
+   Number of wires:                  7
+   Number of wire bits:              7
+   Number of public wires:           5
+   Number of public wire bits:       5
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $dff                            1
+     $mux                            2
+
+=== \$_SDFFE_PP1P__3 ===
+
+   Number of wires:                  7
+   Number of wire bits:              7
+   Number of public wires:           5
+   Number of public wire bits:       5
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $dff                            1
+     $mux                            2
+
+=== \$_SDFFE_PP1P__4 ===
+
+   Number of wires:                  7
+   Number of wire bits:              7
+   Number of public wires:           5
+   Number of public wire bits:       5
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $dff                            1
+     $mux                            2
+
+=== \$_SDFFE_PP1P__5 ===
+
+   Number of wires:                  7
+   Number of wire bits:              7
+   Number of public wires:           5
+   Number of public wire bits:       5
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $dff                            1
+     $mux                            2
+
+=== \$_SDFFE_PP1P__6 ===
+
+   Number of wires:                  7
+   Number of wire bits:              7
+   Number of public wires:           5
+   Number of public wire bits:       5
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $dff                            1
+     $mux                            2
+
+=== \$_XOR_ ===
+
+   Number of wires:                  3
+   Number of wire bits:              3
+   Number of public wires:           3
+   Number of public wire bits:       3
+   Number of ports:                  3
+   Number of port bits:              3
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     $xor                            1
+
+=== assertions ===
+
+   Number of wires:                 97
+   Number of wire bits:            125
+   Number of public wires:           5
+   Number of public wire bits:      14
+   Number of ports:                  4
+   Number of port bits:             13
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                104
+     $and                            6
+     $assert                        10
+     $assume                         2
+     $dff                           28
+     $eq                             7
+     $le                             8
+     $logic_not                      1
+     $mux                           24
+     $ne                             4
+     $not                           13
+     $sub                            1
+
+=== counter_0 ===
+
+   Number of wires:                188
+   Number of wire bits:            577
+   Number of public wires:         188
+   Number of public wire bits:     577
+   Number of ports:                  4
+   Number of port bits:             13
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                355
+     \$_AND_                       131
+     \$_MUX_                        34
+     \$_NOT_                        49
+     \$_OR_                         87
+     \$_SDFFE_PP0P__0                1
+     \$_SDFFE_PP0P__1                1
+     \$_SDFFE_PP0P__2                1
+     \$_SDFFE_PP1P__0                1
+     \$_SDFFE_PP1P__1                1
+     \$_SDFFE_PP1P__2                1
+     \$_SDFFE_PP1P__3                1
+     \$_SDFFE_PP1P__4                1
+     \$_SDFFE_PP1P__5                1
+     \$_SDFFE_PP1P__6                1
+     \$_XOR_                        43
+     assertions                      1
+
+=== tb_counter ===
+
+   Number of wires:                  4
+   Number of wire bits:             13
+   Number of public wires:           4
+   Number of public wire bits:      13
+   Number of ports:                  4
+   Number of port bits:             13
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     counter_0                       1
+
+=== design hierarchy ===
+
+   tb_counter                        1
+     counter_0                       1
+       \$_AND_                     131
+       \$_MUX_                      34
+       \$_NOT_                      49
+       \$_OR_                       87
+       \$_SDFFE_PP0P__0              1
+       \$_SDFFE_PP0P__1              1
+       \$_SDFFE_PP0P__2              1
+       \$_SDFFE_PP1P__0              1
+       \$_SDFFE_PP1P__1              1
+       \$_SDFFE_PP1P__2              1
+       \$_SDFFE_PP1P__3              1
+       \$_SDFFE_PP1P__4              1
+       \$_SDFFE_PP1P__5              1
+       \$_SDFFE_PP1P__6              1
+       \$_XOR_                      43
+       assertions                    1
+
+   Number of wires:               1376
+   Number of wire bits:           1802
+   Number of public wires:        1264
+   Number of public wire bits:    1671
+   Number of ports:               1079
+   Number of port bits:           1106
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                478
+     $and                          137
+     $assert                        10
+     $assume                         2
+     $dff                           38
+     $eq                             7
+     $le                             8
+     $logic_not                      1
+     $mux                           78
+     $ne                             4
+     $not                           62
+     $or                            87
+     $sub                            1
+     $xor                           43
+
+5.13. Executing CHECK pass (checking for obvious problems).
+Checking module \$_AND_...
+Checking module \$_MUX_...
+Checking module \$_NOT_...
+Checking module \$_OR_...
+Checking module \$_SDFFE_PP0P__0...
+Checking module \$_SDFFE_PP0P__1...
+Checking module \$_SDFFE_PP0P__2...
+Checking module \$_SDFFE_PP1P__0...
+Checking module \$_SDFFE_PP1P__1...
+Checking module \$_SDFFE_PP1P__2...
+Checking module \$_SDFFE_PP1P__3...
+Checking module \$_SDFFE_PP1P__4...
+Checking module \$_SDFFE_PP1P__5...
+Checking module \$_SDFFE_PP1P__6...
+Checking module \$_XOR_...
+Checking module assertions...
+Checking module counter_0...
+Checking module tb_counter...
+Found and reported 0 problems.
+
+6. Executing HIERARCHY pass (managing design hierarchy).
+
+6.1. Analyzing design hierarchy..
+Top module:  \tb_counter
+Used module:     \counter_0
+Used module:         \$_NOT_
+Used module:         \$_OR_
+Used module:         \$_AND_
+Used module:         \$_MUX_
+Used module:         \$_XOR_
+Used module:         \$_SDFFE_PP0P__1
+Used module:         \$_SDFFE_PP1P__1
+Used module:         \$_SDFFE_PP1P__2
+Used module:         \$_SDFFE_PP1P__3
+Used module:         \$_SDFFE_PP0P__2
+Used module:         \$_SDFFE_PP0P__0
+Used module:         \$_SDFFE_PP1P__4
+Used module:         \$_SDFFE_PP1P__5
+Used module:         \$_SDFFE_PP1P__6
+Used module:         \$_SDFFE_PP1P__0
+Used module:         \assertions
+
+6.2. Analyzing design hierarchy..
+Top module:  \tb_counter
+Used module:     \counter_0
+Used module:         \$_NOT_
+Used module:         \$_OR_
+Used module:         \$_AND_
+Used module:         \$_MUX_
+Used module:         \$_XOR_
+Used module:         \$_SDFFE_PP0P__1
+Used module:         \$_SDFFE_PP1P__1
+Used module:         \$_SDFFE_PP1P__2
+Used module:         \$_SDFFE_PP1P__3
+Used module:         \$_SDFFE_PP0P__2
+Used module:         \$_SDFFE_PP0P__0
+Used module:         \$_SDFFE_PP1P__4
+Used module:         \$_SDFFE_PP1P__5
+Used module:         \$_SDFFE_PP1P__6
+Used module:         \$_SDFFE_PP1P__0
+Used module:         \assertions
+Removed 0 unused modules.
+Module assertions directly or indirectly contains formal properties -> setting "keep" attribute.
+Module counter_0 directly or indirectly contains formal properties -> setting "keep" attribute.
+Module tb_counter directly or indirectly contains formal properties -> setting "keep" attribute.
+
+7. Executing jny backend.
+
+8. Executing RTLIL backend.
+Output filename: ../model/design.il
+
+Warnings: 1 unique messages, 1 total
+End of script. Logfile hash: aa9365a7c0, CPU: user 0.10s system 0.01s, MEM: 39.25 MB peak
+Yosys 0.45 (git sha1 9ed031ddd, clang++ 14.0.0-1ubuntu1.1 -fPIC -O3)
+Time spent: 42% 4x verific (0 sec), 16% 5x opt_expr (0 sec), ...

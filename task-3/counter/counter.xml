@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+<testsuite timestamp="2024-10-22T20:56:47" hostname="LukasDell" package="counter" id="0" name="default" tests="1" errors="0" failures="0" time="1" skipped="0">
+<properties>
+<property name="os" value="Linux"/>
+<property name="expect" value="PASS"/>
+<property name="status" value="PASS"/>
+</properties>
+<testcase classname="default" name="default" time="1">
+</testcase>
+<system-out>SBY 20:56:46 [counter] Removing directory '/home/lukas/OneDrive/Dokumente/Uni/DIS/task-3/counter'.
+SBY 20:56:46 [counter] Copy '/home/lukas/OneDrive/Dokumente/Uni/DIS/task-3/counter.v' to '/home/lukas/OneDrive/Dokumente/Uni/DIS/task-3/counter/src/counter.v'.
+SBY 20:56:46 [counter] engine_0: aiger suprove
+SBY 20:56:47 [counter] base: starting process &quot;cd counter/src; yosys -ql ../model/design.log ../model/design.ys&quot;
+SBY 20:56:47 [counter] base: Academic/educational license for ICT / TU-Vienna.
+SBY 20:56:47 [counter] base: Do not redistribute without permission.
+SBY 20:56:47 [counter] base: Do not use for commercial purposes.
+SBY 20:56:47 [counter] base: finished (returncode=0)
+SBY 20:56:47 [counter] prep: starting process &quot;cd counter/model; yosys -ql design_prep.log design_prep.ys&quot;
+SBY 20:56:47 [counter] prep: Academic/educational license for ICT / TU-Vienna.
+SBY 20:56:47 [counter] prep: Do not redistribute without permission.
+SBY 20:56:47 [counter] prep: Do not use for commercial purposes.
+SBY 20:56:47 [counter] prep: finished (returncode=0)
+SBY 20:56:47 [counter] aig: starting process &quot;cd counter/model; yosys -ql design_aiger.log design_aiger.ys&quot;
+SBY 20:56:47 [counter] aig: Academic/educational license for ICT / TU-Vienna.
+SBY 20:56:47 [counter] aig: Do not redistribute without permission.
+SBY 20:56:47 [counter] aig: Do not use for commercial purposes.
+SBY 20:56:47 [counter] aig: finished (returncode=0)
+SBY 20:56:47 [counter] engine_0: starting process &quot;cd counter; suprove model/design_aiger.aig&quot;
+SBY 20:56:47 [counter] engine_0: finished (returncode=0)
+SBY 20:56:47 [counter] engine_0: Status returned by engine: PASS
+SBY 20:56:47 [counter] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 20:56:47 [counter] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:01 (1)
+SBY 20:56:47 [counter] summary: engine_0 (aiger suprove) returned PASS
+SBY 20:56:47 [counter] summary: engine_0 did not produce any traces
+SBY 20:56:47 [counter] DONE (PASS, rc=0)
+</system-out>
+<system-err>
+</system-err>
+</testsuite>
+</testsuites>

@@ -1,0 +1,450 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite -- YosysHQ Edition [202409031137]     |
+ |  Copyright (C) 2012 - 2024 YosysHQ GmbH                                    |
+ |  For support, please contact support@yosyshq.com                           |
+ \----------------------------------------------------------------------------/
+ Yosys 0.45 (git sha1 9ed031ddd, clang++ 14.0.0-1ubuntu1.1 -fPIC -O3)
+
+-- Executing script file `design_smt2.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: design_prep.il
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1. Analyzing design hierarchy..
+Top module:  \tb_counter
+Used module:     \counter_0
+Used module:         \assertions
+Used module:         \$_SDFFE_PP1P__0
+Used module:         \$_SDFFE_PP1P__6
+Used module:         \$_SDFFE_PP1P__5
+Used module:         \$_SDFFE_PP1P__4
+Used module:         \$_SDFFE_PP0P__0
+Used module:         \$_SDFFE_PP0P__2
+Used module:         \$_SDFFE_PP1P__3
+Used module:         \$_SDFFE_PP1P__2
+Used module:         \$_SDFFE_PP1P__1
+Used module:         \$_SDFFE_PP0P__1
+Used module:         \$_XOR_
+Used module:         \$_OR_
+Used module:         \$_AND_
+Used module:         \$_NOT_
+Used module:         \$_MUX_
+
+2.2. Analyzing design hierarchy..
+Top module:  \tb_counter
+Used module:     \counter_0
+Used module:         \assertions
+Used module:         \$_SDFFE_PP1P__0
+Used module:         \$_SDFFE_PP1P__6
+Used module:         \$_SDFFE_PP1P__5
+Used module:         \$_SDFFE_PP1P__4
+Used module:         \$_SDFFE_PP0P__0
+Used module:         \$_SDFFE_PP0P__2
+Used module:         \$_SDFFE_PP1P__3
+Used module:         \$_SDFFE_PP1P__2
+Used module:         \$_SDFFE_PP1P__1
+Used module:         \$_SDFFE_PP0P__1
+Used module:         \$_XOR_
+Used module:         \$_OR_
+Used module:         \$_AND_
+Used module:         \$_NOT_
+Used module:         \$_MUX_
+Removed 0 unused modules.
+Module tb_counter directly or indirectly contains formal properties -> setting "keep" attribute.
+Module counter_0 directly or indirectly contains formal properties -> setting "keep" attribute.
+Module assertions directly or indirectly contains formal properties -> setting "keep" attribute.
+
+3. Executing FORMALFF pass.
+
+4. Executing DFFUNMAP pass (unmap clock enable and synchronous reset from FFs).
+
+5. Printing statistics.
+
+=== tb_counter ===
+
+   Number of wires:                  5
+   Number of wire bits:             14
+   Number of public wires:           4
+   Number of public wire bits:      13
+   Number of ports:                  4
+   Number of port bits:             13
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $assume                         1
+     $not                            1
+     counter_0                       1
+
+=== counter_0 ===
+
+   Number of wires:                189
+   Number of wire bits:            578
+   Number of public wires:         188
+   Number of public wire bits:     577
+   Number of ports:                  4
+   Number of port bits:             13
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                357
+     $assume                         1
+     $not                            1
+     \$_AND_                       131
+     \$_MUX_                        34
+     \$_NOT_                        49
+     \$_OR_                         87
+     \$_SDFFE_PP0P__0                1
+     \$_SDFFE_PP0P__1                1
+     \$_SDFFE_PP0P__2                1
+     \$_SDFFE_PP1P__0                1
+     \$_SDFFE_PP1P__1                1
+     \$_SDFFE_PP1P__2                1
+     \$_SDFFE_PP1P__3                1
+     \$_SDFFE_PP1P__4                1
+     \$_SDFFE_PP1P__5                1
+     \$_SDFFE_PP1P__6                1
+     \$_XOR_                        43
+     assertions                      1
+
+=== assertions ===
+
+   Number of wires:                 93
+   Number of wire bits:            121
+   Number of public wires:           8
+   Number of public wire bits:      26
+   Number of ports:                  4
+   Number of port bits:             13
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                102
+     $and                            6
+     $anyinit                        3
+     $assert                        10
+     $assume                         3
+     $eq                             7
+     $ff                            21
+     $le                             8
+     $logic_not                      1
+     $mux                           24
+     $ne                             4
+     $not                           14
+     $sub                            1
+
+=== \$_XOR_ ===
+
+   Number of wires:                  3
+   Number of wire bits:              3
+   Number of public wires:           3
+   Number of public wire bits:       3
+   Number of ports:                  3
+   Number of port bits:              3
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     $xor                            1
+
+=== \$_SDFFE_PP1P__6 ===
+
+   Number of wires:                  8
+   Number of wire bits:              8
+   Number of public wires:           5
+   Number of public wire bits:       5
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $assume                         1
+     $ff                             1
+     $mux                            2
+     $not                            1
+
+=== \$_SDFFE_PP1P__5 ===
+
+   Number of wires:                  8
+   Number of wire bits:              8
+   Number of public wires:           5
+   Number of public wire bits:       5
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $assume                         1
+     $ff                             1
+     $mux                            2
+     $not                            1
+
+=== \$_SDFFE_PP1P__4 ===
+
+   Number of wires:                  8
+   Number of wire bits:              8
+   Number of public wires:           5
+   Number of public wire bits:       5
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $assume                         1
+     $ff                             1
+     $mux                            2
+     $not                            1
+
+=== \$_SDFFE_PP1P__3 ===
+
+   Number of wires:                  8
+   Number of wire bits:              8
+   Number of public wires:           5
+   Number of public wire bits:       5
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $assume                         1
+     $ff                             1
+     $mux                            2
+     $not                            1
+
+=== \$_SDFFE_PP1P__2 ===
+
+   Number of wires:                  8
+   Number of wire bits:              8
+   Number of public wires:           5
+   Number of public wire bits:       5
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $assume                         1
+     $ff                             1
+     $mux                            2
+     $not                            1
+
+=== \$_SDFFE_PP1P__1 ===
+
+   Number of wires:                  8
+   Number of wire bits:              8
+   Number of public wires:           5
+   Number of public wire bits:       5
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $assume                         1
+     $ff                             1
+     $mux                            2
+     $not                            1
+
+=== \$_SDFFE_PP1P__0 ===
+
+   Number of wires:                  8
+   Number of wire bits:              8
+   Number of public wires:           5
+   Number of public wire bits:       5
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $assume                         1
+     $ff                             1
+     $mux                            2
+     $not                            1
+
+=== \$_SDFFE_PP0P__2 ===
+
+   Number of wires:                  8
+   Number of wire bits:              8
+   Number of public wires:           5
+   Number of public wire bits:       5
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $assume                         1
+     $ff                             1
+     $mux                            2
+     $not                            1
+
+=== \$_SDFFE_PP0P__1 ===
+
+   Number of wires:                  8
+   Number of wire bits:              8
+   Number of public wires:           5
+   Number of public wire bits:       5
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $assume                         1
+     $ff                             1
+     $mux                            2
+     $not                            1
+
+=== \$_SDFFE_PP0P__0 ===
+
+   Number of wires:                  8
+   Number of wire bits:              8
+   Number of public wires:           5
+   Number of public wire bits:       5
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $assume                         1
+     $ff                             1
+     $mux                            2
+     $not                            1
+
+=== \$_OR_ ===
+
+   Number of wires:                  3
+   Number of wire bits:              3
+   Number of public wires:           3
+   Number of public wire bits:       3
+   Number of ports:                  3
+   Number of port bits:              3
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     $or                             1
+
+=== \$_NOT_ ===
+
+   Number of wires:                  2
+   Number of wire bits:              2
+   Number of public wires:           2
+   Number of public wire bits:       2
+   Number of ports:                  2
+   Number of port bits:              2
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     $not                            1
+
+=== \$_MUX_ ===
+
+   Number of wires:                  4
+   Number of wire bits:              4
+   Number of public wires:           4
+   Number of public wire bits:       4
+   Number of ports:                  4
+   Number of port bits:              4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     $mux                            1
+
+=== \$_AND_ ===
+
+   Number of wires:                  3
+   Number of wire bits:              3
+   Number of public wires:           3
+   Number of public wire bits:       3
+   Number of ports:                  3
+   Number of port bits:              3
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     $and                            1
+
+=== design hierarchy ===
+
+   tb_counter                        1
+     counter_0                       1
+       \$_AND_                     131
+       \$_MUX_                      34
+       \$_NOT_                      49
+       \$_OR_                       87
+       \$_SDFFE_PP0P__0              1
+       \$_SDFFE_PP0P__1              1
+       \$_SDFFE_PP0P__2              1
+       \$_SDFFE_PP1P__0              1
+       \$_SDFFE_PP1P__1              1
+       \$_SDFFE_PP1P__2              1
+       \$_SDFFE_PP1P__3              1
+       \$_SDFFE_PP1P__4              1
+       \$_SDFFE_PP1P__5              1
+       \$_SDFFE_PP1P__6              1
+       \$_XOR_                      43
+       assertions                    1
+
+   Number of wires:               1384
+   Number of wire bits:           1810
+   Number of public wires:        1267
+   Number of public wire bits:    1683
+   Number of ports:               1079
+   Number of port bits:           1106
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                500
+     $and                          137
+     $anyinit                        3
+     $assert                        10
+     $assume                        15
+     $eq                             7
+     $ff                            31
+     $le                             8
+     $logic_not                      1
+     $mux                           78
+     $ne                             4
+     $not                           75
+     $or                            87
+     $sub                            1
+     $xor                           43
+
+6. Executing SMT2 backend.
+
+6.1. Executing BMUXMAP pass.
+
+6.2. Executing DEMUXMAP pass.
+Creating SMT-LIBv2 representation of module \$_AND_.
+Creating SMT-LIBv2 representation of module \$_MUX_.
+Creating SMT-LIBv2 representation of module \$_NOT_.
+Creating SMT-LIBv2 representation of module \$_OR_.
+Creating SMT-LIBv2 representation of module \$_SDFFE_PP0P__0.
+Creating SMT-LIBv2 representation of module \$_SDFFE_PP0P__1.
+Creating SMT-LIBv2 representation of module \$_SDFFE_PP0P__2.
+Creating SMT-LIBv2 representation of module \$_SDFFE_PP1P__0.
+Creating SMT-LIBv2 representation of module \$_SDFFE_PP1P__1.
+Creating SMT-LIBv2 representation of module \$_SDFFE_PP1P__2.
+Creating SMT-LIBv2 representation of module \$_SDFFE_PP1P__3.
+Creating SMT-LIBv2 representation of module \$_SDFFE_PP1P__4.
+Creating SMT-LIBv2 representation of module \$_SDFFE_PP1P__5.
+Creating SMT-LIBv2 representation of module \$_SDFFE_PP1P__6.
+Creating SMT-LIBv2 representation of module \$_XOR_.
+Creating SMT-LIBv2 representation of module assertions.
+Creating SMT-LIBv2 representation of module counter_0.
+Creating SMT-LIBv2 representation of module tb_counter.
+
+End of script. Logfile hash: e2f6980b5c, CPU: user 0.02s system 0.01s, MEM: 28.38 MB peak
+Yosys 0.45 (git sha1 9ed031ddd, clang++ 14.0.0-1ubuntu1.1 -fPIC -O3)
+Time spent: 75% 2x write_smt2 (0 sec), 18% 2x read_ilang (0 sec), ...

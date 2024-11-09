@@ -1,0 +1,19 @@
+# Read the Verilog model of the counter
+read_verilog counter.v
+
+hierarchy -check -auto-top
+proc 
+clean 
+stat 
+
+techmap -map map.v
+# Optimize the design
+opt -full
+stat
+
+
+
+# Rename the module and write it to a Verilog file
+rename counter counter_opt
+write_verilog counter_opt.v
+

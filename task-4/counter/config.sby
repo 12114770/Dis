@@ -1,0 +1,15 @@
+[options]
+mode prove
+expect pass
+
+[engines]
+aiger suprove
+
+[script]
+read -formal tb_counter.sv counter-cla.v
+verific -import tb_counter
+prep -top tb_counter
+
+[files]
+counter-cla.v
+tb_counter.sv

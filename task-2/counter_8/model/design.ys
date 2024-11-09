@@ -1,0 +1,11 @@
+# running in counter_8/src/
+read -formal simcells.v
+read -formal tb_counter.sv
+read -formal counter-8.v
+verific -import tb_counter
+prep -top tb_counter
+
+hierarchy -smtcheck
+rename -witness
+write_jny -no-connections ../model/design.json
+write_rtlil ../model/design.il

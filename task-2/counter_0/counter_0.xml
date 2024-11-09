@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+<testsuite timestamp="2024-10-17T12:05:51" hostname="LukasDell" package="counter" id="0" name="0" tests="1" errors="0" failures="0" time="1" skipped="0">
+<properties>
+<property name="os" value="Linux"/>
+<property name="expect" value="PASS"/>
+<property name="status" value="PASS"/>
+</properties>
+<testcase classname="0" name="0" time="1">
+</testcase>
+<system-out>SBY 12:05:50 [counter_0] Removing directory '/home/lukas/OneDrive/Dokumente/Uni/DIS/task-2/counter_0'.
+SBY 12:05:50 [counter_0] Copy '/home/lukas/OneDrive/Dokumente/Uni/DIS/task-2/tb_counter.sv' to '/home/lukas/OneDrive/Dokumente/Uni/DIS/task-2/counter_0/src/tb_counter.sv'.
+SBY 12:05:50 [counter_0] Copy '/home/lukas/OneDrive/Dokumente/Uni/DIS/task-2/tests/counter-0.v' to '/home/lukas/OneDrive/Dokumente/Uni/DIS/task-2/counter_0/src/counter-0.v'.
+SBY 12:05:50 [counter_0] Copy '/home/lukas/tabby-linux-x64-20240903/tabby/share/yosys/simcells.v' to '/home/lukas/OneDrive/Dokumente/Uni/DIS/task-2/counter_0/src/simcells.v'.
+SBY 12:05:50 [counter_0] engine_0: aiger suprove
+SBY 12:05:50 [counter_0] base: starting process &quot;cd counter_0/src; yosys -ql ../model/design.log ../model/design.ys&quot;
+SBY 12:05:50 [counter_0] base: Academic/educational license for ICT / TU-Vienna.
+SBY 12:05:50 [counter_0] base: Do not redistribute without permission.
+SBY 12:05:50 [counter_0] base: Do not use for commercial purposes.
+SBY 12:05:50 [counter_0] base: finished (returncode=0)
+SBY 12:05:50 [counter_0] prep: starting process &quot;cd counter_0/model; yosys -ql design_prep.log design_prep.ys&quot;
+SBY 12:05:50 [counter_0] prep: Academic/educational license for ICT / TU-Vienna.
+SBY 12:05:50 [counter_0] prep: Do not redistribute without permission.
+SBY 12:05:50 [counter_0] prep: Do not use for commercial purposes.
+SBY 12:05:50 [counter_0] prep: finished (returncode=0)
+SBY 12:05:50 [counter_0] aig: starting process &quot;cd counter_0/model; yosys -ql design_aiger.log design_aiger.ys&quot;
+SBY 12:05:50 [counter_0] aig: Academic/educational license for ICT / TU-Vienna.
+SBY 12:05:50 [counter_0] aig: Do not redistribute without permission.
+SBY 12:05:50 [counter_0] aig: Do not use for commercial purposes.
+SBY 12:05:50 [counter_0] aig: finished (returncode=0)
+SBY 12:05:50 [counter_0] engine_0: starting process &quot;cd counter_0; suprove model/design_aiger.aig&quot;
+SBY 12:05:51 [counter_0] engine_0: finished (returncode=0)
+SBY 12:05:51 [counter_0] engine_0: Status returned by engine: PASS
+SBY 12:05:51 [counter_0] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 12:05:51 [counter_0] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:01 (1)
+SBY 12:05:51 [counter_0] summary: engine_0 (aiger suprove) returned PASS
+SBY 12:05:51 [counter_0] summary: engine_0 did not produce any traces
+SBY 12:05:51 [counter_0] DONE (PASS, rc=0)
+</system-out>
+<system-err>
+</system-err>
+</testsuite>
+</testsuites>

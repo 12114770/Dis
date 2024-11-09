@@ -1,0 +1,60 @@
+initial
+assume (= [dut.cnt_reg[0].Q] false)
+assume (= [dut.cnt_reg[1].Q] true)
+assume (= [dut.cnt_reg[2].Q] true)
+assume (= [dut.cnt_reg[3].Q] true)
+assume (= [dut.cnt_reg[4].Q] false)
+assume (= [dut.cnt_reg[5].Q] false)
+assume (= [dut.cnt_reg[6].Q] true)
+assume (= [dut.cnt_reg[7].Q] true)
+assume (= [dut.cnt_reg[8].Q] true)
+assume (= [dut.cnt_reg[9].Q] true)
+assume (= [dut.tb.$auto$verificsva.cc:1817:import$1340] false)
+assume (= [dut.tb.$auto$verificsva.cc:1817:import$1351] false)
+assume (= [dut.tb.$auto$verificsva.cc:1817:import$1362] false)
+assume (= [dut.tb.$auto$verificsva.cc:1817:import$1373] false)
+assume (= [dut.tb.$auto$verificsva.cc:1817:import$1384] false)
+assume (= [dut.tb.$auto$verificsva.cc:1817:import$1395] false)
+assume (= [dut.tb.$auto$verificsva.cc:1817:import$1406] false)
+assume (= [dut.tb.$auto$verificsva.cc:1817:import$1417] false)
+assume (= [dut.tb.$auto$verificsva.cc:1817:import$1428] false)
+assume (= [dut.tb.$auto$verificsva.cc:1817:import$1439] false)
+assume (= [dut.tb.$auto$verificsva.cc:1818:import$1341] false)
+assume (= [dut.tb.$auto$verificsva.cc:1818:import$1352] false)
+assume (= [dut.tb.$auto$verificsva.cc:1818:import$1363] false)
+assume (= [dut.tb.$auto$verificsva.cc:1818:import$1374] false)
+assume (= [dut.tb.$auto$verificsva.cc:1818:import$1385] false)
+assume (= [dut.tb.$auto$verificsva.cc:1818:import$1396] false)
+assume (= [dut.tb.$auto$verificsva.cc:1818:import$1407] false)
+assume (= [dut.tb.$auto$verificsva.cc:1818:import$1418] false)
+assume (= [dut.tb.$auto$verificsva.cc:1818:import$1429] false)
+assume (= [dut.tb.$auto$verificsva.cc:1818:import$1440] false)
+assume (= [dut.tb._witness_.anyinit_verific_dff_37_tb_counter_sv_54_1278] #b1111100111)
+assume (= [dut.tb._witness_.anyinit_verific_i35_tb_counter_sv_48_1276] true)
+assume (= [dut.tb._witness_.anyinit_verific_i52_tb_counter_sv_57_1287] true)
+assume (= [dut.tb.init] true)
+
+state 0
+assume (= [clk] false)
+assume (= [mode] true)
+assume (= [rst] true)
+
+state 1
+assume (= [clk] false)
+assume (= [mode] false)
+assume (= [rst] false)
+
+state 2
+assume (= [clk] false)
+assume (= [mode] false)
+assume (= [rst] false)
+
+state 3
+assume (= [clk] false)
+assume (= [mode] false)
+assume (= [rst] false)
+
+state 4
+assume (= [clk] false)
+assume (= [mode] false)
+assume (= [rst] false)

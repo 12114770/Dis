@@ -1,0 +1,18 @@
+# Read the ’gate’ model
+read_verilog counter_opt.v
+
+# Read the ’golden’ model
+read_verilog counter.v
+
+# Synthesize processes and clean the design
+proc
+clean
+
+
+
+# Create the miter
+miter -equiv -make_assert counter counter_opt equal
+
+flatten equal
+
+sat -prove-asserts -tempinduct -verify -show-regs -show-inputs -show-outputs -dump_vcd trace.vcd equal
