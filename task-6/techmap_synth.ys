@@ -1,0 +1,58 @@
+read_verilog counter.v
+proc;
+opt -full;
+design -save A
+write_verilog -noexpr A.v
+
+design -save 1
+design -save B
+design -save C
+
+design -load 1
+synth_ice40
+design -save 1
+write_verilog -noexpr 1.v
+
+design -load B
+techmap
+opt -full
+design -save B
+write_verilog -noexpr B.v
+design -save 2
+
+design -load 2
+synth_ice40
+design -save 2
+write_verilog -noexpr 2.v
+
+design -load C
+techmap -map map.v
+opt -full
+design -save C
+write_verilog -noexpr C.v
+design -save 3
+design -save D
+
+design -load 3
+synth_ice40
+design -save 3
+write_verilog -noexpr 3.v
+
+
+
+design -load D
+techmap
+opt -full
+design -save D
+write_verilog -noexpr D.v
+design -save 4
+
+design -load 4
+synth_ice40
+design -save 4
+write_verilog -noexpr 4.v
+
+
+
+
+

@@ -1,0 +1,69 @@
+# Read design and synthesize processes
+read_verilog counter.v
+proc
+clean
+opt -full
+
+# Create a named selection for the multiplexer that is controlled by the ’mode’ input
+select -set modeswitch w:\mode %co w:\mode %d
+
+
+# Select only the logic that connects to the multiplexer’s ’B’ input and name it ’inc’
+select -set inc counter/$procmux$63 %ci:+[B] @modeswitch %d %cie* 
+
+# ^ 
+# |
+#code like in lecture did not work, chose multiplexer manually
+# |
+# v 
+
+# Select only the logic that connects to the multiplexer’s ’A’ input and name it ’dec’
+select -set dec counter/$procmux$63 %ci:+[A] @modeswitch %d %cie*
+
+
+# Create submodules
+submod -name increment @inc
+submod -name decrement @dec
+clean
+
+
+flatten 
+opt -full
+ 
+techmap increment
+techmap decrement
+
+opt -full
+
+
+cd increment
+write_verilog -selected increment.v
+cd .. 
+
+cd decrement
+write_verilog -selected decrement.v
+cd ..
+ 
+cd counter 
+
+cd increment
+write_verilog -selected counter_submod.v
+
+
+
+# Flatten the design
+flatten
+opt -full
+
+
+
+
+# Gate-level synthesis
+techmap
+
+# Optimize design
+opt -full
+
+
+# Write the counter to file
+write_verilog counter_gl.v
