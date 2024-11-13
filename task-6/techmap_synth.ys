@@ -9,6 +9,7 @@ write_verilog -noexpr A.v
 
 design -load B
 techmap
+opt -full
 design -save B
 write_verilog -noexpr B.v
 design -save 2
@@ -16,6 +17,7 @@ design -save 2
 
 design -load C
 techmap -map map.v
+opt -full
 design -save C
 write_verilog -noexpr C.v
 design -save 3
@@ -23,6 +25,7 @@ design -save D
 
 design -load D
 techmap
+opt -full
 design -save D
 write_verilog -noexpr D.v
 design -save 4

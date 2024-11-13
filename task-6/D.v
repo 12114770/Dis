@@ -3,1019 +3,184 @@
 (* cells_not_processed =  1  *)
 (* src = "counter.v:1.1-39.10" *)
 module counter(clk, rst, mode, cnt);
-  (* src = "counter.v:32.5-38.8" *)
-  wire [9:0] _0000_;
   (* src = "counter.v:10.5-30.8" *)
-  wire [9:0] _0001_;
-  (* src = "counter.v:6.29-6.43" *)
-  wire [9:0] _0002_;
+  wire [9:0] _000_;
   (* src = "counter.v:10.5-30.8" *)
-  wire [9:0] _0003_;
+  wire [9:0] _001_;
   (* src = "counter.v:10.5-30.8" *)
-  wire [9:0] _0004_;
+  wire [9:0] _002_;
   (* src = "counter.v:10.5-30.8" *)
-  wire [9:0] _0005_;
+  wire [9:0] _003_;
   (* src = "counter.v:10.5-30.8" *)
-  wire [9:0] _0006_;
+  wire [9:0] _004_;
   (* src = "counter.v:10.5-30.8" *)
-  wire [9:0] _0007_;
-  (* src = "counter.v:10.5-30.8" *)
-  wire [9:0] _0008_;
-  (* src = "counter.v:10.5-30.8" *)
-  wire [9:0] _0009_;
-  (* src = "counter.v:36.20-36.33|map.v:9.26-9.27" *)
-  wire [9:0] _0010_;
-  (* src = "counter.v:36.20-36.33|map.v:10.26-10.27" *)
-  wire [9:0] _0011_;
+  wire [9:0] _005_;
   (* src = "counter.v:36.20-36.33|map.v:15.22-15.23" *)
-  wire [10:0] _0012_;
+  (* unused_bits = "10" *)
+  wire [10:0] _006_;
   (* src = "counter.v:36.20-36.33|map.v:13.22-13.23" *)
-  wire [10:0] _0013_;
+  (* unused_bits = "9" *)
+  wire [10:0] _007_;
   (* src = "counter.v:36.20-36.33|map.v:14.22-14.23" *)
-  wire [10:0] _0014_;
-  (* src = "counter.v:36.20-36.33|map.v:11.26-11.27" *)
-  wire [10:0] _0015_;
+  wire [10:0] _008_;
   (* src = "counter.v:36.20-36.33|map.v:25.26-25.37" *)
-  wire [-1:0] _0016_;
+  wire [1:0] _009_;
   (* src = "counter.v:36.20-36.33|map.v:25.26-25.37" *)
-  wire [9:0] _0017_;
-  (* src = "counter.v:36.20-36.33|map.v:29.30-29.38" *)
-  wire [9:0] _0018_;
-  (* src = "counter.v:36.20-36.33|map.v:29.30-29.38" *)
-  wire [9:1] _0019_;
-  (* src = "counter.v:36.20-36.33|map.v:29.30-29.38" *)
-  wire [9:2] _0020_;
-  (* src = "counter.v:36.20-36.33|map.v:29.30-29.38" *)
-  wire [9:3] _0021_;
-  (* src = "counter.v:36.20-36.33|map.v:29.30-29.38" *)
-  wire [9:4] _0022_;
-  (* src = "counter.v:36.20-36.33|map.v:29.30-29.38" *)
-  wire [9:5] _0023_;
-  (* src = "counter.v:36.20-36.33|map.v:29.30-29.38" *)
-  wire [9:6] _0024_;
-  (* src = "counter.v:36.20-36.33|map.v:29.30-29.38" *)
-  wire [9:7] _0025_;
-  (* src = "counter.v:36.20-36.33|map.v:29.30-29.38" *)
-  wire [9:8] _0026_;
-  (* src = "counter.v:36.20-36.33|map.v:29.30-29.38" *)
-  wire _0027_;
+  wire [2:0] _010_;
   (* src = "counter.v:36.20-36.33|map.v:25.26-25.37" *)
-  wire _0028_;
-  (* src = "counter.v:36.20-36.33|map.v:29.30-29.38" *)
-  wire _0029_;
+  wire [3:0] _011_;
   (* src = "counter.v:36.20-36.33|map.v:25.26-25.37" *)
-  wire [1:0] _0030_;
-  (* src = "counter.v:36.20-36.33|map.v:29.30-29.38" *)
-  wire [1:0] _0031_;
-  (* src = "counter.v:36.20-36.33|map.v:29.30-29.38" *)
-  wire _0032_;
+  wire [4:0] _012_;
   (* src = "counter.v:36.20-36.33|map.v:25.26-25.37" *)
-  wire [2:0] _0033_;
-  (* src = "counter.v:36.20-36.33|map.v:29.30-29.38" *)
-  wire [2:0] _0034_;
-  (* src = "counter.v:36.20-36.33|map.v:29.30-29.38" *)
-  wire [2:1] _0035_;
-  (* src = "counter.v:36.20-36.33|map.v:29.30-29.38" *)
-  wire _0036_;
+  wire [5:0] _013_;
   (* src = "counter.v:36.20-36.33|map.v:25.26-25.37" *)
-  wire [3:0] _0037_;
-  (* src = "counter.v:36.20-36.33|map.v:29.30-29.38" *)
-  wire [3:0] _0038_;
-  (* src = "counter.v:36.20-36.33|map.v:29.30-29.38" *)
-  wire [3:1] _0039_;
-  (* src = "counter.v:36.20-36.33|map.v:29.30-29.38" *)
-  wire [3:2] _0040_;
-  (* src = "counter.v:36.20-36.33|map.v:29.30-29.38" *)
-  wire _0041_;
+  wire [6:0] _014_;
   (* src = "counter.v:36.20-36.33|map.v:25.26-25.37" *)
-  wire [4:0] _0042_;
-  (* src = "counter.v:36.20-36.33|map.v:29.30-29.38" *)
-  wire [4:0] _0043_;
-  (* src = "counter.v:36.20-36.33|map.v:29.30-29.38" *)
-  wire [4:1] _0044_;
-  (* src = "counter.v:36.20-36.33|map.v:29.30-29.38" *)
-  wire [4:2] _0045_;
-  (* src = "counter.v:36.20-36.33|map.v:29.30-29.38" *)
-  wire [4:3] _0046_;
-  (* src = "counter.v:36.20-36.33|map.v:29.30-29.38" *)
-  wire _0047_;
+  wire [7:0] _015_;
   (* src = "counter.v:36.20-36.33|map.v:25.26-25.37" *)
-  wire [5:0] _0048_;
-  (* src = "counter.v:36.20-36.33|map.v:29.30-29.38" *)
-  wire [5:0] _0049_;
-  (* src = "counter.v:36.20-36.33|map.v:29.30-29.38" *)
-  wire [5:1] _0050_;
-  (* src = "counter.v:36.20-36.33|map.v:29.30-29.38" *)
-  wire [5:2] _0051_;
-  (* src = "counter.v:36.20-36.33|map.v:29.30-29.38" *)
-  wire [5:3] _0052_;
-  (* src = "counter.v:36.20-36.33|map.v:29.30-29.38" *)
-  wire [5:4] _0053_;
-  (* src = "counter.v:36.20-36.33|map.v:29.30-29.38" *)
-  wire _0054_;
-  (* src = "counter.v:36.20-36.33|map.v:25.26-25.37" *)
-  wire [6:0] _0055_;
-  (* src = "counter.v:36.20-36.33|map.v:29.30-29.38" *)
-  wire [6:0] _0056_;
-  (* src = "counter.v:36.20-36.33|map.v:29.30-29.38" *)
-  wire [6:1] _0057_;
-  (* src = "counter.v:36.20-36.33|map.v:29.30-29.38" *)
-  wire [6:2] _0058_;
-  (* src = "counter.v:36.20-36.33|map.v:29.30-29.38" *)
-  wire [6:3] _0059_;
-  (* src = "counter.v:36.20-36.33|map.v:29.30-29.38" *)
-  wire [6:4] _0060_;
-  (* src = "counter.v:36.20-36.33|map.v:29.30-29.38" *)
-  wire [6:5] _0061_;
-  (* src = "counter.v:36.20-36.33|map.v:29.30-29.38" *)
-  wire _0062_;
-  (* src = "counter.v:36.20-36.33|map.v:25.26-25.37" *)
-  wire [7:0] _0063_;
-  (* src = "counter.v:36.20-36.33|map.v:29.30-29.38" *)
-  wire [7:0] _0064_;
-  (* src = "counter.v:36.20-36.33|map.v:29.30-29.38" *)
-  wire [7:1] _0065_;
-  (* src = "counter.v:36.20-36.33|map.v:29.30-29.38" *)
-  wire [7:2] _0066_;
-  (* src = "counter.v:36.20-36.33|map.v:29.30-29.38" *)
-  wire [7:3] _0067_;
-  (* src = "counter.v:36.20-36.33|map.v:29.30-29.38" *)
-  wire [7:4] _0068_;
-  (* src = "counter.v:36.20-36.33|map.v:29.30-29.38" *)
-  wire [7:5] _0069_;
-  (* src = "counter.v:36.20-36.33|map.v:29.30-29.38" *)
-  wire [7:6] _0070_;
-  (* src = "counter.v:36.20-36.33|map.v:29.30-29.38" *)
-  wire _0071_;
-  (* src = "counter.v:36.20-36.33|map.v:25.26-25.37" *)
-  wire [8:0] _0072_;
-  (* src = "counter.v:36.20-36.33|map.v:29.30-29.38" *)
-  wire [8:0] _0073_;
-  (* src = "counter.v:36.20-36.33|map.v:29.30-29.38" *)
-  wire [8:1] _0074_;
-  (* src = "counter.v:36.20-36.33|map.v:29.30-29.38" *)
-  wire [8:2] _0075_;
-  (* src = "counter.v:36.20-36.33|map.v:29.30-29.38" *)
-  wire [8:3] _0076_;
-  (* src = "counter.v:36.20-36.33|map.v:29.30-29.38" *)
-  wire [8:4] _0077_;
-  (* src = "counter.v:36.20-36.33|map.v:29.30-29.38" *)
-  wire [8:5] _0078_;
-  (* src = "counter.v:36.20-36.33|map.v:29.30-29.38" *)
-  wire [8:6] _0079_;
-  (* src = "counter.v:36.20-36.33|map.v:29.30-29.38" *)
-  wire [8:7] _0080_;
-  (* src = "counter.v:36.20-36.33|map.v:29.30-29.38" *)
-  wire _0081_;
+  wire [8:0] _016_;
   (* src = "counter.v:36.20-36.33" *)
-  wire [9:0] _0082_;
-  wire [4:0] _0083_;
-  wire [1:0] _0084_;
-  wire _0085_;
-  wire _0086_;
-  wire [4:0] _0087_;
-  wire [1:0] _0088_;
-  wire _0089_;
-  wire _0090_;
-  wire _0091_;
-  wire _0092_;
-  wire _0093_;
-  wire [1:0] _0094_;
-  wire _0095_;
-  wire [1:0] _0096_;
-  wire _0097_;
-  wire _0098_;
-  wire [2:0] _0099_;
-  wire _0100_;
-  wire _0101_;
-  wire [2:0] _0102_;
-  wire [1:0] _0103_;
-  wire _0104_;
-  wire [3:0] _0105_;
-  wire [1:0] _0106_;
-  wire _0107_;
-  wire [3:0] _0108_;
-  wire [1:0] _0109_;
-  wire _0110_;
-  wire _0111_;
-  wire [4:0] _0112_;
-  wire [1:0] _0113_;
-  wire _0114_;
-  wire _0115_;
-  wire [4:0] _0116_;
-  wire [1:0] _0117_;
-  wire _0118_;
-  wire _0119_;
-  wire _0120_;
-  wire _0121_;
-  wire _0122_;
-  wire [1:0] _0123_;
-  wire _0124_;
-  wire [1:0] _0125_;
-  wire _0126_;
-  wire _0127_;
-  wire [2:0] _0128_;
-  wire _0129_;
-  wire _0130_;
-  wire [2:0] _0131_;
-  wire [1:0] _0132_;
-  wire _0133_;
-  wire [3:0] _0134_;
-  wire [1:0] _0135_;
-  wire _0136_;
-  wire [3:0] _0137_;
-  wire [1:0] _0138_;
-  wire _0139_;
-  wire _0140_;
-  wire [3:0] _0141_;
-  wire [1:0] _0142_;
-  wire _0143_;
-  wire _0144_;
-  wire _0145_;
-  wire _0146_;
-  wire _0147_;
-  wire [1:0] _0148_;
-  wire _0149_;
-  wire [1:0] _0150_;
-  wire _0151_;
-  wire _0152_;
-  wire [2:0] _0153_;
-  wire _0154_;
-  wire _0155_;
-  wire [2:0] _0156_;
-  wire [1:0] _0157_;
-  wire _0158_;
-  wire [3:0] _0159_;
-  wire [1:0] _0160_;
-  wire _0161_;
-  wire [3:0] _0162_;
-  wire [1:0] _0163_;
-  wire _0164_;
-  wire _0165_;
-  wire _0166_;
-  wire _0167_;
-  wire [1:0] _0168_;
-  wire _0169_;
-  wire [1:0] _0170_;
-  wire _0171_;
-  wire _0172_;
-  wire [2:0] _0173_;
-  wire _0174_;
-  wire _0175_;
-  wire [2:0] _0176_;
-  wire [1:0] _0177_;
-  wire _0178_;
-  wire [2:0] _0179_;
-  wire [1:0] _0180_;
-  wire _0181_;
-  wire _0182_;
-  wire _0183_;
-  wire _0184_;
-  wire [1:0] _0185_;
-  wire _0186_;
-  wire [1:0] _0187_;
-  wire _0188_;
-  wire _0189_;
-  wire [2:0] _0190_;
-  wire _0191_;
-  wire _0192_;
-  wire [2:0] _0193_;
-  wire _0194_;
-  wire _0195_;
-  wire _0196_;
-  wire _0197_;
-  wire _0198_;
-  wire [1:0] _0199_;
-  wire _0200_;
-  wire [1:0] _0201_;
-  wire _0202_;
-  wire _0203_;
-  wire [1:0] _0204_;
-  wire _0205_;
-  wire _0206_;
-  wire _0207_;
-  wire _0208_;
-  wire _0209_;
-  wire [1:0] _0210_;
-  wire _0211_;
-  wire [1:0] _0212_;
-  wire _0213_;
-  wire _0214_;
-  wire _0215_;
-  wire _0216_;
-  wire _0217_;
-  wire _0218_;
-  wire _0219_;
-  wire _0220_;
-  wire _0221_;
-  wire _0222_;
-  wire [4:0] _0223_;
-  wire [1:0] _0224_;
-  wire _0225_;
-  wire _0226_;
-  wire _0227_;
-  wire [4:0] _0228_;
-  wire [1:0] _0229_;
-  wire _0230_;
-  wire _0231_;
-  wire _0232_;
-  wire [4:0] _0233_;
-  wire [1:0] _0234_;
-  wire _0235_;
-  wire _0236_;
-  wire _0237_;
-  wire [4:0] _0238_;
-  wire [1:0] _0239_;
-  wire _0240_;
-  wire _0241_;
-  wire [9:0] _0242_;
-  wire [9:0] _0243_;
-  wire [9:0] _0244_;
-  wire [9:0] _0245_;
-  wire _0246_;
-  (* src = "counter.v:23.21-23.37" *)
-  wire _0247_;
-  wire [9:0] _0248_;
-  wire [9:0] _0249_;
-  wire _0250_;
-  (* src = "counter.v:26.26-26.42" *)
-  wire _0251_;
-  wire [9:0] _0252_;
-  wire [9:0] _0253_;
-  wire _0254_;
-  (* src = "counter.v:14.21-14.36" *)
-  wire _0255_;
-  wire [9:0] _0256_;
-  wire [9:0] _0257_;
-  wire _0258_;
-  (* src = "counter.v:17.26-17.41" *)
-  wire _0259_;
+  wire [9:0] _017_;
+  wire [4:0] _018_;
+  wire [1:0] _019_;
+  wire _020_;
+  wire [4:0] _021_;
+  wire [1:0] _022_;
+  wire _023_;
+  wire _024_;
+  wire [1:0] _025_;
+  wire [1:0] _026_;
+  wire _027_;
+  wire [2:0] _028_;
+  wire _029_;
+  wire [2:0] _030_;
+  wire [1:0] _031_;
+  wire [3:0] _032_;
+  wire [1:0] _033_;
+  wire [3:0] _034_;
+  wire [1:0] _035_;
+  wire _036_;
+  wire [1:0] _037_;
+  wire [2:0] _038_;
+  wire [1:0] _039_;
+  wire [3:0] _040_;
+  wire [1:0] _041_;
+  wire [1:0] _042_;
+  wire [2:0] _043_;
+  wire [1:0] _044_;
+  wire [2:0] _045_;
+  wire [1:0] _046_;
+  wire [1:0] _047_;
+  wire [2:0] _048_;
+  wire _049_;
+  wire [1:0] _050_;
+  wire [1:0] _051_;
+  wire _052_;
+  wire [1:0] _053_;
+  wire _054_;
+  wire [4:0] _055_;
+  wire [1:0] _056_;
+  wire _057_;
+  wire [4:0] _058_;
+  wire [1:0] _059_;
+  wire _060_;
+  wire [4:0] _061_;
+  wire [1:0] _062_;
+  wire _063_;
+  wire [4:0] _064_;
+  wire [1:0] _065_;
+  wire _066_;
   (* src = "counter.v:13.17-13.32" *)
-  wire _0260_;
+  wire _067_;
   (* src = "counter.v:22.17-22.31" *)
-  wire _0261_;
-  wire [9:0] _0262_;
-  wire _0263_;
-  wire [9:0] _0264_;
-  wire _0265_;
-  wire [9:0] _0266_;
-  wire _0267_;
-  wire [9:0] _0268_;
-  wire _0269_;
-  wire [9:0] _0270_;
-  wire _0271_;
-  wire [9:0] _0272_;
-  wire _0273_;
-  wire [9:0] _0274_;
-  wire _0275_;
-  wire [9:0] _0276_;
-  wire _0277_;
-  wire [9:0] _0278_;
-  wire _0279_;
-  wire [9:0] _0280_;
-  wire _0281_;
-  wire [9:0] _0282_;
-  wire _0283_;
-  wire [9:0] _0284_;
-  wire _0285_;
-  wire [9:0] _0286_;
-  wire _0287_;
-  wire [9:0] _0288_;
-  wire _0289_;
-  wire [9:0] _0290_;
-  wire _0291_;
-  wire [9:0] _0292_;
-  wire _0293_;
-  wire [9:0] _0294_;
-  wire _0295_;
-  wire [9:0] _0296_;
-  wire _0297_;
-  (* src = "counter.v:36.20-36.33|map.v:39.16-39.21" *)
-  wire [10:0] _0298_;
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  wire _0299_;
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  wire _0300_;
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  wire _0301_;
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  wire _0302_;
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  wire _0303_;
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  wire _0304_;
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  wire _0305_;
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  wire _0306_;
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  wire _0307_;
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  wire _0308_;
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  wire _0309_;
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  wire _0310_;
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  wire _0311_;
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  wire _0312_;
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  wire _0313_;
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  wire _0314_;
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  wire _0315_;
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  wire _0316_;
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  wire _0317_;
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  wire _0318_;
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  wire _0319_;
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  wire _0320_;
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  wire _0321_;
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  wire _0322_;
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  wire _0323_;
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  wire _0324_;
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  wire _0325_;
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  wire _0326_;
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  wire _0327_;
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  wire _0328_;
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  wire _0329_;
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  wire _0330_;
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  wire _0331_;
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  wire _0332_;
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  wire _0333_;
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  wire _0334_;
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  wire _0335_;
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  wire _0336_;
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  wire _0337_;
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  wire _0338_;
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  wire _0339_;
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  wire _0340_;
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  wire _0341_;
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  wire _0342_;
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  wire _0343_;
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  wire _0344_;
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  wire _0345_;
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  wire _0346_;
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  wire _0347_;
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  wire _0348_;
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  wire _0349_;
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  wire _0350_;
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  wire _0351_;
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  wire _0352_;
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  wire _0353_;
-  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
-  wire _0354_;
-  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
-  wire _0355_;
-  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
-  wire _0356_;
-  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
-  wire _0357_;
-  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
-  wire _0358_;
-  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
-  wire _0359_;
-  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
-  wire _0360_;
-  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
-  wire _0361_;
-  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
-  wire _0362_;
-  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
-  wire _0363_;
-  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
-  wire _0364_;
-  (* src = "counter.v:36.20-36.33|map.v:40.16-40.21" *)
-  wire [10:0] _0365_;
-  (* src = "counter.v:36.20-36.33|map.v:44.29-44.60" *)
-  wire [8:0] _0366_;
-  wire [9:0] _0367_;
-  (* force_downto = 32'd1 *)
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:266.22-266.23" *)
-  wire [9:0] _0368_;
-  (* force_downto = 32'd1 *)
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:277.21-277.23" *)
-  wire [9:0] _0369_;
-  (* force_downto = 32'd1 *)
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:282.21-282.26" *)
-  wire [9:0] _0370_;
-  (* force_downto = 32'd1 *)
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:268.22-268.23" *)
-  wire [9:0] _0371_;
+  wire _068_;
   (* force_downto = 32'd1 *)
   (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.21-279.23" *)
-  wire [9:0] _0372_;
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:272.12-272.14" *)
-  wire _0373_;
-  (* force_downto = 32'd1 *)
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:282.28-282.33" *)
-  wire [9:0] _0374_;
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:272.8-272.10" *)
-  wire _0375_;
+  wire [9:0] _069_;
   (* force_downto = 32'd1 *)
   (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:274.23-274.25" *)
-  wire [9:0] _0376_;
-  (* force_downto = 32'd1 *)
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:270.23-270.24" *)
-  wire [9:0] _0377_;
+  (* unused_bits = "4 5 6" *)
+  wire [9:0] _070_;
   (* force_downto = 32'd1 *)
   (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:270.26-270.27" *)
-  wire [9:0] _0378_;
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:215.8-215.10" *)
-  wire _0379_;
-  (* force_downto = 32'd1 *)
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:218.21-218.23" *)
-  wire [9:0] _0380_;
-  (* force_downto = 32'd1 *)
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:214.23-214.24" *)
-  wire [9:0] _0381_;
-  (* force_downto = 32'd1 *)
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:214.20-214.21" *)
-  wire [9:0] _0382_;
-  wire [1023:0] _0383_;
-  (* force_downto = 32'd1 *)
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:222.21-222.22" *)
-  wire [9:0] _0384_;
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:220.10-220.11" *)
-  wire [31:0] _0385_;
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:220.13-220.14" *)
-  wire [31:0] _0386_;
-  (* force_downto = 32'd1 *)
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:222.18-222.19" *)
-  (* unused_bits = "1 2 3 4 5 6 7 8 9" *)
-  wire [9:0] _0387_;
-  wire [9:0] _0388_;
-  wire [9:0] _0389_;
-  wire _0390_;
-  wire _0391_;
-  wire _0392_;
-  wire _0393_;
-  wire [9:0] _0394_;
-  (* force_downto = 32'd1 *)
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:266.22-266.23" *)
-  wire [9:0] _0395_;
-  (* force_downto = 32'd1 *)
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:277.21-277.23" *)
-  wire [9:0] _0396_;
-  (* force_downto = 32'd1 *)
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:282.21-282.26" *)
-  wire [9:0] _0397_;
-  (* force_downto = 32'd1 *)
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:268.22-268.23" *)
-  wire [9:0] _0398_;
-  (* force_downto = 32'd1 *)
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.21-279.23" *)
-  wire [9:0] _0399_;
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:272.12-272.14" *)
-  wire _0400_;
-  (* force_downto = 32'd1 *)
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:282.28-282.33" *)
-  wire [9:0] _0401_;
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:272.8-272.10" *)
-  wire _0402_;
+  (* unused_bits = "3 4 5 6 7 8" *)
+  wire [9:0] _071_;
+  wire _072_;
+  wire _073_;
+  wire _074_;
   (* force_downto = 32'd1 *)
   (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:274.23-274.25" *)
-  wire [9:0] _0403_;
-  (* force_downto = 32'd1 *)
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:270.23-270.24" *)
-  wire [9:0] _0404_;
+  (* unused_bits = "2 4 5 6" *)
+  wire [9:0] _075_;
   (* force_downto = 32'd1 *)
   (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:270.26-270.27" *)
-  wire [9:0] _0405_;
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:215.8-215.10" *)
-  wire _0406_;
-  (* force_downto = 32'd1 *)
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:218.21-218.23" *)
-  wire [9:0] _0407_;
-  (* force_downto = 32'd1 *)
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:214.23-214.24" *)
-  wire [9:0] _0408_;
-  (* force_downto = 32'd1 *)
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:214.20-214.21" *)
-  wire [9:0] _0409_;
-  wire [1023:0] _0410_;
-  (* force_downto = 32'd1 *)
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:222.21-222.22" *)
-  wire [9:0] _0411_;
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:220.10-220.11" *)
-  wire [31:0] _0412_;
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:220.13-220.14" *)
-  wire [31:0] _0413_;
-  (* force_downto = 32'd1 *)
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:222.18-222.19" *)
-  (* unused_bits = "1 2 3 4 5 6 7 8 9" *)
-  wire [9:0] _0414_;
-  wire [9:0] _0415_;
-  wire [9:0] _0416_;
-  wire _0417_;
-  wire _0418_;
-  wire _0419_;
-  wire _0420_;
-  wire [9:0] _0421_;
-  (* force_downto = 32'd1 *)
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:266.22-266.23" *)
-  wire [9:0] _0422_;
-  (* force_downto = 32'd1 *)
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:277.21-277.23" *)
-  wire [9:0] _0423_;
-  (* force_downto = 32'd1 *)
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:282.21-282.26" *)
-  wire [9:0] _0424_;
-  (* force_downto = 32'd1 *)
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:268.22-268.23" *)
-  wire [9:0] _0425_;
-  (* force_downto = 32'd1 *)
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.21-279.23" *)
-  wire [9:0] _0426_;
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:272.12-272.14" *)
-  wire _0427_;
-  (* force_downto = 32'd1 *)
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:282.28-282.33" *)
-  wire [9:0] _0428_;
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:272.8-272.10" *)
-  wire _0429_;
+  (* unused_bits = "1 2 3 4 5 6 7 8" *)
+  wire [9:0] _076_;
+  wire _077_;
+  wire _078_;
+  wire _079_;
   (* force_downto = 32'd1 *)
   (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:274.23-274.25" *)
-  wire [9:0] _0430_;
-  (* force_downto = 32'd1 *)
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:270.23-270.24" *)
-  wire [9:0] _0431_;
+  (* unused_bits = "2 4 5 6" *)
+  wire [9:0] _080_;
   (* force_downto = 32'd1 *)
   (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:270.26-270.27" *)
-  wire [9:0] _0432_;
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:215.8-215.10" *)
-  wire _0433_;
-  (* force_downto = 32'd1 *)
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:218.21-218.23" *)
-  wire [9:0] _0434_;
-  (* force_downto = 32'd1 *)
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:214.23-214.24" *)
-  wire [9:0] _0435_;
-  (* force_downto = 32'd1 *)
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:214.20-214.21" *)
-  wire [9:0] _0436_;
-  wire [1023:0] _0437_;
-  (* force_downto = 32'd1 *)
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:222.21-222.22" *)
-  wire [9:0] _0438_;
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:220.10-220.11" *)
-  wire [31:0] _0439_;
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:220.13-220.14" *)
-  wire [31:0] _0440_;
-  (* force_downto = 32'd1 *)
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:222.18-222.19" *)
-  (* unused_bits = "1 2 3 4 5 6 7 8 9" *)
-  wire [9:0] _0441_;
-  wire [9:0] _0442_;
-  wire [9:0] _0443_;
-  wire _0444_;
-  wire _0445_;
-  wire _0446_;
-  wire _0447_;
-  wire _0448_;
-  wire _0449_;
-  wire [9:0] _0450_;
-  (* force_downto = 32'd1 *)
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:266.22-266.23" *)
-  wire [9:0] _0451_;
-  (* force_downto = 32'd1 *)
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:277.21-277.23" *)
-  wire [9:0] _0452_;
-  (* force_downto = 32'd1 *)
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:282.21-282.26" *)
-  wire [9:0] _0453_;
-  (* force_downto = 32'd1 *)
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:268.22-268.23" *)
-  wire [9:0] _0454_;
-  (* force_downto = 32'd1 *)
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.21-279.23" *)
-  wire [9:0] _0455_;
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:272.12-272.14" *)
-  wire _0456_;
-  (* force_downto = 32'd1 *)
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:282.28-282.33" *)
-  wire [9:0] _0457_;
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:272.8-272.10" *)
-  wire _0458_;
+  (* unused_bits = "1 2 3 4 5 6 7 8" *)
+  wire [9:0] _081_;
+  wire _082_;
+  wire _083_;
+  wire _084_;
+  wire _085_;
+  wire _086_;
   (* force_downto = 32'd1 *)
   (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:274.23-274.25" *)
-  wire [9:0] _0459_;
-  (* force_downto = 32'd1 *)
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:270.23-270.24" *)
-  wire [9:0] _0460_;
+  (* unused_bits = "2 4 5 6" *)
+  wire [9:0] _087_;
   (* force_downto = 32'd1 *)
   (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:270.26-270.27" *)
-  wire [9:0] _0461_;
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:215.8-215.10" *)
-  wire _0462_;
-  (* force_downto = 32'd1 *)
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:218.21-218.23" *)
-  wire [9:0] _0463_;
-  (* force_downto = 32'd1 *)
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:214.23-214.24" *)
-  wire [9:0] _0464_;
-  (* force_downto = 32'd1 *)
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:214.20-214.21" *)
-  wire [9:0] _0465_;
-  wire [1023:0] _0466_;
-  (* force_downto = 32'd1 *)
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:222.21-222.22" *)
-  wire [9:0] _0467_;
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:220.10-220.11" *)
-  wire [31:0] _0468_;
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:220.13-220.14" *)
-  wire [31:0] _0469_;
-  (* force_downto = 32'd1 *)
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:222.18-222.19" *)
-  (* unused_bits = "1 2 3 4 5 6 7 8 9" *)
-  wire [9:0] _0470_;
-  wire [9:0] _0471_;
-  wire [9:0] _0472_;
-  wire _0473_;
-  wire _0474_;
-  wire _0475_;
-  wire _0476_;
-  wire _0477_;
-  wire _0478_;
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.42-286.49" *)
-  wire [9:0] _0479_;
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.31-279.37" *)
-  wire [9:0] _0480_;
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.26-279.45" *)
-  wire [9:0] _0481_;
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:288.13-288.20" *)
-  wire [9:0] _0482_;
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:289.13-289.25" *)
-  wire [10:0] _0483_;
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:231.18-231.27" *)
-  wire _0484_;
+  (* unused_bits = "2 3 4 5 6 7 8" *)
+  wire [9:0] _088_;
+  wire _089_;
+  wire _090_;
+  wire _091_;
+  wire _092_;
+  wire _093_;
   (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
-  wire _0485_;
+  wire _094_;
   (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
-  wire _0486_;
+  wire _095_;
   (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
-  wire _0487_;
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
-  wire _0488_;
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
-  wire _0489_;
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
-  wire _0490_;
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
-  wire _0491_;
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
-  wire _0492_;
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:241.12-241.34" *)
-  wire _0493_;
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:241.12-241.34" *)
-  wire _0494_;
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:241.12-241.34" *)
-  wire _0495_;
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:241.12-241.34" *)
-  wire _0496_;
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:241.12-241.34" *)
-  wire _0497_;
+  wire _096_;
   (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)
-  wire _0498_;
+  wire _097_;
   (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)
-  wire _0499_;
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)
-  wire _0500_;
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)
-  wire _0501_;
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)
-  wire _0502_;
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)
-  wire _0503_;
+  wire _098_;
   (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)
-  wire _0504_;
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)
-  wire _0505_;
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)
-  wire _0506_;
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)
-  wire _0507_;
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)
-  wire _0508_;
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.42-286.49" *)
-  wire [9:0] _0509_;
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.31-279.37" *)
-  wire [9:0] _0510_;
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.26-279.45" *)
-  wire [9:0] _0511_;
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:288.13-288.20" *)
-  wire [9:0] _0512_;
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:289.13-289.25" *)
-  wire [10:0] _0513_;
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:231.18-231.27" *)
-  wire _0514_;
+  wire _099_;
   (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
-  wire _0515_;
+  wire _100_;
   (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
-  wire _0516_;
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
-  wire _0517_;
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
-  wire _0518_;
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
-  wire _0519_;
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
-  wire _0520_;
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
-  wire _0521_;
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
-  wire _0522_;
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:241.12-241.34" *)
-  wire _0523_;
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:241.12-241.34" *)
-  wire _0524_;
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:241.12-241.34" *)
-  wire _0525_;
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:241.12-241.34" *)
-  wire _0526_;
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:241.12-241.34" *)
-  wire _0527_;
+  wire _101_;
   (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)
-  wire _0528_;
+  wire _102_;
   (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)
-  wire _0529_;
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)
-  wire _0530_;
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)
-  wire _0531_;
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)
-  wire _0532_;
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)
-  wire _0533_;
+  wire _103_;
   (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)
-  wire _0534_;
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)
-  wire _0535_;
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)
-  wire _0536_;
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)
-  wire _0537_;
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)
-  wire _0538_;
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.42-286.49" *)
-  wire [9:0] _0539_;
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.31-279.37" *)
-  wire [9:0] _0540_;
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.26-279.45" *)
-  wire [9:0] _0541_;
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:288.13-288.20" *)
-  wire [9:0] _0542_;
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:289.13-289.25" *)
-  wire [10:0] _0543_;
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:231.18-231.27" *)
-  wire _0544_;
+  wire _104_;
   (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
-  wire _0545_;
+  wire _105_;
   (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
-  wire _0546_;
+  wire _106_;
   (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
-  wire _0547_;
+  wire _107_;
   (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
-  wire _0548_;
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
-  wire _0549_;
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
-  wire _0550_;
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
-  wire _0551_;
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
-  wire _0552_;
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:241.12-241.34" *)
-  wire _0553_;
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:241.12-241.34" *)
-  wire _0554_;
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:241.12-241.34" *)
-  wire _0555_;
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:241.12-241.34" *)
-  wire _0556_;
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:241.12-241.34" *)
-  wire _0557_;
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)
-  wire _0558_;
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)
-  wire _0559_;
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)
-  wire _0560_;
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)
-  wire _0561_;
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)
-  wire _0562_;
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)
-  wire _0563_;
+  wire _108_;
   (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)
-  wire _0564_;
+  wire _109_;
   (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)
-  wire _0565_;
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)
-  wire _0566_;
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)
-  wire _0567_;
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)
-  wire _0568_;
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.42-286.49" *)
-  wire [9:0] _0569_;
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.31-279.37" *)
-  wire [9:0] _0570_;
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.26-279.45" *)
-  wire [9:0] _0571_;
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:288.13-288.20" *)
-  wire [9:0] _0572_;
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:289.13-289.25" *)
-  wire [10:0] _0573_;
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:231.18-231.27" *)
-  wire _0574_;
+  wire _110_;
   (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
-  wire _0575_;
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
-  wire _0576_;
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
-  wire _0577_;
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
-  wire _0578_;
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
-  wire _0579_;
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
-  wire _0580_;
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
-  wire _0581_;
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
-  wire _0582_;
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:241.12-241.34" *)
-  wire _0583_;
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:241.12-241.34" *)
-  wire _0584_;
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:241.12-241.34" *)
-  wire _0585_;
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:241.12-241.34" *)
-  wire _0586_;
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:241.12-241.34" *)
-  wire _0587_;
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)
-  wire _0588_;
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)
-  wire _0589_;
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)
-  wire _0590_;
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)
-  wire _0591_;
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)
-  wire _0592_;
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)
-  wire _0593_;
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)
-  wire _0594_;
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)
-  wire _0595_;
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)
-  wire _0596_;
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)
-  wire _0597_;
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)
-  wire _0598_;
+  wire _111_;
   (* src = "counter.v:3.17-3.20" *)
   input clk;
   wire clk;
@@ -1032,5788 +197,1544 @@ module counter(clk, rst, mode, cnt);
   (* src = "counter.v:8.22-8.29" *)
   wire [9:0] summand;
   (* src = "counter.v:32.5-38.8" *)
-  \$_DFF_P_  \cnt_reg[0]  /* _0599_ */ (
+  \$_SDFF_PP0_  \cnt_reg[0]  /* _112_ */ (
     .C(clk),
-    .D(_0262_[0]),
-    .Q(cnt[0])
+    .D(_008_[0]),
+    .Q(cnt[0]),
+    .R(rst)
   );
   (* src = "counter.v:32.5-38.8" *)
-  \$_DFF_P_  \cnt_reg[1]  /* _0600_ */ (
+  \$_SDFF_PP1_  \cnt_reg[1]  /* _113_ */ (
     .C(clk),
-    .D(_0262_[1]),
-    .Q(cnt[1])
+    .D(_017_[1]),
+    .Q(cnt[1]),
+    .R(rst)
   );
   (* src = "counter.v:32.5-38.8" *)
-  \$_DFF_P_  \cnt_reg[2]  /* _0601_ */ (
+  \$_SDFF_PP1_  \cnt_reg[2]  /* _114_ */ (
     .C(clk),
-    .D(_0262_[2]),
-    .Q(cnt[2])
+    .D(_017_[2]),
+    .Q(cnt[2]),
+    .R(rst)
   );
   (* src = "counter.v:32.5-38.8" *)
-  \$_DFF_P_  \cnt_reg[3]  /* _0602_ */ (
+  \$_SDFF_PP1_  \cnt_reg[3]  /* _115_ */ (
     .C(clk),
-    .D(_0262_[3]),
-    .Q(cnt[3])
+    .D(_017_[3]),
+    .Q(cnt[3]),
+    .R(rst)
   );
   (* src = "counter.v:32.5-38.8" *)
-  \$_DFF_P_  \cnt_reg[4]  /* _0603_ */ (
+  \$_SDFF_PP0_  \cnt_reg[4]  /* _116_ */ (
     .C(clk),
-    .D(_0262_[4]),
-    .Q(cnt[4])
+    .D(_017_[4]),
+    .Q(cnt[4]),
+    .R(rst)
   );
   (* src = "counter.v:32.5-38.8" *)
-  \$_DFF_P_  \cnt_reg[5]  /* _0604_ */ (
+  \$_SDFF_PP0_  \cnt_reg[5]  /* _117_ */ (
     .C(clk),
-    .D(_0262_[5]),
-    .Q(cnt[5])
+    .D(_017_[5]),
+    .Q(cnt[5]),
+    .R(rst)
   );
   (* src = "counter.v:32.5-38.8" *)
-  \$_DFF_P_  \cnt_reg[6]  /* _0605_ */ (
+  \$_SDFF_PP1_  \cnt_reg[6]  /* _118_ */ (
     .C(clk),
-    .D(_0262_[6]),
-    .Q(cnt[6])
+    .D(_017_[6]),
+    .Q(cnt[6]),
+    .R(rst)
   );
   (* src = "counter.v:32.5-38.8" *)
-  \$_DFF_P_  \cnt_reg[7]  /* _0606_ */ (
+  \$_SDFF_PP1_  \cnt_reg[7]  /* _119_ */ (
     .C(clk),
-    .D(_0262_[7]),
-    .Q(cnt[7])
+    .D(_017_[7]),
+    .Q(cnt[7]),
+    .R(rst)
   );
   (* src = "counter.v:32.5-38.8" *)
-  \$_DFF_P_  \cnt_reg[8]  /* _0607_ */ (
+  \$_SDFF_PP1_  \cnt_reg[8]  /* _120_ */ (
     .C(clk),
-    .D(_0262_[8]),
-    .Q(cnt[8])
+    .D(_017_[8]),
+    .Q(cnt[8]),
+    .R(rst)
   );
   (* src = "counter.v:32.5-38.8" *)
-  \$_DFF_P_  \cnt_reg[9]  /* _0608_ */ (
+  \$_SDFF_PP1_  \cnt_reg[9]  /* _121_ */ (
     .C(clk),
-    .D(_0262_[9]),
-    .Q(cnt[9])
-  );
-  (* src = "counter.v:13.17-13.32" *)
-  \$_OR_  _0609_ (
-    .A(_0242_[0]),
-    .B(_0242_[1]),
-    .Y(_0083_[0])
-  );
-  (* src = "counter.v:13.17-13.32" *)
-  \$_OR_  _0610_ (
-    .A(_0242_[2]),
-    .B(_0242_[3]),
-    .Y(_0083_[1])
-  );
-  (* src = "counter.v:13.17-13.32" *)
-  \$_OR_  _0611_ (
-    .A(_0242_[4]),
-    .B(_0242_[5]),
-    .Y(_0083_[2])
-  );
-  (* src = "counter.v:13.17-13.32" *)
-  \$_OR_  _0612_ (
-    .A(_0242_[6]),
-    .B(_0242_[7]),
-    .Y(_0083_[3])
-  );
-  (* src = "counter.v:13.17-13.32" *)
-  \$_OR_  _0613_ (
-    .A(_0242_[8]),
-    .B(_0242_[9]),
-    .Y(_0083_[4])
-  );
-  (* src = "counter.v:13.17-13.32" *)
-  \$_OR_  _0614_ (
-    .A(_0083_[0]),
-    .B(_0083_[1]),
-    .Y(_0084_[0])
-  );
-  (* src = "counter.v:13.17-13.32" *)
-  \$_OR_  _0615_ (
-    .A(_0083_[2]),
-    .B(_0083_[3]),
-    .Y(_0084_[1])
-  );
-  (* src = "counter.v:13.17-13.32" *)
-  \$_OR_  _0616_ (
-    .A(_0084_[0]),
-    .B(_0084_[1]),
-    .Y(_0085_)
-  );
-  (* src = "counter.v:13.17-13.32" *)
-  \$_OR_  _0617_ (
-    .A(_0085_),
-    .B(_0083_[4]),
-    .Y(_0260_)
-  );
-  (* src = "counter.v:22.17-22.31" *)
-  \$_OR_  _0618_ (
-    .A(_0243_[0]),
-    .B(_0243_[1]),
-    .Y(_0087_[0])
-  );
-  (* src = "counter.v:22.17-22.31" *)
-  \$_OR_  _0619_ (
-    .A(_0243_[2]),
-    .B(_0243_[3]),
-    .Y(_0087_[1])
-  );
-  (* src = "counter.v:22.17-22.31" *)
-  \$_OR_  _0620_ (
-    .A(_0243_[4]),
-    .B(_0243_[5]),
-    .Y(_0087_[2])
-  );
-  (* src = "counter.v:22.17-22.31" *)
-  \$_OR_  _0621_ (
-    .A(_0243_[6]),
-    .B(_0243_[7]),
-    .Y(_0087_[3])
-  );
-  (* src = "counter.v:22.17-22.31" *)
-  \$_OR_  _0622_ (
-    .A(_0243_[8]),
-    .B(_0243_[9]),
-    .Y(_0087_[4])
-  );
-  (* src = "counter.v:22.17-22.31" *)
-  \$_OR_  _0623_ (
-    .A(_0087_[0]),
-    .B(_0087_[1]),
-    .Y(_0088_[0])
-  );
-  (* src = "counter.v:22.17-22.31" *)
-  \$_OR_  _0624_ (
-    .A(_0087_[2]),
-    .B(_0087_[3]),
-    .Y(_0088_[1])
-  );
-  (* src = "counter.v:22.17-22.31" *)
-  \$_OR_  _0625_ (
-    .A(_0088_[0]),
-    .B(_0088_[1]),
-    .Y(_0089_)
-  );
-  (* src = "counter.v:22.17-22.31" *)
-  \$_OR_  _0626_ (
-    .A(_0089_),
-    .B(_0087_[4]),
-    .Y(_0261_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0627_ (
-    .A(_0026_[8]),
-    .B(_0026_[9]),
-    .Y(_0352_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0628_ (
-    .A(_0025_[7]),
-    .B(_0025_[8]),
-    .Y(_0092_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0629_ (
-    .A(_0092_),
-    .B(_0025_[9]),
-    .Y(_0351_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0630_ (
-    .A(_0024_[6]),
-    .B(_0024_[7]),
-    .Y(_0094_[0])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0631_ (
-    .A(_0024_[8]),
-    .B(_0024_[9]),
-    .Y(_0094_[1])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0632_ (
-    .A(_0094_[0]),
-    .B(_0094_[1]),
-    .Y(_0350_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0633_ (
-    .A(_0023_[5]),
-    .B(_0023_[6]),
-    .Y(_0096_[0])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0634_ (
-    .A(_0023_[7]),
-    .B(_0023_[8]),
-    .Y(_0096_[1])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0635_ (
-    .A(_0096_[0]),
-    .B(_0096_[1]),
-    .Y(_0097_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0636_ (
-    .A(_0097_),
-    .B(_0023_[9]),
-    .Y(_0349_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0637_ (
-    .A(_0022_[4]),
-    .B(_0022_[5]),
-    .Y(_0099_[0])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0638_ (
-    .A(_0022_[6]),
-    .B(_0022_[7]),
-    .Y(_0099_[1])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0639_ (
-    .A(_0022_[8]),
-    .B(_0022_[9]),
-    .Y(_0099_[2])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0640_ (
-    .A(_0099_[0]),
-    .B(_0099_[1]),
-    .Y(_0100_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0641_ (
-    .A(_0100_),
-    .B(_0099_[2]),
-    .Y(_0348_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0642_ (
-    .A(_0021_[3]),
-    .B(_0021_[4]),
-    .Y(_0102_[0])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0643_ (
-    .A(_0021_[5]),
-    .B(_0021_[6]),
-    .Y(_0102_[1])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0644_ (
-    .A(_0021_[7]),
-    .B(_0021_[8]),
-    .Y(_0102_[2])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0645_ (
-    .A(_0102_[0]),
-    .B(_0102_[1]),
-    .Y(_0103_[0])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0646_ (
-    .A(_0102_[2]),
-    .B(_0021_[9]),
-    .Y(_0103_[1])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0647_ (
-    .A(_0103_[0]),
-    .B(_0103_[1]),
-    .Y(_0347_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0648_ (
-    .A(_0020_[2]),
-    .B(_0020_[3]),
-    .Y(_0105_[0])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0649_ (
-    .A(_0020_[4]),
-    .B(_0020_[5]),
-    .Y(_0105_[1])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0650_ (
-    .A(_0020_[6]),
-    .B(_0020_[7]),
-    .Y(_0105_[2])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0651_ (
-    .A(_0020_[8]),
-    .B(_0020_[9]),
-    .Y(_0105_[3])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0652_ (
-    .A(_0105_[0]),
-    .B(_0105_[1]),
-    .Y(_0106_[0])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0653_ (
-    .A(_0105_[2]),
-    .B(_0105_[3]),
-    .Y(_0106_[1])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0654_ (
-    .A(_0106_[0]),
-    .B(_0106_[1]),
-    .Y(_0346_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0655_ (
-    .A(_0019_[1]),
-    .B(_0019_[2]),
-    .Y(_0108_[0])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0656_ (
-    .A(_0019_[3]),
-    .B(_0019_[4]),
-    .Y(_0108_[1])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0657_ (
-    .A(_0019_[5]),
-    .B(_0019_[6]),
-    .Y(_0108_[2])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0658_ (
-    .A(_0019_[7]),
-    .B(_0019_[8]),
-    .Y(_0108_[3])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0659_ (
-    .A(_0108_[0]),
-    .B(_0108_[1]),
-    .Y(_0109_[0])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0660_ (
-    .A(_0108_[2]),
-    .B(_0108_[3]),
-    .Y(_0109_[1])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0661_ (
-    .A(_0109_[0]),
-    .B(_0109_[1]),
-    .Y(_0110_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0662_ (
-    .A(_0110_),
-    .B(_0019_[9]),
-    .Y(_0345_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0663_ (
-    .A(_0018_[0]),
-    .B(_0018_[1]),
-    .Y(_0112_[0])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0664_ (
-    .A(_0018_[2]),
-    .B(_0018_[3]),
-    .Y(_0112_[1])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0665_ (
-    .A(_0018_[4]),
-    .B(_0018_[5]),
-    .Y(_0112_[2])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0666_ (
-    .A(_0018_[6]),
-    .B(_0018_[7]),
-    .Y(_0112_[3])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0667_ (
-    .A(_0018_[8]),
-    .B(_0018_[9]),
-    .Y(_0112_[4])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0668_ (
-    .A(_0112_[0]),
-    .B(_0112_[1]),
-    .Y(_0113_[0])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0669_ (
-    .A(_0112_[2]),
-    .B(_0112_[3]),
-    .Y(_0113_[1])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0670_ (
-    .A(_0113_[0]),
-    .B(_0113_[1]),
-    .Y(_0114_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0671_ (
-    .A(_0114_),
-    .B(_0112_[4]),
-    .Y(_0344_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
-  \$_OR_  _0672_ (
-    .A(_0017_[0]),
-    .B(_0017_[1]),
-    .Y(_0116_[0])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
-  \$_OR_  _0673_ (
-    .A(_0017_[2]),
-    .B(_0017_[3]),
-    .Y(_0116_[1])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
-  \$_OR_  _0674_ (
-    .A(_0017_[4]),
-    .B(_0017_[5]),
-    .Y(_0116_[2])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
-  \$_OR_  _0675_ (
-    .A(_0017_[6]),
-    .B(_0017_[7]),
-    .Y(_0116_[3])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
-  \$_OR_  _0676_ (
-    .A(_0017_[8]),
-    .B(_0017_[9]),
-    .Y(_0116_[4])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
-  \$_OR_  _0677_ (
-    .A(_0116_[0]),
-    .B(_0116_[1]),
-    .Y(_0117_[0])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
-  \$_OR_  _0678_ (
-    .A(_0116_[2]),
-    .B(_0116_[3]),
-    .Y(_0117_[1])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
-  \$_OR_  _0679_ (
-    .A(_0117_[0]),
-    .B(_0117_[1]),
-    .Y(_0118_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
-  \$_OR_  _0680_ (
-    .A(_0118_),
-    .B(_0116_[4]),
-    .Y(_0364_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0681_ (
-    .A(_0080_[7]),
-    .B(_0080_[8]),
-    .Y(_0342_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0682_ (
-    .A(_0079_[6]),
-    .B(_0079_[7]),
-    .Y(_0121_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0683_ (
-    .A(_0121_),
-    .B(_0079_[8]),
-    .Y(_0341_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0684_ (
-    .A(_0078_[5]),
-    .B(_0078_[6]),
-    .Y(_0123_[0])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0685_ (
-    .A(_0078_[7]),
-    .B(_0078_[8]),
-    .Y(_0123_[1])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0686_ (
-    .A(_0123_[0]),
-    .B(_0123_[1]),
-    .Y(_0340_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0687_ (
-    .A(_0077_[4]),
-    .B(_0077_[5]),
-    .Y(_0125_[0])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0688_ (
-    .A(_0077_[6]),
-    .B(_0077_[7]),
-    .Y(_0125_[1])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0689_ (
-    .A(_0125_[0]),
-    .B(_0125_[1]),
-    .Y(_0126_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0690_ (
-    .A(_0126_),
-    .B(_0077_[8]),
-    .Y(_0339_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0691_ (
-    .A(_0076_[3]),
-    .B(_0076_[4]),
-    .Y(_0128_[0])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0692_ (
-    .A(_0076_[5]),
-    .B(_0076_[6]),
-    .Y(_0128_[1])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0693_ (
-    .A(_0076_[7]),
-    .B(_0076_[8]),
-    .Y(_0128_[2])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0694_ (
-    .A(_0128_[0]),
-    .B(_0128_[1]),
-    .Y(_0129_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0695_ (
-    .A(_0129_),
-    .B(_0128_[2]),
-    .Y(_0338_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0696_ (
-    .A(_0075_[2]),
-    .B(_0075_[3]),
-    .Y(_0131_[0])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0697_ (
-    .A(_0075_[4]),
-    .B(_0075_[5]),
-    .Y(_0131_[1])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0698_ (
-    .A(_0075_[6]),
-    .B(_0075_[7]),
-    .Y(_0131_[2])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0699_ (
-    .A(_0131_[0]),
-    .B(_0131_[1]),
-    .Y(_0132_[0])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0700_ (
-    .A(_0131_[2]),
-    .B(_0075_[8]),
-    .Y(_0132_[1])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0701_ (
-    .A(_0132_[0]),
-    .B(_0132_[1]),
-    .Y(_0337_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0702_ (
-    .A(_0074_[1]),
-    .B(_0074_[2]),
-    .Y(_0134_[0])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0703_ (
-    .A(_0074_[3]),
-    .B(_0074_[4]),
-    .Y(_0134_[1])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0704_ (
-    .A(_0074_[5]),
-    .B(_0074_[6]),
-    .Y(_0134_[2])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0705_ (
-    .A(_0074_[7]),
-    .B(_0074_[8]),
-    .Y(_0134_[3])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0706_ (
-    .A(_0134_[0]),
-    .B(_0134_[1]),
-    .Y(_0135_[0])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0707_ (
-    .A(_0134_[2]),
-    .B(_0134_[3]),
-    .Y(_0135_[1])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0708_ (
-    .A(_0135_[0]),
-    .B(_0135_[1]),
-    .Y(_0336_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0709_ (
-    .A(_0073_[0]),
-    .B(_0073_[1]),
-    .Y(_0137_[0])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0710_ (
-    .A(_0073_[2]),
-    .B(_0073_[3]),
-    .Y(_0137_[1])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0711_ (
-    .A(_0073_[4]),
-    .B(_0073_[5]),
-    .Y(_0137_[2])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0712_ (
-    .A(_0073_[6]),
-    .B(_0073_[7]),
-    .Y(_0137_[3])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0713_ (
-    .A(_0137_[0]),
-    .B(_0137_[1]),
-    .Y(_0138_[0])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0714_ (
-    .A(_0137_[2]),
-    .B(_0137_[3]),
-    .Y(_0138_[1])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0715_ (
-    .A(_0138_[0]),
-    .B(_0138_[1]),
-    .Y(_0139_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0716_ (
-    .A(_0139_),
-    .B(_0073_[8]),
-    .Y(_0335_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
-  \$_OR_  _0717_ (
-    .A(_0072_[0]),
-    .B(_0072_[1]),
-    .Y(_0141_[0])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
-  \$_OR_  _0718_ (
-    .A(_0072_[2]),
-    .B(_0072_[3]),
-    .Y(_0141_[1])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
-  \$_OR_  _0719_ (
-    .A(_0072_[4]),
-    .B(_0072_[5]),
-    .Y(_0141_[2])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
-  \$_OR_  _0720_ (
-    .A(_0072_[6]),
-    .B(_0072_[7]),
-    .Y(_0141_[3])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
-  \$_OR_  _0721_ (
-    .A(_0141_[0]),
-    .B(_0141_[1]),
-    .Y(_0142_[0])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
-  \$_OR_  _0722_ (
-    .A(_0141_[2]),
-    .B(_0141_[3]),
-    .Y(_0142_[1])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
-  \$_OR_  _0723_ (
-    .A(_0142_[0]),
-    .B(_0142_[1]),
-    .Y(_0143_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
-  \$_OR_  _0724_ (
-    .A(_0143_),
-    .B(_0072_[8]),
-    .Y(_0363_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0725_ (
-    .A(_0070_[6]),
-    .B(_0070_[7]),
-    .Y(_0333_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0726_ (
-    .A(_0069_[5]),
-    .B(_0069_[6]),
-    .Y(_0146_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0727_ (
-    .A(_0146_),
-    .B(_0069_[7]),
-    .Y(_0332_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0728_ (
-    .A(_0068_[4]),
-    .B(_0068_[5]),
-    .Y(_0148_[0])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0729_ (
-    .A(_0068_[6]),
-    .B(_0068_[7]),
-    .Y(_0148_[1])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0730_ (
-    .A(_0148_[0]),
-    .B(_0148_[1]),
-    .Y(_0331_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0731_ (
-    .A(_0067_[3]),
-    .B(_0067_[4]),
-    .Y(_0150_[0])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0732_ (
-    .A(_0067_[5]),
-    .B(_0067_[6]),
-    .Y(_0150_[1])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0733_ (
-    .A(_0150_[0]),
-    .B(_0150_[1]),
-    .Y(_0151_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0734_ (
-    .A(_0151_),
-    .B(_0067_[7]),
-    .Y(_0330_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0735_ (
-    .A(_0066_[2]),
-    .B(_0066_[3]),
-    .Y(_0153_[0])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0736_ (
-    .A(_0066_[4]),
-    .B(_0066_[5]),
-    .Y(_0153_[1])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0737_ (
-    .A(_0066_[6]),
-    .B(_0066_[7]),
-    .Y(_0153_[2])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0738_ (
-    .A(_0153_[0]),
-    .B(_0153_[1]),
-    .Y(_0154_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0739_ (
-    .A(_0154_),
-    .B(_0153_[2]),
-    .Y(_0329_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0740_ (
-    .A(_0065_[1]),
-    .B(_0065_[2]),
-    .Y(_0156_[0])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0741_ (
-    .A(_0065_[3]),
-    .B(_0065_[4]),
-    .Y(_0156_[1])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0742_ (
-    .A(_0065_[5]),
-    .B(_0065_[6]),
-    .Y(_0156_[2])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0743_ (
-    .A(_0156_[0]),
-    .B(_0156_[1]),
-    .Y(_0157_[0])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0744_ (
-    .A(_0156_[2]),
-    .B(_0065_[7]),
-    .Y(_0157_[1])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0745_ (
-    .A(_0157_[0]),
-    .B(_0157_[1]),
-    .Y(_0328_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0746_ (
-    .A(_0064_[0]),
-    .B(_0064_[1]),
-    .Y(_0159_[0])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0747_ (
-    .A(_0064_[2]),
-    .B(_0064_[3]),
-    .Y(_0159_[1])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0748_ (
-    .A(_0064_[4]),
-    .B(_0064_[5]),
-    .Y(_0159_[2])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0749_ (
-    .A(_0064_[6]),
-    .B(_0064_[7]),
-    .Y(_0159_[3])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0750_ (
-    .A(_0159_[0]),
-    .B(_0159_[1]),
-    .Y(_0160_[0])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0751_ (
-    .A(_0159_[2]),
-    .B(_0159_[3]),
-    .Y(_0160_[1])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0752_ (
-    .A(_0160_[0]),
-    .B(_0160_[1]),
-    .Y(_0327_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
-  \$_OR_  _0753_ (
-    .A(_0063_[0]),
-    .B(_0063_[1]),
-    .Y(_0162_[0])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
-  \$_OR_  _0754_ (
-    .A(_0063_[2]),
-    .B(_0063_[3]),
-    .Y(_0162_[1])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
-  \$_OR_  _0755_ (
-    .A(_0063_[4]),
-    .B(_0063_[5]),
-    .Y(_0162_[2])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
-  \$_OR_  _0756_ (
-    .A(_0063_[6]),
-    .B(_0063_[7]),
-    .Y(_0162_[3])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
-  \$_OR_  _0757_ (
-    .A(_0162_[0]),
-    .B(_0162_[1]),
-    .Y(_0163_[0])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
-  \$_OR_  _0758_ (
-    .A(_0162_[2]),
-    .B(_0162_[3]),
-    .Y(_0163_[1])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
-  \$_OR_  _0759_ (
-    .A(_0163_[0]),
-    .B(_0163_[1]),
-    .Y(_0362_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0760_ (
-    .A(_0061_[5]),
-    .B(_0061_[6]),
-    .Y(_0325_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0761_ (
-    .A(_0060_[4]),
-    .B(_0060_[5]),
-    .Y(_0166_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0762_ (
-    .A(_0166_),
-    .B(_0060_[6]),
-    .Y(_0324_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0763_ (
-    .A(_0059_[3]),
-    .B(_0059_[4]),
-    .Y(_0168_[0])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0764_ (
-    .A(_0059_[5]),
-    .B(_0059_[6]),
-    .Y(_0168_[1])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0765_ (
-    .A(_0168_[0]),
-    .B(_0168_[1]),
-    .Y(_0323_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0766_ (
-    .A(_0058_[2]),
-    .B(_0058_[3]),
-    .Y(_0170_[0])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0767_ (
-    .A(_0058_[4]),
-    .B(_0058_[5]),
-    .Y(_0170_[1])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0768_ (
-    .A(_0170_[0]),
-    .B(_0170_[1]),
-    .Y(_0171_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0769_ (
-    .A(_0171_),
-    .B(_0058_[6]),
-    .Y(_0322_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0770_ (
-    .A(_0057_[1]),
-    .B(_0057_[2]),
-    .Y(_0173_[0])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0771_ (
-    .A(_0057_[3]),
-    .B(_0057_[4]),
-    .Y(_0173_[1])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0772_ (
-    .A(_0057_[5]),
-    .B(_0057_[6]),
-    .Y(_0173_[2])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0773_ (
-    .A(_0173_[0]),
-    .B(_0173_[1]),
-    .Y(_0174_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0774_ (
-    .A(_0174_),
-    .B(_0173_[2]),
-    .Y(_0321_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0775_ (
-    .A(_0056_[0]),
-    .B(_0056_[1]),
-    .Y(_0176_[0])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0776_ (
-    .A(_0056_[2]),
-    .B(_0056_[3]),
-    .Y(_0176_[1])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0777_ (
-    .A(_0056_[4]),
-    .B(_0056_[5]),
-    .Y(_0176_[2])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0778_ (
-    .A(_0176_[0]),
-    .B(_0176_[1]),
-    .Y(_0177_[0])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0779_ (
-    .A(_0176_[2]),
-    .B(_0056_[6]),
-    .Y(_0177_[1])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0780_ (
-    .A(_0177_[0]),
-    .B(_0177_[1]),
-    .Y(_0320_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
-  \$_OR_  _0781_ (
-    .A(_0055_[0]),
-    .B(_0055_[1]),
-    .Y(_0179_[0])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
-  \$_OR_  _0782_ (
-    .A(_0055_[2]),
-    .B(_0055_[3]),
-    .Y(_0179_[1])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
-  \$_OR_  _0783_ (
-    .A(_0055_[4]),
-    .B(_0055_[5]),
-    .Y(_0179_[2])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
-  \$_OR_  _0784_ (
-    .A(_0179_[0]),
-    .B(_0179_[1]),
-    .Y(_0180_[0])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
-  \$_OR_  _0785_ (
-    .A(_0179_[2]),
-    .B(_0055_[6]),
-    .Y(_0180_[1])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
-  \$_OR_  _0786_ (
-    .A(_0180_[0]),
-    .B(_0180_[1]),
-    .Y(_0361_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0787_ (
-    .A(_0053_[4]),
-    .B(_0053_[5]),
-    .Y(_0318_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0788_ (
-    .A(_0052_[3]),
-    .B(_0052_[4]),
-    .Y(_0183_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0789_ (
-    .A(_0183_),
-    .B(_0052_[5]),
-    .Y(_0317_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0790_ (
-    .A(_0051_[2]),
-    .B(_0051_[3]),
-    .Y(_0185_[0])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0791_ (
-    .A(_0051_[4]),
-    .B(_0051_[5]),
-    .Y(_0185_[1])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0792_ (
-    .A(_0185_[0]),
-    .B(_0185_[1]),
-    .Y(_0316_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0793_ (
-    .A(_0050_[1]),
-    .B(_0050_[2]),
-    .Y(_0187_[0])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0794_ (
-    .A(_0050_[3]),
-    .B(_0050_[4]),
-    .Y(_0187_[1])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0795_ (
-    .A(_0187_[0]),
-    .B(_0187_[1]),
-    .Y(_0188_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0796_ (
-    .A(_0188_),
-    .B(_0050_[5]),
-    .Y(_0315_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0797_ (
-    .A(_0049_[0]),
-    .B(_0049_[1]),
-    .Y(_0190_[0])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0798_ (
-    .A(_0049_[2]),
-    .B(_0049_[3]),
-    .Y(_0190_[1])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0799_ (
-    .A(_0049_[4]),
-    .B(_0049_[5]),
-    .Y(_0190_[2])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0800_ (
-    .A(_0190_[0]),
-    .B(_0190_[1]),
-    .Y(_0191_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0801_ (
-    .A(_0191_),
-    .B(_0190_[2]),
-    .Y(_0314_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
-  \$_OR_  _0802_ (
-    .A(_0048_[0]),
-    .B(_0048_[1]),
-    .Y(_0193_[0])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
-  \$_OR_  _0803_ (
-    .A(_0048_[2]),
-    .B(_0048_[3]),
-    .Y(_0193_[1])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
-  \$_OR_  _0804_ (
-    .A(_0048_[4]),
-    .B(_0048_[5]),
-    .Y(_0193_[2])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
-  \$_OR_  _0805_ (
-    .A(_0193_[0]),
-    .B(_0193_[1]),
-    .Y(_0194_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
-  \$_OR_  _0806_ (
-    .A(_0194_),
-    .B(_0193_[2]),
-    .Y(_0360_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0807_ (
-    .A(_0046_[3]),
-    .B(_0046_[4]),
-    .Y(_0312_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0808_ (
-    .A(_0045_[2]),
-    .B(_0045_[3]),
-    .Y(_0197_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0809_ (
-    .A(_0197_),
-    .B(_0045_[4]),
-    .Y(_0311_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0810_ (
-    .A(_0044_[1]),
-    .B(_0044_[2]),
-    .Y(_0199_[0])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0811_ (
-    .A(_0044_[3]),
-    .B(_0044_[4]),
-    .Y(_0199_[1])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0812_ (
-    .A(_0199_[0]),
-    .B(_0199_[1]),
-    .Y(_0310_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0813_ (
-    .A(_0043_[0]),
-    .B(_0043_[1]),
-    .Y(_0201_[0])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0814_ (
-    .A(_0043_[2]),
-    .B(_0043_[3]),
-    .Y(_0201_[1])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0815_ (
-    .A(_0201_[0]),
-    .B(_0201_[1]),
-    .Y(_0202_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0816_ (
-    .A(_0202_),
-    .B(_0043_[4]),
-    .Y(_0309_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
-  \$_OR_  _0817_ (
-    .A(_0042_[0]),
-    .B(_0042_[1]),
-    .Y(_0204_[0])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
-  \$_OR_  _0818_ (
-    .A(_0042_[2]),
-    .B(_0042_[3]),
-    .Y(_0204_[1])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
-  \$_OR_  _0819_ (
-    .A(_0204_[0]),
-    .B(_0204_[1]),
-    .Y(_0205_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
-  \$_OR_  _0820_ (
-    .A(_0205_),
-    .B(_0042_[4]),
-    .Y(_0359_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0821_ (
-    .A(_0040_[2]),
-    .B(_0040_[3]),
-    .Y(_0307_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0822_ (
-    .A(_0039_[1]),
-    .B(_0039_[2]),
-    .Y(_0208_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0823_ (
-    .A(_0208_),
-    .B(_0039_[3]),
-    .Y(_0306_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0824_ (
-    .A(_0038_[0]),
-    .B(_0038_[1]),
-    .Y(_0210_[0])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0825_ (
-    .A(_0038_[2]),
-    .B(_0038_[3]),
-    .Y(_0210_[1])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0826_ (
-    .A(_0210_[0]),
-    .B(_0210_[1]),
-    .Y(_0305_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
-  \$_OR_  _0827_ (
-    .A(_0037_[0]),
-    .B(_0037_[1]),
-    .Y(_0212_[0])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
-  \$_OR_  _0828_ (
-    .A(_0037_[2]),
-    .B(_0037_[3]),
-    .Y(_0212_[1])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
-  \$_OR_  _0829_ (
-    .A(_0212_[0]),
-    .B(_0212_[1]),
-    .Y(_0358_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0830_ (
-    .A(_0035_[1]),
-    .B(_0035_[2]),
-    .Y(_0303_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0831_ (
-    .A(_0034_[0]),
-    .B(_0034_[1]),
-    .Y(_0215_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0832_ (
-    .A(_0215_),
-    .B(_0034_[2]),
-    .Y(_0302_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
-  \$_OR_  _0833_ (
-    .A(_0033_[0]),
-    .B(_0033_[1]),
-    .Y(_0217_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
-  \$_OR_  _0834_ (
-    .A(_0217_),
-    .B(_0033_[2]),
-    .Y(_0357_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
-  \$_AND_  _0835_ (
-    .A(_0031_[0]),
-    .B(_0031_[1]),
-    .Y(_0300_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
-  \$_OR_  _0836_ (
-    .A(_0030_[0]),
-    .B(_0030_[1]),
-    .Y(_0356_)
-  );
-  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
-  \$_OR_  _0837_ (
-    .A(_0016_[0]),
-    .B(_0016_[-1]),
-    .Y(_0354_)
-  );
-  (* src = {0{1'b0}} *)
-  \$_OR_  _0838_ (
-    .A(_0420_),
-    .B(_0417_),
-    .Y(_0418_)
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37" *)
-  \$_AND_  _0839_ (
-    .A(_0415_[0]),
-    .B(_0415_[1]),
-    .Y(_0223_[0])
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37" *)
-  \$_AND_  _0840_ (
-    .A(_0415_[2]),
-    .B(_0415_[3]),
-    .Y(_0223_[1])
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37" *)
-  \$_AND_  _0841_ (
-    .A(_0415_[4]),
-    .B(_0415_[5]),
-    .Y(_0223_[2])
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37" *)
-  \$_AND_  _0842_ (
-    .A(_0415_[6]),
-    .B(_0415_[7]),
-    .Y(_0223_[3])
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37" *)
-  \$_AND_  _0843_ (
-    .A(_0415_[8]),
-    .B(_0415_[9]),
-    .Y(_0223_[4])
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37" *)
-  \$_AND_  _0844_ (
-    .A(_0223_[0]),
-    .B(_0223_[1]),
-    .Y(_0224_[0])
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37" *)
-  \$_AND_  _0845_ (
-    .A(_0223_[2]),
-    .B(_0223_[3]),
-    .Y(_0224_[1])
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37" *)
-  \$_AND_  _0846_ (
-    .A(_0224_[0]),
-    .B(_0224_[1]),
-    .Y(_0225_)
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37" *)
-  \$_AND_  _0847_ (
-    .A(_0225_),
-    .B(_0223_[4]),
-    .Y(_0417_)
-  );
-  (* src = {0{1'b0}} *)
-  \$_OR_  _0848_ (
-    .A(_0393_),
-    .B(_0390_),
-    .Y(_0391_)
-  );
-  (* src = "counter.v:23.21-23.37" *)
-  \$_AND_  _0849_ (
-    .A(_0388_[0]),
-    .B(_0388_[1]),
-    .Y(_0228_[0])
-  );
-  (* src = "counter.v:23.21-23.37" *)
-  \$_AND_  _0850_ (
-    .A(_0388_[2]),
-    .B(_0388_[3]),
-    .Y(_0228_[1])
-  );
-  (* src = "counter.v:23.21-23.37" *)
-  \$_AND_  _0851_ (
-    .A(_0388_[4]),
-    .B(_0388_[5]),
-    .Y(_0228_[2])
-  );
-  (* src = "counter.v:23.21-23.37" *)
-  \$_AND_  _0852_ (
-    .A(_0388_[6]),
-    .B(_0388_[7]),
-    .Y(_0228_[3])
-  );
-  (* src = "counter.v:23.21-23.37" *)
-  \$_AND_  _0853_ (
-    .A(_0388_[8]),
-    .B(_0388_[9]),
-    .Y(_0228_[4])
-  );
-  (* src = "counter.v:23.21-23.37" *)
-  \$_AND_  _0854_ (
-    .A(_0228_[0]),
-    .B(_0228_[1]),
-    .Y(_0229_[0])
-  );
-  (* src = "counter.v:23.21-23.37" *)
-  \$_AND_  _0855_ (
-    .A(_0228_[2]),
-    .B(_0228_[3]),
-    .Y(_0229_[1])
-  );
-  (* src = "counter.v:23.21-23.37" *)
-  \$_AND_  _0856_ (
-    .A(_0229_[0]),
-    .B(_0229_[1]),
-    .Y(_0230_)
-  );
-  (* src = "counter.v:23.21-23.37" *)
-  \$_AND_  _0857_ (
-    .A(_0230_),
-    .B(_0228_[4]),
-    .Y(_0390_)
-  );
-  (* src = {0{1'b0}} *)
-  \$_OR_  _0858_ (
-    .A(_0473_),
-    .B(_0474_),
-    .Y(_0475_)
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36" *)
-  \$_AND_  _0859_ (
-    .A(_0471_[0]),
-    .B(_0471_[1]),
-    .Y(_0233_[0])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36" *)
-  \$_AND_  _0860_ (
-    .A(_0471_[2]),
-    .B(_0471_[3]),
-    .Y(_0233_[1])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36" *)
-  \$_AND_  _0861_ (
-    .A(_0471_[4]),
-    .B(_0471_[5]),
-    .Y(_0233_[2])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36" *)
-  \$_AND_  _0862_ (
-    .A(_0471_[6]),
-    .B(_0471_[7]),
-    .Y(_0233_[3])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36" *)
-  \$_AND_  _0863_ (
-    .A(_0471_[8]),
-    .B(_0471_[9]),
-    .Y(_0233_[4])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36" *)
-  \$_AND_  _0864_ (
-    .A(_0233_[0]),
-    .B(_0233_[1]),
-    .Y(_0234_[0])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36" *)
-  \$_AND_  _0865_ (
-    .A(_0233_[2]),
-    .B(_0233_[3]),
-    .Y(_0234_[1])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36" *)
-  \$_AND_  _0866_ (
-    .A(_0234_[0]),
-    .B(_0234_[1]),
-    .Y(_0235_)
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36" *)
-  \$_AND_  _0867_ (
-    .A(_0235_),
-    .B(_0233_[4]),
-    .Y(_0474_)
-  );
-  (* src = {0{1'b0}} *)
-  \$_OR_  _0868_ (
-    .A(_0444_),
-    .B(_0445_),
-    .Y(_0446_)
-  );
-  (* src = "counter.v:14.21-14.36" *)
-  \$_AND_  _0869_ (
-    .A(_0442_[0]),
-    .B(_0442_[1]),
-    .Y(_0238_[0])
-  );
-  (* src = "counter.v:14.21-14.36" *)
-  \$_AND_  _0870_ (
-    .A(_0442_[2]),
-    .B(_0442_[3]),
-    .Y(_0238_[1])
-  );
-  (* src = "counter.v:14.21-14.36" *)
-  \$_AND_  _0871_ (
-    .A(_0442_[4]),
-    .B(_0442_[5]),
-    .Y(_0238_[2])
-  );
-  (* src = "counter.v:14.21-14.36" *)
-  \$_AND_  _0872_ (
-    .A(_0442_[6]),
-    .B(_0442_[7]),
-    .Y(_0238_[3])
-  );
-  (* src = "counter.v:14.21-14.36" *)
-  \$_AND_  _0873_ (
-    .A(_0442_[8]),
-    .B(_0442_[9]),
-    .Y(_0238_[4])
-  );
-  (* src = "counter.v:14.21-14.36" *)
-  \$_AND_  _0874_ (
-    .A(_0238_[0]),
-    .B(_0238_[1]),
-    .Y(_0239_[0])
-  );
-  (* src = "counter.v:14.21-14.36" *)
-  \$_AND_  _0875_ (
-    .A(_0238_[2]),
-    .B(_0238_[3]),
-    .Y(_0239_[1])
-  );
-  (* src = "counter.v:14.21-14.36" *)
-  \$_AND_  _0876_ (
-    .A(_0239_[0]),
-    .B(_0239_[1]),
-    .Y(_0240_)
-  );
-  (* src = "counter.v:14.21-14.36" *)
-  \$_AND_  _0877_ (
-    .A(_0240_),
-    .B(_0238_[4]),
-    .Y(_0445_)
-  );
-  (* src = "counter.v:33.13-33.16|counter.v:33.9-37.12" *)
-  \$_MUX_  _0878_ (
-    .A(_0082_[0]),
-    .B(1'h0),
-    .S(_0263_),
-    .Y(_0262_[0])
-  );
-  (* src = "counter.v:33.13-33.16|counter.v:33.9-37.12" *)
-  \$_MUX_  _0879_ (
-    .A(_0082_[1]),
-    .B(1'h1),
-    .S(_0263_),
-    .Y(_0262_[1])
-  );
-  (* src = "counter.v:33.13-33.16|counter.v:33.9-37.12" *)
-  \$_MUX_  _0880_ (
-    .A(_0082_[2]),
-    .B(1'h1),
-    .S(_0263_),
-    .Y(_0262_[2])
-  );
-  (* src = "counter.v:33.13-33.16|counter.v:33.9-37.12" *)
-  \$_MUX_  _0881_ (
-    .A(_0082_[3]),
-    .B(1'h1),
-    .S(_0263_),
-    .Y(_0262_[3])
-  );
-  (* src = "counter.v:33.13-33.16|counter.v:33.9-37.12" *)
-  \$_MUX_  _0882_ (
-    .A(_0082_[4]),
-    .B(1'h0),
-    .S(_0263_),
-    .Y(_0262_[4])
-  );
-  (* src = "counter.v:33.13-33.16|counter.v:33.9-37.12" *)
-  \$_MUX_  _0883_ (
-    .A(_0082_[5]),
-    .B(1'h0),
-    .S(_0263_),
-    .Y(_0262_[5])
-  );
-  (* src = "counter.v:33.13-33.16|counter.v:33.9-37.12" *)
-  \$_MUX_  _0884_ (
-    .A(_0082_[6]),
-    .B(1'h1),
-    .S(_0263_),
-    .Y(_0262_[6])
-  );
-  (* src = "counter.v:33.13-33.16|counter.v:33.9-37.12" *)
-  \$_MUX_  _0885_ (
-    .A(_0082_[7]),
-    .B(1'h1),
-    .S(_0263_),
-    .Y(_0262_[7])
-  );
-  (* src = "counter.v:33.13-33.16|counter.v:33.9-37.12" *)
-  \$_MUX_  _0886_ (
-    .A(_0082_[8]),
-    .B(1'h1),
-    .S(_0263_),
-    .Y(_0262_[8])
-  );
-  (* src = "counter.v:33.13-33.16|counter.v:33.9-37.12" *)
-  \$_MUX_  _0887_ (
-    .A(_0082_[9]),
-    .B(1'h1),
-    .S(_0263_),
-    .Y(_0262_[9])
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:26.22-28.16" *)
-  \$_MUX_  _0888_ (
-    .A(1'h0),
-    .B(1'h0),
-    .S(_0265_),
-    .Y(_0264_[0])
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:26.22-28.16" *)
-  \$_MUX_  _0889_ (
-    .A(1'h0),
-    .B(1'h1),
-    .S(_0265_),
-    .Y(_0264_[1])
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:26.22-28.16" *)
-  \$_MUX_  _0890_ (
-    .A(1'h0),
-    .B(1'h1),
-    .S(_0265_),
-    .Y(_0264_[2])
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:26.22-28.16" *)
-  \$_MUX_  _0891_ (
-    .A(1'h0),
-    .B(1'h1),
-    .S(_0265_),
-    .Y(_0264_[3])
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:26.22-28.16" *)
-  \$_MUX_  _0892_ (
-    .A(1'h0),
-    .B(1'h0),
-    .S(_0265_),
-    .Y(_0264_[4])
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:26.22-28.16" *)
-  \$_MUX_  _0893_ (
-    .A(1'h0),
-    .B(1'h1),
-    .S(_0265_),
-    .Y(_0264_[5])
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:26.22-28.16" *)
-  \$_MUX_  _0894_ (
-    .A(1'h0),
-    .B(1'h1),
-    .S(_0265_),
-    .Y(_0264_[6])
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:26.22-28.16" *)
-  \$_MUX_  _0895_ (
-    .A(1'h0),
-    .B(1'h1),
-    .S(_0265_),
-    .Y(_0264_[7])
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:26.22-28.16" *)
-  \$_MUX_  _0896_ (
-    .A(1'h0),
-    .B(1'h1),
-    .S(_0265_),
-    .Y(_0264_[8])
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:26.22-28.16" *)
-  \$_MUX_  _0897_ (
-    .A(1'h0),
-    .B(1'h1),
-    .S(_0265_),
-    .Y(_0264_[9])
-  );
-  (* src = "counter.v:22.17-22.31|counter.v:22.13-28.16" *)
-  \$_MUX_  _0898_ (
-    .A(_0264_[0]),
-    .B(1'hx),
-    .S(_0267_),
-    .Y(_0266_[0])
-  );
-  (* src = "counter.v:22.17-22.31|counter.v:22.13-28.16" *)
-  \$_MUX_  _0899_ (
-    .A(_0264_[1]),
-    .B(1'hx),
-    .S(_0267_),
-    .Y(_0266_[1])
-  );
-  (* src = "counter.v:22.17-22.31|counter.v:22.13-28.16" *)
-  \$_MUX_  _0900_ (
-    .A(_0264_[2]),
-    .B(1'hx),
-    .S(_0267_),
-    .Y(_0266_[2])
-  );
-  (* src = "counter.v:22.17-22.31|counter.v:22.13-28.16" *)
-  \$_MUX_  _0901_ (
-    .A(_0264_[3]),
-    .B(1'hx),
-    .S(_0267_),
-    .Y(_0266_[3])
-  );
-  (* src = "counter.v:22.17-22.31|counter.v:22.13-28.16" *)
-  \$_MUX_  _0902_ (
-    .A(_0264_[4]),
-    .B(1'hx),
-    .S(_0267_),
-    .Y(_0266_[4])
-  );
-  (* src = "counter.v:22.17-22.31|counter.v:22.13-28.16" *)
-  \$_MUX_  _0903_ (
-    .A(_0264_[5]),
-    .B(1'hx),
-    .S(_0267_),
-    .Y(_0266_[5])
-  );
-  (* src = "counter.v:22.17-22.31|counter.v:22.13-28.16" *)
-  \$_MUX_  _0904_ (
-    .A(_0264_[6]),
-    .B(1'hx),
-    .S(_0267_),
-    .Y(_0266_[6])
-  );
-  (* src = "counter.v:22.17-22.31|counter.v:22.13-28.16" *)
-  \$_MUX_  _0905_ (
-    .A(_0264_[7]),
-    .B(1'hx),
-    .S(_0267_),
-    .Y(_0266_[7])
-  );
-  (* src = "counter.v:22.17-22.31|counter.v:22.13-28.16" *)
-  \$_MUX_  _0906_ (
-    .A(_0264_[8]),
-    .B(1'hx),
-    .S(_0267_),
-    .Y(_0266_[8])
-  );
-  (* src = "counter.v:22.17-22.31|counter.v:22.13-28.16" *)
-  \$_MUX_  _0907_ (
-    .A(_0264_[9]),
-    .B(1'hx),
-    .S(_0267_),
-    .Y(_0266_[9])
-  );
-  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
-  \$_MUX_  _0908_ (
-    .A(_0266_[0]),
-    .B(1'hx),
-    .S(_0269_),
-    .Y(_0268_[0])
-  );
-  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
-  \$_MUX_  _0909_ (
-    .A(_0266_[1]),
-    .B(1'hx),
-    .S(_0269_),
-    .Y(_0268_[1])
-  );
-  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
-  \$_MUX_  _0910_ (
-    .A(_0266_[2]),
-    .B(1'hx),
-    .S(_0269_),
-    .Y(_0268_[2])
-  );
-  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
-  \$_MUX_  _0911_ (
-    .A(_0266_[3]),
-    .B(1'hx),
-    .S(_0269_),
-    .Y(_0268_[3])
-  );
-  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
-  \$_MUX_  _0912_ (
-    .A(_0266_[4]),
-    .B(1'hx),
-    .S(_0269_),
-    .Y(_0268_[4])
-  );
-  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
-  \$_MUX_  _0913_ (
-    .A(_0266_[5]),
-    .B(1'hx),
-    .S(_0269_),
-    .Y(_0268_[5])
-  );
-  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
-  \$_MUX_  _0914_ (
-    .A(_0266_[6]),
-    .B(1'hx),
-    .S(_0269_),
-    .Y(_0268_[6])
-  );
-  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
-  \$_MUX_  _0915_ (
-    .A(_0266_[7]),
-    .B(1'hx),
-    .S(_0269_),
-    .Y(_0268_[7])
-  );
-  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
-  \$_MUX_  _0916_ (
-    .A(_0266_[8]),
-    .B(1'hx),
-    .S(_0269_),
-    .Y(_0268_[8])
-  );
-  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
-  \$_MUX_  _0917_ (
-    .A(_0266_[9]),
-    .B(1'hx),
-    .S(_0269_),
-    .Y(_0268_[9])
-  );
-  (* src = "counter.v:23.21-23.37|counter.v:23.17-25.20" *)
-  \$_MUX_  _0918_ (
-    .A(1'h0),
-    .B(1'h1),
-    .S(_0271_),
-    .Y(_0270_[0])
-  );
-  (* src = "counter.v:23.21-23.37|counter.v:23.17-25.20" *)
-  \$_MUX_  _0919_ (
-    .A(1'h0),
-    .B(1'h1),
-    .S(_0271_),
-    .Y(_0270_[1])
-  );
-  (* src = "counter.v:23.21-23.37|counter.v:23.17-25.20" *)
-  \$_MUX_  _0920_ (
-    .A(1'h0),
-    .B(1'h1),
-    .S(_0271_),
-    .Y(_0270_[2])
-  );
-  (* src = "counter.v:23.21-23.37|counter.v:23.17-25.20" *)
-  \$_MUX_  _0921_ (
-    .A(1'h0),
-    .B(1'h0),
-    .S(_0271_),
-    .Y(_0270_[3])
-  );
-  (* src = "counter.v:23.21-23.37|counter.v:23.17-25.20" *)
-  \$_MUX_  _0922_ (
-    .A(1'h0),
-    .B(1'h1),
-    .S(_0271_),
-    .Y(_0270_[4])
-  );
-  (* src = "counter.v:23.21-23.37|counter.v:23.17-25.20" *)
-  \$_MUX_  _0923_ (
-    .A(1'h0),
-    .B(1'h1),
-    .S(_0271_),
-    .Y(_0270_[5])
-  );
-  (* src = "counter.v:23.21-23.37|counter.v:23.17-25.20" *)
-  \$_MUX_  _0924_ (
-    .A(1'h0),
-    .B(1'h1),
-    .S(_0271_),
-    .Y(_0270_[6])
-  );
-  (* src = "counter.v:23.21-23.37|counter.v:23.17-25.20" *)
-  \$_MUX_  _0925_ (
-    .A(1'h0),
-    .B(1'h1),
-    .S(_0271_),
-    .Y(_0270_[7])
-  );
-  (* src = "counter.v:23.21-23.37|counter.v:23.17-25.20" *)
-  \$_MUX_  _0926_ (
-    .A(1'h0),
-    .B(1'h1),
-    .S(_0271_),
-    .Y(_0270_[8])
-  );
-  (* src = "counter.v:23.21-23.37|counter.v:23.17-25.20" *)
-  \$_MUX_  _0927_ (
-    .A(1'h0),
-    .B(1'h1),
-    .S(_0271_),
-    .Y(_0270_[9])
-  );
-  (* src = "counter.v:22.17-22.31|counter.v:22.13-28.16" *)
-  \$_MUX_  _0928_ (
-    .A(1'hx),
-    .B(_0270_[0]),
-    .S(_0273_),
-    .Y(_0272_[0])
-  );
-  (* src = "counter.v:22.17-22.31|counter.v:22.13-28.16" *)
-  \$_MUX_  _0929_ (
-    .A(1'hx),
-    .B(_0270_[1]),
-    .S(_0273_),
-    .Y(_0272_[1])
-  );
-  (* src = "counter.v:22.17-22.31|counter.v:22.13-28.16" *)
-  \$_MUX_  _0930_ (
-    .A(1'hx),
-    .B(_0270_[2]),
-    .S(_0273_),
-    .Y(_0272_[2])
-  );
-  (* src = "counter.v:22.17-22.31|counter.v:22.13-28.16" *)
-  \$_MUX_  _0931_ (
-    .A(1'hx),
-    .B(_0270_[3]),
-    .S(_0273_),
-    .Y(_0272_[3])
-  );
-  (* src = "counter.v:22.17-22.31|counter.v:22.13-28.16" *)
-  \$_MUX_  _0932_ (
-    .A(1'hx),
-    .B(_0270_[4]),
-    .S(_0273_),
-    .Y(_0272_[4])
-  );
-  (* src = "counter.v:22.17-22.31|counter.v:22.13-28.16" *)
-  \$_MUX_  _0933_ (
-    .A(1'hx),
-    .B(_0270_[5]),
-    .S(_0273_),
-    .Y(_0272_[5])
-  );
-  (* src = "counter.v:22.17-22.31|counter.v:22.13-28.16" *)
-  \$_MUX_  _0934_ (
-    .A(1'hx),
-    .B(_0270_[6]),
-    .S(_0273_),
-    .Y(_0272_[6])
-  );
-  (* src = "counter.v:22.17-22.31|counter.v:22.13-28.16" *)
-  \$_MUX_  _0935_ (
-    .A(1'hx),
-    .B(_0270_[7]),
-    .S(_0273_),
-    .Y(_0272_[7])
-  );
-  (* src = "counter.v:22.17-22.31|counter.v:22.13-28.16" *)
-  \$_MUX_  _0936_ (
-    .A(1'hx),
-    .B(_0270_[8]),
-    .S(_0273_),
-    .Y(_0272_[8])
-  );
-  (* src = "counter.v:22.17-22.31|counter.v:22.13-28.16" *)
-  \$_MUX_  _0937_ (
-    .A(1'hx),
-    .B(_0270_[9]),
-    .S(_0273_),
-    .Y(_0272_[9])
-  );
-  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
-  \$_MUX_  _0938_ (
-    .A(_0272_[0]),
-    .B(1'hx),
-    .S(_0275_),
-    .Y(_0274_[0])
-  );
-  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
-  \$_MUX_  _0939_ (
-    .A(_0272_[1]),
-    .B(1'hx),
-    .S(_0275_),
-    .Y(_0274_[1])
-  );
-  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
-  \$_MUX_  _0940_ (
-    .A(_0272_[2]),
-    .B(1'hx),
-    .S(_0275_),
-    .Y(_0274_[2])
-  );
-  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
-  \$_MUX_  _0941_ (
-    .A(_0272_[3]),
-    .B(1'hx),
-    .S(_0275_),
-    .Y(_0274_[3])
-  );
-  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
-  \$_MUX_  _0942_ (
-    .A(_0272_[4]),
-    .B(1'hx),
-    .S(_0275_),
-    .Y(_0274_[4])
-  );
-  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
-  \$_MUX_  _0943_ (
-    .A(_0272_[5]),
-    .B(1'hx),
-    .S(_0275_),
-    .Y(_0274_[5])
-  );
-  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
-  \$_MUX_  _0944_ (
-    .A(_0272_[6]),
-    .B(1'hx),
-    .S(_0275_),
-    .Y(_0274_[6])
-  );
-  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
-  \$_MUX_  _0945_ (
-    .A(_0272_[7]),
-    .B(1'hx),
-    .S(_0275_),
-    .Y(_0274_[7])
-  );
-  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
-  \$_MUX_  _0946_ (
-    .A(_0272_[8]),
-    .B(1'hx),
-    .S(_0275_),
-    .Y(_0274_[8])
-  );
-  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
-  \$_MUX_  _0947_ (
-    .A(_0272_[9]),
-    .B(1'hx),
-    .S(_0275_),
-    .Y(_0274_[9])
-  );
-  (* src = "counter.v:22.17-22.31|counter.v:22.13-28.16" *)
-  \$_MUX_  _0948_ (
-    .A(_0009_[0]),
-    .B(_0008_[0]),
-    .S(_0277_),
-    .Y(_0276_[0])
-  );
-  (* src = "counter.v:22.17-22.31|counter.v:22.13-28.16" *)
-  \$_MUX_  _0949_ (
-    .A(_0009_[1]),
-    .B(_0008_[1]),
-    .S(_0277_),
-    .Y(_0276_[1])
-  );
-  (* src = "counter.v:22.17-22.31|counter.v:22.13-28.16" *)
-  \$_MUX_  _0950_ (
-    .A(_0009_[2]),
-    .B(_0008_[2]),
-    .S(_0277_),
-    .Y(_0276_[2])
-  );
-  (* src = "counter.v:22.17-22.31|counter.v:22.13-28.16" *)
-  \$_MUX_  _0951_ (
-    .A(_0009_[3]),
-    .B(_0008_[3]),
-    .S(_0277_),
-    .Y(_0276_[3])
-  );
-  (* src = "counter.v:22.17-22.31|counter.v:22.13-28.16" *)
-  \$_MUX_  _0952_ (
-    .A(_0009_[4]),
-    .B(_0008_[4]),
-    .S(_0277_),
-    .Y(_0276_[4])
-  );
-  (* src = "counter.v:22.17-22.31|counter.v:22.13-28.16" *)
-  \$_MUX_  _0953_ (
-    .A(_0009_[5]),
-    .B(_0008_[5]),
-    .S(_0277_),
-    .Y(_0276_[5])
-  );
-  (* src = "counter.v:22.17-22.31|counter.v:22.13-28.16" *)
-  \$_MUX_  _0954_ (
-    .A(_0009_[6]),
-    .B(_0008_[6]),
-    .S(_0277_),
-    .Y(_0276_[6])
-  );
-  (* src = "counter.v:22.17-22.31|counter.v:22.13-28.16" *)
-  \$_MUX_  _0955_ (
-    .A(_0009_[7]),
-    .B(_0008_[7]),
-    .S(_0277_),
-    .Y(_0276_[7])
-  );
-  (* src = "counter.v:22.17-22.31|counter.v:22.13-28.16" *)
-  \$_MUX_  _0956_ (
-    .A(_0009_[8]),
-    .B(_0008_[8]),
-    .S(_0277_),
-    .Y(_0276_[8])
-  );
-  (* src = "counter.v:22.17-22.31|counter.v:22.13-28.16" *)
-  \$_MUX_  _0957_ (
-    .A(_0009_[9]),
-    .B(_0008_[9]),
-    .S(_0277_),
-    .Y(_0276_[9])
-  );
-  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
-  \$_MUX_  _0958_ (
-    .A(_0276_[0]),
-    .B(1'hx),
-    .S(_0279_),
-    .Y(_0278_[0])
-  );
-  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
-  \$_MUX_  _0959_ (
-    .A(_0276_[1]),
-    .B(1'hx),
-    .S(_0279_),
-    .Y(_0278_[1])
-  );
-  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
-  \$_MUX_  _0960_ (
-    .A(_0276_[2]),
-    .B(1'hx),
-    .S(_0279_),
-    .Y(_0278_[2])
-  );
-  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
-  \$_MUX_  _0961_ (
-    .A(_0276_[3]),
-    .B(1'hx),
-    .S(_0279_),
-    .Y(_0278_[3])
-  );
-  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
-  \$_MUX_  _0962_ (
-    .A(_0276_[4]),
-    .B(1'hx),
-    .S(_0279_),
-    .Y(_0278_[4])
-  );
-  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
-  \$_MUX_  _0963_ (
-    .A(_0276_[5]),
-    .B(1'hx),
-    .S(_0279_),
-    .Y(_0278_[5])
-  );
-  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
-  \$_MUX_  _0964_ (
-    .A(_0276_[6]),
-    .B(1'hx),
-    .S(_0279_),
-    .Y(_0278_[6])
-  );
-  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
-  \$_MUX_  _0965_ (
-    .A(_0276_[7]),
-    .B(1'hx),
-    .S(_0279_),
-    .Y(_0278_[7])
-  );
-  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
-  \$_MUX_  _0966_ (
-    .A(_0276_[8]),
-    .B(1'hx),
-    .S(_0279_),
-    .Y(_0278_[8])
-  );
-  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
-  \$_MUX_  _0967_ (
-    .A(_0276_[9]),
-    .B(1'hx),
-    .S(_0279_),
-    .Y(_0278_[9])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:17.22-19.16" *)
-  \$_MUX_  _0968_ (
-    .A(1'h0),
-    .B(1'h0),
-    .S(_0281_),
-    .Y(_0280_[0])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:17.22-19.16" *)
-  \$_MUX_  _0969_ (
-    .A(1'h0),
-    .B(1'h1),
-    .S(_0281_),
-    .Y(_0280_[1])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:17.22-19.16" *)
-  \$_MUX_  _0970_ (
-    .A(1'h0),
-    .B(1'h0),
-    .S(_0281_),
-    .Y(_0280_[2])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:17.22-19.16" *)
-  \$_MUX_  _0971_ (
-    .A(1'h0),
-    .B(1'h1),
-    .S(_0281_),
-    .Y(_0280_[3])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:17.22-19.16" *)
-  \$_MUX_  _0972_ (
-    .A(1'h0),
-    .B(1'h0),
-    .S(_0281_),
-    .Y(_0280_[4])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:17.22-19.16" *)
-  \$_MUX_  _0973_ (
-    .A(1'h0),
-    .B(1'h0),
-    .S(_0281_),
-    .Y(_0280_[5])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:17.22-19.16" *)
-  \$_MUX_  _0974_ (
-    .A(1'h0),
-    .B(1'h0),
-    .S(_0281_),
-    .Y(_0280_[6])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:17.22-19.16" *)
-  \$_MUX_  _0975_ (
-    .A(1'h0),
-    .B(1'h0),
-    .S(_0281_),
-    .Y(_0280_[7])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:17.22-19.16" *)
-  \$_MUX_  _0976_ (
-    .A(1'h0),
-    .B(1'h0),
-    .S(_0281_),
-    .Y(_0280_[8])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:17.22-19.16" *)
-  \$_MUX_  _0977_ (
-    .A(1'h0),
-    .B(1'h0),
-    .S(_0281_),
-    .Y(_0280_[9])
-  );
-  (* src = "counter.v:13.17-13.32|counter.v:13.13-19.16" *)
-  \$_MUX_  _0978_ (
-    .A(_0280_[0]),
-    .B(1'hx),
-    .S(_0283_),
-    .Y(_0282_[0])
-  );
-  (* src = "counter.v:13.17-13.32|counter.v:13.13-19.16" *)
-  \$_MUX_  _0979_ (
-    .A(_0280_[1]),
-    .B(1'hx),
-    .S(_0283_),
-    .Y(_0282_[1])
-  );
-  (* src = "counter.v:13.17-13.32|counter.v:13.13-19.16" *)
-  \$_MUX_  _0980_ (
-    .A(_0280_[2]),
-    .B(1'hx),
-    .S(_0283_),
-    .Y(_0282_[2])
-  );
-  (* src = "counter.v:13.17-13.32|counter.v:13.13-19.16" *)
-  \$_MUX_  _0981_ (
-    .A(_0280_[3]),
-    .B(1'hx),
-    .S(_0283_),
-    .Y(_0282_[3])
-  );
-  (* src = "counter.v:13.17-13.32|counter.v:13.13-19.16" *)
-  \$_MUX_  _0982_ (
-    .A(_0280_[4]),
-    .B(1'hx),
-    .S(_0283_),
-    .Y(_0282_[4])
-  );
-  (* src = "counter.v:13.17-13.32|counter.v:13.13-19.16" *)
-  \$_MUX_  _0983_ (
-    .A(_0280_[5]),
-    .B(1'hx),
-    .S(_0283_),
-    .Y(_0282_[5])
-  );
-  (* src = "counter.v:13.17-13.32|counter.v:13.13-19.16" *)
-  \$_MUX_  _0984_ (
-    .A(_0280_[6]),
-    .B(1'hx),
-    .S(_0283_),
-    .Y(_0282_[6])
-  );
-  (* src = "counter.v:13.17-13.32|counter.v:13.13-19.16" *)
-  \$_MUX_  _0985_ (
-    .A(_0280_[7]),
-    .B(1'hx),
-    .S(_0283_),
-    .Y(_0282_[7])
-  );
-  (* src = "counter.v:13.17-13.32|counter.v:13.13-19.16" *)
-  \$_MUX_  _0986_ (
-    .A(_0280_[8]),
-    .B(1'hx),
-    .S(_0283_),
-    .Y(_0282_[8])
-  );
-  (* src = "counter.v:13.17-13.32|counter.v:13.13-19.16" *)
-  \$_MUX_  _0987_ (
-    .A(_0280_[9]),
-    .B(1'hx),
-    .S(_0283_),
-    .Y(_0282_[9])
-  );
-  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
-  \$_MUX_  _0988_ (
-    .A(1'hx),
-    .B(_0282_[0]),
-    .S(_0285_),
-    .Y(_0284_[0])
-  );
-  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
-  \$_MUX_  _0989_ (
-    .A(1'hx),
-    .B(_0282_[1]),
-    .S(_0285_),
-    .Y(_0284_[1])
-  );
-  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
-  \$_MUX_  _0990_ (
-    .A(1'hx),
-    .B(_0282_[2]),
-    .S(_0285_),
-    .Y(_0284_[2])
-  );
-  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
-  \$_MUX_  _0991_ (
-    .A(1'hx),
-    .B(_0282_[3]),
-    .S(_0285_),
-    .Y(_0284_[3])
-  );
-  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
-  \$_MUX_  _0992_ (
-    .A(1'hx),
-    .B(_0282_[4]),
-    .S(_0285_),
-    .Y(_0284_[4])
-  );
-  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
-  \$_MUX_  _0993_ (
-    .A(1'hx),
-    .B(_0282_[5]),
-    .S(_0285_),
-    .Y(_0284_[5])
-  );
-  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
-  \$_MUX_  _0994_ (
-    .A(1'hx),
-    .B(_0282_[6]),
-    .S(_0285_),
-    .Y(_0284_[6])
-  );
-  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
-  \$_MUX_  _0995_ (
-    .A(1'hx),
-    .B(_0282_[7]),
-    .S(_0285_),
-    .Y(_0284_[7])
-  );
-  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
-  \$_MUX_  _0996_ (
-    .A(1'hx),
-    .B(_0282_[8]),
-    .S(_0285_),
-    .Y(_0284_[8])
-  );
-  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
-  \$_MUX_  _0997_ (
-    .A(1'hx),
-    .B(_0282_[9]),
-    .S(_0285_),
-    .Y(_0284_[9])
-  );
-  (* src = "counter.v:14.21-14.36|counter.v:14.17-16.20" *)
-  \$_MUX_  _0998_ (
-    .A(1'h0),
-    .B(1'h1),
-    .S(_0287_),
-    .Y(_0286_[0])
-  );
-  (* src = "counter.v:14.21-14.36|counter.v:14.17-16.20" *)
-  \$_MUX_  _0999_ (
-    .A(1'h0),
-    .B(1'h0),
-    .S(_0287_),
-    .Y(_0286_[1])
-  );
-  (* src = "counter.v:14.21-14.36|counter.v:14.17-16.20" *)
-  \$_MUX_  _1000_ (
-    .A(1'h0),
-    .B(1'h1),
-    .S(_0287_),
-    .Y(_0286_[2])
-  );
-  (* src = "counter.v:14.21-14.36|counter.v:14.17-16.20" *)
-  \$_MUX_  _1001_ (
-    .A(1'h0),
-    .B(1'h0),
-    .S(_0287_),
-    .Y(_0286_[3])
-  );
-  (* src = "counter.v:14.21-14.36|counter.v:14.17-16.20" *)
-  \$_MUX_  _1002_ (
-    .A(1'h0),
-    .B(1'h0),
-    .S(_0287_),
-    .Y(_0286_[4])
-  );
-  (* src = "counter.v:14.21-14.36|counter.v:14.17-16.20" *)
-  \$_MUX_  _1003_ (
-    .A(1'h0),
-    .B(1'h0),
-    .S(_0287_),
-    .Y(_0286_[5])
-  );
-  (* src = "counter.v:14.21-14.36|counter.v:14.17-16.20" *)
-  \$_MUX_  _1004_ (
-    .A(1'h0),
-    .B(1'h0),
-    .S(_0287_),
-    .Y(_0286_[6])
-  );
-  (* src = "counter.v:14.21-14.36|counter.v:14.17-16.20" *)
-  \$_MUX_  _1005_ (
-    .A(1'h0),
-    .B(1'h0),
-    .S(_0287_),
-    .Y(_0286_[7])
-  );
-  (* src = "counter.v:14.21-14.36|counter.v:14.17-16.20" *)
-  \$_MUX_  _1006_ (
-    .A(1'h0),
-    .B(1'h0),
-    .S(_0287_),
-    .Y(_0286_[8])
-  );
-  (* src = "counter.v:14.21-14.36|counter.v:14.17-16.20" *)
-  \$_MUX_  _1007_ (
-    .A(1'h0),
-    .B(1'h0),
-    .S(_0287_),
-    .Y(_0286_[9])
-  );
-  (* src = "counter.v:13.17-13.32|counter.v:13.13-19.16" *)
-  \$_MUX_  _1008_ (
-    .A(1'hx),
-    .B(_0286_[0]),
-    .S(_0289_),
-    .Y(_0288_[0])
-  );
-  (* src = "counter.v:13.17-13.32|counter.v:13.13-19.16" *)
-  \$_MUX_  _1009_ (
-    .A(1'hx),
-    .B(_0286_[1]),
-    .S(_0289_),
-    .Y(_0288_[1])
-  );
-  (* src = "counter.v:13.17-13.32|counter.v:13.13-19.16" *)
-  \$_MUX_  _1010_ (
-    .A(1'hx),
-    .B(_0286_[2]),
-    .S(_0289_),
-    .Y(_0288_[2])
-  );
-  (* src = "counter.v:13.17-13.32|counter.v:13.13-19.16" *)
-  \$_MUX_  _1011_ (
-    .A(1'hx),
-    .B(_0286_[3]),
-    .S(_0289_),
-    .Y(_0288_[3])
-  );
-  (* src = "counter.v:13.17-13.32|counter.v:13.13-19.16" *)
-  \$_MUX_  _1012_ (
-    .A(1'hx),
-    .B(_0286_[4]),
-    .S(_0289_),
-    .Y(_0288_[4])
-  );
-  (* src = "counter.v:13.17-13.32|counter.v:13.13-19.16" *)
-  \$_MUX_  _1013_ (
-    .A(1'hx),
-    .B(_0286_[5]),
-    .S(_0289_),
-    .Y(_0288_[5])
-  );
-  (* src = "counter.v:13.17-13.32|counter.v:13.13-19.16" *)
-  \$_MUX_  _1014_ (
-    .A(1'hx),
-    .B(_0286_[6]),
-    .S(_0289_),
-    .Y(_0288_[6])
-  );
-  (* src = "counter.v:13.17-13.32|counter.v:13.13-19.16" *)
-  \$_MUX_  _1015_ (
-    .A(1'hx),
-    .B(_0286_[7]),
-    .S(_0289_),
-    .Y(_0288_[7])
-  );
-  (* src = "counter.v:13.17-13.32|counter.v:13.13-19.16" *)
-  \$_MUX_  _1016_ (
-    .A(1'hx),
-    .B(_0286_[8]),
-    .S(_0289_),
-    .Y(_0288_[8])
-  );
-  (* src = "counter.v:13.17-13.32|counter.v:13.13-19.16" *)
-  \$_MUX_  _1017_ (
-    .A(1'hx),
-    .B(_0286_[9]),
-    .S(_0289_),
-    .Y(_0288_[9])
-  );
-  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
-  \$_MUX_  _1018_ (
-    .A(1'hx),
-    .B(_0288_[0]),
-    .S(_0291_),
-    .Y(_0290_[0])
-  );
-  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
-  \$_MUX_  _1019_ (
-    .A(1'hx),
-    .B(_0288_[1]),
-    .S(_0291_),
-    .Y(_0290_[1])
-  );
-  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
-  \$_MUX_  _1020_ (
-    .A(1'hx),
-    .B(_0288_[2]),
-    .S(_0291_),
-    .Y(_0290_[2])
-  );
-  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
-  \$_MUX_  _1021_ (
-    .A(1'hx),
-    .B(_0288_[3]),
-    .S(_0291_),
-    .Y(_0290_[3])
-  );
-  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
-  \$_MUX_  _1022_ (
-    .A(1'hx),
-    .B(_0288_[4]),
-    .S(_0291_),
-    .Y(_0290_[4])
-  );
-  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
-  \$_MUX_  _1023_ (
-    .A(1'hx),
-    .B(_0288_[5]),
-    .S(_0291_),
-    .Y(_0290_[5])
-  );
-  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
-  \$_MUX_  _1024_ (
-    .A(1'hx),
-    .B(_0288_[6]),
-    .S(_0291_),
-    .Y(_0290_[6])
-  );
-  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
-  \$_MUX_  _1025_ (
-    .A(1'hx),
-    .B(_0288_[7]),
-    .S(_0291_),
-    .Y(_0290_[7])
-  );
-  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
-  \$_MUX_  _1026_ (
-    .A(1'hx),
-    .B(_0288_[8]),
-    .S(_0291_),
-    .Y(_0290_[8])
-  );
-  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
-  \$_MUX_  _1027_ (
-    .A(1'hx),
-    .B(_0288_[9]),
-    .S(_0291_),
-    .Y(_0290_[9])
-  );
-  (* src = "counter.v:13.17-13.32|counter.v:13.13-19.16" *)
-  \$_MUX_  _1028_ (
-    .A(_0006_[0]),
-    .B(_0005_[0]),
-    .S(_0293_),
-    .Y(_0292_[0])
-  );
-  (* src = "counter.v:13.17-13.32|counter.v:13.13-19.16" *)
-  \$_MUX_  _1029_ (
-    .A(_0006_[1]),
-    .B(_0005_[1]),
-    .S(_0293_),
-    .Y(_0292_[1])
-  );
-  (* src = "counter.v:13.17-13.32|counter.v:13.13-19.16" *)
-  \$_MUX_  _1030_ (
-    .A(_0006_[2]),
-    .B(_0005_[2]),
-    .S(_0293_),
-    .Y(_0292_[2])
-  );
-  (* src = "counter.v:13.17-13.32|counter.v:13.13-19.16" *)
-  \$_MUX_  _1031_ (
-    .A(_0006_[3]),
-    .B(_0005_[3]),
-    .S(_0293_),
-    .Y(_0292_[3])
-  );
-  (* src = "counter.v:13.17-13.32|counter.v:13.13-19.16" *)
-  \$_MUX_  _1032_ (
-    .A(_0006_[4]),
-    .B(_0005_[4]),
-    .S(_0293_),
-    .Y(_0292_[4])
-  );
-  (* src = "counter.v:13.17-13.32|counter.v:13.13-19.16" *)
-  \$_MUX_  _1033_ (
-    .A(_0006_[5]),
-    .B(_0005_[5]),
-    .S(_0293_),
-    .Y(_0292_[5])
-  );
-  (* src = "counter.v:13.17-13.32|counter.v:13.13-19.16" *)
-  \$_MUX_  _1034_ (
-    .A(_0006_[6]),
-    .B(_0005_[6]),
-    .S(_0293_),
-    .Y(_0292_[6])
-  );
-  (* src = "counter.v:13.17-13.32|counter.v:13.13-19.16" *)
-  \$_MUX_  _1035_ (
-    .A(_0006_[7]),
-    .B(_0005_[7]),
-    .S(_0293_),
-    .Y(_0292_[7])
-  );
-  (* src = "counter.v:13.17-13.32|counter.v:13.13-19.16" *)
-  \$_MUX_  _1036_ (
-    .A(_0006_[8]),
-    .B(_0005_[8]),
-    .S(_0293_),
-    .Y(_0292_[8])
-  );
-  (* src = "counter.v:13.17-13.32|counter.v:13.13-19.16" *)
-  \$_MUX_  _1037_ (
-    .A(_0006_[9]),
-    .B(_0005_[9]),
-    .S(_0293_),
-    .Y(_0292_[9])
-  );
-  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
-  \$_MUX_  _1038_ (
-    .A(1'hx),
-    .B(_0292_[0]),
-    .S(_0295_),
-    .Y(_0294_[0])
-  );
-  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
-  \$_MUX_  _1039_ (
-    .A(1'hx),
-    .B(_0292_[1]),
-    .S(_0295_),
-    .Y(_0294_[1])
-  );
-  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
-  \$_MUX_  _1040_ (
-    .A(1'hx),
-    .B(_0292_[2]),
-    .S(_0295_),
-    .Y(_0294_[2])
-  );
-  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
-  \$_MUX_  _1041_ (
-    .A(1'hx),
-    .B(_0292_[3]),
-    .S(_0295_),
-    .Y(_0294_[3])
-  );
-  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
-  \$_MUX_  _1042_ (
-    .A(1'hx),
-    .B(_0292_[4]),
-    .S(_0295_),
-    .Y(_0294_[4])
-  );
-  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
-  \$_MUX_  _1043_ (
-    .A(1'hx),
-    .B(_0292_[5]),
-    .S(_0295_),
-    .Y(_0294_[5])
-  );
-  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
-  \$_MUX_  _1044_ (
-    .A(1'hx),
-    .B(_0292_[6]),
-    .S(_0295_),
-    .Y(_0294_[6])
-  );
-  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
-  \$_MUX_  _1045_ (
-    .A(1'hx),
-    .B(_0292_[7]),
-    .S(_0295_),
-    .Y(_0294_[7])
-  );
-  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
-  \$_MUX_  _1046_ (
-    .A(1'hx),
-    .B(_0292_[8]),
-    .S(_0295_),
-    .Y(_0294_[8])
-  );
-  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
-  \$_MUX_  _1047_ (
-    .A(1'hx),
-    .B(_0292_[9]),
-    .S(_0295_),
-    .Y(_0294_[9])
-  );
-  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
-  \$_MUX_  _1048_ (
-    .A(_0007_[0]),
-    .B(_0004_[0]),
-    .S(_0297_),
-    .Y(_0296_[0])
-  );
-  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
-  \$_MUX_  _1049_ (
-    .A(_0007_[1]),
-    .B(_0004_[1]),
-    .S(_0297_),
-    .Y(_0296_[1])
-  );
-  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
-  \$_MUX_  _1050_ (
-    .A(_0007_[2]),
-    .B(_0004_[2]),
-    .S(_0297_),
-    .Y(_0296_[2])
-  );
-  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
-  \$_MUX_  _1051_ (
-    .A(_0007_[3]),
-    .B(_0004_[3]),
-    .S(_0297_),
-    .Y(_0296_[3])
-  );
-  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
-  \$_MUX_  _1052_ (
-    .A(_0007_[4]),
-    .B(_0004_[4]),
-    .S(_0297_),
-    .Y(_0296_[4])
-  );
-  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
-  \$_MUX_  _1053_ (
-    .A(_0007_[5]),
-    .B(_0004_[5]),
-    .S(_0297_),
-    .Y(_0296_[5])
-  );
-  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
-  \$_MUX_  _1054_ (
-    .A(_0007_[6]),
-    .B(_0004_[6]),
-    .S(_0297_),
-    .Y(_0296_[6])
-  );
-  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
-  \$_MUX_  _1055_ (
-    .A(_0007_[7]),
-    .B(_0004_[7]),
-    .S(_0297_),
-    .Y(_0296_[7])
-  );
-  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
-  \$_MUX_  _1056_ (
-    .A(_0007_[8]),
-    .B(_0004_[8]),
-    .S(_0297_),
-    .Y(_0296_[8])
-  );
-  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
-  \$_MUX_  _1057_ (
-    .A(_0007_[9]),
-    .B(_0004_[9]),
-    .S(_0297_),
-    .Y(_0296_[9])
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.26-279.45" *)
-  \$_MUX_  _1058_ (
-    .A(_0428_[0]),
-    .B(_0540_[0]),
-    .S(1'h1),
-    .Y(_0541_[0])
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.26-279.45" *)
-  \$_MUX_  _1059_ (
-    .A(_0428_[1]),
-    .B(_0540_[1]),
-    .S(1'h1),
-    .Y(_0541_[1])
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.26-279.45" *)
-  \$_MUX_  _1060_ (
-    .A(_0428_[2]),
-    .B(_0540_[2]),
-    .S(1'h1),
-    .Y(_0541_[2])
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.26-279.45" *)
-  \$_MUX_  _1061_ (
-    .A(_0428_[3]),
-    .B(_0540_[3]),
-    .S(1'h1),
-    .Y(_0541_[3])
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.26-279.45" *)
-  \$_MUX_  _1062_ (
-    .A(_0428_[4]),
-    .B(_0540_[4]),
-    .S(1'h1),
-    .Y(_0541_[4])
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.26-279.45" *)
-  \$_MUX_  _1063_ (
-    .A(_0428_[5]),
-    .B(_0540_[5]),
-    .S(1'h1),
-    .Y(_0541_[5])
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.26-279.45" *)
-  \$_MUX_  _1064_ (
-    .A(_0428_[6]),
-    .B(_0540_[6]),
-    .S(1'h1),
-    .Y(_0541_[6])
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.26-279.45" *)
-  \$_MUX_  _1065_ (
-    .A(_0428_[7]),
-    .B(_0540_[7]),
-    .S(1'h1),
-    .Y(_0541_[7])
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.26-279.45" *)
-  \$_MUX_  _1066_ (
-    .A(_0428_[8]),
-    .B(_0540_[8]),
-    .S(1'h1),
-    .Y(_0541_[8])
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.26-279.45" *)
-  \$_MUX_  _1067_ (
-    .A(_0428_[9]),
-    .B(_0540_[9]),
-    .S(1'h1),
-    .Y(_0541_[9])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.26-279.45" *)
-  \$_MUX_  _1068_ (
-    .A(_0457_[0]),
-    .B(_0570_[0]),
-    .S(1'h1),
-    .Y(_0571_[0])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.26-279.45" *)
-  \$_MUX_  _1069_ (
-    .A(_0457_[1]),
-    .B(_0570_[1]),
-    .S(1'h1),
-    .Y(_0571_[1])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.26-279.45" *)
-  \$_MUX_  _1070_ (
-    .A(_0457_[2]),
-    .B(_0570_[2]),
-    .S(1'h1),
-    .Y(_0571_[2])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.26-279.45" *)
-  \$_MUX_  _1071_ (
-    .A(_0457_[3]),
-    .B(_0570_[3]),
-    .S(1'h1),
-    .Y(_0571_[3])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.26-279.45" *)
-  \$_MUX_  _1072_ (
-    .A(_0457_[4]),
-    .B(_0570_[4]),
-    .S(1'h1),
-    .Y(_0571_[4])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.26-279.45" *)
-  \$_MUX_  _1073_ (
-    .A(_0457_[5]),
-    .B(_0570_[5]),
-    .S(1'h1),
-    .Y(_0571_[5])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.26-279.45" *)
-  \$_MUX_  _1074_ (
-    .A(_0457_[6]),
-    .B(_0570_[6]),
-    .S(1'h1),
-    .Y(_0571_[6])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.26-279.45" *)
-  \$_MUX_  _1075_ (
-    .A(_0457_[7]),
-    .B(_0570_[7]),
-    .S(1'h1),
-    .Y(_0571_[7])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.26-279.45" *)
-  \$_MUX_  _1076_ (
-    .A(_0457_[8]),
-    .B(_0570_[8]),
-    .S(1'h1),
-    .Y(_0571_[8])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.26-279.45" *)
-  \$_MUX_  _1077_ (
-    .A(_0457_[9]),
-    .B(_0570_[9]),
-    .S(1'h1),
-    .Y(_0571_[9])
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.26-279.45" *)
-  \$_MUX_  _1078_ (
-    .A(_0374_[0]),
-    .B(_0480_[0]),
-    .S(1'h1),
-    .Y(_0481_[0])
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.26-279.45" *)
-  \$_MUX_  _1079_ (
-    .A(_0374_[1]),
-    .B(_0480_[1]),
-    .S(1'h1),
-    .Y(_0481_[1])
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.26-279.45" *)
-  \$_MUX_  _1080_ (
-    .A(_0374_[2]),
-    .B(_0480_[2]),
-    .S(1'h1),
-    .Y(_0481_[2])
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.26-279.45" *)
-  \$_MUX_  _1081_ (
-    .A(_0374_[3]),
-    .B(_0480_[3]),
-    .S(1'h1),
-    .Y(_0481_[3])
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.26-279.45" *)
-  \$_MUX_  _1082_ (
-    .A(_0374_[4]),
-    .B(_0480_[4]),
-    .S(1'h1),
-    .Y(_0481_[4])
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.26-279.45" *)
-  \$_MUX_  _1083_ (
-    .A(_0374_[5]),
-    .B(_0480_[5]),
-    .S(1'h1),
-    .Y(_0481_[5])
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.26-279.45" *)
-  \$_MUX_  _1084_ (
-    .A(_0374_[6]),
-    .B(_0480_[6]),
-    .S(1'h1),
-    .Y(_0481_[6])
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.26-279.45" *)
-  \$_MUX_  _1085_ (
-    .A(_0374_[7]),
-    .B(_0480_[7]),
-    .S(1'h1),
-    .Y(_0481_[7])
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.26-279.45" *)
-  \$_MUX_  _1086_ (
-    .A(_0374_[8]),
-    .B(_0480_[8]),
-    .S(1'h1),
-    .Y(_0481_[8])
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.26-279.45" *)
-  \$_MUX_  _1087_ (
-    .A(_0374_[9]),
-    .B(_0480_[9]),
-    .S(1'h1),
-    .Y(_0481_[9])
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.26-279.45" *)
-  \$_MUX_  _1088_ (
-    .A(_0401_[0]),
-    .B(_0510_[0]),
-    .S(1'h1),
-    .Y(_0511_[0])
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.26-279.45" *)
-  \$_MUX_  _1089_ (
-    .A(_0401_[1]),
-    .B(_0510_[1]),
-    .S(1'h1),
-    .Y(_0511_[1])
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.26-279.45" *)
-  \$_MUX_  _1090_ (
-    .A(_0401_[2]),
-    .B(_0510_[2]),
-    .S(1'h1),
-    .Y(_0511_[2])
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.26-279.45" *)
-  \$_MUX_  _1091_ (
-    .A(_0401_[3]),
-    .B(_0510_[3]),
-    .S(1'h1),
-    .Y(_0511_[3])
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.26-279.45" *)
-  \$_MUX_  _1092_ (
-    .A(_0401_[4]),
-    .B(_0510_[4]),
-    .S(1'h1),
-    .Y(_0511_[4])
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.26-279.45" *)
-  \$_MUX_  _1093_ (
-    .A(_0401_[5]),
-    .B(_0510_[5]),
-    .S(1'h1),
-    .Y(_0511_[5])
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.26-279.45" *)
-  \$_MUX_  _1094_ (
-    .A(_0401_[6]),
-    .B(_0510_[6]),
-    .S(1'h1),
-    .Y(_0511_[6])
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.26-279.45" *)
-  \$_MUX_  _1095_ (
-    .A(_0401_[7]),
-    .B(_0510_[7]),
-    .S(1'h1),
-    .Y(_0511_[7])
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.26-279.45" *)
-  \$_MUX_  _1096_ (
-    .A(_0401_[8]),
-    .B(_0510_[8]),
-    .S(1'h1),
-    .Y(_0511_[8])
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.26-279.45" *)
-  \$_MUX_  _1097_ (
-    .A(_0401_[9]),
-    .B(_0510_[9]),
-    .S(1'h1),
-    .Y(_0511_[9])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36" *)
-  \$_NOT_  _1098_ (
-    .A(_0476_),
-    .Y(_0473_)
-  );
-  (* src = "counter.v:14.21-14.36" *)
-  \$_NOT_  _1099_ (
-    .A(_0447_),
-    .Y(_0444_)
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.31-279.37" *)
-  \$_NOT_  _1100_ (
-    .A(_0428_[0]),
-    .Y(_0540_[0])
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.31-279.37" *)
-  \$_NOT_  _1101_ (
-    .A(_0428_[1]),
-    .Y(_0540_[1])
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.31-279.37" *)
-  \$_NOT_  _1102_ (
-    .A(_0428_[2]),
-    .Y(_0540_[2])
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.31-279.37" *)
-  \$_NOT_  _1103_ (
-    .A(_0428_[3]),
-    .Y(_0540_[3])
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.31-279.37" *)
-  \$_NOT_  _1104_ (
-    .A(_0428_[4]),
-    .Y(_0540_[4])
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.31-279.37" *)
-  \$_NOT_  _1105_ (
-    .A(_0428_[5]),
-    .Y(_0540_[5])
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.31-279.37" *)
-  \$_NOT_  _1106_ (
-    .A(_0428_[6]),
-    .Y(_0540_[6])
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.31-279.37" *)
-  \$_NOT_  _1107_ (
-    .A(_0428_[7]),
-    .Y(_0540_[7])
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.31-279.37" *)
-  \$_NOT_  _1108_ (
-    .A(_0428_[8]),
-    .Y(_0540_[8])
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.31-279.37" *)
-  \$_NOT_  _1109_ (
-    .A(_0428_[9]),
-    .Y(_0540_[9])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.31-279.37" *)
-  \$_NOT_  _1110_ (
-    .A(_0457_[0]),
-    .Y(_0570_[0])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.31-279.37" *)
-  \$_NOT_  _1111_ (
-    .A(_0457_[1]),
-    .Y(_0570_[1])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.31-279.37" *)
-  \$_NOT_  _1112_ (
-    .A(_0457_[2]),
-    .Y(_0570_[2])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.31-279.37" *)
-  \$_NOT_  _1113_ (
-    .A(_0457_[3]),
-    .Y(_0570_[3])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.31-279.37" *)
-  \$_NOT_  _1114_ (
-    .A(_0457_[4]),
-    .Y(_0570_[4])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.31-279.37" *)
-  \$_NOT_  _1115_ (
-    .A(_0457_[5]),
-    .Y(_0570_[5])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.31-279.37" *)
-  \$_NOT_  _1116_ (
-    .A(_0457_[6]),
-    .Y(_0570_[6])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.31-279.37" *)
-  \$_NOT_  _1117_ (
-    .A(_0457_[7]),
-    .Y(_0570_[7])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.31-279.37" *)
-  \$_NOT_  _1118_ (
-    .A(_0457_[8]),
-    .Y(_0570_[8])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.31-279.37" *)
-  \$_NOT_  _1119_ (
-    .A(_0457_[9]),
-    .Y(_0570_[9])
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.31-279.37" *)
-  \$_NOT_  _1120_ (
-    .A(_0374_[0]),
-    .Y(_0480_[0])
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.31-279.37" *)
-  \$_NOT_  _1121_ (
-    .A(_0374_[1]),
-    .Y(_0480_[1])
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.31-279.37" *)
-  \$_NOT_  _1122_ (
-    .A(_0374_[2]),
-    .Y(_0480_[2])
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.31-279.37" *)
-  \$_NOT_  _1123_ (
-    .A(_0374_[3]),
-    .Y(_0480_[3])
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.31-279.37" *)
-  \$_NOT_  _1124_ (
-    .A(_0374_[4]),
-    .Y(_0480_[4])
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.31-279.37" *)
-  \$_NOT_  _1125_ (
-    .A(_0374_[5]),
-    .Y(_0480_[5])
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.31-279.37" *)
-  \$_NOT_  _1126_ (
-    .A(_0374_[6]),
-    .Y(_0480_[6])
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.31-279.37" *)
-  \$_NOT_  _1127_ (
-    .A(_0374_[7]),
-    .Y(_0480_[7])
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.31-279.37" *)
-  \$_NOT_  _1128_ (
-    .A(_0374_[8]),
-    .Y(_0480_[8])
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.31-279.37" *)
-  \$_NOT_  _1129_ (
-    .A(_0374_[9]),
-    .Y(_0480_[9])
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.31-279.37" *)
-  \$_NOT_  _1130_ (
-    .A(_0401_[0]),
-    .Y(_0510_[0])
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.31-279.37" *)
-  \$_NOT_  _1131_ (
-    .A(_0401_[1]),
-    .Y(_0510_[1])
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.31-279.37" *)
-  \$_NOT_  _1132_ (
-    .A(_0401_[2]),
-    .Y(_0510_[2])
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.31-279.37" *)
-  \$_NOT_  _1133_ (
-    .A(_0401_[3]),
-    .Y(_0510_[3])
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.31-279.37" *)
-  \$_NOT_  _1134_ (
-    .A(_0401_[4]),
-    .Y(_0510_[4])
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.31-279.37" *)
-  \$_NOT_  _1135_ (
-    .A(_0401_[5]),
-    .Y(_0510_[5])
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.31-279.37" *)
-  \$_NOT_  _1136_ (
-    .A(_0401_[6]),
-    .Y(_0510_[6])
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.31-279.37" *)
-  \$_NOT_  _1137_ (
-    .A(_0401_[7]),
-    .Y(_0510_[7])
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.31-279.37" *)
-  \$_NOT_  _1138_ (
-    .A(_0401_[8]),
-    .Y(_0510_[8])
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.31-279.37" *)
-  \$_NOT_  _1139_ (
-    .A(_0401_[9]),
-    .Y(_0510_[9])
-  );
-  (* src = "counter.v:13.17-13.32" *)
-  \$_XOR_  _1140_ (
+    .D(_017_[9]),
+    .Q(cnt[9]),
+    .R(rst)
+  );
+  \$_NOT_  _122_ (
     .A(cnt[0]),
-    .B(1'h0),
-    .Y(_0242_[0])
+    .Y(_069_[0])
   );
   (* src = "counter.v:13.17-13.32" *)
-  \$_XOR_  _1141_ (
-    .A(cnt[1]),
-    .B(1'h0),
-    .Y(_0242_[1])
-  );
-  (* src = "counter.v:13.17-13.32" *)
-  \$_XOR_  _1142_ (
-    .A(cnt[2]),
-    .B(1'h0),
-    .Y(_0242_[2])
-  );
-  (* src = "counter.v:13.17-13.32" *)
-  \$_XOR_  _1143_ (
-    .A(cnt[3]),
-    .B(1'h0),
-    .Y(_0242_[3])
-  );
-  (* src = "counter.v:13.17-13.32" *)
-  \$_XOR_  _1144_ (
-    .A(cnt[4]),
-    .B(1'h1),
-    .Y(_0242_[4])
-  );
-  (* src = "counter.v:13.17-13.32" *)
-  \$_XOR_  _1145_ (
-    .A(cnt[5]),
-    .B(1'h1),
-    .Y(_0242_[5])
-  );
-  (* src = "counter.v:13.17-13.32" *)
-  \$_XOR_  _1146_ (
-    .A(cnt[6]),
-    .B(1'h1),
-    .Y(_0242_[6])
-  );
-  (* src = "counter.v:13.17-13.32" *)
-  \$_XOR_  _1147_ (
-    .A(cnt[7]),
-    .B(1'h1),
-    .Y(_0242_[7])
-  );
-  (* src = "counter.v:13.17-13.32" *)
-  \$_XOR_  _1148_ (
-    .A(cnt[8]),
-    .B(1'h1),
-    .Y(_0242_[8])
-  );
-  (* src = "counter.v:13.17-13.32" *)
-  \$_XOR_  _1149_ (
-    .A(cnt[9]),
-    .B(1'h1),
-    .Y(_0242_[9])
-  );
-  (* src = "counter.v:22.17-22.31" *)
-  \$_XOR_  _1150_ (
+  \$_OR_  _123_ (
     .A(cnt[0]),
-    .B(1'h0),
-    .Y(_0243_[0])
+    .B(cnt[1]),
+    .Y(_018_[0])
   );
-  (* src = "counter.v:22.17-22.31" *)
-  \$_XOR_  _1151_ (
-    .A(cnt[1]),
-    .B(1'h1),
-    .Y(_0243_[1])
-  );
-  (* src = "counter.v:22.17-22.31" *)
-  \$_XOR_  _1152_ (
+  (* src = "counter.v:13.17-13.32" *)
+  \$_OR_  _124_ (
     .A(cnt[2]),
-    .B(1'h1),
-    .Y(_0243_[2])
+    .B(cnt[3]),
+    .Y(_018_[1])
+  );
+  (* src = "counter.v:13.17-13.32" *)
+  \$_OR_  _125_ (
+    .A(_018_[0]),
+    .B(_018_[1]),
+    .Y(_019_[0])
+  );
+  (* src = "counter.v:13.17-13.32" *)
+  \$_OR_  _126_ (
+    .A(_019_[0]),
+    .B(_019_[1]),
+    .Y(_020_)
+  );
+  (* src = "counter.v:13.17-13.32" *)
+  \$_OR_  _127_ (
+    .A(_020_),
+    .B(_018_[4]),
+    .Y(_067_)
   );
   (* src = "counter.v:22.17-22.31" *)
-  \$_XOR_  _1153_ (
-    .A(cnt[3]),
-    .B(1'h1),
-    .Y(_0243_[3])
+  \$_OR_  _128_ (
+    .A(cnt[0]),
+    .B(_069_[1]),
+    .Y(_021_[0])
   );
   (* src = "counter.v:22.17-22.31" *)
-  \$_XOR_  _1154_ (
+  \$_OR_  _129_ (
+    .A(_069_[2]),
+    .B(_069_[3]),
+    .Y(_021_[1])
+  );
+  (* src = "counter.v:22.17-22.31" *)
+  \$_OR_  _130_ (
+    .A(_069_[4]),
+    .B(_069_[5]),
+    .Y(_018_[2])
+  );
+  (* src = "counter.v:22.17-22.31" *)
+  \$_OR_  _131_ (
+    .A(_069_[6]),
+    .B(_069_[7]),
+    .Y(_018_[3])
+  );
+  (* src = "counter.v:22.17-22.31" *)
+  \$_OR_  _132_ (
+    .A(_069_[8]),
+    .B(_069_[9]),
+    .Y(_018_[4])
+  );
+  (* src = "counter.v:22.17-22.31" *)
+  \$_OR_  _133_ (
+    .A(_021_[0]),
+    .B(_021_[1]),
+    .Y(_022_[0])
+  );
+  (* src = "counter.v:22.17-22.31" *)
+  \$_OR_  _134_ (
+    .A(_018_[2]),
+    .B(_018_[3]),
+    .Y(_019_[1])
+  );
+  (* src = "counter.v:22.17-22.31" *)
+  \$_OR_  _135_ (
+    .A(_022_[0]),
+    .B(_019_[1]),
+    .Y(_023_)
+  );
+  (* src = "counter.v:22.17-22.31" *)
+  \$_OR_  _136_ (
+    .A(_023_),
+    .B(_018_[4]),
+    .Y(_068_)
+  );
+  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
+  \$_AND_  _137_ (
+    .A(_008_[8]),
+    .B(_007_[7]),
+    .Y(_016_[7])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
+  \$_AND_  _138_ (
+    .A(_024_),
+    .B(_007_[6]),
+    .Y(_016_[6])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
+  \$_AND_  _139_ (
+    .A(_008_[8]),
+    .B(_007_[5]),
+    .Y(_025_[1])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
+  \$_AND_  _140_ (
+    .A(_025_[0]),
+    .B(_025_[1]),
+    .Y(_016_[5])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
+  \$_AND_  _141_ (
+    .A(_026_[0]),
+    .B(_024_),
+    .Y(_027_)
+  );
+  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
+  \$_AND_  _142_ (
+    .A(_027_),
+    .B(_007_[4]),
+    .Y(_016_[4])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
+  \$_AND_  _143_ (
+    .A(_008_[8]),
+    .B(_007_[3]),
+    .Y(_028_[2])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
+  \$_AND_  _144_ (
+    .A(_029_),
+    .B(_028_[2]),
+    .Y(_016_[3])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
+  \$_AND_  _145_ (
+    .A(_008_[7]),
+    .B(_008_[8]),
+    .Y(_024_)
+  );
+  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
+  \$_AND_  _146_ (
+    .A(_024_),
+    .B(_007_[2]),
+    .Y(_031_[1])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
+  \$_AND_  _147_ (
+    .A(_031_[0]),
+    .B(_031_[1]),
+    .Y(_016_[2])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
+  \$_AND_  _148_ (
+    .A(_008_[8]),
+    .B(_007_[1]),
+    .Y(_032_[3])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
+  \$_AND_  _149_ (
+    .A(_025_[0]),
+    .B(_032_[3]),
+    .Y(_033_[1])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
+  \$_AND_  _150_ (
+    .A(_033_[0]),
+    .B(_033_[1]),
+    .Y(_016_[1])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
+  \$_AND_  _151_ (
+    .A(_011_[0]),
+    .B(_029_),
+    .Y(_015_[0])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
+  \$_AND_  _152_ (
+    .A(_015_[0]),
+    .B(_008_[8]),
+    .Y(_016_[0])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
+  \$_OR_  _153_ (
+    .A(_016_[0]),
+    .B(_016_[1]),
+    .Y(_034_[0])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
+  \$_OR_  _154_ (
+    .A(_016_[2]),
+    .B(_016_[3]),
+    .Y(_034_[1])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
+  \$_OR_  _155_ (
+    .A(_016_[4]),
+    .B(_016_[5]),
+    .Y(_034_[2])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
+  \$_OR_  _156_ (
+    .A(_016_[6]),
+    .B(_016_[7]),
+    .Y(_034_[3])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
+  \$_OR_  _157_ (
+    .A(_034_[0]),
+    .B(_034_[1]),
+    .Y(_035_[0])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
+  \$_OR_  _158_ (
+    .A(_034_[2]),
+    .B(_034_[3]),
+    .Y(_035_[1])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
+  \$_OR_  _159_ (
+    .A(_035_[0]),
+    .B(_035_[1]),
+    .Y(_036_)
+  );
+  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
+  \$_OR_  _160_ (
+    .A(_036_),
+    .B(_007_[8]),
+    .Y(_006_[9])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
+  \$_AND_  _161_ (
+    .A(_008_[7]),
+    .B(_007_[6]),
+    .Y(_015_[6])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
+  \$_AND_  _162_ (
+    .A(_025_[0]),
+    .B(_007_[5]),
+    .Y(_015_[5])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
+  \$_AND_  _163_ (
+    .A(_008_[7]),
+    .B(_007_[4]),
+    .Y(_037_[1])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
+  \$_AND_  _164_ (
+    .A(_026_[0]),
+    .B(_037_[1]),
+    .Y(_015_[4])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
+  \$_AND_  _165_ (
+    .A(_029_),
+    .B(_007_[3]),
+    .Y(_015_[3])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
+  \$_AND_  _166_ (
+    .A(_008_[7]),
+    .B(_007_[2]),
+    .Y(_038_[2])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
+  \$_AND_  _167_ (
+    .A(_031_[0]),
+    .B(_038_[2]),
+    .Y(_015_[2])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
+  \$_AND_  _168_ (
+    .A(_025_[0]),
+    .B(_007_[1]),
+    .Y(_039_[1])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
+  \$_AND_  _169_ (
+    .A(_033_[0]),
+    .B(_039_[1]),
+    .Y(_015_[1])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
+  \$_AND_  _170_ (
+    .A(_008_[6]),
+    .B(_008_[7]),
+    .Y(_025_[0])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
+  \$_AND_  _171_ (
+    .A(_028_[0]),
+    .B(_025_[0]),
+    .Y(_029_)
+  );
+  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
+  \$_OR_  _172_ (
+    .A(_015_[0]),
+    .B(_015_[1]),
+    .Y(_040_[0])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
+  \$_OR_  _173_ (
+    .A(_015_[2]),
+    .B(_015_[3]),
+    .Y(_040_[1])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
+  \$_OR_  _174_ (
+    .A(_015_[4]),
+    .B(_015_[5]),
+    .Y(_040_[2])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
+  \$_OR_  _175_ (
+    .A(_015_[6]),
+    .B(_007_[7]),
+    .Y(_040_[3])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
+  \$_OR_  _176_ (
+    .A(_040_[0]),
+    .B(_040_[1]),
+    .Y(_041_[0])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
+  \$_OR_  _177_ (
+    .A(_040_[2]),
+    .B(_040_[3]),
+    .Y(_041_[1])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
+  \$_OR_  _178_ (
+    .A(_041_[0]),
+    .B(_041_[1]),
+    .Y(_006_[8])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
+  \$_AND_  _179_ (
+    .A(_008_[6]),
+    .B(_007_[5]),
+    .Y(_014_[5])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
+  \$_AND_  _180_ (
+    .A(_026_[0]),
+    .B(_007_[4]),
+    .Y(_014_[4])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
+  \$_AND_  _181_ (
+    .A(_008_[6]),
+    .B(_007_[3]),
+    .Y(_042_[1])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
+  \$_AND_  _182_ (
+    .A(_028_[0]),
+    .B(_042_[1]),
+    .Y(_014_[3])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
+  \$_AND_  _183_ (
+    .A(_008_[5]),
+    .B(_008_[6]),
+    .Y(_026_[0])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
+  \$_AND_  _184_ (
+    .A(_030_[0]),
+    .B(_026_[0]),
+    .Y(_031_[0])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
+  \$_AND_  _185_ (
+    .A(_031_[0]),
+    .B(_007_[2]),
+    .Y(_014_[2])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
+  \$_AND_  _186_ (
+    .A(_008_[6]),
+    .B(_007_[1]),
+    .Y(_043_[2])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
+  \$_AND_  _187_ (
+    .A(_033_[0]),
+    .B(_043_[2]),
+    .Y(_014_[1])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
+  \$_AND_  _188_ (
+    .A(_028_[0]),
+    .B(_008_[6]),
+    .Y(_044_[1])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
+  \$_AND_  _189_ (
+    .A(_011_[0]),
+    .B(_044_[1]),
+    .Y(_014_[0])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
+  \$_OR_  _190_ (
+    .A(_014_[0]),
+    .B(_014_[1]),
+    .Y(_045_[0])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
+  \$_OR_  _191_ (
+    .A(_014_[2]),
+    .B(_014_[3]),
+    .Y(_045_[1])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
+  \$_OR_  _192_ (
+    .A(_014_[4]),
+    .B(_014_[5]),
+    .Y(_045_[2])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
+  \$_OR_  _193_ (
+    .A(_045_[0]),
+    .B(_045_[1]),
+    .Y(_046_[0])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
+  \$_OR_  _194_ (
+    .A(_045_[2]),
+    .B(_007_[6]),
+    .Y(_046_[1])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
+  \$_OR_  _195_ (
+    .A(_046_[0]),
+    .B(_046_[1]),
+    .Y(_006_[7])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
+  \$_AND_  _196_ (
+    .A(_008_[5]),
+    .B(_007_[4]),
+    .Y(_013_[4])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
+  \$_AND_  _197_ (
+    .A(_028_[0]),
+    .B(_007_[3]),
+    .Y(_013_[3])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
+  \$_AND_  _198_ (
+    .A(_008_[5]),
+    .B(_007_[2]),
+    .Y(_047_[1])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
+  \$_AND_  _199_ (
+    .A(_030_[0]),
+    .B(_047_[1]),
+    .Y(_013_[2])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
+  \$_AND_  _200_ (
+    .A(_032_[0]),
+    .B(_028_[0]),
+    .Y(_033_[0])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
+  \$_AND_  _201_ (
+    .A(_033_[0]),
+    .B(_007_[1]),
+    .Y(_013_[1])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
+  \$_AND_  _202_ (
+    .A(_008_[4]),
+    .B(_008_[5]),
+    .Y(_028_[0])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
+  \$_AND_  _203_ (
+    .A(_011_[0]),
+    .B(_028_[0]),
+    .Y(_013_[0])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
+  \$_OR_  _204_ (
+    .A(_013_[0]),
+    .B(_013_[1]),
+    .Y(_048_[0])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
+  \$_OR_  _205_ (
+    .A(_013_[2]),
+    .B(_013_[3]),
+    .Y(_048_[1])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
+  \$_OR_  _206_ (
+    .A(_013_[4]),
+    .B(_007_[5]),
+    .Y(_048_[2])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
+  \$_OR_  _207_ (
+    .A(_048_[0]),
+    .B(_048_[1]),
+    .Y(_049_)
+  );
+  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
+  \$_OR_  _208_ (
+    .A(_049_),
+    .B(_048_[2]),
+    .Y(_006_[6])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
+  \$_AND_  _209_ (
+    .A(_008_[4]),
+    .B(_007_[3]),
+    .Y(_012_[3])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
+  \$_AND_  _210_ (
+    .A(_008_[3]),
+    .B(_008_[4]),
+    .Y(_030_[0])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
+  \$_AND_  _211_ (
+    .A(_030_[0]),
+    .B(_007_[2]),
+    .Y(_012_[2])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
+  \$_AND_  _212_ (
+    .A(_008_[4]),
+    .B(_007_[1]),
+    .Y(_050_[1])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
+  \$_AND_  _213_ (
+    .A(_032_[0]),
+    .B(_050_[1]),
+    .Y(_012_[1])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
+  \$_AND_  _214_ (
+    .A(_009_[0]),
+    .B(_032_[0]),
+    .Y(_011_[0])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
+  \$_AND_  _215_ (
+    .A(_011_[0]),
+    .B(_008_[4]),
+    .Y(_012_[0])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
+  \$_OR_  _216_ (
+    .A(_012_[0]),
+    .B(_012_[1]),
+    .Y(_051_[0])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
+  \$_OR_  _217_ (
+    .A(_012_[2]),
+    .B(_012_[3]),
+    .Y(_051_[1])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
+  \$_OR_  _218_ (
+    .A(_051_[0]),
+    .B(_051_[1]),
+    .Y(_052_)
+  );
+  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
+  \$_OR_  _219_ (
+    .A(_052_),
+    .B(_007_[4]),
+    .Y(_006_[5])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
+  \$_AND_  _220_ (
+    .A(_008_[3]),
+    .B(_007_[2]),
+    .Y(_011_[2])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
+  \$_AND_  _221_ (
+    .A(_032_[0]),
+    .B(_007_[1]),
+    .Y(_011_[1])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
+  \$_AND_  _222_ (
+    .A(_008_[2]),
+    .B(_008_[3]),
+    .Y(_032_[0])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
+  \$_OR_  _223_ (
+    .A(_011_[0]),
+    .B(_011_[1]),
+    .Y(_053_[0])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
+  \$_OR_  _224_ (
+    .A(_011_[2]),
+    .B(_007_[3]),
+    .Y(_053_[1])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
+  \$_OR_  _225_ (
+    .A(_053_[0]),
+    .B(_053_[1]),
+    .Y(_006_[4])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
+  \$_AND_  _226_ (
+    .A(_008_[2]),
+    .B(_007_[1]),
+    .Y(_010_[1])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
+  \$_AND_  _227_ (
+    .A(_006_[1]),
+    .B(_008_[1]),
+    .Y(_009_[0])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:30.41-30.50" *)
+  \$_AND_  _228_ (
+    .A(_009_[0]),
+    .B(_008_[2]),
+    .Y(_010_[0])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
+  \$_OR_  _229_ (
+    .A(_010_[0]),
+    .B(_010_[1]),
+    .Y(_054_)
+  );
+  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
+  \$_OR_  _230_ (
+    .A(_054_),
+    .B(_007_[2]),
+    .Y(_006_[3])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:26.27-26.39" *)
+  \$_OR_  _231_ (
+    .A(_009_[0]),
+    .B(_007_[1]),
+    .Y(_006_[2])
+  );
+  (* src = {0{1'b0}} *)
+  \$_OR_  _232_ (
+    .A(_079_),
+    .B(_077_),
+    .Y(_005_[9])
+  );
+  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37" *)
+  \$_AND_  _233_ (
+    .A(_075_[1]),
+    .B(_055_[1]),
+    .Y(_056_[0])
+  );
+  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37" *)
+  \$_AND_  _234_ (
+    .A(_056_[0]),
+    .B(_056_[1]),
+    .Y(_057_)
+  );
+  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37" *)
+  \$_AND_  _235_ (
+    .A(_057_),
+    .B(_055_[4]),
+    .Y(_077_)
+  );
+  (* src = {0{1'b0}} *)
+  \$_OR_  _236_ (
+    .A(_074_),
+    .B(_072_),
+    .Y(_004_[9])
+  );
+  (* src = "counter.v:23.21-23.37" *)
+  \$_AND_  _237_ (
+    .A(cnt[0]),
+    .B(cnt[1]),
+    .Y(_058_[0])
+  );
+  (* src = "counter.v:23.21-23.37" *)
+  \$_AND_  _238_ (
+    .A(_058_[0]),
+    .B(_070_[3]),
+    .Y(_059_[0])
+  );
+  (* src = "counter.v:23.21-23.37" *)
+  \$_AND_  _239_ (
+    .A(_055_[2]),
+    .B(_055_[3]),
+    .Y(_056_[1])
+  );
+  (* src = "counter.v:23.21-23.37" *)
+  \$_AND_  _240_ (
+    .A(_059_[0]),
+    .B(_056_[1]),
+    .Y(_060_)
+  );
+  (* src = "counter.v:23.21-23.37" *)
+  \$_AND_  _241_ (
+    .A(_060_),
+    .B(_055_[4]),
+    .Y(_072_)
+  );
+  (* src = {0{1'b0}} *)
+  \$_OR_  _242_ (
+    .A(_089_),
+    .B(_090_),
+    .Y(_002_[3])
+  );
+  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36" *)
+  \$_AND_  _243_ (
+    .A(cnt[0]),
+    .B(_069_[1]),
+    .Y(_061_[0])
+  );
+  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36" *)
+  \$_AND_  _244_ (
+    .A(_061_[0]),
+    .B(_070_[3]),
+    .Y(_062_[0])
+  );
+  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36" *)
+  \$_AND_  _245_ (
+    .A(_062_[0]),
+    .B(_062_[1]),
+    .Y(_063_)
+  );
+  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36" *)
+  \$_AND_  _246_ (
+    .A(_063_),
+    .B(_061_[4]),
+    .Y(_090_)
+  );
+  (* src = {0{1'b0}} *)
+  \$_OR_  _247_ (
+    .A(_082_),
+    .B(_083_),
+    .Y(_001_[2])
+  );
+  (* src = "counter.v:14.21-14.36" *)
+  \$_AND_  _248_ (
+    .A(_064_[0]),
+    .B(_064_[1]),
+    .Y(_065_[0])
+  );
+  (* src = "counter.v:14.21-14.36" *)
+  \$_AND_  _249_ (
+    .A(_065_[0]),
+    .B(_062_[1]),
+    .Y(_066_)
+  );
+  (* src = "counter.v:14.21-14.36" *)
+  \$_AND_  _250_ (
+    .A(_066_),
+    .B(_061_[4]),
+    .Y(_083_)
+  );
+  (* src = "counter.v:22.17-22.31|counter.v:22.13-28.16" *)
+  \$_AND_  _251_ (
+    .A(_068_),
+    .B(_004_[9]),
+    .Y(_003_[4])
+  );
+  (* src = "counter.v:22.17-22.31|counter.v:22.13-28.16" *)
+  \$_MUX_  _252_ (
+    .A(_005_[9]),
+    .B(_004_[9]),
+    .S(_068_),
+    .Y(_003_[9])
+  );
+  (* src = "counter.v:22.17-22.31|counter.v:22.13-28.16" *)
+  \$_MUX_  _253_ (
+    .A(_005_[9]),
+    .B(1'h0),
+    .S(_068_),
+    .Y(_003_[3])
+  );
+  (* src = "counter.v:13.17-13.32|counter.v:13.13-19.16" *)
+  \$_AND_  _254_ (
+    .A(_067_),
+    .B(_001_[2]),
+    .Y(_000_[2])
+  );
+  (* src = "counter.v:13.17-13.32|counter.v:13.13-19.16" *)
+  \$_MUX_  _255_ (
+    .A(_002_[3]),
+    .B(1'h0),
+    .S(_067_),
+    .Y(_000_[3])
+  );
+  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
+  \$_MUX_  _256_ (
+    .A(_003_[4]),
+    .B(_000_[2]),
+    .S(mode),
+    .Y(summand[0])
+  );
+  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
+  \$_MUX_  _257_ (
+    .A(_003_[9]),
+    .B(_000_[3]),
+    .S(mode),
+    .Y(summand[1])
+  );
+  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
+  \$_MUX_  _258_ (
+    .A(_003_[9]),
+    .B(_000_[2]),
+    .S(mode),
+    .Y(summand[2])
+  );
+  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
+  \$_MUX_  _259_ (
+    .A(_003_[3]),
+    .B(_000_[3]),
+    .S(mode),
+    .Y(summand[3])
+  );
+  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
+  \$_MUX_  _260_ (
+    .A(_003_[4]),
+    .B(1'h0),
+    .S(mode),
+    .Y(summand[4])
+  );
+  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
+  \$_MUX_  _261_ (
+    .A(_003_[9]),
+    .B(1'h0),
+    .S(mode),
+    .Y(summand[9])
+  );
+  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36" *)
+  \$_NOT_  _262_ (
+    .A(_091_),
+    .Y(_089_)
+  );
+  (* src = "counter.v:14.21-14.36" *)
+  \$_NOT_  _263_ (
+    .A(_084_),
+    .Y(_082_)
+  );
+  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.31-279.37" *)
+  \$_NOT_  _264_ (
     .A(cnt[4]),
-    .B(1'h1),
-    .Y(_0243_[4])
+    .Y(_069_[4])
   );
-  (* src = "counter.v:22.17-22.31" *)
-  \$_XOR_  _1155_ (
-    .A(cnt[5]),
-    .B(1'h1),
-    .Y(_0243_[5])
+  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.31-279.37" *)
+  \$_NOT_  _265_ (
+    .A(cnt[1]),
+    .Y(_069_[1])
   );
-  (* src = "counter.v:22.17-22.31" *)
-  \$_XOR_  _1156_ (
-    .A(cnt[6]),
-    .B(1'h1),
-    .Y(_0243_[6])
+  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.31-279.37" *)
+  \$_NOT_  _266_ (
+    .A(cnt[2]),
+    .Y(_069_[2])
   );
-  (* src = "counter.v:22.17-22.31" *)
-  \$_XOR_  _1157_ (
-    .A(cnt[7]),
-    .B(1'h1),
-    .Y(_0243_[7])
+  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.31-279.37" *)
+  \$_NOT_  _267_ (
+    .A(cnt[3]),
+    .Y(_069_[3])
   );
-  (* src = "counter.v:22.17-22.31" *)
-  \$_XOR_  _1158_ (
-    .A(cnt[8]),
-    .B(1'h1),
-    .Y(_0243_[8])
-  );
-  (* src = "counter.v:22.17-22.31" *)
-  \$_XOR_  _1159_ (
+  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.31-279.37" *)
+  \$_NOT_  _268_ (
     .A(cnt[9]),
-    .B(1'h1),
-    .Y(_0243_[9])
+    .Y(_069_[9])
   );
-  (* src = "counter.v:36.20-36.33|map.v:44.29-44.60" *)
-  \$_XOR_  _1160_ (
-    .A(_0014_[1]),
-    .B(_0012_[1]),
-    .Y(_0366_[0])
+  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.31-279.37" *)
+  \$_NOT_  _269_ (
+    .A(cnt[5]),
+    .Y(_069_[5])
   );
-  (* src = "counter.v:36.20-36.33|map.v:44.29-44.60" *)
-  \$_XOR_  _1161_ (
-    .A(_0014_[2]),
-    .B(_0012_[2]),
-    .Y(_0366_[1])
+  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.31-279.37" *)
+  \$_NOT_  _270_ (
+    .A(cnt[6]),
+    .Y(_069_[6])
   );
-  (* src = "counter.v:36.20-36.33|map.v:44.29-44.60" *)
-  \$_XOR_  _1162_ (
-    .A(_0014_[3]),
-    .B(_0012_[3]),
-    .Y(_0366_[2])
+  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.31-279.37" *)
+  \$_NOT_  _271_ (
+    .A(cnt[7]),
+    .Y(_069_[7])
   );
-  (* src = "counter.v:36.20-36.33|map.v:44.29-44.60" *)
-  \$_XOR_  _1163_ (
-    .A(_0014_[4]),
-    .B(_0012_[4]),
-    .Y(_0366_[3])
+  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.31-279.37" *)
+  \$_NOT_  _272_ (
+    .A(cnt[8]),
+    .Y(_069_[8])
   );
-  (* src = "counter.v:36.20-36.33|map.v:44.29-44.60" *)
-  \$_XOR_  _1164_ (
-    .A(_0014_[5]),
-    .B(_0012_[5]),
-    .Y(_0366_[4])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:44.29-44.60" *)
-  \$_XOR_  _1165_ (
-    .A(_0014_[6]),
-    .B(_0012_[6]),
-    .Y(_0366_[5])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:44.29-44.60" *)
-  \$_XOR_  _1166_ (
-    .A(_0014_[7]),
-    .B(_0012_[7]),
-    .Y(_0366_[6])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:44.29-44.60" *)
-  \$_XOR_  _1167_ (
-    .A(_0014_[8]),
-    .B(_0012_[8]),
-    .Y(_0366_[7])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:44.29-44.60" *)
-  \$_XOR_  _1168_ (
-    .A(_0014_[9]),
-    .B(_0012_[9]),
-    .Y(_0366_[8])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:40.16-40.21" *)
-  \$_XOR_  _1169_ (
+  (* src = {0{1'b0}} *)
+  \$_AND_  _273_ (
     .A(cnt[0]),
     .B(summand[0]),
-    .Y(_0365_[0])
+    .Y(_006_[1])
   );
-  (* src = "counter.v:36.20-36.33|map.v:40.16-40.21" *)
-  \$_XOR_  _1170_ (
+  (* src = {0{1'b0}} *)
+  \$_AND_  _274_ (
     .A(cnt[1]),
     .B(summand[1]),
-    .Y(_0365_[1])
+    .Y(_007_[1])
   );
-  (* src = "counter.v:36.20-36.33|map.v:40.16-40.21" *)
-  \$_XOR_  _1171_ (
+  (* src = {0{1'b0}} *)
+  \$_AND_  _275_ (
     .A(cnt[2]),
     .B(summand[2]),
-    .Y(_0365_[2])
+    .Y(_007_[2])
   );
-  (* src = "counter.v:36.20-36.33|map.v:40.16-40.21" *)
-  \$_XOR_  _1172_ (
+  (* src = {0{1'b0}} *)
+  \$_AND_  _276_ (
     .A(cnt[3]),
     .B(summand[3]),
-    .Y(_0365_[3])
+    .Y(_007_[3])
   );
-  (* src = "counter.v:36.20-36.33|map.v:40.16-40.21" *)
-  \$_XOR_  _1173_ (
+  (* src = {0{1'b0}} *)
+  \$_AND_  _277_ (
     .A(cnt[4]),
     .B(summand[4]),
-    .Y(_0365_[4])
+    .Y(_007_[4])
   );
-  (* src = "counter.v:36.20-36.33|map.v:40.16-40.21" *)
-  \$_XOR_  _1174_ (
+  (* src = {0{1'b0}} *)
+  \$_AND_  _278_ (
     .A(cnt[5]),
-    .B(summand[5]),
-    .Y(_0365_[5])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:40.16-40.21" *)
-  \$_XOR_  _1175_ (
-    .A(cnt[6]),
-    .B(summand[6]),
-    .Y(_0365_[6])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:40.16-40.21" *)
-  \$_XOR_  _1176_ (
-    .A(cnt[7]),
-    .B(summand[7]),
-    .Y(_0365_[7])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:40.16-40.21" *)
-  \$_XOR_  _1177_ (
-    .A(cnt[8]),
-    .B(summand[8]),
-    .Y(_0365_[8])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:40.16-40.21" *)
-  \$_XOR_  _1178_ (
-    .A(cnt[9]),
     .B(summand[9]),
-    .Y(_0365_[9])
+    .Y(_007_[5])
   );
-  (* src = "counter.v:36.20-36.33|map.v:40.16-40.21" *)
-  \$_XOR_  _1179_ (
-    .A(1'h0),
-    .B(1'h0),
-    .Y(_0365_[10])
+  (* src = {0{1'b0}} *)
+  \$_AND_  _279_ (
+    .A(cnt[6]),
+    .B(summand[9]),
+    .Y(_007_[6])
   );
-  (* src = "counter.v:36.20-36.33|map.v:39.16-39.21" *)
-  \$_AND_  _1180_ (
+  (* src = {0{1'b0}} *)
+  \$_AND_  _280_ (
+    .A(cnt[7]),
+    .B(summand[9]),
+    .Y(_007_[7])
+  );
+  (* src = {0{1'b0}} *)
+  \$_AND_  _281_ (
+    .A(cnt[8]),
+    .B(summand[9]),
+    .Y(_007_[8])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:44.29-44.60" *)
+  \$_XOR_  _282_ (
+    .A(_008_[1]),
+    .B(_006_[1]),
+    .Y(_017_[1])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:44.29-44.60" *)
+  \$_XOR_  _283_ (
+    .A(_008_[2]),
+    .B(_006_[2]),
+    .Y(_017_[2])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:44.29-44.60" *)
+  \$_XOR_  _284_ (
+    .A(_008_[3]),
+    .B(_006_[3]),
+    .Y(_017_[3])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:44.29-44.60" *)
+  \$_XOR_  _285_ (
+    .A(_008_[4]),
+    .B(_006_[4]),
+    .Y(_017_[4])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:44.29-44.60" *)
+  \$_XOR_  _286_ (
+    .A(_008_[5]),
+    .B(_006_[5]),
+    .Y(_017_[5])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:44.29-44.60" *)
+  \$_XOR_  _287_ (
+    .A(_008_[6]),
+    .B(_006_[6]),
+    .Y(_017_[6])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:44.29-44.60" *)
+  \$_XOR_  _288_ (
+    .A(_008_[7]),
+    .B(_006_[7]),
+    .Y(_017_[7])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:44.29-44.60" *)
+  \$_XOR_  _289_ (
+    .A(_008_[8]),
+    .B(_006_[8]),
+    .Y(_017_[8])
+  );
+  (* src = "counter.v:36.20-36.33|map.v:44.29-44.60" *)
+  \$_XOR_  _290_ (
+    .A(_008_[9]),
+    .B(_006_[9]),
+    .Y(_017_[9])
+  );
+  (* src = {0{1'b0}} *)
+  \$_XOR_  _291_ (
     .A(cnt[0]),
     .B(summand[0]),
-    .Y(_0298_[0])
+    .Y(_008_[0])
   );
-  (* src = "counter.v:36.20-36.33|map.v:39.16-39.21" *)
-  \$_AND_  _1181_ (
+  (* src = {0{1'b0}} *)
+  \$_XOR_  _292_ (
     .A(cnt[1]),
     .B(summand[1]),
-    .Y(_0298_[1])
+    .Y(_008_[1])
   );
-  (* src = "counter.v:36.20-36.33|map.v:39.16-39.21" *)
-  \$_AND_  _1182_ (
+  (* src = {0{1'b0}} *)
+  \$_XOR_  _293_ (
     .A(cnt[2]),
     .B(summand[2]),
-    .Y(_0298_[2])
+    .Y(_008_[2])
   );
-  (* src = "counter.v:36.20-36.33|map.v:39.16-39.21" *)
-  \$_AND_  _1183_ (
+  (* src = {0{1'b0}} *)
+  \$_XOR_  _294_ (
     .A(cnt[3]),
     .B(summand[3]),
-    .Y(_0298_[3])
+    .Y(_008_[3])
   );
-  (* src = "counter.v:36.20-36.33|map.v:39.16-39.21" *)
-  \$_AND_  _1184_ (
+  (* src = {0{1'b0}} *)
+  \$_XOR_  _295_ (
     .A(cnt[4]),
     .B(summand[4]),
-    .Y(_0298_[4])
+    .Y(_008_[4])
   );
-  (* src = "counter.v:36.20-36.33|map.v:39.16-39.21" *)
-  \$_AND_  _1185_ (
+  (* src = {0{1'b0}} *)
+  \$_XOR_  _296_ (
     .A(cnt[5]),
-    .B(summand[5]),
-    .Y(_0298_[5])
+    .B(summand[9]),
+    .Y(_008_[5])
   );
-  (* src = "counter.v:36.20-36.33|map.v:39.16-39.21" *)
-  \$_AND_  _1186_ (
+  (* src = {0{1'b0}} *)
+  \$_XOR_  _297_ (
     .A(cnt[6]),
-    .B(summand[6]),
-    .Y(_0298_[6])
+    .B(summand[9]),
+    .Y(_008_[6])
   );
-  (* src = "counter.v:36.20-36.33|map.v:39.16-39.21" *)
-  \$_AND_  _1187_ (
+  (* src = {0{1'b0}} *)
+  \$_XOR_  _298_ (
     .A(cnt[7]),
-    .B(summand[7]),
-    .Y(_0298_[7])
+    .B(summand[9]),
+    .Y(_008_[7])
   );
-  (* src = "counter.v:36.20-36.33|map.v:39.16-39.21" *)
-  \$_AND_  _1188_ (
+  (* src = {0{1'b0}} *)
+  \$_XOR_  _299_ (
     .A(cnt[8]),
-    .B(summand[8]),
-    .Y(_0298_[8])
+    .B(summand[9]),
+    .Y(_008_[8])
   );
-  (* src = "counter.v:36.20-36.33|map.v:39.16-39.21" *)
-  \$_AND_  _1189_ (
+  (* src = {0{1'b0}} *)
+  \$_XOR_  _300_ (
     .A(cnt[9]),
     .B(summand[9]),
-    .Y(_0298_[9])
-  );
-  (* src = "counter.v:36.20-36.33|map.v:39.16-39.21" *)
-  \$_AND_  _1190_ (
-    .A(1'h0),
-    .B(1'h0),
-    .Y(_0298_[10])
+    .Y(_008_[9])
   );
   (* src = {0{1'b0}} *)
-  \$_XOR_  _1191_ (
-    .A(_0416_[9]),
-    .B(_0416_[8]),
-    .Y(_0419_)
+  \$_XOR_  _301_ (
+    .A(_075_[9]),
+    .B(_075_[8]),
+    .Y(_078_)
   );
   (* src = {0{1'b0}} *)
-  \$_XOR_  _1192_ (
-    .A(_0419_),
-    .B(_0394_[9]),
-    .Y(_0420_)
+  \$_XOR_  _302_ (
+    .A(_078_),
+    .B(_076_[9]),
+    .Y(_079_)
   );
   (* src = {0{1'b0}} *)
-  \$_XOR_  _1193_ (
-    .A(_0389_[9]),
-    .B(_0389_[8]),
-    .Y(_0392_)
+  \$_XOR_  _303_ (
+    .A(_070_[9]),
+    .B(_070_[8]),
+    .Y(_073_)
   );
   (* src = {0{1'b0}} *)
-  \$_XOR_  _1194_ (
-    .A(_0392_),
-    .B(_0367_[9]),
-    .Y(_0393_)
+  \$_XOR_  _304_ (
+    .A(_073_),
+    .B(_071_[9]),
+    .Y(_074_)
   );
   (* src = {0{1'b0}} *)
-  \$_XOR_  _1195_ (
-    .A(_0472_[9]),
-    .B(_0472_[8]),
-    .Y(_0477_)
+  \$_XOR_  _305_ (
+    .A(_087_[9]),
+    .B(_087_[8]),
+    .Y(_092_)
   );
   (* src = {0{1'b0}} *)
-  \$_XOR_  _1196_ (
-    .A(_0477_),
-    .B(_0450_[9]),
-    .Y(_0478_)
+  \$_XOR_  _306_ (
+    .A(_092_),
+    .B(_088_[9]),
+    .Y(_093_)
   );
   (* src = {0{1'b0}} *)
-  \$_OR_  _1197_ (
-    .A(_0478_),
-    .B(_0474_),
-    .Y(_0476_)
+  \$_OR_  _307_ (
+    .A(_093_),
+    .B(_090_),
+    .Y(_091_)
   );
   (* src = {0{1'b0}} *)
-  \$_XOR_  _1198_ (
-    .A(_0443_[9]),
-    .B(_0443_[8]),
-    .Y(_0448_)
+  \$_XOR_  _308_ (
+    .A(_080_[9]),
+    .B(_080_[8]),
+    .Y(_085_)
   );
   (* src = {0{1'b0}} *)
-  \$_XOR_  _1199_ (
-    .A(_0448_),
-    .B(_0421_[9]),
-    .Y(_0449_)
+  \$_XOR_  _309_ (
+    .A(_085_),
+    .B(_081_[9]),
+    .Y(_086_)
   );
   (* src = {0{1'b0}} *)
-  \$_OR_  _1200_ (
-    .A(_0449_),
-    .B(_0445_),
-    .Y(_0447_)
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:288.13-288.20" *)
-  \$_XOR_  _1201_ (
-    .A(_0423_[0]),
-    .B(_0426_[0]),
-    .Y(_0542_[0])
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:288.13-288.20" *)
-  \$_XOR_  _1202_ (
-    .A(_0423_[1]),
-    .B(_0426_[1]),
-    .Y(_0542_[1])
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:288.13-288.20" *)
-  \$_XOR_  _1203_ (
-    .A(_0423_[2]),
-    .B(_0426_[2]),
-    .Y(_0542_[2])
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:288.13-288.20" *)
-  \$_XOR_  _1204_ (
-    .A(_0423_[3]),
-    .B(_0426_[3]),
-    .Y(_0542_[3])
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:288.13-288.20" *)
-  \$_XOR_  _1205_ (
-    .A(_0423_[4]),
-    .B(_0426_[4]),
-    .Y(_0542_[4])
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:288.13-288.20" *)
-  \$_XOR_  _1206_ (
-    .A(_0423_[5]),
-    .B(_0426_[5]),
-    .Y(_0542_[5])
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:288.13-288.20" *)
-  \$_XOR_  _1207_ (
-    .A(_0423_[6]),
-    .B(_0426_[6]),
-    .Y(_0542_[6])
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:288.13-288.20" *)
-  \$_XOR_  _1208_ (
-    .A(_0423_[7]),
-    .B(_0426_[7]),
-    .Y(_0542_[7])
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:288.13-288.20" *)
-  \$_XOR_  _1209_ (
-    .A(_0423_[8]),
-    .B(_0426_[8]),
-    .Y(_0542_[8])
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:288.13-288.20" *)
-  \$_XOR_  _1210_ (
-    .A(_0423_[9]),
-    .B(_0426_[9]),
-    .Y(_0542_[9])
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:289.13-289.25" *)
-  \$_XOR_  _1211_ (
-    .A(_0442_[0]),
-    .B(1'h1),
-    .Y(_0543_[0])
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:289.13-289.25" *)
-  \$_XOR_  _1212_ (
-    .A(_0442_[1]),
-    .B(_0443_[0]),
-    .Y(_0543_[1])
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:289.13-289.25" *)
-  \$_XOR_  _1213_ (
-    .A(_0442_[2]),
-    .B(_0443_[1]),
-    .Y(_0543_[2])
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:289.13-289.25" *)
-  \$_XOR_  _1214_ (
-    .A(_0442_[3]),
-    .B(_0443_[2]),
-    .Y(_0543_[3])
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:289.13-289.25" *)
-  \$_XOR_  _1215_ (
-    .A(_0442_[4]),
-    .B(_0443_[3]),
-    .Y(_0543_[4])
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:289.13-289.25" *)
-  \$_XOR_  _1216_ (
-    .A(_0442_[5]),
-    .B(_0443_[4]),
-    .Y(_0543_[5])
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:289.13-289.25" *)
-  \$_XOR_  _1217_ (
-    .A(_0442_[6]),
-    .B(_0443_[5]),
-    .Y(_0543_[6])
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:289.13-289.25" *)
-  \$_XOR_  _1218_ (
-    .A(_0442_[7]),
-    .B(_0443_[6]),
-    .Y(_0543_[7])
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:289.13-289.25" *)
-  \$_XOR_  _1219_ (
-    .A(_0442_[8]),
-    .B(_0443_[7]),
-    .Y(_0543_[8])
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:289.13-289.25" *)
-  \$_XOR_  _1220_ (
-    .A(_0442_[9]),
-    .B(_0443_[8]),
-    .Y(_0543_[9])
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:289.13-289.25" *)
-  \$_XOR_  _1221_ (
-    .A(1'h0),
-    .B(_0443_[9]),
-    .Y(_0543_[10])
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.42-286.49" *)
-  \$_AND_  _1222_ (
-    .A(_0423_[0]),
-    .B(_0426_[0]),
-    .Y(_0539_[0])
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.42-286.49" *)
-  \$_AND_  _1223_ (
-    .A(_0423_[1]),
-    .B(_0426_[1]),
-    .Y(_0539_[1])
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.42-286.49" *)
-  \$_AND_  _1224_ (
-    .A(_0423_[2]),
-    .B(_0426_[2]),
-    .Y(_0539_[2])
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.42-286.49" *)
-  \$_AND_  _1225_ (
-    .A(_0423_[3]),
-    .B(_0426_[3]),
-    .Y(_0539_[3])
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.42-286.49" *)
-  \$_AND_  _1226_ (
-    .A(_0423_[4]),
-    .B(_0426_[4]),
-    .Y(_0539_[4])
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.42-286.49" *)
-  \$_AND_  _1227_ (
-    .A(_0423_[5]),
-    .B(_0426_[5]),
-    .Y(_0539_[5])
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.42-286.49" *)
-  \$_AND_  _1228_ (
-    .A(_0423_[6]),
-    .B(_0426_[6]),
-    .Y(_0539_[6])
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.42-286.49" *)
-  \$_AND_  _1229_ (
-    .A(_0423_[7]),
-    .B(_0426_[7]),
-    .Y(_0539_[7])
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.42-286.49" *)
-  \$_AND_  _1230_ (
-    .A(_0423_[8]),
-    .B(_0426_[8]),
-    .Y(_0539_[8])
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.42-286.49" *)
-  \$_AND_  _1231_ (
-    .A(_0423_[9]),
-    .B(_0426_[9]),
-    .Y(_0539_[9])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.42-286.49" *)
-  \$_AND_  _1232_ (
-    .A(_0452_[0]),
-    .B(_0455_[0]),
-    .Y(_0569_[0])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.42-286.49" *)
-  \$_AND_  _1233_ (
-    .A(_0452_[1]),
-    .B(_0455_[1]),
-    .Y(_0569_[1])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.42-286.49" *)
-  \$_AND_  _1234_ (
-    .A(_0452_[2]),
-    .B(_0455_[2]),
-    .Y(_0569_[2])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.42-286.49" *)
-  \$_AND_  _1235_ (
-    .A(_0452_[3]),
-    .B(_0455_[3]),
-    .Y(_0569_[3])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.42-286.49" *)
-  \$_AND_  _1236_ (
-    .A(_0452_[4]),
-    .B(_0455_[4]),
-    .Y(_0569_[4])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.42-286.49" *)
-  \$_AND_  _1237_ (
-    .A(_0452_[5]),
-    .B(_0455_[5]),
-    .Y(_0569_[5])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.42-286.49" *)
-  \$_AND_  _1238_ (
-    .A(_0452_[6]),
-    .B(_0455_[6]),
-    .Y(_0569_[6])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.42-286.49" *)
-  \$_AND_  _1239_ (
-    .A(_0452_[7]),
-    .B(_0455_[7]),
-    .Y(_0569_[7])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.42-286.49" *)
-  \$_AND_  _1240_ (
-    .A(_0452_[8]),
-    .B(_0455_[8]),
-    .Y(_0569_[8])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.42-286.49" *)
-  \$_AND_  _1241_ (
-    .A(_0452_[9]),
-    .B(_0455_[9]),
-    .Y(_0569_[9])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:288.13-288.20" *)
-  \$_XOR_  _1242_ (
-    .A(_0452_[0]),
-    .B(_0455_[0]),
-    .Y(_0572_[0])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:288.13-288.20" *)
-  \$_XOR_  _1243_ (
-    .A(_0452_[1]),
-    .B(_0455_[1]),
-    .Y(_0572_[1])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:288.13-288.20" *)
-  \$_XOR_  _1244_ (
-    .A(_0452_[2]),
-    .B(_0455_[2]),
-    .Y(_0572_[2])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:288.13-288.20" *)
-  \$_XOR_  _1245_ (
-    .A(_0452_[3]),
-    .B(_0455_[3]),
-    .Y(_0572_[3])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:288.13-288.20" *)
-  \$_XOR_  _1246_ (
-    .A(_0452_[4]),
-    .B(_0455_[4]),
-    .Y(_0572_[4])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:288.13-288.20" *)
-  \$_XOR_  _1247_ (
-    .A(_0452_[5]),
-    .B(_0455_[5]),
-    .Y(_0572_[5])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:288.13-288.20" *)
-  \$_XOR_  _1248_ (
-    .A(_0452_[6]),
-    .B(_0455_[6]),
-    .Y(_0572_[6])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:288.13-288.20" *)
-  \$_XOR_  _1249_ (
-    .A(_0452_[7]),
-    .B(_0455_[7]),
-    .Y(_0572_[7])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:288.13-288.20" *)
-  \$_XOR_  _1250_ (
-    .A(_0452_[8]),
-    .B(_0455_[8]),
-    .Y(_0572_[8])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:288.13-288.20" *)
-  \$_XOR_  _1251_ (
-    .A(_0452_[9]),
-    .B(_0455_[9]),
-    .Y(_0572_[9])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:289.13-289.25" *)
-  \$_XOR_  _1252_ (
-    .A(_0471_[0]),
-    .B(1'h1),
-    .Y(_0573_[0])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:289.13-289.25" *)
-  \$_XOR_  _1253_ (
-    .A(_0471_[1]),
-    .B(_0472_[0]),
-    .Y(_0573_[1])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:289.13-289.25" *)
-  \$_XOR_  _1254_ (
-    .A(_0471_[2]),
-    .B(_0472_[1]),
-    .Y(_0573_[2])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:289.13-289.25" *)
-  \$_XOR_  _1255_ (
-    .A(_0471_[3]),
-    .B(_0472_[2]),
-    .Y(_0573_[3])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:289.13-289.25" *)
-  \$_XOR_  _1256_ (
-    .A(_0471_[4]),
-    .B(_0472_[3]),
-    .Y(_0573_[4])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:289.13-289.25" *)
-  \$_XOR_  _1257_ (
-    .A(_0471_[5]),
-    .B(_0472_[4]),
-    .Y(_0573_[5])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:289.13-289.25" *)
-  \$_XOR_  _1258_ (
-    .A(_0471_[6]),
-    .B(_0472_[5]),
-    .Y(_0573_[6])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:289.13-289.25" *)
-  \$_XOR_  _1259_ (
-    .A(_0471_[7]),
-    .B(_0472_[6]),
-    .Y(_0573_[7])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:289.13-289.25" *)
-  \$_XOR_  _1260_ (
-    .A(_0471_[8]),
-    .B(_0472_[7]),
-    .Y(_0573_[8])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:289.13-289.25" *)
-  \$_XOR_  _1261_ (
-    .A(_0471_[9]),
-    .B(_0472_[8]),
-    .Y(_0573_[9])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:289.13-289.25" *)
-  \$_XOR_  _1262_ (
-    .A(1'h0),
-    .B(_0472_[9]),
-    .Y(_0573_[10])
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:289.13-289.25" *)
-  \$_XOR_  _1263_ (
-    .A(_0388_[0]),
-    .B(1'h1),
-    .Y(_0483_[0])
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:289.13-289.25" *)
-  \$_XOR_  _1264_ (
-    .A(_0388_[1]),
-    .B(_0389_[0]),
-    .Y(_0483_[1])
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:289.13-289.25" *)
-  \$_XOR_  _1265_ (
-    .A(_0388_[2]),
-    .B(_0389_[1]),
-    .Y(_0483_[2])
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:289.13-289.25" *)
-  \$_XOR_  _1266_ (
-    .A(_0388_[3]),
-    .B(_0389_[2]),
-    .Y(_0483_[3])
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:289.13-289.25" *)
-  \$_XOR_  _1267_ (
-    .A(_0388_[4]),
-    .B(_0389_[3]),
-    .Y(_0483_[4])
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:289.13-289.25" *)
-  \$_XOR_  _1268_ (
-    .A(_0388_[5]),
-    .B(_0389_[4]),
-    .Y(_0483_[5])
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:289.13-289.25" *)
-  \$_XOR_  _1269_ (
-    .A(_0388_[6]),
-    .B(_0389_[5]),
-    .Y(_0483_[6])
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:289.13-289.25" *)
-  \$_XOR_  _1270_ (
-    .A(_0388_[7]),
-    .B(_0389_[6]),
-    .Y(_0483_[7])
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:289.13-289.25" *)
-  \$_XOR_  _1271_ (
-    .A(_0388_[8]),
-    .B(_0389_[7]),
-    .Y(_0483_[8])
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:289.13-289.25" *)
-  \$_XOR_  _1272_ (
-    .A(_0388_[9]),
-    .B(_0389_[8]),
-    .Y(_0483_[9])
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:289.13-289.25" *)
-  \$_XOR_  _1273_ (
-    .A(1'h0),
-    .B(_0389_[9]),
-    .Y(_0483_[10])
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:288.13-288.20" *)
-  \$_XOR_  _1274_ (
-    .A(_0369_[0]),
-    .B(_0372_[0]),
-    .Y(_0482_[0])
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:288.13-288.20" *)
-  \$_XOR_  _1275_ (
-    .A(_0369_[1]),
-    .B(_0372_[1]),
-    .Y(_0482_[1])
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:288.13-288.20" *)
-  \$_XOR_  _1276_ (
-    .A(_0369_[2]),
-    .B(_0372_[2]),
-    .Y(_0482_[2])
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:288.13-288.20" *)
-  \$_XOR_  _1277_ (
-    .A(_0369_[3]),
-    .B(_0372_[3]),
-    .Y(_0482_[3])
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:288.13-288.20" *)
-  \$_XOR_  _1278_ (
-    .A(_0369_[4]),
-    .B(_0372_[4]),
-    .Y(_0482_[4])
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:288.13-288.20" *)
-  \$_XOR_  _1279_ (
-    .A(_0369_[5]),
-    .B(_0372_[5]),
-    .Y(_0482_[5])
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:288.13-288.20" *)
-  \$_XOR_  _1280_ (
-    .A(_0369_[6]),
-    .B(_0372_[6]),
-    .Y(_0482_[6])
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:288.13-288.20" *)
-  \$_XOR_  _1281_ (
-    .A(_0369_[7]),
-    .B(_0372_[7]),
-    .Y(_0482_[7])
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:288.13-288.20" *)
-  \$_XOR_  _1282_ (
-    .A(_0369_[8]),
-    .B(_0372_[8]),
-    .Y(_0482_[8])
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:288.13-288.20" *)
-  \$_XOR_  _1283_ (
-    .A(_0369_[9]),
-    .B(_0372_[9]),
-    .Y(_0482_[9])
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.42-286.49" *)
-  \$_AND_  _1284_ (
-    .A(_0369_[0]),
-    .B(_0372_[0]),
-    .Y(_0479_[0])
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.42-286.49" *)
-  \$_AND_  _1285_ (
-    .A(_0369_[1]),
-    .B(_0372_[1]),
-    .Y(_0479_[1])
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.42-286.49" *)
-  \$_AND_  _1286_ (
-    .A(_0369_[2]),
-    .B(_0372_[2]),
-    .Y(_0479_[2])
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.42-286.49" *)
-  \$_AND_  _1287_ (
-    .A(_0369_[3]),
-    .B(_0372_[3]),
-    .Y(_0479_[3])
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.42-286.49" *)
-  \$_AND_  _1288_ (
-    .A(_0369_[4]),
-    .B(_0372_[4]),
-    .Y(_0479_[4])
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.42-286.49" *)
-  \$_AND_  _1289_ (
-    .A(_0369_[5]),
-    .B(_0372_[5]),
-    .Y(_0479_[5])
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.42-286.49" *)
-  \$_AND_  _1290_ (
-    .A(_0369_[6]),
-    .B(_0372_[6]),
-    .Y(_0479_[6])
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.42-286.49" *)
-  \$_AND_  _1291_ (
-    .A(_0369_[7]),
-    .B(_0372_[7]),
-    .Y(_0479_[7])
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.42-286.49" *)
-  \$_AND_  _1292_ (
-    .A(_0369_[8]),
-    .B(_0372_[8]),
-    .Y(_0479_[8])
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.42-286.49" *)
-  \$_AND_  _1293_ (
-    .A(_0369_[9]),
-    .B(_0372_[9]),
-    .Y(_0479_[9])
+  \$_OR_  _310_ (
+    .A(_086_),
+    .B(_083_),
+    .Y(_084_)
   );
   (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:289.13-289.25" *)
-  \$_XOR_  _1294_ (
-    .A(_0415_[0]),
-    .B(1'h1),
-    .Y(_0513_[0])
+  \$_XOR_  _311_ (
+    .A(cnt[9]),
+    .B(_075_[8]),
+    .Y(_076_[9])
   );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:289.13-289.25" *)
-  \$_XOR_  _1295_ (
-    .A(_0415_[1]),
-    .B(_0416_[0]),
-    .Y(_0513_[1])
+  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:289.13-289.25" *)
+  \$_XOR_  _312_ (
+    .A(cnt[9]),
+    .B(_070_[8]),
+    .Y(_071_[9])
   );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:289.13-289.25" *)
-  \$_XOR_  _1296_ (
-    .A(_0415_[2]),
-    .B(_0416_[1]),
-    .Y(_0513_[2])
+  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:289.13-289.25" *)
+  \$_XOR_  _313_ (
+    .A(_069_[9]),
+    .B(_087_[8]),
+    .Y(_088_[9])
   );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:289.13-289.25" *)
-  \$_XOR_  _1297_ (
-    .A(_0415_[3]),
-    .B(_0416_[2]),
-    .Y(_0513_[3])
+  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:289.13-289.25" *)
+  \$_XOR_  _314_ (
+    .A(_069_[9]),
+    .B(_080_[8]),
+    .Y(_081_[9])
   );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:289.13-289.25" *)
-  \$_XOR_  _1298_ (
-    .A(_0415_[4]),
-    .B(_0416_[3]),
-    .Y(_0513_[4])
+  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)
+  \$_AND_  _315_ (
+    .A(_069_[8]),
+    .B(_080_[7]),
+    .Y(_080_[8])
   );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:289.13-289.25" *)
-  \$_XOR_  _1299_ (
-    .A(_0415_[5]),
-    .B(_0416_[4]),
-    .Y(_0513_[5])
+  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
+  \$_AND_  _316_ (
+    .A(_069_[1]),
+    .B(_069_[0]),
+    .Y(_075_[1])
   );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:289.13-289.25" *)
-  \$_XOR_  _1300_ (
-    .A(_0415_[6]),
-    .B(_0416_[5]),
-    .Y(_0513_[6])
+  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
+  \$_AND_  _317_ (
+    .A(cnt[3]),
+    .B(_069_[2]),
+    .Y(_100_)
   );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:289.13-289.25" *)
-  \$_XOR_  _1301_ (
-    .A(_0415_[7]),
-    .B(_0416_[6]),
-    .Y(_0513_[7])
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:289.13-289.25" *)
-  \$_XOR_  _1302_ (
-    .A(_0415_[8]),
-    .B(_0416_[7]),
-    .Y(_0513_[8])
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:289.13-289.25" *)
-  \$_XOR_  _1303_ (
-    .A(_0415_[9]),
-    .B(_0416_[8]),
-    .Y(_0513_[9])
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:289.13-289.25" *)
-  \$_XOR_  _1304_ (
-    .A(1'h0),
-    .B(_0416_[9]),
-    .Y(_0513_[10])
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.42-286.49" *)
-  \$_AND_  _1305_ (
-    .A(_0396_[0]),
-    .B(_0399_[0]),
-    .Y(_0509_[0])
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.42-286.49" *)
-  \$_AND_  _1306_ (
-    .A(_0396_[1]),
-    .B(_0399_[1]),
-    .Y(_0509_[1])
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.42-286.49" *)
-  \$_AND_  _1307_ (
-    .A(_0396_[2]),
-    .B(_0399_[2]),
-    .Y(_0509_[2])
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.42-286.49" *)
-  \$_AND_  _1308_ (
-    .A(_0396_[3]),
-    .B(_0399_[3]),
-    .Y(_0509_[3])
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.42-286.49" *)
-  \$_AND_  _1309_ (
-    .A(_0396_[4]),
-    .B(_0399_[4]),
-    .Y(_0509_[4])
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.42-286.49" *)
-  \$_AND_  _1310_ (
-    .A(_0396_[5]),
-    .B(_0399_[5]),
-    .Y(_0509_[5])
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.42-286.49" *)
-  \$_AND_  _1311_ (
-    .A(_0396_[6]),
-    .B(_0399_[6]),
-    .Y(_0509_[6])
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.42-286.49" *)
-  \$_AND_  _1312_ (
-    .A(_0396_[7]),
-    .B(_0399_[7]),
-    .Y(_0509_[7])
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.42-286.49" *)
-  \$_AND_  _1313_ (
-    .A(_0396_[8]),
-    .B(_0399_[8]),
-    .Y(_0509_[8])
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.42-286.49" *)
-  \$_AND_  _1314_ (
-    .A(_0396_[9]),
-    .B(_0399_[9]),
-    .Y(_0509_[9])
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:288.13-288.20" *)
-  \$_XOR_  _1315_ (
-    .A(_0396_[0]),
-    .B(_0399_[0]),
-    .Y(_0512_[0])
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:288.13-288.20" *)
-  \$_XOR_  _1316_ (
-    .A(_0396_[1]),
-    .B(_0399_[1]),
-    .Y(_0512_[1])
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:288.13-288.20" *)
-  \$_XOR_  _1317_ (
-    .A(_0396_[2]),
-    .B(_0399_[2]),
-    .Y(_0512_[2])
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:288.13-288.20" *)
-  \$_XOR_  _1318_ (
-    .A(_0396_[3]),
-    .B(_0399_[3]),
-    .Y(_0512_[3])
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:288.13-288.20" *)
-  \$_XOR_  _1319_ (
-    .A(_0396_[4]),
-    .B(_0399_[4]),
-    .Y(_0512_[4])
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:288.13-288.20" *)
-  \$_XOR_  _1320_ (
-    .A(_0396_[5]),
-    .B(_0399_[5]),
-    .Y(_0512_[5])
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:288.13-288.20" *)
-  \$_XOR_  _1321_ (
-    .A(_0396_[6]),
-    .B(_0399_[6]),
-    .Y(_0512_[6])
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:288.13-288.20" *)
-  \$_XOR_  _1322_ (
-    .A(_0396_[7]),
-    .B(_0399_[7]),
-    .Y(_0512_[7])
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:288.13-288.20" *)
-  \$_XOR_  _1323_ (
-    .A(_0396_[8]),
-    .B(_0399_[8]),
-    .Y(_0512_[8])
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:288.13-288.20" *)
-  \$_XOR_  _1324_ (
-    .A(_0396_[9]),
-    .B(_0399_[9]),
-    .Y(_0512_[9])
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.12-248.41" *)
-  \$_OR_  _1325_ (
-    .A(_0509_[8]),
-    .B(_0533_),
-    .Y(_0416_[8])
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.12-248.41" *)
-  \$_OR_  _1326_ (
-    .A(_0509_[6]),
-    .B(_0532_),
-    .Y(_0416_[6])
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.12-248.41" *)
-  \$_OR_  _1327_ (
-    .A(_0509_[4]),
-    .B(_0531_),
-    .Y(_0416_[4])
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.12-248.41" *)
-  \$_OR_  _1328_ (
-    .A(_0509_[2]),
-    .B(_0530_),
-    .Y(_0416_[2])
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.12-248.41" *)
-  \$_OR_  _1329_ (
-    .A(_0537_),
-    .B(_0529_),
-    .Y(_0416_[9])
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.12-248.41" *)
-  \$_OR_  _1330_ (
-    .A(_0535_),
-    .B(_0528_),
-    .Y(_0416_[5])
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)
-  \$_OR_  _1331_ (
-    .A(_0538_),
-    .B(_0522_),
-    .Y(_0416_[7])
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)
-  \$_OR_  _1332_ (
-    .A(_0536_),
-    .B(_0521_),
-    .Y(_0538_)
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)
-  \$_OR_  _1333_ (
-    .A(_0534_),
-    .B(_0520_),
-    .Y(_0416_[3])
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)
-  \$_OR_  _1334_ (
-    .A(_0509_[9]),
-    .B(_0519_),
-    .Y(_0537_)
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)
-  \$_OR_  _1335_ (
-    .A(_0509_[7]),
-    .B(_0518_),
-    .Y(_0536_)
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)
-  \$_OR_  _1336_ (
-    .A(_0509_[5]),
-    .B(_0517_),
-    .Y(_0535_)
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)
-  \$_OR_  _1337_ (
-    .A(_0509_[3]),
-    .B(_0516_),
-    .Y(_0534_)
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)
-  \$_OR_  _1338_ (
-    .A(_0509_[1]),
-    .B(_0515_),
-    .Y(_0416_[1])
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:231.10-231.28" *)
-  \$_OR_  _1339_ (
-    .A(_0509_[0]),
-    .B(_0514_),
-    .Y(_0416_[0])
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)
-  \$_AND_  _1340_ (
-    .A(_0415_[8]),
-    .B(_0416_[7]),
-    .Y(_0533_)
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)
-  \$_AND_  _1341_ (
-    .A(_0415_[6]),
-    .B(_0416_[5]),
-    .Y(_0532_)
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)
-  \$_AND_  _1342_ (
-    .A(_0415_[4]),
-    .B(_0416_[3]),
-    .Y(_0531_)
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)
-  \$_AND_  _1343_ (
-    .A(_0415_[2]),
-    .B(_0416_[1]),
-    .Y(_0530_)
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)
-  \$_AND_  _1344_ (
-    .A(_0526_),
-    .B(_0416_[7]),
-    .Y(_0529_)
-  );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)
-  \$_AND_  _1345_ (
-    .A(_0524_),
-    .B(_0416_[3]),
-    .Y(_0528_)
+  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
+  \$_AND_  _318_ (
+    .A(_056_[1]),
+    .B(_075_[3]),
+    .Y(_101_)
   );
   (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:241.12-241.34" *)
-  \$_AND_  _1346_ (
-    .A(_0525_),
-    .B(_0524_),
-    .Y(_0527_)
+  \$_AND_  _319_ (
+    .A(cnt[3]),
+    .B(cnt[2]),
+    .Y(_055_[1])
   );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:241.12-241.34" *)
-  \$_AND_  _1347_ (
-    .A(_0415_[9]),
-    .B(_0415_[8]),
-    .Y(_0526_)
+  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)
+  \$_AND_  _320_ (
+    .A(_055_[4]),
+    .B(_075_[7]),
+    .Y(_102_)
   );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:241.12-241.34" *)
-  \$_AND_  _1348_ (
-    .A(_0415_[7]),
-    .B(_0415_[6]),
-    .Y(_0525_)
+  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)
+  \$_AND_  _321_ (
+    .A(cnt[8]),
+    .B(_075_[7]),
+    .Y(_103_)
   );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:241.12-241.34" *)
-  \$_AND_  _1349_ (
-    .A(_0415_[5]),
-    .B(_0415_[4]),
-    .Y(_0524_)
+  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)
+  \$_OR_  _322_ (
+    .A(_069_[3]),
+    .B(_100_),
+    .Y(_104_)
   );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:241.12-241.34" *)
-  \$_AND_  _1350_ (
-    .A(_0415_[3]),
-    .B(_0415_[2]),
-    .Y(_0523_)
+  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)
+  \$_OR_  _323_ (
+    .A(_069_[9]),
+    .B(_094_),
+    .Y(_099_)
   );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
-  \$_AND_  _1351_ (
-    .A(_0527_),
-    .B(_0416_[3]),
-    .Y(_0522_)
+  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)
+  \$_OR_  _324_ (
+    .A(_104_),
+    .B(_056_[0]),
+    .Y(_075_[3])
   );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
-  \$_AND_  _1352_ (
-    .A(_0525_),
-    .B(_0535_),
-    .Y(_0521_)
+  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)
+  \$_OR_  _325_ (
+    .A(_095_),
+    .B(_101_),
+    .Y(_075_[7])
   );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
-  \$_AND_  _1353_ (
-    .A(_0523_),
-    .B(_0416_[1]),
-    .Y(_0520_)
+  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.12-248.41" *)
+  \$_OR_  _326_ (
+    .A(_099_),
+    .B(_102_),
+    .Y(_075_[9])
   );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
-  \$_AND_  _1354_ (
-    .A(_0415_[9]),
-    .B(_0509_[8]),
-    .Y(_0519_)
+  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)
+  \$_OR_  _327_ (
+    .A(_069_[1]),
+    .B(_064_[0]),
+    .Y(_080_[1])
   );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
-  \$_AND_  _1355_ (
-    .A(_0415_[7]),
-    .B(_0509_[6]),
-    .Y(_0518_)
+  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
+  \$_AND_  _328_ (
+    .A(_062_[1]),
+    .B(_080_[3]),
+    .Y(_108_)
   );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
-  \$_AND_  _1356_ (
-    .A(_0415_[5]),
-    .B(_0509_[4]),
-    .Y(_0517_)
+  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.12-248.41" *)
+  \$_OR_  _329_ (
+    .A(_069_[8]),
+    .B(_103_),
+    .Y(_075_[8])
   );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
-  \$_AND_  _1357_ (
-    .A(_0415_[3]),
-    .B(_0509_[2]),
-    .Y(_0516_)
+  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
+  \$_AND_  _330_ (
+    .A(_070_[3]),
+    .B(_069_[1]),
+    .Y(_087_[3])
   );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
-  \$_AND_  _1358_ (
-    .A(_0415_[1]),
-    .B(_0416_[0]),
-    .Y(_0515_)
+  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
+  \$_AND_  _331_ (
+    .A(_061_[3]),
+    .B(_069_[5]),
+    .Y(_107_)
   );
-  (* src = "counter.v:26.26-26.42|counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:231.18-231.27" *)
-  \$_AND_  _1359_ (
-    .A(_0415_[0]),
-    .B(1'h1),
-    .Y(_0514_)
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.12-248.41" *)
-  \$_OR_  _1360_ (
-    .A(_0479_[8]),
-    .B(_0503_),
-    .Y(_0389_[8])
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.12-248.41" *)
-  \$_OR_  _1361_ (
-    .A(_0479_[6]),
-    .B(_0502_),
-    .Y(_0389_[6])
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.12-248.41" *)
-  \$_OR_  _1362_ (
-    .A(_0479_[4]),
-    .B(_0501_),
-    .Y(_0389_[4])
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.12-248.41" *)
-  \$_OR_  _1363_ (
-    .A(_0479_[2]),
-    .B(_0500_),
-    .Y(_0389_[2])
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.12-248.41" *)
-  \$_OR_  _1364_ (
-    .A(_0507_),
-    .B(_0499_),
-    .Y(_0389_[9])
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.12-248.41" *)
-  \$_OR_  _1365_ (
-    .A(_0505_),
-    .B(_0498_),
-    .Y(_0389_[5])
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)
-  \$_OR_  _1366_ (
-    .A(_0508_),
-    .B(_0492_),
-    .Y(_0389_[7])
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)
-  \$_OR_  _1367_ (
-    .A(_0506_),
-    .B(_0491_),
-    .Y(_0508_)
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)
-  \$_OR_  _1368_ (
-    .A(_0504_),
-    .B(_0490_),
-    .Y(_0389_[3])
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)
-  \$_OR_  _1369_ (
-    .A(_0479_[9]),
-    .B(_0489_),
-    .Y(_0507_)
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)
-  \$_OR_  _1370_ (
-    .A(_0479_[7]),
-    .B(_0488_),
-    .Y(_0506_)
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)
-  \$_OR_  _1371_ (
-    .A(_0479_[5]),
-    .B(_0487_),
-    .Y(_0505_)
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)
-  \$_OR_  _1372_ (
-    .A(_0479_[3]),
-    .B(_0486_),
-    .Y(_0504_)
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)
-  \$_OR_  _1373_ (
-    .A(_0479_[1]),
-    .B(_0485_),
-    .Y(_0389_[1])
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:231.10-231.28" *)
-  \$_OR_  _1374_ (
-    .A(_0479_[0]),
-    .B(_0484_),
-    .Y(_0389_[0])
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)
-  \$_AND_  _1375_ (
-    .A(_0388_[8]),
-    .B(_0389_[7]),
-    .Y(_0503_)
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)
-  \$_AND_  _1376_ (
-    .A(_0388_[6]),
-    .B(_0389_[5]),
-    .Y(_0502_)
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)
-  \$_AND_  _1377_ (
-    .A(_0388_[4]),
-    .B(_0389_[3]),
-    .Y(_0501_)
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)
-  \$_AND_  _1378_ (
-    .A(_0388_[2]),
-    .B(_0389_[1]),
-    .Y(_0500_)
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)
-  \$_AND_  _1379_ (
-    .A(_0496_),
-    .B(_0389_[7]),
-    .Y(_0499_)
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)
-  \$_AND_  _1380_ (
-    .A(_0494_),
-    .B(_0389_[3]),
-    .Y(_0498_)
+  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
+  \$_AND_  _332_ (
+    .A(_064_[1]),
+    .B(_080_[1]),
+    .Y(_106_)
   );
   (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:241.12-241.34" *)
-  \$_AND_  _1381_ (
-    .A(_0495_),
-    .B(_0494_),
-    .Y(_0497_)
+  \$_AND_  _333_ (
+    .A(cnt[9]),
+    .B(cnt[8]),
+    .Y(_055_[4])
+  );
+  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)
+  \$_OR_  _334_ (
+    .A(_069_[7]),
+    .B(_105_),
+    .Y(_109_)
+  );
+  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
+  \$_AND_  _335_ (
+    .A(cnt[7]),
+    .B(_069_[6]),
+    .Y(_105_)
+  );
+  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)
+  \$_OR_  _336_ (
+    .A(_070_[3]),
+    .B(_106_),
+    .Y(_080_[3])
+  );
+  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)
+  \$_OR_  _337_ (
+    .A(_110_),
+    .B(_108_),
+    .Y(_080_[7])
+  );
+  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
+  \$_AND_  _338_ (
+    .A(_062_[1]),
+    .B(_087_[3]),
+    .Y(_111_)
+  );
+  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)
+  \$_AND_  _339_ (
+    .A(_061_[4]),
+    .B(_087_[7]),
+    .Y(_087_[9])
+  );
+  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
+  \$_AND_  _340_ (
+    .A(cnt[9]),
+    .B(_069_[8]),
+    .Y(_094_)
+  );
+  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
+  \$_AND_  _341_ (
+    .A(_055_[3]),
+    .B(_069_[5]),
+    .Y(_095_)
+  );
+  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
+  \$_AND_  _342_ (
+    .A(_056_[1]),
+    .B(_070_[3]),
+    .Y(_096_)
   );
   (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:241.12-241.34" *)
-  \$_AND_  _1382_ (
-    .A(_0388_[9]),
-    .B(_0388_[8]),
-    .Y(_0496_)
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:241.12-241.34" *)
-  \$_AND_  _1383_ (
-    .A(_0388_[7]),
-    .B(_0388_[6]),
-    .Y(_0495_)
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:241.12-241.34" *)
-  \$_AND_  _1384_ (
-    .A(_0388_[5]),
-    .B(_0388_[4]),
-    .Y(_0494_)
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:241.12-241.34" *)
-  \$_AND_  _1385_ (
-    .A(_0388_[3]),
-    .B(_0388_[2]),
-    .Y(_0493_)
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
-  \$_AND_  _1386_ (
-    .A(_0497_),
-    .B(_0389_[3]),
-    .Y(_0492_)
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
-  \$_AND_  _1387_ (
-    .A(_0495_),
-    .B(_0505_),
-    .Y(_0491_)
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
-  \$_AND_  _1388_ (
-    .A(_0493_),
-    .B(_0389_[1]),
-    .Y(_0490_)
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
-  \$_AND_  _1389_ (
-    .A(_0388_[9]),
-    .B(_0479_[8]),
-    .Y(_0489_)
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
-  \$_AND_  _1390_ (
-    .A(_0388_[7]),
-    .B(_0479_[6]),
-    .Y(_0488_)
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
-  \$_AND_  _1391_ (
-    .A(_0388_[5]),
-    .B(_0479_[4]),
-    .Y(_0487_)
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
-  \$_AND_  _1392_ (
-    .A(_0388_[3]),
-    .B(_0479_[2]),
-    .Y(_0486_)
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
-  \$_AND_  _1393_ (
-    .A(_0388_[1]),
-    .B(_0389_[0]),
-    .Y(_0485_)
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:231.18-231.27" *)
-  \$_AND_  _1394_ (
-    .A(_0388_[0]),
-    .B(1'h1),
-    .Y(_0484_)
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.12-248.41" *)
-  \$_OR_  _1395_ (
-    .A(_0569_[8]),
-    .B(_0593_),
-    .Y(_0472_[8])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.12-248.41" *)
-  \$_OR_  _1396_ (
-    .A(_0569_[6]),
-    .B(_0592_),
-    .Y(_0472_[6])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.12-248.41" *)
-  \$_OR_  _1397_ (
-    .A(_0569_[4]),
-    .B(_0591_),
-    .Y(_0472_[4])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.12-248.41" *)
-  \$_OR_  _1398_ (
-    .A(_0569_[2]),
-    .B(_0590_),
-    .Y(_0472_[2])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.12-248.41" *)
-  \$_OR_  _1399_ (
-    .A(_0597_),
-    .B(_0589_),
-    .Y(_0472_[9])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.12-248.41" *)
-  \$_OR_  _1400_ (
-    .A(_0595_),
-    .B(_0588_),
-    .Y(_0472_[5])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)
-  \$_OR_  _1401_ (
-    .A(_0598_),
-    .B(_0582_),
-    .Y(_0472_[7])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)
-  \$_OR_  _1402_ (
-    .A(_0596_),
-    .B(_0581_),
-    .Y(_0598_)
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)
-  \$_OR_  _1403_ (
-    .A(_0594_),
-    .B(_0580_),
-    .Y(_0472_[3])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)
-  \$_OR_  _1404_ (
-    .A(_0569_[9]),
-    .B(_0579_),
-    .Y(_0597_)
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)
-  \$_OR_  _1405_ (
-    .A(_0569_[7]),
-    .B(_0578_),
-    .Y(_0596_)
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)
-  \$_OR_  _1406_ (
-    .A(_0569_[5]),
-    .B(_0577_),
-    .Y(_0595_)
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)
-  \$_OR_  _1407_ (
-    .A(_0569_[3]),
-    .B(_0576_),
-    .Y(_0594_)
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)
-  \$_OR_  _1408_ (
-    .A(_0569_[1]),
-    .B(_0575_),
-    .Y(_0472_[1])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:231.10-231.28" *)
-  \$_OR_  _1409_ (
-    .A(_0569_[0]),
-    .B(_0574_),
-    .Y(_0472_[0])
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)
-  \$_AND_  _1410_ (
-    .A(_0471_[8]),
-    .B(_0472_[7]),
-    .Y(_0593_)
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)
-  \$_AND_  _1411_ (
-    .A(_0471_[6]),
-    .B(_0472_[5]),
-    .Y(_0592_)
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)
-  \$_AND_  _1412_ (
-    .A(_0471_[4]),
-    .B(_0472_[3]),
-    .Y(_0591_)
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)
-  \$_AND_  _1413_ (
-    .A(_0471_[2]),
-    .B(_0472_[1]),
-    .Y(_0590_)
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)
-  \$_AND_  _1414_ (
-    .A(_0586_),
-    .B(_0472_[7]),
-    .Y(_0589_)
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)
-  \$_AND_  _1415_ (
-    .A(_0584_),
-    .B(_0472_[3]),
-    .Y(_0588_)
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:241.12-241.34" *)
-  \$_AND_  _1416_ (
-    .A(_0585_),
-    .B(_0584_),
-    .Y(_0587_)
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:241.12-241.34" *)
-  \$_AND_  _1417_ (
-    .A(_0471_[9]),
-    .B(_0471_[8]),
-    .Y(_0586_)
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:241.12-241.34" *)
-  \$_AND_  _1418_ (
-    .A(_0471_[7]),
-    .B(_0471_[6]),
-    .Y(_0585_)
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:241.12-241.34" *)
-  \$_AND_  _1419_ (
-    .A(_0471_[5]),
-    .B(_0471_[4]),
-    .Y(_0584_)
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:241.12-241.34" *)
-  \$_AND_  _1420_ (
-    .A(_0471_[3]),
-    .B(_0471_[2]),
-    .Y(_0583_)
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
-  \$_AND_  _1421_ (
-    .A(_0587_),
-    .B(_0472_[3]),
-    .Y(_0582_)
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
-  \$_AND_  _1422_ (
-    .A(_0585_),
-    .B(_0595_),
-    .Y(_0581_)
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
-  \$_AND_  _1423_ (
-    .A(_0583_),
-    .B(_0472_[1]),
-    .Y(_0580_)
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
-  \$_AND_  _1424_ (
-    .A(_0471_[9]),
-    .B(_0569_[8]),
-    .Y(_0579_)
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
-  \$_AND_  _1425_ (
-    .A(_0471_[7]),
-    .B(_0569_[6]),
-    .Y(_0578_)
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
-  \$_AND_  _1426_ (
-    .A(_0471_[5]),
-    .B(_0569_[4]),
-    .Y(_0577_)
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
-  \$_AND_  _1427_ (
-    .A(_0471_[3]),
-    .B(_0569_[2]),
-    .Y(_0576_)
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
-  \$_AND_  _1428_ (
-    .A(_0471_[1]),
-    .B(_0472_[0]),
-    .Y(_0575_)
-  );
-  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:231.18-231.27" *)
-  \$_AND_  _1429_ (
-    .A(_0471_[0]),
-    .B(1'h1),
-    .Y(_0574_)
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.12-248.41" *)
-  \$_OR_  _1430_ (
-    .A(_0539_[8]),
-    .B(_0563_),
-    .Y(_0443_[8])
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.12-248.41" *)
-  \$_OR_  _1431_ (
-    .A(_0539_[6]),
-    .B(_0562_),
-    .Y(_0443_[6])
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.12-248.41" *)
-  \$_OR_  _1432_ (
-    .A(_0539_[4]),
-    .B(_0561_),
-    .Y(_0443_[4])
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.12-248.41" *)
-  \$_OR_  _1433_ (
-    .A(_0539_[2]),
-    .B(_0560_),
-    .Y(_0443_[2])
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.12-248.41" *)
-  \$_OR_  _1434_ (
-    .A(_0567_),
-    .B(_0559_),
-    .Y(_0443_[9])
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.12-248.41" *)
-  \$_OR_  _1435_ (
-    .A(_0565_),
-    .B(_0558_),
-    .Y(_0443_[5])
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)
-  \$_OR_  _1436_ (
-    .A(_0568_),
-    .B(_0552_),
-    .Y(_0443_[7])
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)
-  \$_OR_  _1437_ (
-    .A(_0566_),
-    .B(_0551_),
-    .Y(_0568_)
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)
-  \$_OR_  _1438_ (
-    .A(_0564_),
-    .B(_0550_),
-    .Y(_0443_[3])
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)
-  \$_OR_  _1439_ (
-    .A(_0539_[9]),
-    .B(_0549_),
-    .Y(_0567_)
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)
-  \$_OR_  _1440_ (
-    .A(_0539_[7]),
-    .B(_0548_),
-    .Y(_0566_)
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)
-  \$_OR_  _1441_ (
-    .A(_0539_[5]),
-    .B(_0547_),
-    .Y(_0565_)
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)
-  \$_OR_  _1442_ (
-    .A(_0539_[3]),
-    .B(_0546_),
-    .Y(_0564_)
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)
-  \$_OR_  _1443_ (
-    .A(_0539_[1]),
-    .B(_0545_),
-    .Y(_0443_[1])
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:231.10-231.28" *)
-  \$_OR_  _1444_ (
-    .A(_0539_[0]),
-    .B(_0544_),
-    .Y(_0443_[0])
+  \$_AND_  _343_ (
+    .A(_069_[7]),
+    .B(_069_[6]),
+    .Y(_055_[3])
   );
   (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)
-  \$_AND_  _1445_ (
-    .A(_0442_[8]),
-    .B(_0443_[7]),
-    .Y(_0563_)
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)
-  \$_AND_  _1446_ (
-    .A(_0442_[6]),
-    .B(_0443_[5]),
-    .Y(_0562_)
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)
-  \$_AND_  _1447_ (
-    .A(_0442_[4]),
-    .B(_0443_[3]),
-    .Y(_0561_)
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)
-  \$_AND_  _1448_ (
-    .A(_0442_[2]),
-    .B(_0443_[1]),
-    .Y(_0560_)
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)
-  \$_AND_  _1449_ (
-    .A(_0556_),
-    .B(_0443_[7]),
-    .Y(_0559_)
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)
-  \$_AND_  _1450_ (
-    .A(_0554_),
-    .B(_0443_[3]),
-    .Y(_0558_)
+  \$_AND_  _344_ (
+    .A(_061_[4]),
+    .B(_080_[7]),
+    .Y(_080_[9])
   );
   (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:241.12-241.34" *)
-  \$_AND_  _1451_ (
-    .A(_0555_),
-    .B(_0554_),
-    .Y(_0557_)
+  \$_AND_  _345_ (
+    .A(cnt[5]),
+    .B(_069_[4]),
+    .Y(_055_[2])
+  );
+  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)
+  \$_AND_  _346_ (
+    .A(_069_[8]),
+    .B(_087_[7]),
+    .Y(_087_[8])
   );
   (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:241.12-241.34" *)
-  \$_AND_  _1452_ (
-    .A(_0442_[9]),
-    .B(_0442_[8]),
-    .Y(_0556_)
+  \$_AND_  _347_ (
+    .A(_069_[3]),
+    .B(cnt[2]),
+    .Y(_064_[1])
   );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:241.12-241.34" *)
-  \$_AND_  _1453_ (
-    .A(_0442_[7]),
-    .B(_0442_[6]),
-    .Y(_0555_)
+  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:241.12-241.34" *)
+  \$_AND_  _348_ (
+    .A(_061_[3]),
+    .B(_055_[2]),
+    .Y(_062_[1])
   );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:241.12-241.34" *)
-  \$_AND_  _1454_ (
-    .A(_0442_[5]),
-    .B(_0442_[4]),
-    .Y(_0554_)
+  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:241.12-241.34" *)
+  \$_AND_  _349_ (
+    .A(_069_[9]),
+    .B(_069_[8]),
+    .Y(_061_[4])
   );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:241.12-241.34" *)
-  \$_AND_  _1455_ (
-    .A(_0442_[3]),
-    .B(_0442_[2]),
-    .Y(_0553_)
+  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:241.12-241.34" *)
+  \$_AND_  _350_ (
+    .A(cnt[7]),
+    .B(cnt[6]),
+    .Y(_061_[3])
   );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
-  \$_AND_  _1456_ (
-    .A(_0557_),
-    .B(_0443_[3]),
-    .Y(_0552_)
+  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)
+  \$_AND_  _351_ (
+    .A(_055_[4]),
+    .B(_070_[7]),
+    .Y(_097_)
   );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
-  \$_AND_  _1457_ (
-    .A(_0555_),
-    .B(_0565_),
-    .Y(_0551_)
+  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)
+  \$_AND_  _352_ (
+    .A(cnt[8]),
+    .B(_070_[7]),
+    .Y(_098_)
   );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
-  \$_AND_  _1458_ (
-    .A(_0553_),
-    .B(_0443_[1]),
-    .Y(_0550_)
+  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)
+  \$_OR_  _353_ (
+    .A(_095_),
+    .B(_096_),
+    .Y(_070_[7])
   );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
-  \$_AND_  _1459_ (
-    .A(_0442_[9]),
-    .B(_0539_[8]),
-    .Y(_0549_)
+  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.12-248.41" *)
+  \$_OR_  _354_ (
+    .A(_099_),
+    .B(_097_),
+    .Y(_070_[9])
   );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
-  \$_AND_  _1460_ (
-    .A(_0442_[7]),
-    .B(_0539_[6]),
-    .Y(_0548_)
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
-  \$_AND_  _1461_ (
-    .A(_0442_[5]),
-    .B(_0539_[4]),
-    .Y(_0547_)
+  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.12-248.41" *)
+  \$_OR_  _355_ (
+    .A(_069_[8]),
+    .B(_098_),
+    .Y(_070_[8])
   );
   (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
-  \$_AND_  _1462_ (
-    .A(_0442_[3]),
-    .B(_0539_[2]),
-    .Y(_0546_)
+  \$_AND_  _356_ (
+    .A(_069_[3]),
+    .B(_069_[2]),
+    .Y(_070_[3])
+  );
+  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)
+  \$_OR_  _357_ (
+    .A(_109_),
+    .B(_107_),
+    .Y(_110_)
+  );
+  (* src = "counter.v:17.26-17.41|counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)
+  \$_OR_  _358_ (
+    .A(_110_),
+    .B(_111_),
+    .Y(_087_[7])
   );
   (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
-  \$_AND_  _1463_ (
-    .A(_0442_[1]),
-    .B(_0443_[0]),
-    .Y(_0545_)
+  \$_AND_  _359_ (
+    .A(cnt[1]),
+    .B(_069_[0]),
+    .Y(_064_[0])
   );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:231.18-231.27" *)
-  \$_AND_  _1464_ (
-    .A(_0442_[0]),
-    .B(1'h1),
-    .Y(_0544_)
-  );
-  assign _0002_ = 10'h3ce;
-  assign _0001_ = _0003_;
-  assign _0263_ = rst;
-  assign _0000_ = _0262_;
-  assign _0265_ = _0251_;
-  assign _0267_ = _0261_;
-  assign _0269_ = mode;
-  assign _0009_ = _0268_;
-  assign _0271_ = _0247_;
-  assign _0273_ = _0261_;
-  assign _0275_ = mode;
-  assign _0008_ = _0274_;
-  assign _0277_ = _0261_;
-  assign _0279_ = mode;
-  assign _0007_ = _0278_;
-  assign _0281_ = _0259_;
-  assign _0283_ = _0260_;
-  assign _0285_ = mode;
-  assign _0006_ = _0284_;
-  assign _0287_ = _0255_;
-  assign _0289_ = _0260_;
-  assign _0291_ = mode;
-  assign _0005_ = _0290_;
-  assign _0293_ = _0260_;
-  assign _0295_ = mode;
-  assign _0004_ = _0294_;
-  assign _0297_ = mode;
-  assign _0003_ = _0296_;
-  assign summand = _0296_;
-  assign _0013_ = _0298_;
-  assign _0014_ = _0365_;
-  assign _0082_[0] = _0014_[0];
-  assign _0015_[10] = _0012_[10];
-  assign _0082_[9:1] = _0366_;
-  assign _0012_[0] = _0354_;
-  assign _0012_[1] = _0355_;
-  assign _0028_ = _0299_;
-  assign _0029_ = _0013_[0];
-  assign _0012_[2] = _0356_;
-  assign _0030_[0] = _0300_;
-  assign _0031_[0] = _0013_[0];
-  assign _0031_[1] = _0014_[1];
-  assign _0030_[1] = _0301_;
-  assign _0032_ = _0013_[1];
-  assign _0012_[3] = _0357_;
-  assign _0033_[0] = _0302_;
-  assign _0034_[0] = _0013_[0];
-  assign _0034_[1] = _0014_[1];
-  assign _0034_[2] = _0014_[2];
-  assign _0033_[1] = _0303_;
-  assign _0035_[1] = _0013_[1];
-  assign _0035_[2] = _0014_[2];
-  assign _0033_[2] = _0304_;
-  assign _0036_ = _0013_[2];
-  assign _0012_[4] = _0358_;
-  assign _0037_[0] = _0305_;
-  assign _0038_[0] = _0013_[0];
-  assign _0038_[1] = _0014_[1];
-  assign _0038_[2] = _0014_[2];
-  assign _0038_[3] = _0014_[3];
-  assign _0037_[1] = _0306_;
-  assign _0039_[1] = _0013_[1];
-  assign _0039_[2] = _0014_[2];
-  assign _0039_[3] = _0014_[3];
-  assign _0037_[2] = _0307_;
-  assign _0040_[2] = _0013_[2];
-  assign _0040_[3] = _0014_[3];
-  assign _0037_[3] = _0308_;
-  assign _0041_ = _0013_[3];
-  assign _0012_[5] = _0359_;
-  assign _0042_[0] = _0309_;
-  assign _0043_[0] = _0013_[0];
-  assign _0043_[1] = _0014_[1];
-  assign _0043_[2] = _0014_[2];
-  assign _0043_[3] = _0014_[3];
-  assign _0043_[4] = _0014_[4];
-  assign _0042_[1] = _0310_;
-  assign _0044_[1] = _0013_[1];
-  assign _0044_[2] = _0014_[2];
-  assign _0044_[3] = _0014_[3];
-  assign _0044_[4] = _0014_[4];
-  assign _0042_[2] = _0311_;
-  assign _0045_[2] = _0013_[2];
-  assign _0045_[3] = _0014_[3];
-  assign _0045_[4] = _0014_[4];
-  assign _0042_[3] = _0312_;
-  assign _0046_[3] = _0013_[3];
-  assign _0046_[4] = _0014_[4];
-  assign _0042_[4] = _0313_;
-  assign _0047_ = _0013_[4];
-  assign _0012_[6] = _0360_;
-  assign _0048_[0] = _0314_;
-  assign _0049_[0] = _0013_[0];
-  assign _0049_[1] = _0014_[1];
-  assign _0049_[2] = _0014_[2];
-  assign _0049_[3] = _0014_[3];
-  assign _0049_[4] = _0014_[4];
-  assign _0049_[5] = _0014_[5];
-  assign _0048_[1] = _0315_;
-  assign _0050_[1] = _0013_[1];
-  assign _0050_[2] = _0014_[2];
-  assign _0050_[3] = _0014_[3];
-  assign _0050_[4] = _0014_[4];
-  assign _0050_[5] = _0014_[5];
-  assign _0048_[2] = _0316_;
-  assign _0051_[2] = _0013_[2];
-  assign _0051_[3] = _0014_[3];
-  assign _0051_[4] = _0014_[4];
-  assign _0051_[5] = _0014_[5];
-  assign _0048_[3] = _0317_;
-  assign _0052_[3] = _0013_[3];
-  assign _0052_[4] = _0014_[4];
-  assign _0052_[5] = _0014_[5];
-  assign _0048_[4] = _0318_;
-  assign _0053_[4] = _0013_[4];
-  assign _0053_[5] = _0014_[5];
-  assign _0048_[5] = _0319_;
-  assign _0054_ = _0013_[5];
-  assign _0012_[7] = _0361_;
-  assign _0055_[0] = _0320_;
-  assign _0056_[0] = _0013_[0];
-  assign _0056_[1] = _0014_[1];
-  assign _0056_[2] = _0014_[2];
-  assign _0056_[3] = _0014_[3];
-  assign _0056_[4] = _0014_[4];
-  assign _0056_[5] = _0014_[5];
-  assign _0056_[6] = _0014_[6];
-  assign _0055_[1] = _0321_;
-  assign _0057_[1] = _0013_[1];
-  assign _0057_[2] = _0014_[2];
-  assign _0057_[3] = _0014_[3];
-  assign _0057_[4] = _0014_[4];
-  assign _0057_[5] = _0014_[5];
-  assign _0057_[6] = _0014_[6];
-  assign _0055_[2] = _0322_;
-  assign _0058_[2] = _0013_[2];
-  assign _0058_[3] = _0014_[3];
-  assign _0058_[4] = _0014_[4];
-  assign _0058_[5] = _0014_[5];
-  assign _0058_[6] = _0014_[6];
-  assign _0055_[3] = _0323_;
-  assign _0059_[3] = _0013_[3];
-  assign _0059_[4] = _0014_[4];
-  assign _0059_[5] = _0014_[5];
-  assign _0059_[6] = _0014_[6];
-  assign _0055_[4] = _0324_;
-  assign _0060_[4] = _0013_[4];
-  assign _0060_[5] = _0014_[5];
-  assign _0060_[6] = _0014_[6];
-  assign _0055_[5] = _0325_;
-  assign _0061_[5] = _0013_[5];
-  assign _0061_[6] = _0014_[6];
-  assign _0055_[6] = _0326_;
-  assign _0062_ = _0013_[6];
-  assign _0012_[8] = _0362_;
-  assign _0063_[0] = _0327_;
-  assign _0064_[0] = _0013_[0];
-  assign _0064_[1] = _0014_[1];
-  assign _0064_[2] = _0014_[2];
-  assign _0064_[3] = _0014_[3];
-  assign _0064_[4] = _0014_[4];
-  assign _0064_[5] = _0014_[5];
-  assign _0064_[6] = _0014_[6];
-  assign _0064_[7] = _0014_[7];
-  assign _0063_[1] = _0328_;
-  assign _0065_[1] = _0013_[1];
-  assign _0065_[2] = _0014_[2];
-  assign _0065_[3] = _0014_[3];
-  assign _0065_[4] = _0014_[4];
-  assign _0065_[5] = _0014_[5];
-  assign _0065_[6] = _0014_[6];
-  assign _0065_[7] = _0014_[7];
-  assign _0063_[2] = _0329_;
-  assign _0066_[2] = _0013_[2];
-  assign _0066_[3] = _0014_[3];
-  assign _0066_[4] = _0014_[4];
-  assign _0066_[5] = _0014_[5];
-  assign _0066_[6] = _0014_[6];
-  assign _0066_[7] = _0014_[7];
-  assign _0063_[3] = _0330_;
-  assign _0067_[3] = _0013_[3];
-  assign _0067_[4] = _0014_[4];
-  assign _0067_[5] = _0014_[5];
-  assign _0067_[6] = _0014_[6];
-  assign _0067_[7] = _0014_[7];
-  assign _0063_[4] = _0331_;
-  assign _0068_[4] = _0013_[4];
-  assign _0068_[5] = _0014_[5];
-  assign _0068_[6] = _0014_[6];
-  assign _0068_[7] = _0014_[7];
-  assign _0063_[5] = _0332_;
-  assign _0069_[5] = _0013_[5];
-  assign _0069_[6] = _0014_[6];
-  assign _0069_[7] = _0014_[7];
-  assign _0063_[6] = _0333_;
-  assign _0070_[6] = _0013_[6];
-  assign _0070_[7] = _0014_[7];
-  assign _0063_[7] = _0334_;
-  assign _0071_ = _0013_[7];
-  assign _0012_[9] = _0363_;
-  assign _0072_[0] = _0335_;
-  assign _0073_[0] = _0013_[0];
-  assign _0073_[1] = _0014_[1];
-  assign _0073_[2] = _0014_[2];
-  assign _0073_[3] = _0014_[3];
-  assign _0073_[4] = _0014_[4];
-  assign _0073_[5] = _0014_[5];
-  assign _0073_[6] = _0014_[6];
-  assign _0073_[7] = _0014_[7];
-  assign _0073_[8] = _0014_[8];
-  assign _0072_[1] = _0336_;
-  assign _0074_[1] = _0013_[1];
-  assign _0074_[2] = _0014_[2];
-  assign _0074_[3] = _0014_[3];
-  assign _0074_[4] = _0014_[4];
-  assign _0074_[5] = _0014_[5];
-  assign _0074_[6] = _0014_[6];
-  assign _0074_[7] = _0014_[7];
-  assign _0074_[8] = _0014_[8];
-  assign _0072_[2] = _0337_;
-  assign _0075_[2] = _0013_[2];
-  assign _0075_[3] = _0014_[3];
-  assign _0075_[4] = _0014_[4];
-  assign _0075_[5] = _0014_[5];
-  assign _0075_[6] = _0014_[6];
-  assign _0075_[7] = _0014_[7];
-  assign _0075_[8] = _0014_[8];
-  assign _0072_[3] = _0338_;
-  assign _0076_[3] = _0013_[3];
-  assign _0076_[4] = _0014_[4];
-  assign _0076_[5] = _0014_[5];
-  assign _0076_[6] = _0014_[6];
-  assign _0076_[7] = _0014_[7];
-  assign _0076_[8] = _0014_[8];
-  assign _0072_[4] = _0339_;
-  assign _0077_[4] = _0013_[4];
-  assign _0077_[5] = _0014_[5];
-  assign _0077_[6] = _0014_[6];
-  assign _0077_[7] = _0014_[7];
-  assign _0077_[8] = _0014_[8];
-  assign _0072_[5] = _0340_;
-  assign _0078_[5] = _0013_[5];
-  assign _0078_[6] = _0014_[6];
-  assign _0078_[7] = _0014_[7];
-  assign _0078_[8] = _0014_[8];
-  assign _0072_[6] = _0341_;
-  assign _0079_[6] = _0013_[6];
-  assign _0079_[7] = _0014_[7];
-  assign _0079_[8] = _0014_[8];
-  assign _0072_[7] = _0342_;
-  assign _0080_[7] = _0013_[7];
-  assign _0080_[8] = _0014_[8];
-  assign _0072_[8] = _0343_;
-  assign _0081_ = _0013_[8];
-  assign _0012_[10] = _0364_;
-  assign _0017_[0] = _0344_;
-  assign _0018_[0] = _0013_[0];
-  assign _0018_[1] = _0014_[1];
-  assign _0018_[2] = _0014_[2];
-  assign _0018_[3] = _0014_[3];
-  assign _0018_[4] = _0014_[4];
-  assign _0018_[5] = _0014_[5];
-  assign _0018_[6] = _0014_[6];
-  assign _0018_[7] = _0014_[7];
-  assign _0018_[8] = _0014_[8];
-  assign _0018_[9] = _0014_[9];
-  assign _0017_[1] = _0345_;
-  assign _0019_[1] = _0013_[1];
-  assign _0019_[2] = _0014_[2];
-  assign _0019_[3] = _0014_[3];
-  assign _0019_[4] = _0014_[4];
-  assign _0019_[5] = _0014_[5];
-  assign _0019_[6] = _0014_[6];
-  assign _0019_[7] = _0014_[7];
-  assign _0019_[8] = _0014_[8];
-  assign _0019_[9] = _0014_[9];
-  assign _0017_[2] = _0346_;
-  assign _0020_[2] = _0013_[2];
-  assign _0020_[3] = _0014_[3];
-  assign _0020_[4] = _0014_[4];
-  assign _0020_[5] = _0014_[5];
-  assign _0020_[6] = _0014_[6];
-  assign _0020_[7] = _0014_[7];
-  assign _0020_[8] = _0014_[8];
-  assign _0020_[9] = _0014_[9];
-  assign _0017_[3] = _0347_;
-  assign _0021_[3] = _0013_[3];
-  assign _0021_[4] = _0014_[4];
-  assign _0021_[5] = _0014_[5];
-  assign _0021_[6] = _0014_[6];
-  assign _0021_[7] = _0014_[7];
-  assign _0021_[8] = _0014_[8];
-  assign _0021_[9] = _0014_[9];
-  assign _0017_[4] = _0348_;
-  assign _0022_[4] = _0013_[4];
-  assign _0022_[5] = _0014_[5];
-  assign _0022_[6] = _0014_[6];
-  assign _0022_[7] = _0014_[7];
-  assign _0022_[8] = _0014_[8];
-  assign _0022_[9] = _0014_[9];
-  assign _0017_[5] = _0349_;
-  assign _0023_[5] = _0013_[5];
-  assign _0023_[6] = _0014_[6];
-  assign _0023_[7] = _0014_[7];
-  assign _0023_[8] = _0014_[8];
-  assign _0023_[9] = _0014_[9];
-  assign _0017_[6] = _0350_;
-  assign _0024_[6] = _0013_[6];
-  assign _0024_[7] = _0014_[7];
-  assign _0024_[8] = _0014_[8];
-  assign _0024_[9] = _0014_[9];
-  assign _0017_[7] = _0351_;
-  assign _0025_[7] = _0013_[7];
-  assign _0025_[8] = _0014_[8];
-  assign _0025_[9] = _0014_[9];
-  assign _0017_[8] = _0352_;
-  assign _0026_[8] = _0013_[8];
-  assign _0026_[9] = _0014_[9];
-  assign _0017_[9] = _0353_;
-  assign _0027_ = _0013_[9];
-  assign _0255_ = _0446_;
-  assign _0259_ = _0475_;
-  assign _0247_ = _0391_;
-  assign _0251_ = _0418_;
-  assign _0353_ = _0027_;
-  assign _0343_ = _0081_;
-  assign _0334_ = _0071_;
-  assign _0326_ = _0062_;
-  assign _0319_ = _0054_;
-  assign _0313_ = _0047_;
-  assign _0308_ = _0041_;
-  assign _0304_ = _0036_;
-  assign _0301_ = _0032_;
-  assign _0299_ = _0029_;
-  assign _0355_ = _0028_;
-  assign _0403_ = _0416_;
-  assign _0404_ = _0415_;
-  assign _0405_ = _0394_;
-  assign _0398_ = cnt;
-  assign _0395_ = 10'h32c;
-  assign _0396_ = _0397_;
-  assign _0399_ = _0511_;
-  assign _0415_ = _0512_;
-  assign _0394_ = _0513_[9:0];
-  assign _0376_ = _0389_;
-  assign _0377_ = _0388_;
-  assign _0378_ = _0367_;
-  assign _0371_ = cnt;
-  assign _0368_ = 10'h323;
-  assign _0369_ = _0370_;
-  assign _0372_ = _0481_;
-  assign _0388_ = _0482_;
-  assign _0367_ = _0483_[9:0];
-  assign _0459_ = _0472_;
-  assign _0460_ = _0471_;
-  assign _0461_ = _0450_;
-  assign _0454_ = cnt;
-  assign _0451_ = 10'h0e1;
-  assign _0452_ = _0453_;
-  assign _0455_ = _0571_;
-  assign _0471_ = _0572_;
-  assign _0450_ = _0573_[9:0];
-  assign _0430_ = _0443_;
-  assign _0431_ = _0442_;
-  assign _0432_ = _0421_;
-  assign _0425_ = cnt;
-  assign _0422_ = 10'h0e6;
-  assign _0423_ = _0424_;
-  assign _0426_ = _0541_;
-  assign _0442_ = _0542_;
-  assign _0421_ = _0543_[9:0];
-  assign _0424_ = 10'h0e6;
-  assign _0428_ = cnt;
-  assign _0434_ = _0443_;
-  assign _0435_ = _0539_;
-  assign _0436_ = _0442_;
-  assign _0437_ = 1024'h000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000070726f633b206f7074202d66617374;
-  assign _0438_ = _0443_;
-  assign _0441_[0] = _0442_[0];
-  assign _0440_ = 32'd10;
-  assign _0439_ = 32'd0;
-  assign _0453_ = 10'h0e1;
-  assign _0463_ = _0472_;
-  assign _0464_ = _0569_;
-  assign _0465_ = _0471_;
-  assign _0466_ = 1024'h000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000070726f633b206f7074202d66617374;
-  assign _0467_ = _0472_;
-  assign _0470_[0] = _0471_[0];
-  assign _0469_ = 32'd10;
-  assign _0468_ = 32'd0;
-  assign _0457_ = cnt;
-  assign _0370_ = 10'h323;
-  assign _0374_ = cnt;
-  assign _0380_ = _0389_;
-  assign _0381_ = _0479_;
-  assign _0382_ = _0388_;
-  assign _0383_ = 1024'h000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000070726f633b206f7074202d66617374;
-  assign _0384_ = _0389_;
-  assign _0387_[0] = _0388_[0];
-  assign _0386_ = 32'd10;
-  assign _0385_ = 32'd0;
-  assign _0397_ = 10'h32c;
-  assign _0401_ = cnt;
-  assign _0407_ = _0416_;
-  assign _0408_ = _0509_;
-  assign _0409_ = _0415_;
-  assign _0410_ = 1024'h000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000070726f633b206f7074202d66617374;
-  assign _0411_ = _0416_;
-  assign _0414_[0] = _0415_[0];
-  assign _0413_ = 32'd10;
-  assign _0412_ = 32'd0;
+  assign { _000_[9:4], _000_[1:0] } = { 6'h00, _000_[3:2] };
+  assign { _001_[9:3], _001_[1:0] } = { 8'h00, _001_[2] };
+  assign { _002_[9:4], _002_[2:0] } = { 7'h00, _002_[3], 1'h0 };
+  assign { _003_[8:5], _003_[2:0] } = { _003_[9], _003_[9], _003_[9], _003_[9], _003_[9], _003_[9], _003_[4] };
+  assign _004_[8:0] = { _004_[9], _004_[9], _004_[9], _004_[9], _004_[9], 1'h0, _004_[9], _004_[9], _004_[9] };
+  assign _005_[8:0] = { _005_[9], _005_[9], _005_[9], _005_[9], 1'h0, _005_[9], _005_[9], _005_[9], 1'h0 };
+  assign _006_[0] = 1'hx;
+  assign { _007_[10], _007_[0] } = { 1'h0, _006_[1] };
+  assign _008_[10] = 1'h0;
+  assign _009_[1] = _007_[1];
+  assign _010_[2] = _007_[2];
+  assign _011_[3] = _007_[3];
+  assign _012_[4] = _007_[4];
+  assign _013_[5] = _007_[5];
+  assign _014_[6] = _007_[6];
+  assign _015_[7] = _007_[7];
+  assign _016_[8] = _007_[8];
+  assign _017_[0] = _008_[0];
+  assign _021_[4:2] = _018_[4:2];
+  assign _022_[1] = _019_[1];
+  assign _026_[1] = _024_;
+  assign _028_[1] = _025_[0];
+  assign _030_[2:1] = { _024_, _026_[0] };
+  assign _032_[2:1] = { _025_[0], _028_[0] };
+  assign _037_[0] = _026_[0];
+  assign _038_[1:0] = { _026_[0], _030_[0] };
+  assign _039_[0] = _033_[0];
+  assign _042_[0] = _028_[0];
+  assign _043_[1:0] = { _028_[0], _032_[0] };
+  assign _044_[0] = _011_[0];
+  assign _047_[0] = _030_[0];
+  assign _050_[0] = _032_[0];
+  assign _055_[0] = _075_[1];
+  assign _058_[4:1] = { _055_[4:2], _070_[3] };
+  assign _059_[1] = _056_[1];
+  assign _061_[2:1] = { _055_[2], _070_[3] };
+  assign _064_[4:2] = { _061_[4:3], _055_[2] };
+  assign _065_[1] = _062_[1];
+  assign _070_[2:0] = { _069_[2], 2'h3 };
+  assign _071_[2:0] = { cnt[2], _069_[1:0] };
+  assign _075_[0] = _069_[0];
+  assign _076_[0] = cnt[0];
+  assign _080_[0] = _069_[0];
+  assign _081_[0] = cnt[0];
+  assign _087_[1:0] = { _069_[1], 1'h1 };
+  assign _088_[1:0] = { cnt[1], _069_[0] };
+  assign summand[8:5] = { summand[9], summand[9], summand[9], summand[9] };
 endmodule

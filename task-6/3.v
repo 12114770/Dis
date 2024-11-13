@@ -10,132 +10,123 @@ module counter(clk, rst, mode, cnt);
   output [9:0] cnt;
   wire [9:0] cnt;
   wire cnt_SB_DFFSR_Q_1_D;
+  (* force_downto = 32'd1 *)
+  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:6.21-6.22" *)
+  wire [2:0] cnt_SB_DFFSR_Q_1_D_SB_LUT4_O_I3;
   wire cnt_SB_DFFSR_Q_2_D;
   (* force_downto = 32'd1 *)
   (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:6.21-6.22" *)
-  wire [3:0] cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I1;
+  wire [1:0] cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3;
   (* force_downto = 32'd1 *)
   (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:6.21-6.22" *)
-  wire [3:0] cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I1_SB_LUT4_O_1_I2;
+  wire [3:0] cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_I3_1_O;
   (* force_downto = 32'd1 *)
   (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:6.21-6.22" *)
-  wire [3:0] cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I1_SB_LUT4_O_I1;
+  wire [3:0] cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_I3_I2;
   (* force_downto = 32'd1 *)
   (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:6.21-6.22" *)
-  wire [1:0] cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I1_SB_LUT4_O_I3;
+  wire [3:0] cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_I3_I2_SB_LUT4_O_I2;
+  (* force_downto = 32'd1 *)
+  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:6.21-6.22" *)
+  wire [3:0] cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_I3_I2_SB_LUT4_O_I2_SB_LUT4_I3_O;
+  (* force_downto = 32'd1 *)
+  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:6.21-6.22" *)
+  wire [3:0] cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_I3_I2_SB_LUT4_O_I2_SB_LUT4_O_I1;
+  wire cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_I3_O;
+  (* force_downto = 32'd1 *)
+  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:6.21-6.22" *)
+  wire [1:0] cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2;
+  (* force_downto = 32'd1 *)
+  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:6.21-6.22" *)
+  wire [2:0] cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_I3_O;
+  (* abc9_carry = 32'd1 *)
+  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11" *)
+  wire cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2;
+  (* abc9_carry = 32'd1 *)
+  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11" *)
+  wire cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI;
+  (* abc9_carry = 32'd1 *)
+  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11" *)
+  wire cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI;
+  (* abc9_carry = 32'd1 *)
+  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11" *)
+  wire cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI;
+  (* abc9_carry = 32'd1 *)
+  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11" *)
+  wire cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI;
+  (* abc9_carry = 32'd1 *)
+  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11" *)
+  wire cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI;
+  wire cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1;
+  (* abc9_carry = 32'd1 *)
+  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11" *)
+  wire cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CI;
+  (* abc9_carry = 32'd1 *)
+  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11" *)
+  wire cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CI_SB_CARRY_CO_CI;
+  (* abc9_carry = 32'd1 *)
+  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11" *)
+  wire cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI;
+  (* abc9_carry = 32'd1 *)
+  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/abc9_model.v:8.8-8.10" *)
+  wire cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI;
+  wire cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1;
+  (* abc9_carry = 32'd1 *)
+  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11" *)
+  wire cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CI;
+  (* abc9_carry = 32'd1 *)
+  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11" *)
+  wire cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CO;
+  (* abc9_carry = 32'd1 *)
+  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11" *)
+  wire cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CO_SB_CARRY_CI_CO;
+  (* abc9_carry = 32'd1 *)
+  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11" *)
+  wire cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO;
+  (* abc9_carry = 32'd1 *)
+  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11" *)
+  wire cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO;
+  (* force_downto = 32'd1 *)
+  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:6.21-6.22" *)
+  wire [2:0] cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I2_I3;
+  (* force_downto = 32'd1 *)
+  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:6.21-6.22" *)
+  wire [3:0] cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I2_O;
+  (* force_downto = 32'd1 *)
+  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:6.21-6.22" *)
+  wire [2:0] cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I2_O_SB_LUT4_O_I1;
+  (* force_downto = 32'd1 *)
+  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:6.21-6.22" *)
+  wire [2:0] cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I3;
+  (* force_downto = 32'd1 *)
+  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:6.21-6.22" *)
+  wire [1:0] cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_LUT4_O_I2;
   wire cnt_SB_DFFSR_Q_D;
   (* force_downto = 32'd1 *)
   (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:6.21-6.22" *)
-  wire [1:0] cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2;
-  (* force_downto = 32'd1 *)
-  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:6.21-6.22" *)
-  wire [3:0] cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3;
-  (* force_downto = 32'd1 *)
-  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:6.21-6.22" *)
-  wire [1:0] cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2;
-  (* force_downto = 32'd1 *)
-  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:6.21-6.22" *)
-  wire [2:0] cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O;
-  (* abc9_carry = 32'd1 *)
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11" *)
-  wire cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I2;
-  (* abc9_carry = 32'd1 *)
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11" *)
-  wire cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_CARRY_CO_CI;
-  (* abc9_carry = 32'd1 *)
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11" *)
-  wire cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI;
-  (* abc9_carry = 32'd1 *)
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11" *)
-  wire cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI;
-  (* abc9_carry = 32'd1 *)
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11" *)
-  wire cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI;
-  (* abc9_carry = 32'd1 *)
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11" *)
-  wire cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI;
-  (* abc9_carry = 32'd1 *)
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11" *)
-  wire cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI;
-  (* abc9_carry = 32'd1 *)
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11" *)
-  wire cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI;
-  (* abc9_carry = 32'd1 *)
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/abc9_model.v:8.8-8.10" *)
-  wire cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI;
-  wire cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1;
-  (* abc9_carry = 32'd1 *)
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11" *)
-  wire cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CI;
-  wire cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1;
-  (* abc9_carry = 32'd1 *)
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11" *)
-  wire cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CI;
-  (* abc9_carry = 32'd1 *)
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11" *)
-  wire cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CO;
-  (* abc9_carry = 32'd1 *)
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11" *)
-  wire cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CO_SB_CARRY_CI_CO;
-  (* abc9_carry = 32'd1 *)
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11" *)
-  wire cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO;
-  (* abc9_carry = 32'd1 *)
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11" *)
-  wire cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO;
-  (* force_downto = 32'd1 *)
-  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:6.21-6.22" *)
-  wire [2:0] cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I3;
-  (* force_downto = 32'd1 *)
-  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:6.21-6.22" *)
-  wire [2:0] cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I3_O;
-  (* force_downto = 32'd1 *)
-  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:6.21-6.22" *)
-  wire [3:0] cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_I2;
-  (* force_downto = 32'd1 *)
-  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:6.21-6.22" *)
-  wire [3:0] cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_I2_O;
-  (* force_downto = 32'd1 *)
-  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:6.21-6.22" *)
   wire [3:0] cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3;
-  (* force_downto = 32'd1 *)
-  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:6.21-6.22" *)
-  wire [3:0] cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_I1;
-  (* force_downto = 32'd1 *)
-  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:6.21-6.22" *)
-  wire [2:0] cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_I3;
-  (* force_downto = 32'd1 *)
-  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:6.21-6.22" *)
-  wire [3:0] cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_I3_SB_LUT4_I3_O;
-  wire cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O;
+  wire cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O;
   (* force_downto = 32'd1 *)
   (* src = "counter.v:17.26-17.41|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:49.21-49.23" *)
   (* unused_bits = "3 4" *)
-  wire [8:0] cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q;
-  wire cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q_SB_DFFSR_Q_1_D;
-  wire cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q_SB_DFFSR_Q_2_D;
-  wire cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q_SB_DFFSR_Q_4_D;
+  wire [8:0] cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q;
+  wire cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q_SB_DFFSR_Q_1_D;
+  wire cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q_SB_DFFSR_Q_2_D;
   (* force_downto = 32'd1 *)
   (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:6.21-6.22" *)
-  wire [2:0] cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q_SB_DFFSR_Q_4_D_SB_LUT4_O_I1;
-  wire cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q_SB_DFFSR_Q_5_D;
-  wire cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q_SB_DFFSR_Q_D;
+  wire [3:0] cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q_SB_DFFSR_Q_2_D_SB_LUT4_O_I2;
   (* force_downto = 32'd1 *)
   (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:6.21-6.22" *)
-  wire [3:0] cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q_SB_DFFSR_Q_D_SB_LUT4_O_I3;
+  wire [2:0] cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q_SB_DFFSR_Q_2_D_SB_LUT4_O_I2_SB_LUT4_O_I2;
+  wire cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q_SB_DFFSR_Q_3_D;
   (* force_downto = 32'd1 *)
   (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:6.21-6.22" *)
-  wire [3:0] cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I1;
+  wire [3:0] cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q_SB_DFFSR_Q_3_D_SB_LUT4_O_I3;
+  wire cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q_SB_DFFSR_Q_4_D;
+  wire cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q_SB_DFFSR_Q_D;
   (* force_downto = 32'd1 *)
   (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:6.21-6.22" *)
-  wire [2:0] cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I1_SB_LUT4_O_I1;
-  (* force_downto = 32'd1 *)
-  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:6.21-6.22" *)
-  wire [2:0] cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I2;
-  wire cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_I2_O;
-  (* force_downto = 32'd1 *)
-  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:6.21-6.22" *)
-  wire [2:0] cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_I3_O;
+  wire [2:0] cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q_SB_DFFSR_Q_D_SB_LUT4_O_I3;
   (* src = "counter.v:5.17-5.21" *)
   input mode;
   wire mode;
@@ -168,9 +159,20 @@ module counter(clk, rst, mode, cnt);
   ) cnt_SB_DFFSR_Q_1_D_SB_LUT4_O (
     .I0(1'h0),
     .I1(1'h0),
-    .I2(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_I3_O[1]),
-    .I3(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3[3]),
+    .I2(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_I3_I2_SB_LUT4_O_I2_SB_LUT4_I3_O[3]),
+    .I3(cnt_SB_DFFSR_Q_1_D_SB_LUT4_O_I3[2]),
     .O(cnt_SB_DFFSR_Q_1_D)
+  );
+  (* module_not_derived = 32'd1 *)
+  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:26.33-27.52" *)
+  SB_LUT4 #(
+    .LUT_INIT(16'h1015)
+  ) cnt_SB_DFFSR_Q_1_D_SB_LUT4_O_I3_SB_LUT4_O (
+    .I0(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q[2]),
+    .I1(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q[1]),
+    .I2(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_I3_1_O[2]),
+    .I3(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_I3_1_O[3]),
+    .O(cnt_SB_DFFSR_Q_1_D_SB_LUT4_O_I3[2])
   );
   (* module_not_derived = 32'd1 *)
   (* src = "counter.v:32.5-38.8|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/ff_map.v:19.59-19.105" *)
@@ -181,697 +183,598 @@ module counter(clk, rst, mode, cnt);
     .R(rst)
   );
   (* module_not_derived = 32'd1 *)
+  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:17.34-18.52" *)
+  SB_LUT4 #(
+    .LUT_INIT(16'hf00f)
+  ) cnt_SB_DFFSR_Q_2_D_SB_LUT4_O (
+    .I0(1'h0),
+    .I1(1'h0),
+    .I2(cnt[0]),
+    .I3(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3[1]),
+    .O(cnt_SB_DFFSR_Q_2_D)
+  );
+  (* module_not_derived = 32'd1 *)
   (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:26.33-27.52" *)
   SB_LUT4 #(
-    .LUT_INIT(16'h595a)
-  ) cnt_SB_DFFSR_Q_2_D_SB_LUT4_O (
+    .LUT_INIT(16'h3c96)
+  ) cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_I3 (
     .I0(cnt[0]),
-    .I1(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I1[3]),
-    .I2(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O[1]),
-    .I3(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O[2]),
-    .O(cnt_SB_DFFSR_Q_2_D)
+    .I1(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q[0]),
+    .I2(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_I3_I2[2]),
+    .I3(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3[1]),
+    .O(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_I3_O)
+  );
+  (* module_not_derived = 32'd1 *)
+  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:26.33-27.52" *)
+  SB_LUT4 #(
+    .LUT_INIT(16'hcf4d)
+  ) cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_I3_1 (
+    .I0(cnt[0]),
+    .I1(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q[0]),
+    .I2(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_I3_I2[2]),
+    .I3(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3[1]),
+    .O(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_I3_1_O[3])
+  );
+  (* module_not_derived = 32'd1 *)
+  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:26.33-27.52" *)
+  SB_LUT4 #(
+    .LUT_INIT(16'h1070)
+  ) cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_I3_1_O_SB_LUT4_I3 (
+    .I0(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q[1]),
+    .I1(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q_SB_DFFSR_Q_3_D_SB_LUT4_O_I3[1]),
+    .I2(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q_SB_DFFSR_Q_3_D_SB_LUT4_O_I3[2]),
+    .I3(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_I3_1_O[3]),
+    .O(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q_SB_DFFSR_Q_2_D_SB_LUT4_O_I2[3])
+  );
+  (* module_not_derived = 32'd1 *)
+  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:22.34-23.52" *)
+  SB_LUT4 #(
+    .LUT_INIT(16'h333c)
+  ) cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_I3_1_O_SB_LUT4_O (
+    .I0(1'h0),
+    .I1(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q[1]),
+    .I2(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I2_O[3]),
+    .I3(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_I3_O[2]),
+    .O(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_I3_1_O[2])
+  );
+  (* module_not_derived = 32'd1 *)
+  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:22.34-23.52" *)
+  SB_LUT4 #(
+    .LUT_INIT(16'hc0f3)
+  ) cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_I3_I2_SB_LUT4_O (
+    .I0(1'h0),
+    .I1(mode),
+    .I2(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_I3_I2_SB_LUT4_O_I2[3]),
+    .I3(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2[1]),
+    .O(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_I3_I2[2])
+  );
+  (* module_not_derived = 32'd1 *)
+  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:26.33-27.52" *)
+  SB_LUT4 #(
+    .LUT_INIT(16'h54dc)
+  ) cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_I3_I2_SB_LUT4_O_I2_SB_LUT4_I3 (
+    .I0(mode),
+    .I1(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q[2]),
+    .I2(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I2_O[1]),
+    .I3(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_I3_I2_SB_LUT4_O_I2[3]),
+    .O(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_I3_I2_SB_LUT4_O_I2_SB_LUT4_I3_O[0])
+  );
+  (* module_not_derived = 32'd1 *)
+  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:17.34-18.52" *)
+  SB_LUT4 #(
+    .LUT_INIT(16'hf00f)
+  ) cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_I3_I2_SB_LUT4_O_I2_SB_LUT4_I3_O_SB_LUT4_O (
+    .I0(1'h0),
+    .I1(1'h0),
+    .I2(mode),
+    .I3(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q[5]),
+    .O(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_I3_I2_SB_LUT4_O_I2_SB_LUT4_I3_O[1])
+  );
+  (* module_not_derived = 32'd1 *)
+  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:22.34-23.52" *)
+  SB_LUT4 #(
+    .LUT_INIT(16'h0f3c)
+  ) cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_I3_I2_SB_LUT4_O_I2_SB_LUT4_I3_O_SB_LUT4_O_1 (
+    .I0(1'h0),
+    .I1(mode),
+    .I2(cnt[5]),
+    .I3(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2[1]),
+    .O(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_I3_I2_SB_LUT4_O_I2_SB_LUT4_I3_O[2])
+  );
+  (* module_not_derived = 32'd1 *)
+  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:26.33-27.52" *)
+  SB_LUT4 #(
+    .LUT_INIT(16'h3336)
+  ) cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_I3_I2_SB_LUT4_O_I2_SB_LUT4_I3_O_SB_LUT4_O_2 (
+    .I0(mode),
+    .I1(cnt[4]),
+    .I2(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I2_O[1]),
+    .I3(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2[1]),
+    .O(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_I3_I2_SB_LUT4_O_I2_SB_LUT4_I3_O[3])
   );
   (* module_not_derived = 32'd1 *)
   (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:22.34-23.52" *)
   SB_LUT4 #(
     .LUT_INIT(16'hc000)
-  ) cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I1_SB_LUT4_O (
+  ) cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_I3_I2_SB_LUT4_O_I2_SB_LUT4_O (
     .I0(1'h0),
-    .I1(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I1_SB_LUT4_O_I1[1]),
-    .I2(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I1_SB_LUT4_O_I1[2]),
-    .I3(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I1_SB_LUT4_O_I3[1]),
-    .O(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I1[2])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:26.33-27.52" *)
-  SB_LUT4 #(
-    .LUT_INIT(16'h1000)
-  ) cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I1_SB_LUT4_O_1 (
-    .I0(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q[8]),
-    .I1(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q[7]),
-    .I2(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I1_SB_LUT4_O_1_I2[2]),
-    .I3(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I1_SB_LUT4_O_I1[2]),
-    .O(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I1[3])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:26.33-27.52" *)
-  SB_LUT4 #(
-    .LUT_INIT(16'h0001)
-  ) cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I1_SB_LUT4_O_1_I2_SB_LUT4_O (
-    .I0(cnt[0]),
-    .I1(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q[2]),
-    .I2(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q[1]),
-    .I3(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q[0]),
-    .O(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I1_SB_LUT4_O_1_I2[2])
+    .I1(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_I3_I2_SB_LUT4_O_I2_SB_LUT4_O_I1[1]),
+    .I2(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_I3_I2_SB_LUT4_O_I2_SB_LUT4_O_I1[2]),
+    .I3(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_I3_I2_SB_LUT4_O_I2_SB_LUT4_O_I1[3]),
+    .O(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_I3_I2_SB_LUT4_O_I2[3])
   );
   (* module_not_derived = 32'd1 *)
   (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:17.34-18.52" *)
   SB_LUT4 #(
-    .LUT_INIT(16'h0f00)
-  ) cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I1_SB_LUT4_O_I1_SB_LUT4_O (
+    .LUT_INIT(16'hf000)
+  ) cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_I3_I2_SB_LUT4_O_I2_SB_LUT4_O_I1_SB_LUT4_O (
     .I0(1'h0),
     .I1(1'h0),
-    .I2(cnt[0]),
-    .I3(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q[0]),
-    .O(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I1_SB_LUT4_O_I1[1])
+    .I2(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q[2]),
+    .I3(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q[1]),
+    .O(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_I3_I2_SB_LUT4_O_I2_SB_LUT4_O_I1[1])
+  );
+  (* module_not_derived = 32'd1 *)
+  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:26.33-27.52" *)
+  SB_LUT4 #(
+    .LUT_INIT(16'h0100)
+  ) cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_I3_I2_SB_LUT4_O_I2_SB_LUT4_O_I1_SB_LUT4_O_1 (
+    .I0(cnt[0]),
+    .I1(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q[8]),
+    .I2(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q[7]),
+    .I3(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q[0]),
+    .O(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_I3_I2_SB_LUT4_O_I2_SB_LUT4_O_I1[2])
   );
   (* module_not_derived = 32'd1 *)
   (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:26.33-27.52" *)
   SB_LUT4 #(
     .LUT_INIT(16'h0008)
-  ) cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I1_SB_LUT4_O_I1_SB_LUT4_O_1 (
+  ) cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_I3_I2_SB_LUT4_O_I2_SB_LUT4_O_I1_SB_LUT4_O_2 (
     .I0(cnt[5]),
     .I1(cnt[4]),
-    .I2(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q[6]),
-    .I3(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q[5]),
-    .O(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I1_SB_LUT4_O_I1[2])
+    .I2(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q[6]),
+    .I3(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q[5]),
+    .O(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_I3_I2_SB_LUT4_O_I2_SB_LUT4_O_I1[3])
+  );
+  (* module_not_derived = 32'd1 *)
+  (* src = "counter.v:32.5-38.8|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/ff_map.v:19.59-19.105" *)
+  SB_DFFSR cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D (
+    .C(clk),
+    .D(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_I3_O),
+    .Q(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q[0]),
+    .R(rst)
+  );
+  (* module_not_derived = 32'd1 *)
+  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:26.33-27.52" *)
+  SB_LUT4 #(
+    .LUT_INIT(16'h00fe)
+  ) cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O (
+    .I0(mode),
+    .I1(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I2_O[1]),
+    .I2(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2[1]),
+    .I3(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I2_O[3]),
+    .O(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3[1])
+  );
+  (* module_not_derived = 32'd1 *)
+  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:17.34-18.52" *)
+  SB_LUT4 #(
+    .LUT_INIT(16'h000f)
+  ) cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_I3 (
+    .I0(1'h0),
+    .I1(1'h0),
+    .I2(mode),
+    .I3(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2[1]),
+    .O(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_I3_O[2])
   );
   (* module_not_derived = 32'd1 *)
   (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:22.34-23.52" *)
   SB_LUT4 #(
-    .LUT_INIT(16'h00c0)
-  ) cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_O (
+    .LUT_INIT(16'h0030)
+  ) cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O (
     .I0(1'h0),
-    .I1(cnt[5]),
-    .I2(cnt[0]),
-    .I3(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q[0]),
-    .O(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I1_SB_LUT4_O_I3[0])
+    .I1(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q[8]),
+    .I2(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2),
+    .I3(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I3[2]),
+    .O(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2[1])
+  );
+  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4" *)
+  SB_CARRY cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO (
+    .CI(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI),
+    .CO(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2),
+    .I0(1'h1),
+    .I1(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q[7])
+  );
+  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4" *)
+  SB_CARRY cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO (
+    .CI(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI),
+    .CO(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI),
+    .I0(1'h0),
+    .I1(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q[6])
+  );
+  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4" *)
+  SB_CARRY cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO (
+    .CI(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI),
+    .CO(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI),
+    .I0(1'h0),
+    .I1(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q[5])
+  );
+  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4" *)
+  SB_CARRY cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO (
+    .CI(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI),
+    .CO(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI),
+    .I0(1'h1),
+    .I1(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1)
+  );
+  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4" *)
+  SB_CARRY cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO (
+    .CI(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI),
+    .CO(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI),
+    .I0(1'h0),
+    .I1(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1)
+  );
+  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4" *)
+  SB_CARRY cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO (
+    .CI(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q[1]),
+    .CO(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI),
+    .I0(1'h0),
+    .I1(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q[2])
+  );
+  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4" *)
+  SB_CARRY cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1 (
+    .CI(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CI),
+    .CO(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CI),
+    .I0(1'h0),
+    .I1(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1)
+  );
+  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4" *)
+  SB_CARRY cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CI_SB_CARRY_CO (
+    .CI(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CI_SB_CARRY_CO_CI),
+    .CO(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CI),
+    .I0(1'h0),
+    .I1(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q[2])
+  );
+  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4" *)
+  SB_CARRY cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CI_SB_CARRY_CO_CI_SB_CARRY_CO (
+    .CI(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI),
+    .CO(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CI_SB_CARRY_CO_CI),
+    .I0(1'h1),
+    .I1(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q[1])
+  );
+  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4" *)
+  SB_CARRY cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO (
+    .CI(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI),
+    .CO(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI),
+    .I0(1'h1),
+    .I1(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q[0])
+  );
+  (* module_not_derived = 32'd1 *)
+  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:12.34-13.52" *)
+  SB_LUT4 #(
+    .LUT_INIT(16'h00ff)
+  ) cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_O (
+    .I0(1'h0),
+    .I1(1'h0),
+    .I2(1'h0),
+    .I3(cnt[0]),
+    .O(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI)
+  );
+  (* module_not_derived = 32'd1 *)
+  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:12.34-13.52" *)
+  SB_LUT4 #(
+    .LUT_INIT(16'h00ff)
+  ) cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_LUT4_O (
+    .I0(1'h0),
+    .I1(1'h0),
+    .I2(1'h0),
+    .I3(cnt[4]),
+    .O(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1)
+  );
+  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4" *)
+  SB_CARRY cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1 (
+    .CI(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CI),
+    .CO(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CO),
+    .I0(1'h1),
+    .I1(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1)
+  );
+  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4" *)
+  SB_CARRY cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CO_SB_CARRY_CI (
+    .CI(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CO),
+    .CO(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CO_SB_CARRY_CI_CO),
+    .I0(1'h1),
+    .I1(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q[5])
+  );
+  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4" *)
+  SB_CARRY cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CO_SB_CARRY_CI_CO_SB_CARRY_CI (
+    .CI(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CO_SB_CARRY_CI_CO),
+    .CO(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO),
+    .I0(1'h1),
+    .I1(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q[6])
+  );
+  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4" *)
+  SB_CARRY cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI (
+    .CI(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO),
+    .CO(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO),
+    .I0(1'h0),
+    .I1(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q[7])
+  );
+  (* module_not_derived = 32'd1 *)
+  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:22.34-23.52" *)
+  SB_LUT4 #(
+    .LUT_INIT(16'hf300)
+  ) cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I2 (
+    .I0(1'h0),
+    .I1(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q[8]),
+    .I2(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO),
+    .I3(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I2_I3[2]),
+    .O(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I2_O[3])
   );
   (* module_not_derived = 32'd1 *)
   (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:26.33-27.52" *)
   SB_LUT4 #(
-    .LUT_INIT(16'h1000)
-  ) cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_O_1 (
-    .I0(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q[8]),
-    .I1(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q[7]),
-    .I2(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q[2]),
-    .I3(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q[1]),
-    .O(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I1_SB_LUT4_O_I3[1])
+    .LUT_INIT(16'h2aaa)
+  ) cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I2_I3_SB_LUT4_O (
+    .I0(mode),
+    .I1(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_I3_I2_SB_LUT4_O_I2_SB_LUT4_O_I1[1]),
+    .I2(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_I3_I2_SB_LUT4_O_I2_SB_LUT4_O_I1[2]),
+    .I3(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_I3_I2_SB_LUT4_O_I2_SB_LUT4_O_I1[3]),
+    .O(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I2_I3[2])
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:26.33-27.52" *)
+  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:17.34-18.52" *)
   SB_LUT4 #(
-    .LUT_INIT(16'ha6a5)
+    .LUT_INIT(16'h000f)
+  ) cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I2_O_SB_LUT4_I2 (
+    .I0(1'h0),
+    .I1(1'h0),
+    .I2(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I2_O[3]),
+    .I3(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_I3_O[2]),
+    .O(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q_SB_DFFSR_Q_3_D_SB_LUT4_O_I3[1])
+  );
+  (* module_not_derived = 32'd1 *)
+  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:22.34-23.52" *)
+  SB_LUT4 #(
+    .LUT_INIT(16'hc000)
+  ) cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I2_O_SB_LUT4_O (
+    .I0(1'h0),
+    .I1(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I2_O_SB_LUT4_O_I1[0]),
+    .I2(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_LUT4_O_I2[1]),
+    .I3(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_I3_I2_SB_LUT4_O_I2_SB_LUT4_O_I1[3]),
+    .O(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I2_O[1])
+  );
+  (* module_not_derived = 32'd1 *)
+  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:22.34-23.52" *)
+  SB_LUT4 #(
+    .LUT_INIT(16'h0003)
+  ) cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I2_O_SB_LUT4_O_I1_SB_LUT4_O (
+    .I0(1'h0),
+    .I1(cnt[0]),
+    .I2(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q[2]),
+    .I3(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q[1]),
+    .O(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I2_O_SB_LUT4_O_I1[0])
+  );
+  (* module_not_derived = 32'd1 *)
+  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:12.34-13.52" *)
+  SB_LUT4 #(
+    .LUT_INIT(16'h00ff)
+  ) cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_LUT4_O (
+    .I0(1'h0),
+    .I1(1'h0),
+    .I2(1'h0),
+    .I3(cnt[5]),
+    .O(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1)
+  );
+  (* module_not_derived = 32'd1 *)
+  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:17.34-18.52" *)
+  SB_LUT4 #(
+    .LUT_INIT(16'hf000)
+  ) cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_LUT4_O (
+    .I0(1'h0),
+    .I1(1'h0),
+    .I2(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_LUT4_O_I2[0]),
+    .I3(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_LUT4_O_I2[1]),
+    .O(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I3[2])
+  );
+  (* module_not_derived = 32'd1 *)
+  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:17.34-18.52" *)
+  SB_LUT4 #(
+    .LUT_INIT(16'hf000)
+  ) cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O (
+    .I0(1'h0),
+    .I1(1'h0),
+    .I2(cnt[5]),
+    .I3(cnt[0]),
+    .O(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_LUT4_O_I2[0])
+  );
+  (* module_not_derived = 32'd1 *)
+  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:22.34-23.52" *)
+  SB_LUT4 #(
+    .LUT_INIT(16'h0003)
+  ) cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_1 (
+    .I0(1'h0),
+    .I1(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q[8]),
+    .I2(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q[7]),
+    .I3(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q[0]),
+    .O(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_LUT4_O_I2[1])
+  );
+  (* module_not_derived = 32'd1 *)
+  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:17.34-18.52" *)
+  SB_LUT4 #(
+    .LUT_INIT(16'hf00f)
   ) cnt_SB_DFFSR_Q_D_SB_LUT4_O (
-    .I0(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_I3_O[0]),
-    .I1(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_I3_O[1]),
-    .I2(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2[1]),
+    .I0(1'h0),
+    .I1(1'h0),
+    .I2(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_I3_I2_SB_LUT4_O_I2_SB_LUT4_I3_O[2]),
     .I3(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3[3]),
     .O(cnt_SB_DFFSR_Q_D)
   );
   (* module_not_derived = 32'd1 *)
   (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:26.33-27.52" *)
   SB_LUT4 #(
-    .LUT_INIT(16'h4044)
-  ) cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O (
-    .I0(mode),
-    .I1(cnt[5]),
-    .I2(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_I2[3]),
-    .I3(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I3_O[2]),
-    .O(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2[0])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:22.34-23.52" *)
-  SB_LUT4 #(
-    .LUT_INIT(16'h0030)
-  ) cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1 (
-    .I0(1'h0),
-    .I1(mode),
-    .I2(cnt[4]),
-    .I3(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3[3]),
-    .O(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2[1])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:26.33-27.52" *)
-  SB_LUT4 #(
-    .LUT_INIT(16'h3301)
-  ) cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_I2 (
-    .I0(mode),
-    .I1(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q[1]),
-    .I2(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3[3]),
-    .I3(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O[1]),
-    .O(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_I2_O[2])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:22.34-23.52" *)
-  SB_LUT4 #(
-    .LUT_INIT(16'h000c)
-  ) cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O (
-    .I0(1'h0),
-    .I1(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO),
-    .I2(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2[1]),
-    .I3(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_I2[3]),
-    .O(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3[3])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:26.33-27.52" *)
-  SB_LUT4 #(
-    .LUT_INIT(16'h3331)
-  ) cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2 (
-    .I0(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO),
-    .I1(mode),
-    .I2(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2[1]),
-    .I3(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_I2[3]),
-    .O(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O[2])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:22.34-23.52" *)
-  SB_LUT4 #(
-    .LUT_INIT(16'hf300)
-  ) cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O (
-    .I0(1'h0),
-    .I1(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q[8]),
-    .I2(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I2),
-    .I3(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I3[2]),
-    .O(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O[1])
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4" *)
-  SB_CARRY cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_CARRY_CO (
-    .CI(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_CARRY_CO_CI),
-    .CO(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I2),
-    .I0(1'h0),
-    .I1(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q[7])
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4" *)
-  SB_CARRY cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO (
-    .CI(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI),
-    .CO(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_CARRY_CO_CI),
-    .I0(1'h1),
-    .I1(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q[6])
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4" *)
-  SB_CARRY cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO (
-    .CI(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI),
-    .CO(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI),
-    .I0(1'h1),
-    .I1(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q[5])
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4" *)
-  SB_CARRY cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO (
-    .CI(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI),
-    .CO(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI),
-    .I0(1'h1),
-    .I1(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1)
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4" *)
-  SB_CARRY cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO (
-    .CI(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI),
-    .CO(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI),
-    .I0(1'h0),
-    .I1(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1)
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4" *)
-  SB_CARRY cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO (
-    .CI(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI),
-    .CO(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI),
-    .I0(1'h0),
-    .I1(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q[2])
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4" *)
-  SB_CARRY cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO (
-    .CI(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI),
-    .CO(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI),
-    .I0(1'h1),
-    .I1(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q[1])
-  );
-  (* src = "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4" *)
-  SB_CARRY cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO (
-    .CI(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI),
-    .CO(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI),
-    .I0(1'h1),
-    .I1(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q[0])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:12.34-13.52" *)
-  SB_LUT4 #(
-    .LUT_INIT(16'h00ff)
-  ) cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_O (
-    .I0(1'h0),
-    .I1(1'h0),
-    .I2(1'h0),
-    .I3(cnt[0]),
-    .O(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI)
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4" *)
-  SB_CARRY cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1 (
-    .CI(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CI),
-    .CO(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CI),
-    .I0(1'h0),
-    .I1(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1)
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4" *)
-  SB_CARRY cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CI_SB_CARRY_CO (
-    .CI(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q[1]),
-    .CO(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CI),
-    .I0(1'h0),
-    .I1(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q[2])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:12.34-13.52" *)
-  SB_LUT4 #(
-    .LUT_INIT(16'h00ff)
-  ) cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_LUT4_O (
-    .I0(1'h0),
-    .I1(1'h0),
-    .I2(1'h0),
-    .I3(cnt[4]),
-    .O(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1)
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4" *)
-  SB_CARRY cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1 (
-    .CI(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CI),
-    .CO(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CO),
-    .I0(1'h1),
-    .I1(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1)
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4" *)
-  SB_CARRY cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CO_SB_CARRY_CI (
-    .CI(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CO),
-    .CO(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CO_SB_CARRY_CI_CO),
-    .I0(1'h0),
-    .I1(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q[5])
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4" *)
-  SB_CARRY cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CO_SB_CARRY_CI_CO_SB_CARRY_CI (
-    .CI(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CO_SB_CARRY_CI_CO),
-    .CO(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO),
-    .I0(1'h0),
-    .I1(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q[6])
-  );
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4" *)
-  SB_CARRY cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI (
-    .CI(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO),
-    .CO(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO),
-    .I0(1'h1),
-    .I1(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q[7])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:12.34-13.52" *)
-  SB_LUT4 #(
-    .LUT_INIT(16'h00ff)
-  ) cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_LUT4_O (
-    .I0(1'h0),
-    .I1(1'h0),
-    .I2(1'h0),
-    .I3(cnt[5]),
-    .O(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:26.33-27.52" *)
-  SB_LUT4 #(
-    .LUT_INIT(16'h2aaa)
-  ) cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_LUT4_O (
-    .I0(mode),
-    .I1(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I1_SB_LUT4_O_I1[1]),
-    .I2(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I1_SB_LUT4_O_I1[2]),
-    .I3(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I1_SB_LUT4_O_I3[1]),
-    .O(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I3[2])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:17.34-18.52" *)
-  SB_LUT4 #(
-    .LUT_INIT(16'h00f0)
-  ) cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I3 (
-    .I0(1'h0),
-    .I1(1'h0),
-    .I2(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO),
-    .I3(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2[1]),
-    .O(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I3_O[2])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:17.34-18.52" *)
-  SB_LUT4 #(
-    .LUT_INIT(16'hf000)
-  ) cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I3_O_SB_LUT4_O (
-    .I0(1'h0),
-    .I1(1'h0),
-    .I2(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q[6]),
-    .I3(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q[5]),
-    .O(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I3_O[1])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:26.33-27.52" *)
-  SB_LUT4 #(
-    .LUT_INIT(16'h6996)
-  ) cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_O (
-    .I0(1'h0),
-    .I1(1'h1),
-    .I2(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q[8]),
-    .I3(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO),
-    .O(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2[1])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:26.33-27.52" *)
-  SB_LUT4 #(
-    .LUT_INIT(16'hb0bb)
-  ) cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_I2 (
-    .I0(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I1[2]),
-    .I1(mode),
-    .I2(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_I2[3]),
-    .I3(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I3_O[2]),
-    .O(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_I2_O[1])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:22.34-23.52" *)
-  SB_LUT4 #(
-    .LUT_INIT(16'hccc0)
-  ) cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O (
-    .I0(1'h0),
-    .I1(cnt[0]),
-    .I2(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O[1]),
-    .I3(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O[2]),
-    .O(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_I2_O[3])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:17.34-18.52" *)
-  SB_LUT4 #(
-    .LUT_INIT(16'hf000)
-  ) cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O (
-    .I0(1'h0),
-    .I1(1'h0),
-    .I2(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I1_SB_LUT4_O_I3[0]),
-    .I3(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I1_SB_LUT4_O_I3[1]),
-    .O(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_I2[3])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:26.33-27.52" *)
-  SB_LUT4 #(
-    .LUT_INIT(16'h6c33)
-  ) cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0 (
-    .I0(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3[3]),
-    .I1(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_I1[1]),
-    .I2(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_I1[2]),
-    .I3(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_I3[2]),
-    .O(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:17.34-18.52" *)
-  SB_LUT4 #(
-    .LUT_INIT(16'h0ff0)
-  ) cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_I1_SB_LUT4_O (
-    .I0(1'h0),
-    .I1(1'h0),
-    .I2(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q[5]),
-    .I3(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O[2]),
-    .O(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_I1[1])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:17.34-18.52" *)
-  SB_LUT4 #(
-    .LUT_INIT(16'h000f)
-  ) cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_I1_SB_LUT4_O_1 (
-    .I0(1'h0),
-    .I1(1'h0),
-    .I2(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_I3_O[0]),
-    .I3(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_I3_O[1]),
-    .O(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_I1[2])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:22.34-23.52" *)
-  SB_LUT4 #(
-    .LUT_INIT(16'hcf00)
-  ) cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_I3_SB_LUT4_I3 (
-    .I0(1'h0),
-    .I1(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q[5]),
-    .I2(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O[2]),
-    .I3(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_I3[2]),
-    .O(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_I3_SB_LUT4_I3_O[3])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:17.34-18.52" *)
-  SB_LUT4 #(
-    .LUT_INIT(16'h0ff0)
-  ) cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_I3_SB_LUT4_I3_O_SB_LUT4_O (
-    .I0(1'h0),
-    .I1(1'h0),
-    .I2(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q[6]),
-    .I3(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O[2]),
-    .O(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_I3_SB_LUT4_I3_O[0])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:22.34-23.52" *)
-  SB_LUT4 #(
-    .LUT_INIT(16'h0300)
-  ) cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_I3_SB_LUT4_I3_O_SB_LUT4_O_1 (
-    .I0(1'h0),
-    .I1(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_I3_O[0]),
-    .I2(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_I3_O[1]),
-    .I3(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_I3_O[2]),
-    .O(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_I3_SB_LUT4_I3_O[1])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:26.33-27.52" *)
-  SB_LUT4 #(
-    .LUT_INIT(16'h020b)
-  ) cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_I3_SB_LUT4_I3_O_SB_LUT4_O_2 (
-    .I0(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q[0]),
-    .I1(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_I2_O[1]),
-    .I2(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_I2_O[2]),
-    .I3(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_I2_O[3]),
-    .O(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_I3_SB_LUT4_I3_O[2])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:17.34-18.52" *)
-  SB_LUT4 #(
-    .LUT_INIT(16'h000f)
-  ) cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_I3_SB_LUT4_O (
-    .I0(1'h0),
-    .I1(1'h0),
-    .I2(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2[0]),
-    .I3(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2[1]),
-    .O(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_I3[2])
+    .LUT_INIT(16'hc69c)
+  ) cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3 (
+    .I0(cnt[5]),
+    .I1(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q[5]),
+    .I2(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_I3_O[2]),
+    .I3(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3[3]),
+    .O(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O)
   );
   (* module_not_derived = 32'd1 *)
   (* src = "counter.v:32.5-38.8|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/ff_map.v:19.59-19.105" *)
-  SB_DFFSR cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D (
+  SB_DFFSR cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D (
     .C(clk),
-    .D(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O),
-    .Q(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q[5]),
+    .D(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O),
+    .Q(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q[5]),
     .R(rst)
   );
   (* module_not_derived = 32'd1 *)
   (* src = "counter.v:32.5-38.8|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/ff_map.v:19.59-19.105" *)
-  SB_DFFSR cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q_SB_DFFSR_Q (
+  SB_DFFSR cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q_SB_DFFSR_Q (
     .C(clk),
-    .D(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q_SB_DFFSR_Q_D),
-    .Q(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q[8]),
+    .D(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q_SB_DFFSR_Q_D),
+    .Q(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q[8]),
     .R(rst)
   );
   (* module_not_derived = 32'd1 *)
   (* src = "counter.v:32.5-38.8|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/ff_map.v:19.59-19.105" *)
-  SB_DFFSR cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q_SB_DFFSR_Q_1 (
+  SB_DFFSR cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q_SB_DFFSR_Q_1 (
     .C(clk),
-    .D(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q_SB_DFFSR_Q_1_D),
-    .Q(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q[7]),
-    .R(rst)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:22.34-23.52" *)
-  SB_LUT4 #(
-    .LUT_INIT(16'h3cc3)
-  ) cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q_SB_DFFSR_Q_1_D_SB_LUT4_O (
-    .I0(1'h0),
-    .I1(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q[7]),
-    .I2(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O[2]),
-    .I3(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q_SB_DFFSR_Q_D_SB_LUT4_O_I3[3]),
-    .O(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q_SB_DFFSR_Q_1_D)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "counter.v:32.5-38.8|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/ff_map.v:19.59-19.105" *)
-  SB_DFFSR cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q_SB_DFFSR_Q_2 (
-    .C(clk),
-    .D(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q_SB_DFFSR_Q_2_D),
-    .Q(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q[6]),
-    .R(rst)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:26.33-27.52" *)
-  SB_LUT4 #(
-    .LUT_INIT(16'ha655)
-  ) cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q_SB_DFFSR_Q_2_D_SB_LUT4_O (
-    .I0(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_I3_SB_LUT4_I3_O[0]),
-    .I1(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_I3_SB_LUT4_I3_O[1]),
-    .I2(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_I3_SB_LUT4_I3_O[2]),
-    .I3(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_I3_SB_LUT4_I3_O[3]),
-    .O(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q_SB_DFFSR_Q_2_D)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "counter.v:32.5-38.8|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/ff_map.v:19.59-19.105" *)
-  SB_DFFSR cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q_SB_DFFSR_Q_3 (
-    .C(clk),
-    .D(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_I2_O),
-    .Q(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q[2]),
-    .R(rst)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "counter.v:32.5-38.8|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/ff_map.v:19.59-19.105" *)
-  SB_DFFSR cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q_SB_DFFSR_Q_4 (
-    .C(clk),
-    .D(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q_SB_DFFSR_Q_4_D),
-    .Q(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q[1]),
-    .R(rst)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:22.34-23.52" *)
-  SB_LUT4 #(
-    .LUT_INIT(16'h03fc)
-  ) cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q_SB_DFFSR_Q_4_D_SB_LUT4_O (
-    .I0(1'h0),
-    .I1(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q_SB_DFFSR_Q_4_D_SB_LUT4_O_I1[0]),
-    .I2(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_I2_O[2]),
-    .I3(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q_SB_DFFSR_Q_4_D_SB_LUT4_O_I1[2]),
-    .O(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q_SB_DFFSR_Q_4_D)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:26.33-27.52" *)
-  SB_LUT4 #(
-    .LUT_INIT(16'h00c8)
-  ) cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q_SB_DFFSR_Q_4_D_SB_LUT4_O_I1_SB_LUT4_O (
-    .I0(mode),
-    .I1(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q[1]),
-    .I2(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3[3]),
-    .I3(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O[1]),
-    .O(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q_SB_DFFSR_Q_4_D_SB_LUT4_O_I1[0])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:22.34-23.52" *)
-  SB_LUT4 #(
-    .LUT_INIT(16'hf330)
-  ) cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q_SB_DFFSR_Q_4_D_SB_LUT4_O_I1_SB_LUT4_O_1 (
-    .I0(1'h0),
-    .I1(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q[0]),
-    .I2(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_I2_O[1]),
-    .I3(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_I2_O[3]),
-    .O(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q_SB_DFFSR_Q_4_D_SB_LUT4_O_I1[2])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "counter.v:32.5-38.8|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/ff_map.v:19.59-19.105" *)
-  SB_DFFSR cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q_SB_DFFSR_Q_5 (
-    .C(clk),
-    .D(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q_SB_DFFSR_Q_5_D),
-    .Q(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q[0]),
+    .D(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q_SB_DFFSR_Q_1_D),
+    .Q(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q[7]),
     .R(rst)
   );
   (* module_not_derived = 32'd1 *)
   (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:22.34-23.52" *)
   SB_LUT4 #(
     .LUT_INIT(16'hc33c)
-  ) cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q_SB_DFFSR_Q_5_D_SB_LUT4_O (
+  ) cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q_SB_DFFSR_Q_1_D_SB_LUT4_O (
     .I0(1'h0),
-    .I1(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q[0]),
-    .I2(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_I2_O[1]),
-    .I3(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_I2_O[3]),
-    .O(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q_SB_DFFSR_Q_5_D)
+    .I1(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q[7]),
+    .I2(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_I3_O[2]),
+    .I3(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q_SB_DFFSR_Q_D_SB_LUT4_O_I3[2]),
+    .O(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q_SB_DFFSR_Q_1_D)
+  );
+  (* module_not_derived = 32'd1 *)
+  (* src = "counter.v:32.5-38.8|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/ff_map.v:19.59-19.105" *)
+  SB_DFFSR cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q_SB_DFFSR_Q_2 (
+    .C(clk),
+    .D(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q_SB_DFFSR_Q_2_D),
+    .Q(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q[6]),
+    .R(rst)
   );
   (* module_not_derived = 32'd1 *)
   (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:26.33-27.52" *)
   SB_LUT4 #(
-    .LUT_INIT(16'h2aab)
-  ) cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q_SB_DFFSR_Q_D_SB_LUT4_O (
-    .I0(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q[8]),
-    .I1(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q[7]),
-    .I2(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O[2]),
-    .I3(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q_SB_DFFSR_Q_D_SB_LUT4_O_I3[3]),
-    .O(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q_SB_DFFSR_Q_D)
+    .LUT_INIT(16'h9969)
+  ) cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q_SB_DFFSR_Q_2_D_SB_LUT4_O (
+    .I0(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q[6]),
+    .I1(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_I3_O[2]),
+    .I2(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q_SB_DFFSR_Q_2_D_SB_LUT4_O_I2[2]),
+    .I3(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q_SB_DFFSR_Q_2_D_SB_LUT4_O_I2[3]),
+    .O(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q_SB_DFFSR_Q_2_D)
+  );
+  (* module_not_derived = 32'd1 *)
+  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:22.34-23.52" *)
+  SB_LUT4 #(
+    .LUT_INIT(16'h030f)
+  ) cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q_SB_DFFSR_Q_2_D_SB_LUT4_O_I2_SB_LUT4_O (
+    .I0(1'h0),
+    .I1(cnt[4]),
+    .I2(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q_SB_DFFSR_Q_2_D_SB_LUT4_O_I2_SB_LUT4_O_I2[1]),
+    .I3(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_I3_O[2]),
+    .O(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q_SB_DFFSR_Q_2_D_SB_LUT4_O_I2[2])
+  );
+  (* module_not_derived = 32'd1 *)
+  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:22.34-23.52" *)
+  SB_LUT4 #(
+    .LUT_INIT(16'hcf00)
+  ) cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q_SB_DFFSR_Q_2_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O (
+    .I0(1'h0),
+    .I1(cnt[5]),
+    .I2(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q[5]),
+    .I3(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_I3_O[2]),
+    .O(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q_SB_DFFSR_Q_2_D_SB_LUT4_O_I2_SB_LUT4_O_I2[1])
+  );
+  (* module_not_derived = 32'd1 *)
+  (* src = "counter.v:32.5-38.8|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/ff_map.v:19.59-19.105" *)
+  SB_DFFSR cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q_SB_DFFSR_Q_3 (
+    .C(clk),
+    .D(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q_SB_DFFSR_Q_3_D),
+    .Q(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q[2]),
+    .R(rst)
   );
   (* module_not_derived = 32'd1 *)
   (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:26.33-27.52" *)
   SB_LUT4 #(
-    .LUT_INIT(16'hcc8c)
-  ) cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_O (
-    .I0(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_I3_SB_LUT4_I3_O[0]),
-    .I1(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I1[1]),
-    .I2(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_I3_SB_LUT4_I3_O[1]),
-    .I3(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_I3_SB_LUT4_I3_O[2]),
-    .O(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q_SB_DFFSR_Q_D_SB_LUT4_O_I3[3])
+    .LUT_INIT(16'ha487)
+  ) cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q_SB_DFFSR_Q_3_D_SB_LUT4_O (
+    .I0(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_I3_1_O[3]),
+    .I1(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q[1]),
+    .I2(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_I3_I2_SB_LUT4_O_I2_SB_LUT4_I3_O[0]),
+    .I3(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q_SB_DFFSR_Q_3_D_SB_LUT4_O_I3[1]),
+    .O(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q_SB_DFFSR_Q_3_D)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:22.34-23.52" *)
+  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:26.33-27.52" *)
   SB_LUT4 #(
-    .LUT_INIT(16'h0003)
-  ) cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I1_SB_LUT4_O (
-    .I0(1'h0),
-    .I1(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I1_SB_LUT4_O_I1[0]),
-    .I2(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2[0]),
-    .I3(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2[1]),
-    .O(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I1[1])
+    .LUT_INIT(16'h0001)
+  ) cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q_SB_DFFSR_Q_3_D_SB_LUT4_O_I3_SB_LUT4_O (
+    .I0(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_I3_I2_SB_LUT4_O_I2_SB_LUT4_I3_O[0]),
+    .I1(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_I3_I2_SB_LUT4_O_I2_SB_LUT4_I3_O[1]),
+    .I2(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_I3_I2_SB_LUT4_O_I2_SB_LUT4_I3_O[2]),
+    .I3(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_I3_I2_SB_LUT4_O_I2_SB_LUT4_I3_O[3]),
+    .O(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q_SB_DFFSR_Q_3_D_SB_LUT4_O_I3[2])
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:22.34-23.52" *)
-  SB_LUT4 #(
-    .LUT_INIT(16'h0003)
-  ) cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I1_SB_LUT4_O_I1_SB_LUT4_O (
-    .I0(1'h0),
-    .I1(mode),
-    .I2(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I3_O[1]),
-    .I3(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I3_O[2]),
-    .O(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I1_SB_LUT4_O_I1[0])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:22.34-23.52" *)
-  SB_LUT4 #(
-    .LUT_INIT(16'h00cf)
-  ) cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_O (
-    .I0(1'h0),
-    .I1(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I1[3]),
-    .I2(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I2[2]),
-    .I3(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_I3_SB_LUT4_I3_O[2]),
-    .O(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3[3])
+  (* src = "counter.v:32.5-38.8|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/ff_map.v:19.59-19.105" *)
+  SB_DFFSR cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q_SB_DFFSR_Q_4 (
+    .C(clk),
+    .D(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q_SB_DFFSR_Q_4_D),
+    .Q(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q[1]),
+    .R(rst)
   );
   (* module_not_derived = 32'd1 *)
   (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:17.34-18.52" *)
   SB_LUT4 #(
     .LUT_INIT(16'hf00f)
-  ) cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_I2 (
+  ) cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q_SB_DFFSR_Q_4_D_SB_LUT4_O (
     .I0(1'h0),
     .I1(1'h0),
-    .I2(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I2[2]),
-    .I3(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_I3_SB_LUT4_I3_O[2]),
-    .O(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_I2_O)
+    .I2(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_I3_1_O[2]),
+    .I3(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_I3_1_O[3]),
+    .O(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q_SB_DFFSR_Q_4_D)
+  );
+  (* module_not_derived = 32'd1 *)
+  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:26.33-27.52" *)
+  SB_LUT4 #(
+    .LUT_INIT(16'hab2a)
+  ) cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q_SB_DFFSR_Q_D_SB_LUT4_O (
+    .I0(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q[8]),
+    .I1(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q[7]),
+    .I2(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_I3_O[2]),
+    .I3(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q_SB_DFFSR_Q_D_SB_LUT4_O_I3[2]),
+    .O(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q_SB_DFFSR_Q_D)
+  );
+  (* module_not_derived = 32'd1 *)
+  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:26.33-27.52" *)
+  SB_LUT4 #(
+    .LUT_INIT(16'hdd4d)
+  ) cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_O (
+    .I0(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q[6]),
+    .I1(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_I3_O[2]),
+    .I2(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q_SB_DFFSR_Q_2_D_SB_LUT4_O_I2[2]),
+    .I3(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q_SB_DFFSR_Q_2_D_SB_LUT4_O_I2[3]),
+    .O(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q_SB_DFFSR_Q_D_SB_LUT4_O_I3[2])
   );
   (* module_not_derived = 32'd1 *)
   (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:22.34-23.52" *)
   SB_LUT4 #(
-    .LUT_INIT(16'h003c)
-  ) cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_I3 (
+    .LUT_INIT(16'hfcc0)
+  ) cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_O (
     .I0(1'h0),
-    .I1(mode),
-    .I2(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q[5]),
-    .I3(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I2[2]),
-    .O(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_I3_O[2])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:26.33-27.52" *)
-  SB_LUT4 #(
-    .LUT_INIT(16'h6366)
-  ) cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_I3_O_SB_LUT4_O (
-    .I0(mode),
-    .I1(cnt[5]),
-    .I2(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_I2[3]),
-    .I3(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I3_O[2]),
-    .O(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_I3_O[0])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:26.33-27.52" *)
-  SB_LUT4 #(
-    .LUT_INIT(16'h3336)
-  ) cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_I3_O_SB_LUT4_O_1 (
-    .I0(mode),
     .I1(cnt[4]),
-    .I2(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I1[3]),
-    .I3(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3[3]),
-    .O(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_I3_O[1])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:26.33-27.52" *)
-  SB_LUT4 #(
-    .LUT_INIT(16'h5d4c)
-  ) cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O (
-    .I0(mode),
-    .I1(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q[2]),
-    .I2(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I1[2]),
-    .I3(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I1[3]),
-    .O(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I2[2])
+    .I2(cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_I3_O[2]),
+    .I3(cnt_SB_DFFSR_Q_1_D_SB_LUT4_O_I3[2]),
+    .O(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3[3])
   );
   (* module_not_derived = 32'd1 *)
   (* src = "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:12.34-13.52" *)
@@ -881,7 +784,7 @@ module counter(clk, rst, mode, cnt);
     .I0(1'h0),
     .I1(1'h0),
     .I2(1'h0),
-    .I3(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q[8]),
+    .I3(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q[8]),
     .O(cnt[9])
   );
   (* module_not_derived = 32'd1 *)
@@ -892,7 +795,7 @@ module counter(clk, rst, mode, cnt);
     .I0(1'h0),
     .I1(1'h0),
     .I2(1'h0),
-    .I3(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q[7]),
+    .I3(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q[7]),
     .O(cnt[8])
   );
   (* module_not_derived = 32'd1 *)
@@ -903,7 +806,7 @@ module counter(clk, rst, mode, cnt);
     .I0(1'h0),
     .I1(1'h0),
     .I2(1'h0),
-    .I3(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q[6]),
+    .I3(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q[6]),
     .O(cnt[7])
   );
   (* module_not_derived = 32'd1 *)
@@ -914,7 +817,7 @@ module counter(clk, rst, mode, cnt);
     .I0(1'h0),
     .I1(1'h0),
     .I2(1'h0),
-    .I3(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q[5]),
+    .I3(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q[5]),
     .O(cnt[6])
   );
   (* module_not_derived = 32'd1 *)
@@ -925,7 +828,7 @@ module counter(clk, rst, mode, cnt);
     .I0(1'h0),
     .I1(1'h0),
     .I2(1'h0),
-    .I3(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q[2]),
+    .I3(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q[2]),
     .O(cnt[3])
   );
   (* module_not_derived = 32'd1 *)
@@ -936,7 +839,7 @@ module counter(clk, rst, mode, cnt);
     .I0(1'h0),
     .I1(1'h0),
     .I2(1'h0),
-    .I3(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q[1]),
+    .I3(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q[1]),
     .O(cnt[2])
   );
   (* module_not_derived = 32'd1 *)
@@ -947,26 +850,25 @@ module counter(clk, rst, mode, cnt);
     .I0(1'h0),
     .I1(1'h0),
     .I2(1'h0),
-    .I3(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q[0]),
+    .I3(cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q[0]),
     .O(cnt[1])
   );
-  assign cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I3[1:0] = { cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I2, cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q[8] };
-  assign cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q_SB_DFFSR_Q_D_SB_LUT4_O_I3[2:0] = { cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O[2], cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q[7], cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q[8] };
-  assign cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_I3[1:0] = { cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O[2], cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q[5] };
-  assign cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I3_O[0] = mode;
-  assign { cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I1_SB_LUT4_O_I1[3], cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I1_SB_LUT4_O_I1[0] } = { cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I1_SB_LUT4_O_I3[1], mode };
-  assign cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I2[1:0] = { cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q[5], mode };
-  assign cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2[0] = cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO;
-  assign { cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I1_SB_LUT4_O_1_I2[3], cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I1_SB_LUT4_O_1_I2[1:0] } = { cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I1_SB_LUT4_O_I1[2], cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q[7], cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q[8] };
-  assign cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3[2:0] = { cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I1[3], cnt[4], mode };
-  assign cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_I2[2:0] = { cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2[1], mode, cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO };
-  assign cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_I2_O[0] = cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q[0];
-  assign { cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_I1[3], cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_I1[0] } = { cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_I3[2], cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3[3] };
-  assign cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O[0] = cnt[0];
-  assign cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3[2:0] = { cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2[1], cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_I3_O[1:0] };
-  assign cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I1_SB_LUT4_O_I1[2:1] = cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2;
-  assign cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q_SB_DFFSR_Q_4_D_SB_LUT4_O_I1[1] = cnt_SB_DFFSR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_I2_O[2];
-  assign cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I1[1:0] = { cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q[2], mode };
-  assign { cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I1[3:2], cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_O_SB_DFFSR_D_Q_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I1[0] } = cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I0_I3_SB_LUT4_I3_O[2:0];
+  assign cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2[0] = mode;
+  assign cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3[0] = cnt[0];
+  assign cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I3[1:0] = { cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2, cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q[8] };
+  assign cnt_SB_DFFSR_Q_1_D_SB_LUT4_O_I3[1:0] = { cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_I3_O[2], cnt[4] };
+  assign cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_I3_I2_SB_LUT4_O_I2[2:0] = { cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I2_O[1], cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q[2], mode };
+  assign cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3[2:0] = { cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_I3_O[2], cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q[5], cnt[5] };
+  assign { cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I2_O[2], cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I2_O[0] } = { cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2[1], mode };
+  assign { cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q_SB_DFFSR_Q_2_D_SB_LUT4_O_I2_SB_LUT4_O_I2[2], cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q_SB_DFFSR_Q_2_D_SB_LUT4_O_I2_SB_LUT4_O_I2[0] } = { cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_I3_O[2], cnt[4] };
+  assign cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I2_I3[1:0] = { cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO, cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q[8] };
+  assign cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q_SB_DFFSR_Q_D_SB_LUT4_O_I3[1:0] = { cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_I3_O[2], cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q[7] };
+  assign cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_I3_I2_SB_LUT4_O_I2_SB_LUT4_O_I1[0] = mode;
+  assign { cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q_SB_DFFSR_Q_3_D_SB_LUT4_O_I3[3], cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q_SB_DFFSR_Q_3_D_SB_LUT4_O_I3[0] } = { cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_I3_1_O[3], cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q[1] };
+  assign { cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_I3_I2[3], cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_I3_I2[1:0] } = { cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3[1], cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q[0], cnt[0] };
+  assign cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q_SB_DFFSR_Q_2_D_SB_LUT4_O_I2[1:0] = { cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_I3_O[2], cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q[6] };
+  assign cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_CARRY_I1_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I2_O_SB_LUT4_O_I1[2:1] = { cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_I3_I2_SB_LUT4_O_I2_SB_LUT4_O_I1[3], cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_LUT4_O_I2[1] };
+  assign cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_I3_O[1:0] = { cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q[5], cnt[5] };
+  assign cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_LUT4_I3_1_O[1:0] = { cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q[1], cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFSR_D_Q[2] };
   assign summand[8:5] = { summand[9], summand[9], summand[9], summand[9] };
 endmodule
