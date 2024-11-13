@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+<testsuite timestamp="2024-11-13T09:31:51" hostname="LukasDell" package="check" id="0" name="3" tests="0" errors="0" failures="0" time="7" skipped="0">
+<properties>
+<property name="os" value="Linux"/>
+<property name="expect" value="PASS"/>
+<property name="status" value="PASS"/>
+</properties>
+<testcase classname="3" name="build execution" time="0">
+</testcase>
+<system-out>SBY  9:31:50 [check_1] Removing directory '/home/lukas/OneDrive/Dokumente/Uni/DIS/task-6/check_1'.
+SBY  9:31:50 [check_2] Removing directory '/home/lukas/OneDrive/Dokumente/Uni/DIS/task-6/check_2'.
+SBY  9:31:50 [check_3] Removing directory '/home/lukas/OneDrive/Dokumente/Uni/DIS/task-6/check_3'.
+SBY  9:31:50 [check_3] Copy '/home/lukas/tabby-linux-x64-20240903/tabby/share/yosys/ice40' to '/home/lukas/OneDrive/Dokumente/Uni/DIS/task-6/check_3/src'.
+SBY  9:31:50 [check_3] Copy '/home/lukas/OneDrive/Dokumente/Uni/DIS/task-6/properties.sv' to '/home/lukas/OneDrive/Dokumente/Uni/DIS/task-6/check_3/src/properties.sv'.
+SBY  9:31:50 [check_3] Copy '/home/lukas/OneDrive/Dokumente/Uni/DIS/task-6/3.v' to '/home/lukas/OneDrive/Dokumente/Uni/DIS/task-6/check_3/src/3.v'.
+SBY  9:31:50 [check_3] engine_0: smtbmc
+SBY  9:31:50 [check_3] base: starting process &quot;cd check_3/src; yosys -ql ../model/design.log ../model/design.ys&quot;
+SBY  9:31:50 [check_3] base: Academic/educational license for ICT / TU-Vienna.
+SBY  9:31:50 [check_3] base: Do not redistribute without permission.
+SBY  9:31:50 [check_3] base: Do not use for commercial purposes.
+SBY  9:31:50 [check_3] base: VERIFIC-WARNING [VDB-1002] 3.v:144: net 'summand[9]' does not have a driver
+SBY  9:31:50 [check_3] base: finished (returncode=0)
+SBY  9:31:50 [check_3] prep: starting process &quot;cd check_3/model; yosys -ql design_prep.log design_prep.ys&quot;
+SBY  9:31:50 [check_3] prep: Academic/educational license for ICT / TU-Vienna.
+SBY  9:31:50 [check_3] prep: Do not redistribute without permission.
+SBY  9:31:50 [check_3] prep: Do not use for commercial purposes.
+SBY  9:31:50 [check_3] prep: finished (returncode=0)
+SBY  9:31:50 [check_3] smt2: starting process &quot;cd check_3/model; yosys -ql design_smt2.log design_smt2.ys&quot;
+SBY  9:31:50 [check_3] smt2: Academic/educational license for ICT / TU-Vienna.
+SBY  9:31:50 [check_3] smt2: Do not redistribute without permission.
+SBY  9:31:50 [check_3] smt2: Do not use for commercial purposes.
+SBY  9:31:50 [check_3] smt2: finished (returncode=0)
+SBY  9:31:50 [check_3] engine_0.basecase: starting process &quot;cd check_3; yosys-smtbmc --presat --unroll --noprogress -t 20  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2&quot;
+SBY  9:31:50 [check_3] engine_0.induction: starting process &quot;cd check_3; yosys-smtbmc --presat --unroll -i --noprogress -t 20  --append 0 --dump-vcd engine_0/trace_induct.vcd --dump-yw engine_0/trace_induct.yw --dump-vlogtb engine_0/trace_induct_tb.v --dump-smtc engine_0/trace_induct.smtc model/design_smt2.smt2&quot;
+SBY  9:31:50 [check_3] engine_0.basecase: ##   0:00:00  Solver: yices
+SBY  9:31:50 [check_3] engine_0.induction: ##   0:00:00  Solver: yices
+SBY  9:31:50 [check_3] engine_0.basecase: ##   0:00:00  Checking assumptions in step 0..
+SBY  9:31:50 [check_3] engine_0.basecase: ##   0:00:00  Checking assertions in step 0..
+SBY  9:31:50 [check_3] engine_0.induction: ##   0:00:00  Trying induction in step 20..
+SBY  9:31:50 [check_3] engine_0.induction: ##   0:00:00  Temporal induction successful.
+SBY  9:31:50 [check_3] engine_0.induction: ##   0:00:00  Status: passed
+SBY  9:31:50 [check_3] engine_0.induction: finished (returncode=0)
+SBY  9:31:50 [check_3] engine_0.induction: Status returned by engine for induction: pass
+SBY  9:31:50 [check_3] engine_0.basecase: ##   0:00:00  Checking assumptions in step 1..
+SBY  9:31:50 [check_3] engine_0.basecase: ##   0:00:00  Checking assertions in step 1..
+SBY  9:31:50 [check_3] engine_0.basecase: ##   0:00:00  Checking assumptions in step 2..
+SBY  9:31:50 [check_3] engine_0.basecase: ##   0:00:00  Checking assertions in step 2..
+SBY  9:31:50 [check_3] engine_0.basecase: ##   0:00:00  Checking assumptions in step 3..
+SBY  9:31:50 [check_3] engine_0.basecase: ##   0:00:00  Checking assertions in step 3..
+SBY  9:31:50 [check_3] engine_0.basecase: ##   0:00:00  Checking assumptions in step 4..
+SBY  9:31:50 [check_3] engine_0.basecase: ##   0:00:00  Checking assertions in step 4..
+SBY  9:31:51 [check_3] engine_0.basecase: ##   0:00:00  Checking assumptions in step 5..
+SBY  9:31:51 [check_3] engine_0.basecase: ##   0:00:00  Checking assertions in step 5..
+SBY  9:31:51 [check_3] engine_0.basecase: ##   0:00:00  Checking assumptions in step 6..
+SBY  9:31:51 [check_3] engine_0.basecase: ##   0:00:00  Checking assertions in step 6..
+SBY  9:31:51 [check_3] engine_0.basecase: ##   0:00:00  Checking assumptions in step 7..
+SBY  9:31:51 [check_3] engine_0.basecase: ##   0:00:00  Checking assertions in step 7..
+SBY  9:31:51 [check_3] engine_0.basecase: ##   0:00:00  Checking assumptions in step 8..
+SBY  9:31:51 [check_3] engine_0.basecase: ##   0:00:00  Checking assertions in step 8..
+SBY  9:31:51 [check_3] engine_0.basecase: ##   0:00:00  Checking assumptions in step 9..
+SBY  9:31:51 [check_3] engine_0.basecase: ##   0:00:00  Checking assertions in step 9..
+SBY  9:31:51 [check_3] engine_0.basecase: ##   0:00:00  Checking assumptions in step 10..
+SBY  9:31:51 [check_3] engine_0.basecase: ##   0:00:00  Checking assertions in step 10..
+SBY  9:31:51 [check_3] engine_0.basecase: ##   0:00:00  Checking assumptions in step 11..
+SBY  9:31:51 [check_3] engine_0.basecase: ##   0:00:00  Checking assertions in step 11..
+SBY  9:31:51 [check_3] engine_0.basecase: ##   0:00:00  Checking assumptions in step 12..
+SBY  9:31:51 [check_3] engine_0.basecase: ##   0:00:00  Checking assertions in step 12..
+SBY  9:31:51 [check_3] engine_0.basecase: ##   0:00:00  Checking assumptions in step 13..
+SBY  9:31:51 [check_3] engine_0.basecase: ##   0:00:00  Checking assertions in step 13..
+SBY  9:31:51 [check_3] engine_0.basecase: ##   0:00:00  Checking assumptions in step 14..
+SBY  9:31:51 [check_3] engine_0.basecase: ##   0:00:00  Checking assertions in step 14..
+SBY  9:31:51 [check_3] engine_0.basecase: ##   0:00:00  Checking assumptions in step 15..
+SBY  9:31:51 [check_3] engine_0.basecase: ##   0:00:00  Checking assertions in step 15..
+SBY  9:31:51 [check_3] engine_0.basecase: ##   0:00:00  Checking assumptions in step 16..
+SBY  9:31:51 [check_3] engine_0.basecase: ##   0:00:00  Checking assertions in step 16..
+SBY  9:31:51 [check_3] engine_0.basecase: ##   0:00:00  Checking assumptions in step 17..
+SBY  9:31:51 [check_3] engine_0.basecase: ##   0:00:00  Checking assertions in step 17..
+SBY  9:31:51 [check_3] engine_0.basecase: ##   0:00:00  Checking assumptions in step 18..
+SBY  9:31:51 [check_3] engine_0.basecase: ##   0:00:00  Checking assertions in step 18..
+SBY  9:31:51 [check_3] engine_0.basecase: ##   0:00:00  Checking assumptions in step 19..
+SBY  9:31:51 [check_3] engine_0.basecase: ##   0:00:00  Checking assertions in step 19..
+SBY  9:31:51 [check_3] engine_0.basecase: ##   0:00:00  Status: passed
+SBY  9:31:51 [check_3] engine_0.basecase: finished (returncode=0)
+SBY  9:31:51 [check_3] engine_0.basecase: Status returned by engine for basecase: pass
+SBY  9:31:51 [check_3] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:01 (1)
+SBY  9:31:51 [check_3] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:07 (7)
+SBY  9:31:51 [check_3] summary: engine_0 (smtbmc) returned pass for basecase
+SBY  9:31:51 [check_3] summary: engine_0 (smtbmc) returned pass for induction
+SBY  9:31:51 [check_3] summary: engine_0 did not produce any traces
+SBY  9:31:51 [check_3] summary: successful proof by k-induction.
+SBY  9:31:51 [check_3] DONE (PASS, rc=0)
+</system-out>
+<system-err>
+</system-err>
+</testsuite>
+</testsuites>

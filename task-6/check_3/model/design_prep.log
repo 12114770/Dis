@@ -1,0 +1,354 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite -- YosysHQ Edition [202409031137]     |
+ |  Copyright (C) 2012 - 2024 YosysHQ GmbH                                    |
+ |  For support, please contact support@yosyshq.com                           |
+ \----------------------------------------------------------------------------/
+ Yosys 0.45 (git sha1 9ed031ddd, clang++ 14.0.0-1ubuntu1.1 -fPIC -O3)
+
+-- Executing script file `design_prep.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: design.il
+
+2. Executing SCC pass (detecting logic loops).
+Found 0 SCCs in module counter.
+Found 0 SCCs in module SB_LUT4(LUT_INIT=16'b1111110101110001).
+Found 0 SCCs in module SB_LUT4(LUT_INIT=16'b1111110011000000).
+Found 0 SCCs in module SB_LUT4(LUT_INIT=16'b1111001100000000).
+Found 0 SCCs in module SB_LUT4(LUT_INIT=16'b1111000011000011).
+Found 0 SCCs in module SB_LUT4(LUT_INIT=16'b1111000000111100).
+Found 0 SCCs in module SB_LUT4(LUT_INIT=16'b1111000000001111).
+Found 0 SCCs in module SB_LUT4(LUT_INIT=16'b1111000000000000).
+Found 0 SCCs in module SB_LUT4(LUT_INIT=16'b1100001111001100).
+Found 0 SCCs in module SB_LUT4(LUT_INIT=16'b1100000011001100).
+Found 0 SCCs in module SB_LUT4(LUT_INIT=16'b1011111100000000).
+Found 0 SCCs in module SB_LUT4(LUT_INIT=16'b1010001011110011).
+Found 0 SCCs in module SB_LUT4(LUT_INIT=16'b1000000000000000).
+Found 0 SCCs in module SB_LUT4(LUT_INIT=16'b011111111111100).
+Found 0 SCCs in module SB_LUT4(LUT_INIT=16'b011111111).
+Found 0 SCCs in module SB_LUT4(LUT_INIT=16'b011111110).
+Found 0 SCCs in module SB_LUT4(LUT_INIT=16'b0111100111100).
+Found 0 SCCs in module SB_LUT4(LUT_INIT=16'b011110011000011).
+Found 0 SCCs in module SB_LUT4(LUT_INIT=16'b011110000111001).
+Found 0 SCCs in module SB_LUT4(LUT_INIT=16'b0111100000000).
+Found 0 SCCs in module SB_LUT4(LUT_INIT=16'b01111).
+Found 0 SCCs in module SB_LUT4(LUT_INIT=16'b0111).
+Found 0 SCCs in module SB_LUT4(LUT_INIT=16'b0110101010101001).
+Found 0 SCCs in module SB_LUT4(LUT_INIT=16'b011001111001001).
+Found 0 SCCs in module SB_LUT4(LUT_INIT=16'b011001100110110).
+Found 0 SCCs in module SB_LUT4(LUT_INIT=16'b011001100110000).
+Found 0 SCCs in module SB_LUT4(LUT_INIT=16'b011000000110001).
+Found 0 SCCs in module SB_LUT4(LUT_INIT=16'b011000000).
+Found 0 SCCs in module SB_LUT4(LUT_INIT=16'b0110000).
+Found 0 SCCs in module SB_LUT4(LUT_INIT=16'b01100).
+Found 0 SCCs in module SB_LUT4(LUT_INIT=16'b010101010101011).
+Found 0 SCCs in module SB_LUT4(LUT_INIT=16'b010101010101010).
+Found 0 SCCs in module SB_LUT4(LUT_INIT=16'b01000000000000).
+Found 0 SCCs in module SB_LUT4(LUT_INIT=16'b01000).
+Found 0 SCCs in module SB_LUT4(LUT_INIT=16'b01).
+Found 0 SCCs in module SB_DFFSR.
+Found 0 SCCs in module SB_CARRY.
+Found 0 SCCs.
+
+3. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+4. Executing MEMORY_NORDFF pass (extracting $dff cells from memories).
+
+5. Executing ASYNC2SYNC pass.
+
+6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \counter..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1111110101110001)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1111110011000000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1111001100000000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1111000011000011)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1111000000111100)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1111000000001111)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1111000000000000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1100001111001100)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1100000011001100)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1011111100000000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1010001011110011)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1000000000000000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b011111111111100)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b011111111)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b011111110)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b0111100111100)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b011110011000011)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b011110000111001)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b0111100000000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b01111)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b0111)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b0110101010101001)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b011001111001001)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b011001100110110)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b011001100110000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b011000000110001)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b011000000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b0110000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b01100)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b010101010101011)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b010101010101010)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b01000000000000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b01000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b01)..
+Finding unused cells or wires in module \SB_DFFSR..
+Finding unused cells or wires in module \SB_CARRY..
+
+7. Executing FORMALFF pass.
+
+8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \SB_CARRY..
+Finding unused cells or wires in module \SB_DFFSR..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b01)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b01000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b01000000000000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b010101010101010)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b010101010101011)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b01100)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b0110000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b011000000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b011000000110001)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b011001100110000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b011001100110110)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b011001111001001)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b0110101010101001)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b0111)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b01111)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b0111100000000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b011110000111001)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b011110011000011)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b0111100111100)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b011111110)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b011111111)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b011111111111100)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1000000000000000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1010001011110011)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1011111100000000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1100000011001100)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1100001111001100)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1111000000000000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1111000000001111)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1111000000111100)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1111000011000011)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1111001100000000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1111110011000000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1111110101110001)..
+Finding unused cells or wires in module \counter..
+Removed 2 unused cells and 2 unused wires.
+<suppressed ~4 debug messages>
+
+9. Executing CHECK pass (checking for obvious problems).
+Checking module SB_CARRY...
+Checking module SB_DFFSR...
+Checking module SB_LUT4(LUT_INIT=16'b01)...
+Checking module SB_LUT4(LUT_INIT=16'b01000)...
+Checking module SB_LUT4(LUT_INIT=16'b01000000000000)...
+Checking module SB_LUT4(LUT_INIT=16'b010101010101010)...
+Checking module SB_LUT4(LUT_INIT=16'b010101010101011)...
+Checking module SB_LUT4(LUT_INIT=16'b01100)...
+Checking module SB_LUT4(LUT_INIT=16'b0110000)...
+Checking module SB_LUT4(LUT_INIT=16'b011000000)...
+Checking module SB_LUT4(LUT_INIT=16'b011000000110001)...
+Checking module SB_LUT4(LUT_INIT=16'b011001100110000)...
+Checking module SB_LUT4(LUT_INIT=16'b011001100110110)...
+Checking module SB_LUT4(LUT_INIT=16'b011001111001001)...
+Checking module SB_LUT4(LUT_INIT=16'b0110101010101001)...
+Checking module SB_LUT4(LUT_INIT=16'b0111)...
+Checking module SB_LUT4(LUT_INIT=16'b01111)...
+Checking module SB_LUT4(LUT_INIT=16'b0111100000000)...
+Checking module SB_LUT4(LUT_INIT=16'b011110000111001)...
+Checking module SB_LUT4(LUT_INIT=16'b011110011000011)...
+Checking module SB_LUT4(LUT_INIT=16'b0111100111100)...
+Checking module SB_LUT4(LUT_INIT=16'b011111110)...
+Checking module SB_LUT4(LUT_INIT=16'b011111111)...
+Checking module SB_LUT4(LUT_INIT=16'b011111111111100)...
+Checking module SB_LUT4(LUT_INIT=16'b1000000000000000)...
+Checking module SB_LUT4(LUT_INIT=16'b1010001011110011)...
+Checking module SB_LUT4(LUT_INIT=16'b1011111100000000)...
+Checking module SB_LUT4(LUT_INIT=16'b1100000011001100)...
+Checking module SB_LUT4(LUT_INIT=16'b1100001111001100)...
+Checking module SB_LUT4(LUT_INIT=16'b1111000000000000)...
+Checking module SB_LUT4(LUT_INIT=16'b1111000000001111)...
+Checking module SB_LUT4(LUT_INIT=16'b1111000000111100)...
+Checking module SB_LUT4(LUT_INIT=16'b1111000011000011)...
+Checking module SB_LUT4(LUT_INIT=16'b1111001100000000)...
+Checking module SB_LUT4(LUT_INIT=16'b1111110011000000)...
+Checking module SB_LUT4(LUT_INIT=16'b1111110101110001)...
+Checking module counter...
+Found and reported 0 problems.
+
+10. Executing SETUNDEF pass (replace undef values with defined constants).
+
+11. Executing OPT pass (performing simple optimizations).
+
+11.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module SB_CARRY.
+Optimizing module SB_DFFSR.
+Optimizing module SB_LUT4(LUT_INIT=16'b01).
+Optimizing module SB_LUT4(LUT_INIT=16'b01000).
+Optimizing module SB_LUT4(LUT_INIT=16'b01000000000000).
+Optimizing module SB_LUT4(LUT_INIT=16'b010101010101010).
+Optimizing module SB_LUT4(LUT_INIT=16'b010101010101011).
+Optimizing module SB_LUT4(LUT_INIT=16'b01100).
+Optimizing module SB_LUT4(LUT_INIT=16'b0110000).
+Optimizing module SB_LUT4(LUT_INIT=16'b011000000).
+Optimizing module SB_LUT4(LUT_INIT=16'b011000000110001).
+Optimizing module SB_LUT4(LUT_INIT=16'b011001100110000).
+Optimizing module SB_LUT4(LUT_INIT=16'b011001100110110).
+Optimizing module SB_LUT4(LUT_INIT=16'b011001111001001).
+Optimizing module SB_LUT4(LUT_INIT=16'b0110101010101001).
+Optimizing module SB_LUT4(LUT_INIT=16'b0111).
+Optimizing module SB_LUT4(LUT_INIT=16'b01111).
+Optimizing module SB_LUT4(LUT_INIT=16'b0111100000000).
+Optimizing module SB_LUT4(LUT_INIT=16'b011110000111001).
+Optimizing module SB_LUT4(LUT_INIT=16'b011110011000011).
+Optimizing module SB_LUT4(LUT_INIT=16'b0111100111100).
+Optimizing module SB_LUT4(LUT_INIT=16'b011111110).
+Optimizing module SB_LUT4(LUT_INIT=16'b011111111).
+Optimizing module SB_LUT4(LUT_INIT=16'b011111111111100).
+Optimizing module SB_LUT4(LUT_INIT=16'b1000000000000000).
+Optimizing module SB_LUT4(LUT_INIT=16'b1010001011110011).
+Optimizing module SB_LUT4(LUT_INIT=16'b1011111100000000).
+Optimizing module SB_LUT4(LUT_INIT=16'b1100000011001100).
+Optimizing module SB_LUT4(LUT_INIT=16'b1100001111001100).
+Optimizing module SB_LUT4(LUT_INIT=16'b1111000000000000).
+Optimizing module SB_LUT4(LUT_INIT=16'b1111000000001111).
+Optimizing module SB_LUT4(LUT_INIT=16'b1111000000111100).
+Optimizing module SB_LUT4(LUT_INIT=16'b1111000011000011).
+Optimizing module SB_LUT4(LUT_INIT=16'b1111001100000000).
+Optimizing module SB_LUT4(LUT_INIT=16'b1111110011000000).
+Optimizing module SB_LUT4(LUT_INIT=16'b1111110101110001).
+Optimizing module counter.
+
+11.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\SB_CARRY'.
+Finding identical cells in module `\SB_DFFSR'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b01)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b01000)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b01000000000000)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b010101010101010)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b010101010101011)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b01100)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b0110000)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b011000000)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b011000000110001)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b011001100110000)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b011001100110110)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b011001111001001)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b0110101010101001)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b0111)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b01111)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b0111100000000)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b011110000111001)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b011110011000011)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b0111100111100)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b011111110)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b011111111)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b011111111111100)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b1000000000000000)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b1010001011110011)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b1011111100000000)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b1100000011001100)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b1100001111001100)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b1111000000000000)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b1111000000001111)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b1111000000111100)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b1111000011000011)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b1111001100000000)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b1111110011000000)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b1111110101110001)'.
+Finding identical cells in module `\counter'.
+Removed a total of 0 cells.
+
+11.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+11.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \SB_CARRY..
+Finding unused cells or wires in module \SB_DFFSR..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b01)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b01000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b01000000000000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b010101010101010)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b010101010101011)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b01100)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b0110000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b011000000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b011000000110001)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b011001100110000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b011001100110110)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b011001111001001)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b0110101010101001)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b0111)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b01111)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b0111100000000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b011110000111001)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b011110011000011)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b0111100111100)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b011111110)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b011111111)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b011111111111100)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1000000000000000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1010001011110011)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1011111100000000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1100000011001100)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1100001111001100)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1111000000000000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1111000000001111)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1111000000111100)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1111000011000011)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1111001100000000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1111110011000000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1111110101110001)..
+Finding unused cells or wires in module \counter..
+Removed 7 unused cells and 7 unused wires.
+<suppressed ~8 debug messages>
+
+11.5. Finished fast OPT passes.
+
+12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \SB_CARRY..
+Finding unused cells or wires in module \SB_DFFSR..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b01)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b01000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b01000000000000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b010101010101010)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b010101010101011)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b01100)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b0110000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b011000000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b011000000110001)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b011001100110000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b011001100110110)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b011001111001001)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b0110101010101001)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b0111)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b01111)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b0111100000000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b011110000111001)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b011110011000011)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b0111100111100)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b011111110)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b011111111)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b011111111111100)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1000000000000000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1010001011110011)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1011111100000000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1100000011001100)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1100001111001100)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1111000000000000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1111000000001111)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1111000000111100)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1111000011000011)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1111001100000000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1111110011000000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1111110101110001)..
+Finding unused cells or wires in module \counter..
+
+13. Executing RTLIL backend.
+Output filename: ../model/design_prep.il
+
+End of script. Logfile hash: d343a66381, CPU: user 0.09s system 0.02s, MEM: 28.12 MB peak
+Yosys 0.45 (git sha1 9ed031ddd, clang++ 14.0.0-1ubuntu1.1 -fPIC -O3)
+Time spent: 17% 1x formalff (0 sec), 17% 1x opt_dff (0 sec), ...

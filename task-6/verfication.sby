@@ -1,0 +1,18 @@
+[options]
+mode prove
+expect pass
+depth 100
+
+[engines]
+smtbmc --syn
+
+[script]
+read -formal properties.sv counter_submod.v increment.v decrement.v
+verific -import ctb
+prep -top ctb
+
+[files]
+properties.sv
+counter_submod.v
+increment.v
+decrement.v

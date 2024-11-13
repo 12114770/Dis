@@ -1,0 +1,21 @@
+
+
+[options]
+mode prove
+expect pass
+
+[engines]
+smtbmc
+
+[script]
+read -define NO_ICE40_DEFAULT_ASSIGNMENTS
+read -formal cells_sim.v
+read -formal properties.sv
+read -formal 4.v
+verific -import counter
+prep -top counter
+
+[files]
+/home/lukas/tabby-linux-x64-20240903/tabby/share/yosys/ice40/
+properties.sv
+4.v

@@ -1,0 +1,2802 @@
+{
+  "$schema": "https://raw.githubusercontent.com/YosysHQ/yosys/main/misc/jny.schema.json",
+  "generator": "Yosys 0.45 (git sha1 9ed031ddd, clang++ 14.0.0-1ubuntu1.1 -fPIC -O3)",
+  "version": "0.0.1",
+  "invocation": "write_jny -no-connections ../model/design.json ",
+  "features": ["attributes", "properties"],
+  "modules": [
+      {
+        "name": "SB_CARRY",
+        "cell_sorts": [
+          {
+            "type": "$or",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$verific$i5$cells_sim.v:229$340",
+                  "attributes": {
+                    "src": "cells_sim.v:229.29-229.39"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$verific$i7$cells_sim.v:229$342",
+                  "attributes": {
+                    "src": "cells_sim.v:229.14-229.46"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$and",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$verific$i4$cells_sim.v:229$339",
+                  "attributes": {
+                    "src": "cells_sim.v:229.14-229.24"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$verific$i6$cells_sim.v:229$341",
+                  "attributes": {
+                    "src": "cells_sim.v:229.28-229.46"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          }
+        ],
+        "attributes": {
+            "library": "work",
+            "hdlname": "SB_CARRY",
+            "lib_whitebox": "00000000000000000000000000000001",
+            "src": "cells_sim.v:228.8-228.16"
+        }
+      },
+      {
+        "name": "SB_DFFSR",
+        "cell_sorts": [
+          {
+            "type": "$mux",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "S",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$verific$i7$cells_sim.v:360$353",
+                  "attributes": {
+                    "src": "cells_sim.v:357.3-360.11"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$dff",
+            "ports": [
+                {
+                  "name": "CLK",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "D",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Q",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$verific$Q_reg$cells_sim.v:360$354",
+                  "attributes": {
+                    "src": "cells_sim.v:356.9-360.11"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "00000000000000000000000000000001",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          }
+        ],
+        "attributes": {
+            "library": "work",
+            "hdlname": "SB_DFFSR",
+            "lib_whitebox": "00000000000000000000000000000001",
+            "abc9_flop": "00000000000000000000000000000001",
+            "src": "cells_sim.v:350.8-350.16"
+        }
+      },
+      {
+        "name": "SB_LUT4(LUT_INIT=16'b01000)",
+        "cell_sorts": [
+          {
+            "type": "$not",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$verific$i12$cells_sim.v:185$361",
+                  "attributes": {
+                    "src": "cells_sim.v:185.18-185.53"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$mux",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "S",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$verific$i10$cells_sim.v:188$367",
+                  "attributes": {
+                    "src": "cells_sim.v:188.13-188.31"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$verific$mux_5$cells_sim.v:186$363",
+                  "attributes": {
+                    "src": "cells_sim.v:186.18-186.53"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000100"
+                  }
+                },
+                {
+                  "name": "$verific$mux_7$cells_sim.v:187$365",
+                  "attributes": {
+                    "src": "cells_sim.v:187.18-187.53"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                }
+            ]
+          }
+        ],
+        "attributes": {
+            "library": "work",
+            "hdlname": "SB_LUT4",
+            "lib_whitebox": "00000000000000000000000000000001",
+            "abc9_lut": "00000000000000000000000000000001",
+            "src": "cells_sim.v:177.8-177.15"
+        }
+      },
+      {
+        "name": "SB_LUT4(LUT_INIT=16'b010101010101010)",
+        "cell_sorts": [
+          {
+            "type": "$not",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$verific$i12$cells_sim.v:185$377",
+                  "attributes": {
+                    "src": "cells_sim.v:185.18-185.53"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$mux",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "S",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$verific$i10$cells_sim.v:188$383",
+                  "attributes": {
+                    "src": "cells_sim.v:188.13-188.31"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$verific$mux_5$cells_sim.v:186$379",
+                  "attributes": {
+                    "src": "cells_sim.v:186.18-186.53"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000100"
+                  }
+                },
+                {
+                  "name": "$verific$mux_7$cells_sim.v:187$381",
+                  "attributes": {
+                    "src": "cells_sim.v:187.18-187.53"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                }
+            ]
+          }
+        ],
+        "attributes": {
+            "library": "work",
+            "hdlname": "SB_LUT4",
+            "lib_whitebox": "00000000000000000000000000000001",
+            "abc9_lut": "00000000000000000000000000000001",
+            "src": "cells_sim.v:177.8-177.15"
+        }
+      },
+      {
+        "name": "SB_LUT4(LUT_INIT=16'b011)",
+        "cell_sorts": [
+          {
+            "type": "$not",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$verific$i13$cells_sim.v:185$391",
+                  "attributes": {
+                    "src": "cells_sim.v:185.18-185.53"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$mux",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "S",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$verific$i10$cells_sim.v:188$397",
+                  "attributes": {
+                    "src": "cells_sim.v:188.13-188.31"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$verific$mux_5$cells_sim.v:186$393",
+                  "attributes": {
+                    "src": "cells_sim.v:186.18-186.53"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$verific$mux_7$cells_sim.v:187$395",
+                  "attributes": {
+                    "src": "cells_sim.v:187.18-187.53"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                }
+            ]
+          }
+        ],
+        "attributes": {
+            "library": "work",
+            "hdlname": "SB_LUT4",
+            "lib_whitebox": "00000000000000000000000000000001",
+            "abc9_lut": "00000000000000000000000000000001",
+            "src": "cells_sim.v:177.8-177.15"
+        }
+      },
+      {
+        "name": "SB_LUT4(LUT_INIT=16'b0110000)",
+        "cell_sorts": [
+          {
+            "type": "$not",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$verific$i13$cells_sim.v:185$405",
+                  "attributes": {
+                    "src": "cells_sim.v:185.18-185.53"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$mux",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "S",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$verific$i10$cells_sim.v:188$411",
+                  "attributes": {
+                    "src": "cells_sim.v:188.13-188.31"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$verific$mux_5$cells_sim.v:186$407",
+                  "attributes": {
+                    "src": "cells_sim.v:186.18-186.53"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$verific$mux_7$cells_sim.v:187$409",
+                  "attributes": {
+                    "src": "cells_sim.v:187.18-187.53"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                }
+            ]
+          }
+        ],
+        "attributes": {
+            "library": "work",
+            "hdlname": "SB_LUT4",
+            "lib_whitebox": "00000000000000000000000000000001",
+            "abc9_lut": "00000000000000000000000000000001",
+            "src": "cells_sim.v:177.8-177.15"
+        }
+      },
+      {
+        "name": "SB_LUT4(LUT_INIT=16'b01100000000)",
+        "cell_sorts": [
+          {
+            "type": "$mux",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "S",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$verific$i10$cells_sim.v:188$423",
+                  "attributes": {
+                    "src": "cells_sim.v:188.13-188.31"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$verific$mux_5$cells_sim.v:186$419",
+                  "attributes": {
+                    "src": "cells_sim.v:186.18-186.53"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$verific$mux_7$cells_sim.v:187$421",
+                  "attributes": {
+                    "src": "cells_sim.v:187.18-187.53"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                }
+            ]
+          }
+        ],
+        "attributes": {
+            "library": "work",
+            "hdlname": "SB_LUT4",
+            "lib_whitebox": "00000000000000000000000000000001",
+            "abc9_lut": "00000000000000000000000000000001",
+            "src": "cells_sim.v:177.8-177.15"
+        }
+      },
+      {
+        "name": "SB_LUT4(LUT_INIT=16'b011000000000000)",
+        "cell_sorts": [
+          {
+            "type": "$mux",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "S",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$verific$i10$cells_sim.v:188$435",
+                  "attributes": {
+                    "src": "cells_sim.v:188.13-188.31"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$verific$mux_5$cells_sim.v:186$431",
+                  "attributes": {
+                    "src": "cells_sim.v:186.18-186.53"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$verific$mux_7$cells_sim.v:187$433",
+                  "attributes": {
+                    "src": "cells_sim.v:187.18-187.53"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                }
+            ]
+          }
+        ],
+        "attributes": {
+            "library": "work",
+            "hdlname": "SB_LUT4",
+            "lib_whitebox": "00000000000000000000000000000001",
+            "abc9_lut": "00000000000000000000000000000001",
+            "src": "cells_sim.v:177.8-177.15"
+        }
+      },
+      {
+        "name": "SB_LUT4(LUT_INIT=16'b0110100110010110)",
+        "cell_sorts": [
+          {
+            "type": "$not",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$verific$i13$cells_sim.v:185$441",
+                  "attributes": {
+                    "src": "cells_sim.v:185.18-185.53"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$mux",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "S",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$verific$i10$cells_sim.v:188$447",
+                  "attributes": {
+                    "src": "cells_sim.v:188.13-188.31"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$verific$mux_5$cells_sim.v:186$443",
+                  "attributes": {
+                    "src": "cells_sim.v:186.18-186.53"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000100"
+                  }
+                },
+                {
+                  "name": "$verific$mux_7$cells_sim.v:187$445",
+                  "attributes": {
+                    "src": "cells_sim.v:187.18-187.53"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                }
+            ]
+          }
+        ],
+        "attributes": {
+            "library": "work",
+            "hdlname": "SB_LUT4",
+            "lib_whitebox": "00000000000000000000000000000001",
+            "abc9_lut": "00000000000000000000000000000001",
+            "src": "cells_sim.v:177.8-177.15"
+        }
+      },
+      {
+        "name": "SB_LUT4(LUT_INIT=16'b01111)",
+        "cell_sorts": [
+          {
+            "type": "$not",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$verific$i13$cells_sim.v:185$455",
+                  "attributes": {
+                    "src": "cells_sim.v:185.18-185.53"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$mux",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "S",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$verific$i10$cells_sim.v:188$461",
+                  "attributes": {
+                    "src": "cells_sim.v:188.13-188.31"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$verific$mux_5$cells_sim.v:186$457",
+                  "attributes": {
+                    "src": "cells_sim.v:186.18-186.53"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000100"
+                  }
+                },
+                {
+                  "name": "$verific$mux_7$cells_sim.v:187$459",
+                  "attributes": {
+                    "src": "cells_sim.v:187.18-187.53"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                }
+            ]
+          }
+        ],
+        "attributes": {
+            "library": "work",
+            "hdlname": "SB_LUT4",
+            "lib_whitebox": "00000000000000000000000000000001",
+            "abc9_lut": "00000000000000000000000000000001",
+            "src": "cells_sim.v:177.8-177.15"
+        }
+      },
+      {
+        "name": "SB_LUT4(LUT_INIT=16'b0111100000000)",
+        "cell_sorts": [
+          {
+            "type": "$mux",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "S",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$verific$i10$cells_sim.v:188$473",
+                  "attributes": {
+                    "src": "cells_sim.v:188.13-188.31"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$verific$mux_5$cells_sim.v:186$469",
+                  "attributes": {
+                    "src": "cells_sim.v:186.18-186.53"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000100"
+                  }
+                },
+                {
+                  "name": "$verific$mux_7$cells_sim.v:187$471",
+                  "attributes": {
+                    "src": "cells_sim.v:187.18-187.53"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                }
+            ]
+          }
+        ],
+        "attributes": {
+            "library": "work",
+            "hdlname": "SB_LUT4",
+            "lib_whitebox": "00000000000000000000000000000001",
+            "abc9_lut": "00000000000000000000000000000001",
+            "src": "cells_sim.v:177.8-177.15"
+        }
+      },
+      {
+        "name": "SB_LUT4(LUT_INIT=16'b011111100)",
+        "cell_sorts": [
+          {
+            "type": "$not",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$verific$i13$cells_sim.v:185$481",
+                  "attributes": {
+                    "src": "cells_sim.v:185.18-185.53"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$mux",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "S",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$verific$i10$cells_sim.v:188$487",
+                  "attributes": {
+                    "src": "cells_sim.v:188.13-188.31"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$verific$mux_5$cells_sim.v:186$483",
+                  "attributes": {
+                    "src": "cells_sim.v:186.18-186.53"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$verific$mux_7$cells_sim.v:187$485",
+                  "attributes": {
+                    "src": "cells_sim.v:187.18-187.53"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                }
+            ]
+          }
+        ],
+        "attributes": {
+            "library": "work",
+            "hdlname": "SB_LUT4",
+            "lib_whitebox": "00000000000000000000000000000001",
+            "abc9_lut": "00000000000000000000000000000001",
+            "src": "cells_sim.v:177.8-177.15"
+        }
+      },
+      {
+        "name": "SB_LUT4(LUT_INIT=16'b011111111)",
+        "cell_sorts": [
+          {
+            "type": "$not",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$verific$i13$cells_sim.v:185$493",
+                  "attributes": {
+                    "src": "cells_sim.v:185.18-185.53"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          }
+        ],
+        "attributes": {
+            "library": "work",
+            "hdlname": "SB_LUT4",
+            "lib_whitebox": "00000000000000000000000000000001",
+            "abc9_lut": "00000000000000000000000000000001",
+            "src": "cells_sim.v:177.8-177.15"
+        }
+      },
+      {
+        "name": "SB_LUT4(LUT_INIT=16'b1001011001101001)",
+        "cell_sorts": [
+          {
+            "type": "$not",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$verific$i13$cells_sim.v:185$505",
+                  "attributes": {
+                    "src": "cells_sim.v:185.18-185.53"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$mux",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "S",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$verific$i10$cells_sim.v:188$511",
+                  "attributes": {
+                    "src": "cells_sim.v:188.13-188.31"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$verific$mux_5$cells_sim.v:186$507",
+                  "attributes": {
+                    "src": "cells_sim.v:186.18-186.53"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000100"
+                  }
+                },
+                {
+                  "name": "$verific$mux_7$cells_sim.v:187$509",
+                  "attributes": {
+                    "src": "cells_sim.v:187.18-187.53"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                }
+            ]
+          }
+        ],
+        "attributes": {
+            "library": "work",
+            "hdlname": "SB_LUT4",
+            "lib_whitebox": "00000000000000000000000000000001",
+            "abc9_lut": "00000000000000000000000000000001",
+            "src": "cells_sim.v:177.8-177.15"
+        }
+      },
+      {
+        "name": "SB_LUT4(LUT_INIT=16'b1100000000000000)",
+        "cell_sorts": [
+          {
+            "type": "$mux",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "S",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$verific$i10$cells_sim.v:188$523",
+                  "attributes": {
+                    "src": "cells_sim.v:188.13-188.31"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$verific$mux_5$cells_sim.v:186$519",
+                  "attributes": {
+                    "src": "cells_sim.v:186.18-186.53"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000100"
+                  }
+                },
+                {
+                  "name": "$verific$mux_7$cells_sim.v:187$521",
+                  "attributes": {
+                    "src": "cells_sim.v:187.18-187.53"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                }
+            ]
+          }
+        ],
+        "attributes": {
+            "library": "work",
+            "hdlname": "SB_LUT4",
+            "lib_whitebox": "00000000000000000000000000000001",
+            "abc9_lut": "00000000000000000000000000000001",
+            "src": "cells_sim.v:177.8-177.15"
+        }
+      },
+      {
+        "name": "SB_LUT4(LUT_INIT=16'b1111000000000000)",
+        "cell_sorts": [
+          {
+            "type": "$mux",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "S",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$verific$i10$cells_sim.v:188$535",
+                  "attributes": {
+                    "src": "cells_sim.v:188.13-188.31"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$verific$mux_5$cells_sim.v:186$531",
+                  "attributes": {
+                    "src": "cells_sim.v:186.18-186.53"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000100"
+                  }
+                },
+                {
+                  "name": "$verific$mux_7$cells_sim.v:187$533",
+                  "attributes": {
+                    "src": "cells_sim.v:187.18-187.53"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                }
+            ]
+          }
+        ],
+        "attributes": {
+            "library": "work",
+            "hdlname": "SB_LUT4",
+            "lib_whitebox": "00000000000000000000000000000001",
+            "abc9_lut": "00000000000000000000000000000001",
+            "src": "cells_sim.v:177.8-177.15"
+        }
+      },
+      {
+        "name": "SB_LUT4(LUT_INIT=16'b1111001100000000)",
+        "cell_sorts": [
+          {
+            "type": "$mux",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "S",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$verific$i10$cells_sim.v:188$547",
+                  "attributes": {
+                    "src": "cells_sim.v:188.13-188.31"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$verific$mux_5$cells_sim.v:186$543",
+                  "attributes": {
+                    "src": "cells_sim.v:186.18-186.53"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000100"
+                  }
+                },
+                {
+                  "name": "$verific$mux_7$cells_sim.v:187$545",
+                  "attributes": {
+                    "src": "cells_sim.v:187.18-187.53"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                }
+            ]
+          }
+        ],
+        "attributes": {
+            "library": "work",
+            "hdlname": "SB_LUT4",
+            "lib_whitebox": "00000000000000000000000000000001",
+            "abc9_lut": "00000000000000000000000000000001",
+            "src": "cells_sim.v:177.8-177.15"
+        }
+      },
+      {
+        "name": "SB_LUT4(LUT_INIT=16'b1111111100000001)",
+        "cell_sorts": [
+          {
+            "type": "$mux",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "S",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$verific$i10$cells_sim.v:188$559",
+                  "attributes": {
+                    "src": "cells_sim.v:188.13-188.31"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$verific$mux_5$cells_sim.v:186$555",
+                  "attributes": {
+                    "src": "cells_sim.v:186.18-186.53"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$verific$mux_7$cells_sim.v:187$557",
+                  "attributes": {
+                    "src": "cells_sim.v:187.18-187.53"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          }
+        ],
+        "attributes": {
+            "library": "work",
+            "hdlname": "SB_LUT4",
+            "lib_whitebox": "00000000000000000000000000000001",
+            "abc9_lut": "00000000000000000000000000000001",
+            "src": "cells_sim.v:177.8-177.15"
+        }
+      },
+      {
+        "name": "SB_LUT4(LUT_INIT=16'b1111111100000011)",
+        "cell_sorts": [
+          {
+            "type": "$mux",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "S",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$verific$i10$cells_sim.v:188$571",
+                  "attributes": {
+                    "src": "cells_sim.v:188.13-188.31"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$verific$mux_5$cells_sim.v:186$567",
+                  "attributes": {
+                    "src": "cells_sim.v:186.18-186.53"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$verific$mux_7$cells_sim.v:187$569",
+                  "attributes": {
+                    "src": "cells_sim.v:187.18-187.53"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                }
+            ]
+          }
+        ],
+        "attributes": {
+            "library": "work",
+            "hdlname": "SB_LUT4",
+            "lib_whitebox": "00000000000000000000000000000001",
+            "abc9_lut": "00000000000000000000000000000001",
+            "src": "cells_sim.v:177.8-177.15"
+        }
+      },
+      {
+        "name": "counter",
+        "cell_sorts": [
+          {
+            "type": "SB_LUT4(LUT_INIT=16'b0110000)",
+            "ports": [
+                {
+                  "name": "I0",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "I1",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "I2",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "I3",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "O",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "mode_SB_LUT4_I2_I3_SB_LUT4_O",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:22.34-23.52"
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          },
+          {
+            "type": "SB_LUT4(LUT_INIT=16'b011111100)",
+            "ports": [
+                {
+                  "name": "I0",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "I1",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "I2",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "I3",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "O",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "mode_SB_LUT4_I2_1",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:22.34-23.52"
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          },
+          {
+            "type": "SB_LUT4(LUT_INIT=16'b1111111100000011)",
+            "ports": [
+                {
+                  "name": "I0",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "I1",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "I2",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "I3",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "O",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "mode_SB_LUT4_I1",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:22.34-23.52"
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          },
+          {
+            "type": "SB_LUT4(LUT_INIT=16'b1100000000000000)",
+            "ports": [
+                {
+                  "name": "I0",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "I1",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "I2",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "I3",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "O",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "mode_SB_LUT4_I0_1_O_SB_LUT4_I3_O_SB_LUT4_O",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:22.34-23.52"
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          },
+          {
+            "type": "SB_DFFSR",
+            "ports": [
+                {
+                  "name": "C",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "D",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Q",
+                  "direction": "",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "R",
+                  "direction": "io",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "cnt_SB_DFFSR_Q",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "counter.v:32.5-38.8|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/ff_map.v:19.59-19.105"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "cnt_SB_DFFSR_Q_1",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "counter.v:32.5-38.8|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/ff_map.v:19.59-19.105"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "cnt_SB_DFFSR_Q_2",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "counter.v:32.5-38.8|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/ff_map.v:19.59-19.105"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "mode_SB_LUT4_I1_O_SB_LUT4_I1_O_SB_DFFSR_D",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "counter.v:32.5-38.8|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/ff_map.v:19.59-19.105"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "mode_SB_LUT4_I1_O_SB_LUT4_I1_O_SB_DFFSR_D_Q_SB_DFFSR_Q",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "counter.v:32.5-38.8|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/ff_map.v:19.59-19.105"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "mode_SB_LUT4_I1_O_SB_LUT4_I1_O_SB_DFFSR_D_Q_SB_DFFSR_Q_1",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "counter.v:32.5-38.8|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/ff_map.v:19.59-19.105"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "mode_SB_LUT4_I1_O_SB_LUT4_I1_O_SB_DFFSR_D_Q_SB_DFFSR_Q_2",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "counter.v:32.5-38.8|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/ff_map.v:19.59-19.105"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "mode_SB_LUT4_I1_O_SB_LUT4_I1_O_SB_DFFSR_D_Q_SB_DFFSR_Q_3",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "counter.v:32.5-38.8|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/ff_map.v:19.59-19.105"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "mode_SB_LUT4_I1_O_SB_LUT4_I1_O_SB_DFFSR_D_Q_SB_DFFSR_Q_4",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "counter.v:32.5-38.8|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/ff_map.v:19.59-19.105"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "mode_SB_LUT4_I2_1_O_SB_LUT4_I1_O_SB_DFFSR_D",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "counter.v:32.5-38.8|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/ff_map.v:19.59-19.105"
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          },
+          {
+            "type": "SB_LUT4(LUT_INIT=16'b0110100110010110)",
+            "ports": [
+                {
+                  "name": "I0",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "I1",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "I2",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "I3",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "O",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "cnt_SB_DFFSR_Q_1_D_SB_LUT4_O",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "cnt_SB_DFFSR_Q_2_D_SB_LUT4_O",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "cnt_SB_DFFSR_Q_D_SB_LUT4_O",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          },
+          {
+            "type": "SB_LUT4(LUT_INIT=16'b011000000000000)",
+            "ports": [
+                {
+                  "name": "I0",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "I1",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "I2",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "I3",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "O",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "mode_SB_LUT4_I0_1_I1_SB_LUT4_O",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:22.34-23.52"
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          },
+          {
+            "type": "SB_CARRY",
+            "ports": [
+                {
+                  "name": "CI",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "CO",
+                  "direction": "",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "I0",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "I1",
+                  "direction": "io",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "cnt_SB_DFFSR_Q_1_D_SB_LUT4_O_I3_SB_CARRY_CO",
+                  "attributes": {
+                    "src": "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "cnt_SB_DFFSR_Q_2_D_SB_LUT4_O_I1_SB_CARRY_I0",
+                  "attributes": {
+                    "src": "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_CARRY_CI",
+                  "attributes": {
+                    "src": "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI",
+                  "attributes": {
+                    "src": "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI",
+                  "attributes": {
+                    "src": "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI",
+                  "attributes": {
+                    "src": "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_CARRY_CO",
+                  "attributes": {
+                    "src": "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "mode_SB_LUT4_I0_1_O_SB_LUT4_I2_O_SB_CARRY_I0",
+                  "attributes": {
+                    "src": "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "mode_SB_LUT4_I0_1_O_SB_LUT4_I3_I2_SB_CARRY_CO",
+                  "attributes": {
+                    "src": "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "mode_SB_LUT4_I0_1_O_SB_LUT4_I3_I2_SB_CARRY_CO_CI_SB_CARRY_CO",
+                  "attributes": {
+                    "src": "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "mode_SB_LUT4_I0_1_O_SB_LUT4_I3_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO",
+                  "attributes": {
+                    "src": "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "mode_SB_LUT4_I0_1_O_SB_LUT4_I3_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO",
+                  "attributes": {
+                    "src": "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "mode_SB_LUT4_I0_1_O_SB_LUT4_I3_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO",
+                  "attributes": {
+                    "src": "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "mode_SB_LUT4_I0_1_O_SB_LUT4_I3_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO",
+                  "attributes": {
+                    "src": "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "mode_SB_LUT4_I0_1_O_SB_LUT4_I3_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO",
+                  "attributes": {
+                    "src": "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "mode_SB_LUT4_I0_1_O_SB_LUT4_I3_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO",
+                  "attributes": {
+                    "src": "counter.v:14.21-14.36|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "mode_SB_LUT4_I1_O_SB_CARRY_I0",
+                  "attributes": {
+                    "src": "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "mode_SB_LUT4_I2_I3_SB_LUT4_O_I2_SB_CARRY_CO",
+                  "attributes": {
+                    "src": "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "mode_SB_LUT4_I2_I3_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO",
+                  "attributes": {
+                    "src": "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "mode_SB_LUT4_I2_I3_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO",
+                  "attributes": {
+                    "src": "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "mode_SB_LUT4_I2_I3_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO",
+                  "attributes": {
+                    "src": "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "mode_SB_LUT4_I2_I3_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO",
+                  "attributes": {
+                    "src": "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "mode_SB_LUT4_I2_I3_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO",
+                  "attributes": {
+                    "src": "counter.v:23.21-23.37|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4"
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          },
+          {
+            "type": "SB_LUT4(LUT_INIT=16'b1001011001101001)",
+            "ports": [
+                {
+                  "name": "I0",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "I1",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "I2",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "I3",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "O",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I3",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "cnt_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_LUT4_I3",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "mode_SB_LUT4_I0_1_O_SB_LUT4_I2_O_SB_LUT4_I1",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "mode_SB_LUT4_I1_O_SB_LUT4_I1",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "mode_SB_LUT4_I1_O_SB_LUT4_I1_O_SB_DFFSR_D_Q_SB_DFFSR_Q_1_D_SB_LUT4_O",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "mode_SB_LUT4_I1_O_SB_LUT4_I1_O_SB_DFFSR_D_Q_SB_DFFSR_Q_D_SB_LUT4_O",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "mode_SB_LUT4_I2_1_O_SB_LUT4_I1",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          },
+          {
+            "type": "SB_LUT4(LUT_INIT=16'b0111100000000)",
+            "ports": [
+                {
+                  "name": "I0",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "I1",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "I2",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "I3",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "O",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "cnt_SB_DFFSR_Q_1_D_SB_LUT4_O_I1_SB_LUT4_O",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:17.34-18.52"
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          },
+          {
+            "type": "SB_LUT4(LUT_INIT=16'b011111111)",
+            "ports": [
+                {
+                  "name": "I0",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "I1",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "I2",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "I3",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "O",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "cnt_SB_LUT4_O",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:12.34-13.52"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "cnt_SB_LUT4_O_1",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:12.34-13.52"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "cnt_SB_LUT4_O_2",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:12.34-13.52"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "cnt_SB_LUT4_O_3",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:12.34-13.52"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "cnt_SB_LUT4_O_4",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:12.34-13.52"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "cnt_SB_LUT4_O_5",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:12.34-13.52"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "cnt_SB_LUT4_O_6",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:12.34-13.52"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "mode_SB_LUT4_I0_1_O_SB_LUT4_I3_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_O",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:12.34-13.52"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "mode_SB_LUT4_I2_I3_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_LUT4_O",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:12.34-13.52"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "mode_SB_LUT4_I2_I3_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_LUT4_O",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:12.34-13.52"
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          },
+          {
+            "type": "SB_LUT4(LUT_INIT=16'b1111111100000001)",
+            "ports": [
+                {
+                  "name": "I0",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "I1",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "I2",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "I3",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "O",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "mode_SB_LUT4_I0",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          },
+          {
+            "type": "SB_LUT4(LUT_INIT=16'b01100000000)",
+            "ports": [
+                {
+                  "name": "I0",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "I1",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "I2",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "I3",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "O",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "mode_SB_LUT4_I0_1_I1_SB_LUT4_O_1",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:22.34-23.52"
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          },
+          {
+            "type": "SB_LUT4(LUT_INIT=16'b1111000000000000)",
+            "ports": [
+                {
+                  "name": "I0",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "I1",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "I2",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "I3",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "O",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "mode_SB_LUT4_I2_I3_SB_LUT4_O_I3_SB_LUT4_O",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:17.34-18.52"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "mode_SB_LUT4_I2_I3_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:17.34-18.52"
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          },
+          {
+            "type": "SB_LUT4(LUT_INIT=16'b01000)",
+            "ports": [
+                {
+                  "name": "I0",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "I1",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "I2",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "I3",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "O",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "mode_SB_LUT4_I0_1_I3_SB_LUT4_O_2",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          },
+          {
+            "type": "SB_LUT4(LUT_INIT=16'b01111)",
+            "ports": [
+                {
+                  "name": "I0",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "I1",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "I2",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "I3",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "O",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "mode_SB_LUT4_I0_1_O_SB_LUT4_I2",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:17.34-18.52"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "mode_SB_LUT4_I2",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:17.34-18.52"
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          },
+          {
+            "type": "SB_LUT4(LUT_INIT=16'b1111001100000000)",
+            "ports": [
+                {
+                  "name": "I0",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "I1",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "I2",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "I3",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "O",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "mode_SB_LUT4_I0_1_O_SB_LUT4_I3",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:22.34-23.52"
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          },
+          {
+            "type": "SB_LUT4(LUT_INIT=16'b010101010101010)",
+            "ports": [
+                {
+                  "name": "I0",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "I1",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "I2",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "I3",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "O",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "mode_SB_LUT4_I0_1",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          },
+          {
+            "type": "SB_LUT4(LUT_INIT=16'b011)",
+            "ports": [
+                {
+                  "name": "I0",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "I1",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "I2",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "I3",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "O",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "mode_SB_LUT4_I0_1_I3_SB_LUT4_O",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:22.34-23.52"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "mode_SB_LUT4_I0_1_I3_SB_LUT4_O_1",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/ice40/cells_map.v:22.34-23.52"
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          }
+        ],
+        "attributes": {
+            "library": "work",
+            "hdlname": "counter",
+            "top": "00000000000000000000000000000001",
+            "src": "counter.v:1.1-39.10"
+        }
+      }
+  ]
+}

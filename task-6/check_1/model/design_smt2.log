@@ -1,0 +1,447 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite -- YosysHQ Edition [202409031137]     |
+ |  Copyright (C) 2012 - 2024 YosysHQ GmbH                                    |
+ |  For support, please contact support@yosyshq.com                           |
+ \----------------------------------------------------------------------------/
+ Yosys 0.45 (git sha1 9ed031ddd, clang++ 14.0.0-1ubuntu1.1 -fPIC -O3)
+
+-- Executing script file `design_smt2.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: design_prep.il
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1. Analyzing design hierarchy..
+Top module:  \counter
+Used module:     \SB_LUT4(LUT_INIT=16'b1111000000000000)
+Used module:     \SB_LUT4(LUT_INIT=16'b011111111)
+Used module:     \SB_CARRY
+Used module:     \SB_LUT4(LUT_INIT=16'b0110000)
+Used module:     \SB_DFFSR
+Used module:     \SB_LUT4(LUT_INIT=16'b1001011001101001)
+Used module:     \SB_LUT4(LUT_INIT=16'b011111100)
+Used module:     \SB_LUT4(LUT_INIT=16'b01111)
+Used module:     \SB_LUT4(LUT_INIT=16'b1111111100000011)
+Used module:     \SB_LUT4(LUT_INIT=16'b1100000000000000)
+Used module:     \SB_LUT4(LUT_INIT=16'b1111001100000000)
+Used module:     \SB_LUT4(LUT_INIT=16'b01000)
+Used module:     \SB_LUT4(LUT_INIT=16'b011)
+Used module:     \SB_LUT4(LUT_INIT=16'b01100000000)
+Used module:     \SB_LUT4(LUT_INIT=16'b011000000000000)
+Used module:     \SB_LUT4(LUT_INIT=16'b010101010101010)
+Used module:     \SB_LUT4(LUT_INIT=16'b1111111100000001)
+Used module:     \SB_LUT4(LUT_INIT=16'b0110100110010110)
+Used module:     \SB_LUT4(LUT_INIT=16'b0111100000000)
+
+2.2. Analyzing design hierarchy..
+Top module:  \counter
+Used module:     \SB_LUT4(LUT_INIT=16'b1111000000000000)
+Used module:     \SB_LUT4(LUT_INIT=16'b011111111)
+Used module:     \SB_CARRY
+Used module:     \SB_LUT4(LUT_INIT=16'b0110000)
+Used module:     \SB_DFFSR
+Used module:     \SB_LUT4(LUT_INIT=16'b1001011001101001)
+Used module:     \SB_LUT4(LUT_INIT=16'b011111100)
+Used module:     \SB_LUT4(LUT_INIT=16'b01111)
+Used module:     \SB_LUT4(LUT_INIT=16'b1111111100000011)
+Used module:     \SB_LUT4(LUT_INIT=16'b1100000000000000)
+Used module:     \SB_LUT4(LUT_INIT=16'b1111001100000000)
+Used module:     \SB_LUT4(LUT_INIT=16'b01000)
+Used module:     \SB_LUT4(LUT_INIT=16'b011)
+Used module:     \SB_LUT4(LUT_INIT=16'b01100000000)
+Used module:     \SB_LUT4(LUT_INIT=16'b011000000000000)
+Used module:     \SB_LUT4(LUT_INIT=16'b010101010101010)
+Used module:     \SB_LUT4(LUT_INIT=16'b1111111100000001)
+Used module:     \SB_LUT4(LUT_INIT=16'b0110100110010110)
+Used module:     \SB_LUT4(LUT_INIT=16'b0111100000000)
+Removed 0 unused modules.
+
+3. Executing FORMALFF pass.
+
+4. Executing DFFUNMAP pass (unmap clock enable and synchronous reset from FFs).
+
+5. Printing statistics.
+
+=== counter ===
+
+   Number of wires:                 56
+   Number of wire bits:            114
+   Number of public wires:          55
+   Number of public wire bits:     113
+   Number of ports:                  4
+   Number of port bits:             13
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 72
+     $assume                         1
+     $not                            1
+     SB_CARRY                       23
+     SB_DFFSR                       10
+     SB_LUT4(LUT_INIT=16'b01000)      1
+     SB_LUT4(LUT_INIT=16'b010101010101010)      1
+     SB_LUT4(LUT_INIT=16'b011)       2
+     SB_LUT4(LUT_INIT=16'b0110000)      1
+     SB_LUT4(LUT_INIT=16'b01100000000)      1
+     SB_LUT4(LUT_INIT=16'b011000000000000)      1
+     SB_LUT4(LUT_INIT=16'b0110100110010110)      3
+     SB_LUT4(LUT_INIT=16'b01111)      2
+     SB_LUT4(LUT_INIT=16'b0111100000000)      1
+     SB_LUT4(LUT_INIT=16'b011111100)      1
+     SB_LUT4(LUT_INIT=16'b011111111)     10
+     SB_LUT4(LUT_INIT=16'b1001011001101001)      7
+     SB_LUT4(LUT_INIT=16'b1100000000000000)      1
+     SB_LUT4(LUT_INIT=16'b1111000000000000)      2
+     SB_LUT4(LUT_INIT=16'b1111001100000000)      1
+     SB_LUT4(LUT_INIT=16'b1111111100000001)      1
+     SB_LUT4(LUT_INIT=16'b1111111100000011)      1
+
+=== SB_LUT4(LUT_INIT=16'b1111111100000011) ===
+
+   Number of wires:                  8
+   Number of wire bits:             19
+   Number of public wires:           8
+   Number of public wire bits:      19
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $mux                            3
+
+=== SB_LUT4(LUT_INIT=16'b1111111100000001) ===
+
+   Number of wires:                  8
+   Number of wire bits:             19
+   Number of public wires:           8
+   Number of public wire bits:      19
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $mux                            3
+
+=== SB_LUT4(LUT_INIT=16'b1111001100000000) ===
+
+   Number of wires:                  8
+   Number of wire bits:             19
+   Number of public wires:           8
+   Number of public wire bits:      19
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $mux                            3
+
+=== SB_LUT4(LUT_INIT=16'b1111000000000000) ===
+
+   Number of wires:                  8
+   Number of wire bits:             19
+   Number of public wires:           8
+   Number of public wire bits:      19
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $mux                            3
+
+=== SB_LUT4(LUT_INIT=16'b1100000000000000) ===
+
+   Number of wires:                  8
+   Number of wire bits:             19
+   Number of public wires:           8
+   Number of public wire bits:      19
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $mux                            3
+
+=== SB_LUT4(LUT_INIT=16'b1001011001101001) ===
+
+   Number of wires:                  8
+   Number of wire bits:             19
+   Number of public wires:           8
+   Number of public wire bits:      19
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $mux                            3
+     $not                            1
+
+=== SB_LUT4(LUT_INIT=16'b011111111) ===
+
+   Number of wires:                  8
+   Number of wire bits:             19
+   Number of public wires:           8
+   Number of public wire bits:      19
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     $not                            1
+
+=== SB_LUT4(LUT_INIT=16'b011111100) ===
+
+   Number of wires:                  8
+   Number of wire bits:             19
+   Number of public wires:           8
+   Number of public wire bits:      19
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $mux                            3
+     $not                            1
+
+=== SB_LUT4(LUT_INIT=16'b0111100000000) ===
+
+   Number of wires:                  8
+   Number of wire bits:             15
+   Number of public wires:           8
+   Number of public wire bits:      15
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $mux                            3
+
+=== SB_LUT4(LUT_INIT=16'b01111) ===
+
+   Number of wires:                  8
+   Number of wire bits:             15
+   Number of public wires:           8
+   Number of public wire bits:      15
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $mux                            3
+     $not                            1
+
+=== SB_LUT4(LUT_INIT=16'b0110100110010110) ===
+
+   Number of wires:                  8
+   Number of wire bits:             19
+   Number of public wires:           8
+   Number of public wire bits:      19
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $mux                            3
+     $not                            1
+
+=== SB_LUT4(LUT_INIT=16'b011000000000000) ===
+
+   Number of wires:                  8
+   Number of wire bits:             15
+   Number of public wires:           8
+   Number of public wire bits:      15
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $mux                            3
+
+=== SB_LUT4(LUT_INIT=16'b01100000000) ===
+
+   Number of wires:                  8
+   Number of wire bits:             11
+   Number of public wires:           8
+   Number of public wire bits:      11
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $mux                            3
+
+=== SB_LUT4(LUT_INIT=16'b0110000) ===
+
+   Number of wires:                  8
+   Number of wire bits:             17
+   Number of public wires:           8
+   Number of public wire bits:      17
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $mux                            3
+     $not                            1
+
+=== SB_LUT4(LUT_INIT=16'b011) ===
+
+   Number of wires:                  8
+   Number of wire bits:             11
+   Number of public wires:           8
+   Number of public wire bits:      11
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $mux                            3
+     $not                            1
+
+=== SB_LUT4(LUT_INIT=16'b010101010101010) ===
+
+   Number of wires:                  8
+   Number of wire bits:             19
+   Number of public wires:           8
+   Number of public wire bits:      19
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $mux                            3
+     $not                            1
+
+=== SB_LUT4(LUT_INIT=16'b01000) ===
+
+   Number of wires:                  8
+   Number of wire bits:             15
+   Number of public wires:           8
+   Number of public wire bits:      15
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $mux                            3
+     $not                            1
+
+=== SB_DFFSR ===
+
+   Number of wires:                  6
+   Number of wire bits:              6
+   Number of public wires:           4
+   Number of public wire bits:       4
+   Number of ports:                  4
+   Number of port bits:              4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $assume                         1
+     $ff                             1
+     $mux                            1
+     $not                            1
+
+=== SB_CARRY ===
+
+   Number of wires:                  7
+   Number of wire bits:              7
+   Number of public wires:           4
+   Number of public wire bits:       4
+   Number of ports:                  4
+   Number of port bits:              4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $and                            2
+     $or                             2
+
+=== design hierarchy ===
+
+   counter                           1
+     SB_CARRY                       23
+     SB_DFFSR                       10
+     SB_LUT4(LUT_INIT=16'b01000)      1
+     SB_LUT4(LUT_INIT=16'b010101010101010)      1
+     SB_LUT4(LUT_INIT=16'b011)       2
+     SB_LUT4(LUT_INIT=16'b0110000)      1
+     SB_LUT4(LUT_INIT=16'b01100000000)      1
+     SB_LUT4(LUT_INIT=16'b011000000000000)      1
+     SB_LUT4(LUT_INIT=16'b0110100110010110)      3
+     SB_LUT4(LUT_INIT=16'b01111)      2
+     SB_LUT4(LUT_INIT=16'b0111100000000)      1
+     SB_LUT4(LUT_INIT=16'b011111100)      1
+     SB_LUT4(LUT_INIT=16'b011111111)     10
+     SB_LUT4(LUT_INIT=16'b1001011001101001)      7
+     SB_LUT4(LUT_INIT=16'b1100000000000000)      1
+     SB_LUT4(LUT_INIT=16'b1111000000000000)      2
+     SB_LUT4(LUT_INIT=16'b1111001100000000)      1
+     SB_LUT4(LUT_INIT=16'b1111111100000001)      1
+     SB_LUT4(LUT_INIT=16'b1111111100000011)      1
+
+   Number of wires:                573
+   Number of wire bits:            992
+   Number of public wires:         483
+   Number of public wire bits:     902
+   Number of ports:                321
+   Number of port bits:            330
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                243
+     $and                           46
+     $assume                        11
+     $ff                            10
+     $mux                           91
+     $not                           39
+     $or                            46
+
+6. Executing SMT2 backend.
+
+6.1. Executing BMUXMAP pass.
+
+6.2. Executing DEMUXMAP pass.
+Creating SMT-LIBv2 representation of module SB_CARRY.
+Creating SMT-LIBv2 representation of module SB_DFFSR.
+Creating SMT-LIBv2 representation of module SB_LUT4(LUT_INIT=16'b01000).
+Creating SMT-LIBv2 representation of module SB_LUT4(LUT_INIT=16'b010101010101010).
+Creating SMT-LIBv2 representation of module SB_LUT4(LUT_INIT=16'b011).
+Creating SMT-LIBv2 representation of module SB_LUT4(LUT_INIT=16'b0110000).
+Creating SMT-LIBv2 representation of module SB_LUT4(LUT_INIT=16'b01100000000).
+Creating SMT-LIBv2 representation of module SB_LUT4(LUT_INIT=16'b011000000000000).
+Creating SMT-LIBv2 representation of module SB_LUT4(LUT_INIT=16'b0110100110010110).
+Creating SMT-LIBv2 representation of module SB_LUT4(LUT_INIT=16'b01111).
+Creating SMT-LIBv2 representation of module SB_LUT4(LUT_INIT=16'b0111100000000).
+Creating SMT-LIBv2 representation of module SB_LUT4(LUT_INIT=16'b011111100).
+Creating SMT-LIBv2 representation of module SB_LUT4(LUT_INIT=16'b011111111).
+Creating SMT-LIBv2 representation of module SB_LUT4(LUT_INIT=16'b1001011001101001).
+Creating SMT-LIBv2 representation of module SB_LUT4(LUT_INIT=16'b1100000000000000).
+Creating SMT-LIBv2 representation of module SB_LUT4(LUT_INIT=16'b1111000000000000).
+Creating SMT-LIBv2 representation of module SB_LUT4(LUT_INIT=16'b1111001100000000).
+Creating SMT-LIBv2 representation of module SB_LUT4(LUT_INIT=16'b1111111100000001).
+Creating SMT-LIBv2 representation of module SB_LUT4(LUT_INIT=16'b1111111100000011).
+Creating SMT-LIBv2 representation of module counter.
+
+End of script. Logfile hash: ee430bc66d, CPU: user 0.02s system 0.01s, MEM: 27.38 MB peak
+Yosys 0.45 (git sha1 9ed031ddd, clang++ 14.0.0-1ubuntu1.1 -fPIC -O3)
+Time spent: 75% 2x write_smt2 (0 sec), 16% 2x read_ilang (0 sec), ...

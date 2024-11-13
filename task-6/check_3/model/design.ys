@@ -1,0 +1,12 @@
+# running in check_3/src/
+read -define NO_ICE40_DEFAULT_ASSIGNMENTS
+read -formal cells_sim.v
+read -formal properties.sv
+read -formal 3.v
+verific -import counter
+prep -top counter
+
+hierarchy -smtcheck
+rename -witness
+write_jny -no-connections ../model/design.json
+write_rtlil ../model/design.il

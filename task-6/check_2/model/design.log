@@ -1,0 +1,1791 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite -- YosysHQ Edition [202409031137]     |
+ |  Copyright (C) 2012 - 2024 YosysHQ GmbH                                    |
+ |  For support, please contact support@yosyshq.com                           |
+ \----------------------------------------------------------------------------/
+ Yosys 0.45 (git sha1 9ed031ddd, clang++ 14.0.0-1ubuntu1.1 -fPIC -O3)
+
+-- Executing script file `../model/design.ys' --
+
+1. Executing VERIFIC (loading SystemVerilog and VHDL designs using Verific).
+Built with Verific Aug24_SW_Release, released at Thu Aug 29 19:14:57 2024.
+
+2. Executing VERIFIC (loading SystemVerilog and VHDL designs using Verific).
+Built with Verific Aug24_SW_Release, released at Thu Aug 29 19:14:57 2024.
+VERIFIC-COMMENT [VERI-1482] Analyzing Verilog file 'cells_sim.v'
+
+3. Executing VERIFIC (loading SystemVerilog and VHDL designs using Verific).
+Built with Verific Aug24_SW_Release, released at Thu Aug 29 19:14:57 2024.
+VERIFIC-COMMENT [VERI-1482] Analyzing Verilog file 'properties.sv'
+
+4. Executing VERIFIC (loading SystemVerilog and VHDL designs using Verific).
+Built with Verific Aug24_SW_Release, released at Thu Aug 29 19:14:57 2024.
+VERIFIC-COMMENT [VERI-1482] Analyzing Verilog file '2.v'
+
+5. Executing VERIFIC (loading SystemVerilog and VHDL designs using Verific).
+Built with Verific Aug24_SW_Release, released at Thu Aug 29 19:14:57 2024.
+Adding Verilog module 'counter' to elaboration queue.
+Statically elaborating the Verific parse tree.
+Elaborating all modules in library 'work'
+VERIFIC-INFO [VERI-1018] 2.v:5: compiling module 'counter'
+Running rewriter 'initial-assertions'.
+Clearing rewriter list.
+Adding Verilog module 'counter' to elaboration queue.
+Running hier_tree::Elaborate().
+VERIFIC-INFO [VERI-1018] 2.v:5: compiling module 'counter'
+VERIFIC-INFO [VERI-1018] cells_sim.v:350: compiling module 'SB_DFFSR'
+VERIFIC-INFO [VERI-1018] cells_sim.v:177: compiling module 'SB_LUT4(LUT_INIT=16'b1010010101101010)'
+VERIFIC-INFO [VERI-1018] cells_sim.v:177: compiling module 'SB_LUT4(LUT_INIT=16'b0110101010101001)'
+VERIFIC-INFO [VERI-1018] cells_sim.v:177: compiling module 'SB_LUT4(LUT_INIT=16'b1111000000001111)'
+VERIFIC-INFO [VERI-1018] cells_sim.v:177: compiling module 'SB_LUT4(LUT_INIT=16'b0111111110000)'
+VERIFIC-INFO [VERI-1018] cells_sim.v:177: compiling module 'SB_LUT4(LUT_INIT=16'b1100001100111100)'
+VERIFIC-INFO [VERI-1018] cells_sim.v:177: compiling module 'SB_LUT4(LUT_INIT=16'b011110011)'
+VERIFIC-INFO [VERI-1018] cells_sim.v:177: compiling module 'SB_LUT4(LUT_INIT=16'b1100001101101001)'
+VERIFIC-INFO [VERI-1018] cells_sim.v:177: compiling module 'SB_LUT4(LUT_INIT=16'b1111000000000000)'
+VERIFIC-INFO [VERI-1018] cells_sim.v:177: compiling module 'SB_LUT4(LUT_INIT=16'b1111001111001100)'
+VERIFIC-INFO [VERI-1018] cells_sim.v:177: compiling module 'SB_LUT4(LUT_INIT=16'b01111)'
+VERIFIC-INFO [VERI-1018] cells_sim.v:177: compiling module 'SB_LUT4(LUT_INIT=16'b011000000000000)'
+VERIFIC-INFO [VERI-1018] cells_sim.v:177: compiling module 'SB_LUT4(LUT_INIT=16'b011110000)'
+VERIFIC-INFO [VERI-1018] cells_sim.v:177: compiling module 'SB_LUT4(LUT_INIT=16'b0111111)'
+VERIFIC-INFO [VERI-1018] cells_sim.v:177: compiling module 'SB_LUT4(LUT_INIT=16'b1111110011010100)'
+VERIFIC-INFO [VERI-1018] cells_sim.v:177: compiling module 'SB_LUT4(LUT_INIT=16'b1100010011110101)'
+VERIFIC-INFO [VERI-1018] cells_sim.v:177: compiling module 'SB_LUT4(LUT_INIT=16'b011110011000011)'
+VERIFIC-INFO [VERI-1018] cells_sim.v:177: compiling module 'SB_LUT4(LUT_INIT=16'b0111100000011)'
+VERIFIC-INFO [VERI-1018] cells_sim.v:177: compiling module 'SB_LUT4(LUT_INIT=16'b011111111)'
+VERIFIC-INFO [VERI-1018] cells_sim.v:177: compiling module 'SB_LUT4(LUT_INIT=16'b010101010101010)'
+VERIFIC-INFO [VERI-1018] cells_sim.v:177: compiling module 'SB_LUT4(LUT_INIT=16'b0101111101001100)'
+VERIFIC-INFO [VERI-1018] cells_sim.v:177: compiling module 'SB_LUT4(LUT_INIT=16'b1100000000000000)'
+VERIFIC-INFO [VERI-1018] cells_sim.v:177: compiling module 'SB_LUT4(LUT_INIT=16'b0100000111)'
+VERIFIC-INFO [VERI-1018] cells_sim.v:177: compiling module 'SB_LUT4(LUT_INIT=16'b1110000110000111)'
+VERIFIC-INFO [VERI-1018] cells_sim.v:177: compiling module 'SB_LUT4(LUT_INIT=16'b0100000000)'
+VERIFIC-INFO [VERI-1018] cells_sim.v:177: compiling module 'SB_LUT4(LUT_INIT=16'b01000)'
+VERIFIC-INFO [VERI-1018] cells_sim.v:177: compiling module 'SB_LUT4(LUT_INIT=16'b0111010100000000)'
+VERIFIC-INFO [VERI-1018] cells_sim.v:177: compiling module 'SB_LUT4(LUT_INIT=16'b01100)'
+VERIFIC-INFO [VERI-1018] cells_sim.v:177: compiling module 'SB_LUT4(LUT_INIT=16'b011000000110001)'
+VERIFIC-INFO [VERI-1018] cells_sim.v:177: compiling module 'SB_LUT4(LUT_INIT=16'b0100010011000100)'
+VERIFIC-INFO [VERI-1018] cells_sim.v:177: compiling module 'SB_LUT4(LUT_INIT=16'b1010101010100010)'
+VERIFIC-INFO [VERI-1018] cells_sim.v:177: compiling module 'SB_LUT4(LUT_INIT=16'b0111100000000)'
+VERIFIC-INFO [VERI-1018] cells_sim.v:177: compiling module 'SB_LUT4(LUT_INIT=16'b01000000000000)'
+VERIFIC-INFO [VERI-1018] cells_sim.v:177: compiling module 'SB_LUT4(LUT_INIT=16'b01)'
+VERIFIC-INFO [VERI-1018] cells_sim.v:177: compiling module 'SB_LUT4(LUT_INIT=16'b1111110011111111)'
+VERIFIC-INFO [VERI-1018] cells_sim.v:177: compiling module 'SB_LUT4(LUT_INIT=16'b0101101011011111)'
+VERIFIC-INFO [VERI-1018] cells_sim.v:177: compiling module 'SB_LUT4(LUT_INIT=16'b01000100000001)'
+VERIFIC-WARNING [VDB-1002] 2.v:100: net 'summand[9]' does not have a driver
+Importing module counter.
+Importing module SB_DFFSR.
+Importing module SB_LUT4(LUT_INIT=16'b01).
+Importing module SB_LUT4(LUT_INIT=16'b01000).
+Importing module SB_LUT4(LUT_INIT=16'b0100000000).
+Importing module SB_LUT4(LUT_INIT=16'b01000000000000).
+Importing module SB_LUT4(LUT_INIT=16'b0100000111).
+Importing module SB_LUT4(LUT_INIT=16'b01000100000001).
+Importing module SB_LUT4(LUT_INIT=16'b0100010011000100).
+Importing module SB_LUT4(LUT_INIT=16'b010101010101010).
+Importing module SB_LUT4(LUT_INIT=16'b0101101011011111).
+Importing module SB_LUT4(LUT_INIT=16'b0101111101001100).
+Importing module SB_LUT4(LUT_INIT=16'b01100).
+Importing module SB_LUT4(LUT_INIT=16'b011000000000000).
+Importing module SB_LUT4(LUT_INIT=16'b011000000110001).
+Importing module SB_LUT4(LUT_INIT=16'b0110101010101001).
+Importing module SB_LUT4(LUT_INIT=16'b0111010100000000).
+Importing module SB_LUT4(LUT_INIT=16'b01111).
+Importing module SB_LUT4(LUT_INIT=16'b011110000).
+Importing module SB_LUT4(LUT_INIT=16'b0111100000000).
+Importing module SB_LUT4(LUT_INIT=16'b0111100000011).
+Importing module SB_LUT4(LUT_INIT=16'b011110011).
+Importing module SB_LUT4(LUT_INIT=16'b011110011000011).
+Importing module SB_LUT4(LUT_INIT=16'b0111111).
+Importing module SB_LUT4(LUT_INIT=16'b011111111).
+Importing module SB_LUT4(LUT_INIT=16'b0111111110000).
+Importing module SB_LUT4(LUT_INIT=16'b1010010101101010).
+Importing module SB_LUT4(LUT_INIT=16'b1010101010100010).
+Importing module SB_LUT4(LUT_INIT=16'b1100000000000000).
+Importing module SB_LUT4(LUT_INIT=16'b1100001100111100).
+Importing module SB_LUT4(LUT_INIT=16'b1100001101101001).
+Importing module SB_LUT4(LUT_INIT=16'b1100010011110101).
+Importing module SB_LUT4(LUT_INIT=16'b1110000110000111).
+Importing module SB_LUT4(LUT_INIT=16'b1111000000000000).
+Importing module SB_LUT4(LUT_INIT=16'b1111000000001111).
+Importing module SB_LUT4(LUT_INIT=16'b1111001111001100).
+Importing module SB_LUT4(LUT_INIT=16'b1111110011010100).
+Importing module SB_LUT4(LUT_INIT=16'b1111110011111111).
+
+6. Executing PREP pass.
+
+6.1. Executing HIERARCHY pass (managing design hierarchy).
+
+6.1.1. Analyzing design hierarchy..
+Top module:  \counter
+Used module:     \SB_LUT4(LUT_INIT=16'b0111111110000)
+Used module:     \SB_LUT4(LUT_INIT=16'b01000100000001)
+Used module:     \SB_LUT4(LUT_INIT=16'b01100)
+Used module:     \SB_LUT4(LUT_INIT=16'b011000000000000)
+Used module:     \SB_LUT4(LUT_INIT=16'b1111000000000000)
+Used module:     \SB_LUT4(LUT_INIT=16'b0101101011011111)
+Used module:     \SB_LUT4(LUT_INIT=16'b1111110011111111)
+Used module:     \SB_LUT4(LUT_INIT=16'b01)
+Used module:     \SB_LUT4(LUT_INIT=16'b01000000000000)
+Used module:     \SB_LUT4(LUT_INIT=16'b0111100000000)
+Used module:     \SB_LUT4(LUT_INIT=16'b1010101010100010)
+Used module:     \SB_LUT4(LUT_INIT=16'b0100010011000100)
+Used module:     \SB_LUT4(LUT_INIT=16'b011000000110001)
+Used module:     \SB_LUT4(LUT_INIT=16'b011110000)
+Used module:     \SB_LUT4(LUT_INIT=16'b0111010100000000)
+Used module:     \SB_LUT4(LUT_INIT=16'b01000)
+Used module:     \SB_LUT4(LUT_INIT=16'b0100000000)
+Used module:     \SB_LUT4(LUT_INIT=16'b1110000110000111)
+Used module:     \SB_LUT4(LUT_INIT=16'b0100000111)
+Used module:     \SB_LUT4(LUT_INIT=16'b1100000000000000)
+Used module:     \SB_LUT4(LUT_INIT=16'b0101111101001100)
+Used module:     \SB_LUT4(LUT_INIT=16'b010101010101010)
+Used module:     \SB_LUT4(LUT_INIT=16'b011111111)
+Used module:     \SB_LUT4(LUT_INIT=16'b0111100000011)
+Used module:     \SB_LUT4(LUT_INIT=16'b011110011000011)
+Used module:     \SB_LUT4(LUT_INIT=16'b1100010011110101)
+Used module:     \SB_LUT4(LUT_INIT=16'b01111)
+Used module:     \SB_LUT4(LUT_INIT=16'b1111110011010100)
+Used module:     \SB_LUT4(LUT_INIT=16'b1111000000001111)
+Used module:     \SB_DFFSR
+Used module:     \SB_LUT4(LUT_INIT=16'b0111111)
+Used module:     \SB_LUT4(LUT_INIT=16'b1111001111001100)
+Used module:     \SB_LUT4(LUT_INIT=16'b1100001101101001)
+Used module:     \SB_LUT4(LUT_INIT=16'b011110011)
+Used module:     \SB_LUT4(LUT_INIT=16'b1100001100111100)
+Used module:     \SB_LUT4(LUT_INIT=16'b0110101010101001)
+Used module:     \SB_LUT4(LUT_INIT=16'b1010010101101010)
+
+6.1.2. Analyzing design hierarchy..
+Top module:  \counter
+Used module:     \SB_LUT4(LUT_INIT=16'b0111111110000)
+Used module:     \SB_LUT4(LUT_INIT=16'b01000100000001)
+Used module:     \SB_LUT4(LUT_INIT=16'b01100)
+Used module:     \SB_LUT4(LUT_INIT=16'b011000000000000)
+Used module:     \SB_LUT4(LUT_INIT=16'b1111000000000000)
+Used module:     \SB_LUT4(LUT_INIT=16'b0101101011011111)
+Used module:     \SB_LUT4(LUT_INIT=16'b1111110011111111)
+Used module:     \SB_LUT4(LUT_INIT=16'b01)
+Used module:     \SB_LUT4(LUT_INIT=16'b01000000000000)
+Used module:     \SB_LUT4(LUT_INIT=16'b0111100000000)
+Used module:     \SB_LUT4(LUT_INIT=16'b1010101010100010)
+Used module:     \SB_LUT4(LUT_INIT=16'b0100010011000100)
+Used module:     \SB_LUT4(LUT_INIT=16'b011000000110001)
+Used module:     \SB_LUT4(LUT_INIT=16'b011110000)
+Used module:     \SB_LUT4(LUT_INIT=16'b0111010100000000)
+Used module:     \SB_LUT4(LUT_INIT=16'b01000)
+Used module:     \SB_LUT4(LUT_INIT=16'b0100000000)
+Used module:     \SB_LUT4(LUT_INIT=16'b1110000110000111)
+Used module:     \SB_LUT4(LUT_INIT=16'b0100000111)
+Used module:     \SB_LUT4(LUT_INIT=16'b1100000000000000)
+Used module:     \SB_LUT4(LUT_INIT=16'b0101111101001100)
+Used module:     \SB_LUT4(LUT_INIT=16'b010101010101010)
+Used module:     \SB_LUT4(LUT_INIT=16'b011111111)
+Used module:     \SB_LUT4(LUT_INIT=16'b0111100000011)
+Used module:     \SB_LUT4(LUT_INIT=16'b011110011000011)
+Used module:     \SB_LUT4(LUT_INIT=16'b1100010011110101)
+Used module:     \SB_LUT4(LUT_INIT=16'b01111)
+Used module:     \SB_LUT4(LUT_INIT=16'b1111110011010100)
+Used module:     \SB_LUT4(LUT_INIT=16'b1111000000001111)
+Used module:     \SB_DFFSR
+Used module:     \SB_LUT4(LUT_INIT=16'b0111111)
+Used module:     \SB_LUT4(LUT_INIT=16'b1111001111001100)
+Used module:     \SB_LUT4(LUT_INIT=16'b1100001101101001)
+Used module:     \SB_LUT4(LUT_INIT=16'b011110011)
+Used module:     \SB_LUT4(LUT_INIT=16'b1100001100111100)
+Used module:     \SB_LUT4(LUT_INIT=16'b0110101010101001)
+Used module:     \SB_LUT4(LUT_INIT=16'b1010010101101010)
+Removed 0 unused modules.
+
+6.2. Executing PROC pass (convert processes to netlists).
+
+6.2.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+6.2.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+6.2.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 0 assignments to connections.
+
+6.2.4. Executing PROC_INIT pass (extract init attributes).
+
+6.2.5. Executing PROC_ARST pass (detect async resets in processes).
+
+6.2.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+
+6.2.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+
+6.2.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+6.2.9. Executing PROC_DFF pass (convert process syncs to FFs).
+
+6.2.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+6.2.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+6.2.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module SB_LUT4(LUT_INIT=16'b1111110011111111).
+Optimizing module SB_LUT4(LUT_INIT=16'b1111110011010100).
+Optimizing module SB_LUT4(LUT_INIT=16'b1111001111001100).
+Optimizing module SB_LUT4(LUT_INIT=16'b1111000000001111).
+Optimizing module SB_LUT4(LUT_INIT=16'b1111000000000000).
+Optimizing module SB_LUT4(LUT_INIT=16'b1110000110000111).
+Optimizing module SB_LUT4(LUT_INIT=16'b1100010011110101).
+Optimizing module SB_LUT4(LUT_INIT=16'b1100001101101001).
+Optimizing module SB_LUT4(LUT_INIT=16'b1100001100111100).
+Optimizing module SB_LUT4(LUT_INIT=16'b1100000000000000).
+Optimizing module SB_LUT4(LUT_INIT=16'b1010101010100010).
+Optimizing module SB_LUT4(LUT_INIT=16'b1010010101101010).
+Optimizing module SB_LUT4(LUT_INIT=16'b0111111110000).
+Optimizing module SB_LUT4(LUT_INIT=16'b011111111).
+Optimizing module SB_LUT4(LUT_INIT=16'b0111111).
+Optimizing module SB_LUT4(LUT_INIT=16'b011110011000011).
+Optimizing module SB_LUT4(LUT_INIT=16'b011110011).
+Optimizing module SB_LUT4(LUT_INIT=16'b0111100000011).
+Optimizing module SB_LUT4(LUT_INIT=16'b0111100000000).
+Optimizing module SB_LUT4(LUT_INIT=16'b011110000).
+Optimizing module SB_LUT4(LUT_INIT=16'b01111).
+Optimizing module SB_LUT4(LUT_INIT=16'b0111010100000000).
+Optimizing module SB_LUT4(LUT_INIT=16'b0110101010101001).
+Optimizing module SB_LUT4(LUT_INIT=16'b011000000110001).
+Optimizing module SB_LUT4(LUT_INIT=16'b011000000000000).
+Optimizing module SB_LUT4(LUT_INIT=16'b01100).
+Optimizing module SB_LUT4(LUT_INIT=16'b0101111101001100).
+Optimizing module SB_LUT4(LUT_INIT=16'b0101101011011111).
+Optimizing module SB_LUT4(LUT_INIT=16'b010101010101010).
+Optimizing module SB_LUT4(LUT_INIT=16'b0100010011000100).
+Optimizing module SB_LUT4(LUT_INIT=16'b01000100000001).
+Optimizing module SB_LUT4(LUT_INIT=16'b0100000111).
+Optimizing module SB_LUT4(LUT_INIT=16'b01000000000000).
+Optimizing module SB_LUT4(LUT_INIT=16'b0100000000).
+Optimizing module SB_LUT4(LUT_INIT=16'b01000).
+Optimizing module SB_LUT4(LUT_INIT=16'b01).
+Optimizing module SB_DFFSR.
+Optimizing module counter.
+
+6.3. Executing FUTURE pass.
+
+6.4. Executing OPT_EXPR pass (perform const folding).
+Optimizing module SB_LUT4(LUT_INIT=16'b1111110011111111).
+Optimizing module SB_LUT4(LUT_INIT=16'b1111110011010100).
+Optimizing module SB_LUT4(LUT_INIT=16'b1111001111001100).
+Optimizing module SB_LUT4(LUT_INIT=16'b1111000000001111).
+Optimizing module SB_LUT4(LUT_INIT=16'b1111000000000000).
+Optimizing module SB_LUT4(LUT_INIT=16'b1110000110000111).
+Optimizing module SB_LUT4(LUT_INIT=16'b1100010011110101).
+Optimizing module SB_LUT4(LUT_INIT=16'b1100001101101001).
+Optimizing module SB_LUT4(LUT_INIT=16'b1100001100111100).
+Optimizing module SB_LUT4(LUT_INIT=16'b1100000000000000).
+Optimizing module SB_LUT4(LUT_INIT=16'b1010101010100010).
+Optimizing module SB_LUT4(LUT_INIT=16'b1010010101101010).
+Optimizing module SB_LUT4(LUT_INIT=16'b0111111110000).
+Optimizing module SB_LUT4(LUT_INIT=16'b011111111).
+Optimizing module SB_LUT4(LUT_INIT=16'b0111111).
+Optimizing module SB_LUT4(LUT_INIT=16'b011110011000011).
+Optimizing module SB_LUT4(LUT_INIT=16'b011110011).
+Optimizing module SB_LUT4(LUT_INIT=16'b0111100000011).
+Optimizing module SB_LUT4(LUT_INIT=16'b0111100000000).
+Optimizing module SB_LUT4(LUT_INIT=16'b011110000).
+Optimizing module SB_LUT4(LUT_INIT=16'b01111).
+Optimizing module SB_LUT4(LUT_INIT=16'b0111010100000000).
+Optimizing module SB_LUT4(LUT_INIT=16'b0110101010101001).
+Optimizing module SB_LUT4(LUT_INIT=16'b011000000110001).
+Optimizing module SB_LUT4(LUT_INIT=16'b011000000000000).
+Optimizing module SB_LUT4(LUT_INIT=16'b01100).
+Optimizing module SB_LUT4(LUT_INIT=16'b0101111101001100).
+Optimizing module SB_LUT4(LUT_INIT=16'b0101101011011111).
+Optimizing module SB_LUT4(LUT_INIT=16'b010101010101010).
+Optimizing module SB_LUT4(LUT_INIT=16'b0100010011000100).
+Optimizing module SB_LUT4(LUT_INIT=16'b01000100000001).
+Optimizing module SB_LUT4(LUT_INIT=16'b0100000111).
+Optimizing module SB_LUT4(LUT_INIT=16'b01000000000000).
+Optimizing module SB_LUT4(LUT_INIT=16'b0100000000).
+Optimizing module SB_LUT4(LUT_INIT=16'b01000).
+Optimizing module SB_LUT4(LUT_INIT=16'b01).
+Optimizing module SB_DFFSR.
+Optimizing module counter.
+
+6.5. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1111110011111111)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1111110011010100)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1111001111001100)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1111000000001111)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1111000000000000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1110000110000111)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1100010011110101)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1100001101101001)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1100001100111100)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1100000000000000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1010101010100010)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1010010101101010)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b0111111110000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b011111111)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b0111111)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b011110011000011)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b011110011)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b0111100000011)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b0111100000000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b011110000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b01111)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b0111010100000000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b0110101010101001)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b011000000110001)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b011000000000000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b01100)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b0101111101001100)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b0101101011011111)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b010101010101010)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b0100010011000100)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b01000100000001)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b0100000111)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b01000000000000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b0100000000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b01000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b01)..
+Finding unused cells or wires in module \SB_DFFSR..
+Finding unused cells or wires in module \counter..
+Removed 0 unused cells and 488 unused wires.
+<suppressed ~203 debug messages>
+
+6.6. Executing CHECK pass (checking for obvious problems).
+Checking module SB_DFFSR...
+Checking module SB_LUT4(LUT_INIT=16'b01)...
+Checking module SB_LUT4(LUT_INIT=16'b01000)...
+Checking module SB_LUT4(LUT_INIT=16'b0100000000)...
+Checking module SB_LUT4(LUT_INIT=16'b01000000000000)...
+Checking module SB_LUT4(LUT_INIT=16'b0100000111)...
+Checking module SB_LUT4(LUT_INIT=16'b01000100000001)...
+Checking module SB_LUT4(LUT_INIT=16'b0100010011000100)...
+Checking module SB_LUT4(LUT_INIT=16'b010101010101010)...
+Checking module SB_LUT4(LUT_INIT=16'b0101101011011111)...
+Checking module SB_LUT4(LUT_INIT=16'b0101111101001100)...
+Checking module SB_LUT4(LUT_INIT=16'b01100)...
+Checking module SB_LUT4(LUT_INIT=16'b011000000000000)...
+Checking module SB_LUT4(LUT_INIT=16'b011000000110001)...
+Checking module SB_LUT4(LUT_INIT=16'b0110101010101001)...
+Checking module SB_LUT4(LUT_INIT=16'b0111010100000000)...
+Checking module SB_LUT4(LUT_INIT=16'b01111)...
+Checking module SB_LUT4(LUT_INIT=16'b011110000)...
+Checking module SB_LUT4(LUT_INIT=16'b0111100000000)...
+Checking module SB_LUT4(LUT_INIT=16'b0111100000011)...
+Checking module SB_LUT4(LUT_INIT=16'b011110011)...
+Checking module SB_LUT4(LUT_INIT=16'b011110011000011)...
+Checking module SB_LUT4(LUT_INIT=16'b0111111)...
+Checking module SB_LUT4(LUT_INIT=16'b011111111)...
+Checking module SB_LUT4(LUT_INIT=16'b0111111110000)...
+Checking module SB_LUT4(LUT_INIT=16'b1010010101101010)...
+Checking module SB_LUT4(LUT_INIT=16'b1010101010100010)...
+Checking module SB_LUT4(LUT_INIT=16'b1100000000000000)...
+Checking module SB_LUT4(LUT_INIT=16'b1100001100111100)...
+Checking module SB_LUT4(LUT_INIT=16'b1100001101101001)...
+Checking module SB_LUT4(LUT_INIT=16'b1100010011110101)...
+Checking module SB_LUT4(LUT_INIT=16'b1110000110000111)...
+Checking module SB_LUT4(LUT_INIT=16'b1111000000000000)...
+Checking module SB_LUT4(LUT_INIT=16'b1111000000001111)...
+Checking module SB_LUT4(LUT_INIT=16'b1111001111001100)...
+Checking module SB_LUT4(LUT_INIT=16'b1111110011010100)...
+Checking module SB_LUT4(LUT_INIT=16'b1111110011111111)...
+Checking module counter...
+Found and reported 0 problems.
+
+6.7. Executing OPT pass (performing simple optimizations).
+
+6.7.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module SB_DFFSR.
+Optimizing module SB_LUT4(LUT_INIT=16'b01).
+Optimizing module SB_LUT4(LUT_INIT=16'b01000).
+Optimizing module SB_LUT4(LUT_INIT=16'b0100000000).
+Optimizing module SB_LUT4(LUT_INIT=16'b01000000000000).
+Optimizing module SB_LUT4(LUT_INIT=16'b0100000111).
+Optimizing module SB_LUT4(LUT_INIT=16'b01000100000001).
+Optimizing module SB_LUT4(LUT_INIT=16'b0100010011000100).
+Optimizing module SB_LUT4(LUT_INIT=16'b010101010101010).
+Optimizing module SB_LUT4(LUT_INIT=16'b0101101011011111).
+Optimizing module SB_LUT4(LUT_INIT=16'b0101111101001100).
+Optimizing module SB_LUT4(LUT_INIT=16'b01100).
+Optimizing module SB_LUT4(LUT_INIT=16'b011000000000000).
+Optimizing module SB_LUT4(LUT_INIT=16'b011000000110001).
+Optimizing module SB_LUT4(LUT_INIT=16'b0110101010101001).
+Optimizing module SB_LUT4(LUT_INIT=16'b0111010100000000).
+Optimizing module SB_LUT4(LUT_INIT=16'b01111).
+Optimizing module SB_LUT4(LUT_INIT=16'b011110000).
+Optimizing module SB_LUT4(LUT_INIT=16'b0111100000000).
+Optimizing module SB_LUT4(LUT_INIT=16'b0111100000011).
+Optimizing module SB_LUT4(LUT_INIT=16'b011110011).
+Optimizing module SB_LUT4(LUT_INIT=16'b011110011000011).
+Optimizing module SB_LUT4(LUT_INIT=16'b0111111).
+Optimizing module SB_LUT4(LUT_INIT=16'b011111111).
+<suppressed ~3 debug messages>
+Optimizing module SB_LUT4(LUT_INIT=16'b0111111110000).
+Optimizing module SB_LUT4(LUT_INIT=16'b1010010101101010).
+Optimizing module SB_LUT4(LUT_INIT=16'b1010101010100010).
+Optimizing module SB_LUT4(LUT_INIT=16'b1100000000000000).
+Optimizing module SB_LUT4(LUT_INIT=16'b1100001100111100).
+Optimizing module SB_LUT4(LUT_INIT=16'b1100001101101001).
+Optimizing module SB_LUT4(LUT_INIT=16'b1100010011110101).
+Optimizing module SB_LUT4(LUT_INIT=16'b1110000110000111).
+Optimizing module SB_LUT4(LUT_INIT=16'b1111000000000000).
+Optimizing module SB_LUT4(LUT_INIT=16'b1111000000001111).
+Optimizing module SB_LUT4(LUT_INIT=16'b1111001111001100).
+Optimizing module SB_LUT4(LUT_INIT=16'b1111110011010100).
+Optimizing module SB_LUT4(LUT_INIT=16'b1111110011111111).
+Optimizing module counter.
+
+6.7.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\SB_DFFSR'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b01)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b01000)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b0100000000)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b01000000000000)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b0100000111)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b01000100000001)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b0100010011000100)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b010101010101010)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b0101101011011111)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b0101111101001100)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b01100)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b011000000000000)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b011000000110001)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b0110101010101001)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b0111010100000000)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b01111)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b011110000)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b0111100000000)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b0111100000011)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b011110011)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b011110011000011)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b0111111)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b011111111)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b0111111110000)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b1010010101101010)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b1010101010100010)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b1100000000000000)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b1100001100111100)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b1100001101101001)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b1100010011110101)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b1110000110000111)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b1111000000000000)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b1111000000001111)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b1111001111001100)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b1111110011010100)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b1111110011111111)'.
+Finding identical cells in module `\counter'.
+Removed a total of 0 cells.
+
+6.7.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \SB_DFFSR..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SB_LUT4(LUT_INIT=16'b01)..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SB_LUT4(LUT_INIT=16'b01000)..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SB_LUT4(LUT_INIT=16'b0100000000)..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SB_LUT4(LUT_INIT=16'b01000000000000)..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SB_LUT4(LUT_INIT=16'b0100000111)..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SB_LUT4(LUT_INIT=16'b01000100000001)..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SB_LUT4(LUT_INIT=16'b0100010011000100)..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SB_LUT4(LUT_INIT=16'b010101010101010)..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SB_LUT4(LUT_INIT=16'b0101101011011111)..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SB_LUT4(LUT_INIT=16'b0101111101001100)..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SB_LUT4(LUT_INIT=16'b01100)..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SB_LUT4(LUT_INIT=16'b011000000000000)..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SB_LUT4(LUT_INIT=16'b011000000110001)..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SB_LUT4(LUT_INIT=16'b0110101010101001)..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SB_LUT4(LUT_INIT=16'b0111010100000000)..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SB_LUT4(LUT_INIT=16'b01111)..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SB_LUT4(LUT_INIT=16'b011110000)..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SB_LUT4(LUT_INIT=16'b0111100000000)..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SB_LUT4(LUT_INIT=16'b0111100000011)..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SB_LUT4(LUT_INIT=16'b011110011)..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SB_LUT4(LUT_INIT=16'b011110011000011)..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SB_LUT4(LUT_INIT=16'b0111111)..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SB_LUT4(LUT_INIT=16'b011111111)..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \SB_LUT4(LUT_INIT=16'b0111111110000)..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SB_LUT4(LUT_INIT=16'b1010010101101010)..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SB_LUT4(LUT_INIT=16'b1010101010100010)..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SB_LUT4(LUT_INIT=16'b1100000000000000)..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SB_LUT4(LUT_INIT=16'b1100001100111100)..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SB_LUT4(LUT_INIT=16'b1100001101101001)..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SB_LUT4(LUT_INIT=16'b1100010011110101)..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SB_LUT4(LUT_INIT=16'b1110000110000111)..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SB_LUT4(LUT_INIT=16'b1111000000000000)..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SB_LUT4(LUT_INIT=16'b1111000000001111)..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SB_LUT4(LUT_INIT=16'b1111001111001100)..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SB_LUT4(LUT_INIT=16'b1111110011010100)..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SB_LUT4(LUT_INIT=16'b1111110011111111)..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \counter..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+<suppressed ~36 debug messages>
+
+6.7.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \SB_DFFSR.
+  Optimizing cells in module \SB_LUT4(LUT_INIT=16'b01).
+  Optimizing cells in module \SB_LUT4(LUT_INIT=16'b01000).
+  Optimizing cells in module \SB_LUT4(LUT_INIT=16'b0100000000).
+  Optimizing cells in module \SB_LUT4(LUT_INIT=16'b01000000000000).
+  Optimizing cells in module \SB_LUT4(LUT_INIT=16'b0100000111).
+  Optimizing cells in module \SB_LUT4(LUT_INIT=16'b01000100000001).
+  Optimizing cells in module \SB_LUT4(LUT_INIT=16'b0100010011000100).
+  Optimizing cells in module \SB_LUT4(LUT_INIT=16'b010101010101010).
+  Optimizing cells in module \SB_LUT4(LUT_INIT=16'b0101101011011111).
+  Optimizing cells in module \SB_LUT4(LUT_INIT=16'b0101111101001100).
+  Optimizing cells in module \SB_LUT4(LUT_INIT=16'b01100).
+  Optimizing cells in module \SB_LUT4(LUT_INIT=16'b011000000000000).
+  Optimizing cells in module \SB_LUT4(LUT_INIT=16'b011000000110001).
+  Optimizing cells in module \SB_LUT4(LUT_INIT=16'b0110101010101001).
+  Optimizing cells in module \SB_LUT4(LUT_INIT=16'b0111010100000000).
+  Optimizing cells in module \SB_LUT4(LUT_INIT=16'b01111).
+  Optimizing cells in module \SB_LUT4(LUT_INIT=16'b011110000).
+  Optimizing cells in module \SB_LUT4(LUT_INIT=16'b0111100000000).
+  Optimizing cells in module \SB_LUT4(LUT_INIT=16'b0111100000011).
+  Optimizing cells in module \SB_LUT4(LUT_INIT=16'b011110011).
+  Optimizing cells in module \SB_LUT4(LUT_INIT=16'b011110011000011).
+  Optimizing cells in module \SB_LUT4(LUT_INIT=16'b0111111).
+  Optimizing cells in module \SB_LUT4(LUT_INIT=16'b011111111).
+  Optimizing cells in module \SB_LUT4(LUT_INIT=16'b0111111110000).
+  Optimizing cells in module \SB_LUT4(LUT_INIT=16'b1010010101101010).
+  Optimizing cells in module \SB_LUT4(LUT_INIT=16'b1010101010100010).
+  Optimizing cells in module \SB_LUT4(LUT_INIT=16'b1100000000000000).
+  Optimizing cells in module \SB_LUT4(LUT_INIT=16'b1100001100111100).
+  Optimizing cells in module \SB_LUT4(LUT_INIT=16'b1100001101101001).
+  Optimizing cells in module \SB_LUT4(LUT_INIT=16'b1100010011110101).
+  Optimizing cells in module \SB_LUT4(LUT_INIT=16'b1110000110000111).
+  Optimizing cells in module \SB_LUT4(LUT_INIT=16'b1111000000000000).
+  Optimizing cells in module \SB_LUT4(LUT_INIT=16'b1111000000001111).
+  Optimizing cells in module \SB_LUT4(LUT_INIT=16'b1111001111001100).
+  Optimizing cells in module \SB_LUT4(LUT_INIT=16'b1111110011010100).
+  Optimizing cells in module \SB_LUT4(LUT_INIT=16'b1111110011111111).
+  Optimizing cells in module \counter.
+Performed a total of 0 changes.
+
+6.7.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\SB_DFFSR'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b01)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b01000)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b0100000000)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b01000000000000)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b0100000111)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b01000100000001)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b0100010011000100)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b010101010101010)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b0101101011011111)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b0101111101001100)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b01100)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b011000000000000)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b011000000110001)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b0110101010101001)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b0111010100000000)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b01111)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b011110000)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b0111100000000)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b0111100000011)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b011110011)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b011110011000011)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b0111111)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b011111111)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b0111111110000)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b1010010101101010)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b1010101010100010)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b1100000000000000)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b1100001100111100)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b1100001101101001)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b1100010011110101)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b1110000110000111)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b1111000000000000)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b1111000000001111)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b1111001111001100)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b1111110011010100)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b1111110011111111)'.
+Finding identical cells in module `\counter'.
+Removed a total of 0 cells.
+
+6.7.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \SB_DFFSR..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b01)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b01000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b0100000000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b01000000000000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b0100000111)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b01000100000001)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b0100010011000100)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b010101010101010)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b0101101011011111)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b0101111101001100)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b01100)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b011000000000000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b011000000110001)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b0110101010101001)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b0111010100000000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b01111)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b011110000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b0111100000000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b0111100000011)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b011110011)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b011110011000011)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b0111111)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b011111111)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b0111111110000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1010010101101010)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1010101010100010)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1100000000000000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1100001100111100)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1100001101101001)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1100010011110101)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1110000110000111)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1111000000000000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1111000000001111)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1111001111001100)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1111110011010100)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1111110011111111)..
+Finding unused cells or wires in module \counter..
+
+6.7.7. Executing OPT_EXPR pass (perform const folding).
+Optimizing module SB_DFFSR.
+Optimizing module SB_LUT4(LUT_INIT=16'b01).
+Optimizing module SB_LUT4(LUT_INIT=16'b01000).
+Optimizing module SB_LUT4(LUT_INIT=16'b0100000000).
+Optimizing module SB_LUT4(LUT_INIT=16'b01000000000000).
+Optimizing module SB_LUT4(LUT_INIT=16'b0100000111).
+Optimizing module SB_LUT4(LUT_INIT=16'b01000100000001).
+Optimizing module SB_LUT4(LUT_INIT=16'b0100010011000100).
+Optimizing module SB_LUT4(LUT_INIT=16'b010101010101010).
+Optimizing module SB_LUT4(LUT_INIT=16'b0101101011011111).
+Optimizing module SB_LUT4(LUT_INIT=16'b0101111101001100).
+Optimizing module SB_LUT4(LUT_INIT=16'b01100).
+Optimizing module SB_LUT4(LUT_INIT=16'b011000000000000).
+Optimizing module SB_LUT4(LUT_INIT=16'b011000000110001).
+Optimizing module SB_LUT4(LUT_INIT=16'b0110101010101001).
+Optimizing module SB_LUT4(LUT_INIT=16'b0111010100000000).
+Optimizing module SB_LUT4(LUT_INIT=16'b01111).
+Optimizing module SB_LUT4(LUT_INIT=16'b011110000).
+Optimizing module SB_LUT4(LUT_INIT=16'b0111100000000).
+Optimizing module SB_LUT4(LUT_INIT=16'b0111100000011).
+Optimizing module SB_LUT4(LUT_INIT=16'b011110011).
+Optimizing module SB_LUT4(LUT_INIT=16'b011110011000011).
+Optimizing module SB_LUT4(LUT_INIT=16'b0111111).
+Optimizing module SB_LUT4(LUT_INIT=16'b011111111).
+Optimizing module SB_LUT4(LUT_INIT=16'b0111111110000).
+Optimizing module SB_LUT4(LUT_INIT=16'b1010010101101010).
+Optimizing module SB_LUT4(LUT_INIT=16'b1010101010100010).
+Optimizing module SB_LUT4(LUT_INIT=16'b1100000000000000).
+Optimizing module SB_LUT4(LUT_INIT=16'b1100001100111100).
+Optimizing module SB_LUT4(LUT_INIT=16'b1100001101101001).
+Optimizing module SB_LUT4(LUT_INIT=16'b1100010011110101).
+Optimizing module SB_LUT4(LUT_INIT=16'b1110000110000111).
+Optimizing module SB_LUT4(LUT_INIT=16'b1111000000000000).
+Optimizing module SB_LUT4(LUT_INIT=16'b1111000000001111).
+Optimizing module SB_LUT4(LUT_INIT=16'b1111001111001100).
+Optimizing module SB_LUT4(LUT_INIT=16'b1111110011010100).
+Optimizing module SB_LUT4(LUT_INIT=16'b1111110011111111).
+Optimizing module counter.
+
+6.7.8. Finished OPT passes. (There is nothing left to do.)
+
+6.8. Executing WREDUCE pass (reducing word size of cells).
+Removed top 3 bits (of 4) from mux cell SB_LUT4(LUT_INIT=16'b01).$verific$mux_5$cells_sim.v:186$346 ($mux).
+Removed top 1 bits (of 2) from mux cell SB_LUT4(LUT_INIT=16'b01).$verific$mux_7$cells_sim.v:187$348 ($mux).
+Removed top 1 bits (of 2) from wire SB_LUT4(LUT_INIT=16'b01).s1.
+Removed top 3 bits (of 4) from wire SB_LUT4(LUT_INIT=16'b01).s2.
+Removed top 7 bits (of 8) from wire SB_LUT4(LUT_INIT=16'b01).s3.
+Removed top 4 bits (of 8) from wire SB_LUT4(LUT_INIT=16'b01000).s3.
+Removed top 3 bits (of 4) from mux cell SB_LUT4(LUT_INIT=16'b0100000000).$verific$mux_5$cells_sim.v:186$372 ($mux).
+Removed top 1 bits (of 2) from mux cell SB_LUT4(LUT_INIT=16'b0100000000).$verific$mux_7$cells_sim.v:187$374 ($mux).
+Removed top 1 bits (of 2) from wire SB_LUT4(LUT_INIT=16'b0100000000).s1.
+Removed top 3 bits (of 4) from wire SB_LUT4(LUT_INIT=16'b0100000000).s2.
+Removed top 3 bits (of 4) from mux cell SB_LUT4(LUT_INIT=16'b01000000000000).$verific$mux_5$cells_sim.v:186$384 ($mux).
+Removed top 1 bits (of 2) from mux cell SB_LUT4(LUT_INIT=16'b01000000000000).$verific$mux_7$cells_sim.v:187$386 ($mux).
+Removed top 1 bits (of 2) from wire SB_LUT4(LUT_INIT=16'b01000000000000).s1.
+Removed top 3 bits (of 4) from wire SB_LUT4(LUT_INIT=16'b01000000000000).s2.
+Removed top 3 bits (of 8) from wire SB_LUT4(LUT_INIT=16'b01000000000000).s3.
+Removed top 1 bits (of 4) from mux cell SB_LUT4(LUT_INIT=16'b0100000111).$verific$mux_5$cells_sim.v:186$400 ($mux).
+Removed top 1 bits (of 4) from wire SB_LUT4(LUT_INIT=16'b0100000111).s2.
+Removed top 3 bits (of 4) from mux cell SB_LUT4(LUT_INIT=16'b01000100000001).$verific$mux_5$cells_sim.v:186$414 ($mux).
+Removed top 1 bits (of 2) from mux cell SB_LUT4(LUT_INIT=16'b01000100000001).$verific$mux_7$cells_sim.v:187$416 ($mux).
+Removed top 1 bits (of 2) from wire SB_LUT4(LUT_INIT=16'b01000100000001).s1.
+Removed top 3 bits (of 4) from wire SB_LUT4(LUT_INIT=16'b01000100000001).s2.
+Removed top 3 bits (of 8) from wire SB_LUT4(LUT_INIT=16'b01000100000001).s3.
+Removed top 3 bits (of 8) from wire SB_LUT4(LUT_INIT=16'b0101111101001100).s3.
+Removed top 4 bits (of 8) from wire SB_LUT4(LUT_INIT=16'b01100).s3.
+Removed top 2 bits (of 4) from mux cell SB_LUT4(LUT_INIT=16'b011000000000000).$verific$mux_5$cells_sim.v:186$502 ($mux).
+Removed top 2 bits (of 4) from wire SB_LUT4(LUT_INIT=16'b011000000000000).s2.
+Removed top 2 bits (of 8) from wire SB_LUT4(LUT_INIT=16'b011000000000000).s3.
+Removed top 2 bits (of 4) from mux cell SB_LUT4(LUT_INIT=16'b011000000110001).$verific$mux_5$cells_sim.v:186$518 ($mux).
+Removed top 2 bits (of 4) from wire SB_LUT4(LUT_INIT=16'b011000000110001).s2.
+Removed top 2 bits (of 4) from mux cell SB_LUT4(LUT_INIT=16'b0111010100000000).$verific$mux_5$cells_sim.v:186$546 ($mux).
+Removed top 1 bits (of 4) from wire SB_LUT4(LUT_INIT=16'b0111010100000000).s2.
+Removed top 1 bits (of 8) from wire SB_LUT4(LUT_INIT=16'b0111010100000000).s3.
+Removed top 4 bits (of 8) from wire SB_LUT4(LUT_INIT=16'b01111).s3.
+Removed top 4 bits (of 8) from wire SB_LUT4(LUT_INIT=16'b0111100000000).s3.
+Removed top 4 bits (of 8) from wire SB_LUT4(LUT_INIT=16'b0111100000011).s3.
+Removed top 2 bits (of 8) from wire SB_LUT4(LUT_INIT=16'b0111111).s3.
+Removed top 4 bits (of 8) from wire SB_LUT4(LUT_INIT=16'b1010101010100010).s3.
+Removed top 2 bits (of 8) from wire SB_LUT4(LUT_INIT=16'b1100010011110101).s3.
+Removed top 1 bits (of 8) from wire SB_LUT4(LUT_INIT=16'b1110000110000111).s3.
+Removed top 2 bits (of 8) from wire SB_LUT4(LUT_INIT=16'b1111001111001100).s3.
+Removed top 2 bits (of 8) from wire SB_LUT4(LUT_INIT=16'b1111110011010100).s3.
+Removed top 2 bits (of 4) from mux cell SB_LUT4(LUT_INIT=16'b1111110011111111).$verific$mux_5$cells_sim.v:186$832 ($mux).
+Removed top 2 bits (of 4) from wire SB_LUT4(LUT_INIT=16'b1111110011111111).s2.
+
+6.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \SB_DFFSR..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b01)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b01000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b0100000000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b01000000000000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b0100000111)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b01000100000001)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b0100010011000100)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b010101010101010)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b0101101011011111)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b0101111101001100)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b01100)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b011000000000000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b011000000110001)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b0110101010101001)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b0111010100000000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b01111)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b011110000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b0111100000000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b0111100000011)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b011110011)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b011110011000011)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b0111111)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b011111111)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b0111111110000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1010010101101010)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1010101010100010)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1100000000000000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1100001100111100)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1100001101101001)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1100010011110101)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1110000110000111)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1111000000000000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1111000000001111)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1111001111001100)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1111110011010100)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1111110011111111)..
+Finding unused cells or wires in module \counter..
+Removed 0 unused cells and 30 unused wires.
+<suppressed ~21 debug messages>
+
+6.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+6.11. Executing OPT pass (performing simple optimizations).
+
+6.11.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module SB_DFFSR.
+Optimizing module SB_LUT4(LUT_INIT=16'b01).
+Optimizing module SB_LUT4(LUT_INIT=16'b01000).
+Optimizing module SB_LUT4(LUT_INIT=16'b0100000000).
+Optimizing module SB_LUT4(LUT_INIT=16'b01000000000000).
+Optimizing module SB_LUT4(LUT_INIT=16'b0100000111).
+Optimizing module SB_LUT4(LUT_INIT=16'b01000100000001).
+Optimizing module SB_LUT4(LUT_INIT=16'b0100010011000100).
+Optimizing module SB_LUT4(LUT_INIT=16'b010101010101010).
+Optimizing module SB_LUT4(LUT_INIT=16'b0101101011011111).
+Optimizing module SB_LUT4(LUT_INIT=16'b0101111101001100).
+Optimizing module SB_LUT4(LUT_INIT=16'b01100).
+Optimizing module SB_LUT4(LUT_INIT=16'b011000000000000).
+Optimizing module SB_LUT4(LUT_INIT=16'b011000000110001).
+Optimizing module SB_LUT4(LUT_INIT=16'b0110101010101001).
+Optimizing module SB_LUT4(LUT_INIT=16'b0111010100000000).
+Optimizing module SB_LUT4(LUT_INIT=16'b01111).
+Optimizing module SB_LUT4(LUT_INIT=16'b011110000).
+Optimizing module SB_LUT4(LUT_INIT=16'b0111100000000).
+Optimizing module SB_LUT4(LUT_INIT=16'b0111100000011).
+Optimizing module SB_LUT4(LUT_INIT=16'b011110011).
+Optimizing module SB_LUT4(LUT_INIT=16'b011110011000011).
+Optimizing module SB_LUT4(LUT_INIT=16'b0111111).
+Optimizing module SB_LUT4(LUT_INIT=16'b011111111).
+Optimizing module SB_LUT4(LUT_INIT=16'b0111111110000).
+Optimizing module SB_LUT4(LUT_INIT=16'b1010010101101010).
+Optimizing module SB_LUT4(LUT_INIT=16'b1010101010100010).
+Optimizing module SB_LUT4(LUT_INIT=16'b1100000000000000).
+Optimizing module SB_LUT4(LUT_INIT=16'b1100001100111100).
+Optimizing module SB_LUT4(LUT_INIT=16'b1100001101101001).
+Optimizing module SB_LUT4(LUT_INIT=16'b1100010011110101).
+Optimizing module SB_LUT4(LUT_INIT=16'b1110000110000111).
+Optimizing module SB_LUT4(LUT_INIT=16'b1111000000000000).
+Optimizing module SB_LUT4(LUT_INIT=16'b1111000000001111).
+Optimizing module SB_LUT4(LUT_INIT=16'b1111001111001100).
+Optimizing module SB_LUT4(LUT_INIT=16'b1111110011010100).
+Optimizing module SB_LUT4(LUT_INIT=16'b1111110011111111).
+Optimizing module counter.
+
+6.11.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\SB_DFFSR'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b01)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b01000)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b0100000000)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b01000000000000)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b0100000111)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b01000100000001)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b0100010011000100)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b010101010101010)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b0101101011011111)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b0101111101001100)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b01100)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b011000000000000)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b011000000110001)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b0110101010101001)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b0111010100000000)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b01111)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b011110000)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b0111100000000)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b0111100000011)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b011110011)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b011110011000011)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b0111111)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b011111111)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b0111111110000)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b1010010101101010)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b1010101010100010)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b1100000000000000)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b1100001100111100)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b1100001101101001)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b1100010011110101)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b1110000110000111)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b1111000000000000)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b1111000000001111)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b1111001111001100)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b1111110011010100)'.
+Finding identical cells in module `\SB_LUT4(LUT_INIT=16'b1111110011111111)'.
+Finding identical cells in module `\counter'.
+Removed a total of 0 cells.
+
+6.11.3. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \SB_DFFSR..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b01)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b01000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b0100000000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b01000000000000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b0100000111)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b01000100000001)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b0100010011000100)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b010101010101010)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b0101101011011111)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b0101111101001100)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b01100)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b011000000000000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b011000000110001)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b0110101010101001)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b0111010100000000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b01111)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b011110000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b0111100000000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b0111100000011)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b011110011)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b011110011000011)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b0111111)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b011111111)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b0111111110000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1010010101101010)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1010101010100010)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1100000000000000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1100001100111100)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1100001101101001)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1100010011110101)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1110000110000111)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1111000000000000)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1111000000001111)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1111001111001100)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1111110011010100)..
+Finding unused cells or wires in module \SB_LUT4(LUT_INIT=16'b1111110011111111)..
+Finding unused cells or wires in module \counter..
+
+6.11.4. Finished fast OPT passes.
+
+6.12. Printing statistics.
+
+=== SB_DFFSR ===
+
+   Number of wires:                  5
+   Number of wire bits:              5
+   Number of public wires:           4
+   Number of public wire bits:       4
+   Number of ports:                  4
+   Number of port bits:              4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     $dff                            1
+     $mux                            1
+
+=== SB_LUT4(LUT_INIT=16'b01) ===
+
+   Number of wires:                  8
+   Number of wire bits:              8
+   Number of public wires:           8
+   Number of public wire bits:       8
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $mux                            3
+     $not                            1
+
+=== SB_LUT4(LUT_INIT=16'b01000) ===
+
+   Number of wires:                  8
+   Number of wire bits:             15
+   Number of public wires:           8
+   Number of public wire bits:      15
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $mux                            3
+     $not                            1
+
+=== SB_LUT4(LUT_INIT=16'b0100000000) ===
+
+   Number of wires:                  8
+   Number of wire bits:             15
+   Number of public wires:           8
+   Number of public wire bits:      15
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $mux                            3
+
+=== SB_LUT4(LUT_INIT=16'b01000000000000) ===
+
+   Number of wires:                  8
+   Number of wire bits:             12
+   Number of public wires:           8
+   Number of public wire bits:      12
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $mux                            3
+
+=== SB_LUT4(LUT_INIT=16'b0100000111) ===
+
+   Number of wires:                  8
+   Number of wire bits:             18
+   Number of public wires:           8
+   Number of public wire bits:      18
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $mux                            3
+     $not                            1
+
+=== SB_LUT4(LUT_INIT=16'b01000100000001) ===
+
+   Number of wires:                  8
+   Number of wire bits:             12
+   Number of public wires:           8
+   Number of public wire bits:      12
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $mux                            3
+
+=== SB_LUT4(LUT_INIT=16'b0100010011000100) ===
+
+   Number of wires:                  8
+   Number of wire bits:             19
+   Number of public wires:           8
+   Number of public wire bits:      19
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $mux                            3
+     $not                            1
+
+=== SB_LUT4(LUT_INIT=16'b010101010101010) ===
+
+   Number of wires:                  8
+   Number of wire bits:             19
+   Number of public wires:           8
+   Number of public wire bits:      19
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $mux                            3
+     $not                            1
+
+=== SB_LUT4(LUT_INIT=16'b0101101011011111) ===
+
+   Number of wires:                  8
+   Number of wire bits:             19
+   Number of public wires:           8
+   Number of public wire bits:      19
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $mux                            3
+     $not                            1
+
+=== SB_LUT4(LUT_INIT=16'b0101111101001100) ===
+
+   Number of wires:                  8
+   Number of wire bits:             16
+   Number of public wires:           8
+   Number of public wire bits:      16
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $mux                            3
+
+=== SB_LUT4(LUT_INIT=16'b01100) ===
+
+   Number of wires:                  8
+   Number of wire bits:             15
+   Number of public wires:           8
+   Number of public wire bits:      15
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $mux                            3
+     $not                            1
+
+=== SB_LUT4(LUT_INIT=16'b011000000000000) ===
+
+   Number of wires:                  8
+   Number of wire bits:             15
+   Number of public wires:           8
+   Number of public wire bits:      15
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $mux                            3
+
+=== SB_LUT4(LUT_INIT=16'b011000000110001) ===
+
+   Number of wires:                  8
+   Number of wire bits:             17
+   Number of public wires:           8
+   Number of public wire bits:      17
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $mux                            3
+     $not                            1
+
+=== SB_LUT4(LUT_INIT=16'b0110101010101001) ===
+
+   Number of wires:                  8
+   Number of wire bits:             19
+   Number of public wires:           8
+   Number of public wire bits:      19
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $mux                            3
+     $not                            1
+
+=== SB_LUT4(LUT_INIT=16'b0111010100000000) ===
+
+   Number of wires:                  8
+   Number of wire bits:             17
+   Number of public wires:           8
+   Number of public wire bits:      17
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $mux                            3
+
+=== SB_LUT4(LUT_INIT=16'b01111) ===
+
+   Number of wires:                  8
+   Number of wire bits:             15
+   Number of public wires:           8
+   Number of public wire bits:      15
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $mux                            3
+     $not                            1
+
+=== SB_LUT4(LUT_INIT=16'b011110000) ===
+
+   Number of wires:                  8
+   Number of wire bits:             19
+   Number of public wires:           8
+   Number of public wire bits:      19
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $mux                            3
+     $not                            1
+
+=== SB_LUT4(LUT_INIT=16'b0111100000000) ===
+
+   Number of wires:                  8
+   Number of wire bits:             15
+   Number of public wires:           8
+   Number of public wire bits:      15
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $mux                            3
+
+=== SB_LUT4(LUT_INIT=16'b0111100000011) ===
+
+   Number of wires:                  8
+   Number of wire bits:             15
+   Number of public wires:           8
+   Number of public wire bits:      15
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $mux                            3
+
+=== SB_LUT4(LUT_INIT=16'b011110011) ===
+
+   Number of wires:                  8
+   Number of wire bits:             19
+   Number of public wires:           8
+   Number of public wire bits:      19
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $mux                            3
+     $not                            1
+
+=== SB_LUT4(LUT_INIT=16'b011110011000011) ===
+
+   Number of wires:                  8
+   Number of wire bits:             19
+   Number of public wires:           8
+   Number of public wire bits:      19
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $mux                            3
+     $not                            1
+
+=== SB_LUT4(LUT_INIT=16'b0111111) ===
+
+   Number of wires:                  8
+   Number of wire bits:             17
+   Number of public wires:           8
+   Number of public wire bits:      17
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $mux                            3
+     $not                            1
+
+=== SB_LUT4(LUT_INIT=16'b011111111) ===
+
+   Number of wires:                  8
+   Number of wire bits:             19
+   Number of public wires:           8
+   Number of public wire bits:      19
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     $not                            1
+
+=== SB_LUT4(LUT_INIT=16'b0111111110000) ===
+
+   Number of wires:                  8
+   Number of wire bits:             19
+   Number of public wires:           8
+   Number of public wire bits:      19
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $mux                            3
+     $not                            1
+
+=== SB_LUT4(LUT_INIT=16'b1010010101101010) ===
+
+   Number of wires:                  8
+   Number of wire bits:             19
+   Number of public wires:           8
+   Number of public wire bits:      19
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $mux                            3
+     $not                            1
+
+=== SB_LUT4(LUT_INIT=16'b1010101010100010) ===
+
+   Number of wires:                  8
+   Number of wire bits:             15
+   Number of public wires:           8
+   Number of public wire bits:      15
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $mux                            3
+
+=== SB_LUT4(LUT_INIT=16'b1100000000000000) ===
+
+   Number of wires:                  8
+   Number of wire bits:             19
+   Number of public wires:           8
+   Number of public wire bits:      19
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $mux                            3
+
+=== SB_LUT4(LUT_INIT=16'b1100001100111100) ===
+
+   Number of wires:                  8
+   Number of wire bits:             19
+   Number of public wires:           8
+   Number of public wire bits:      19
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $mux                            3
+     $not                            1
+
+=== SB_LUT4(LUT_INIT=16'b1100001101101001) ===
+
+   Number of wires:                  8
+   Number of wire bits:             19
+   Number of public wires:           8
+   Number of public wire bits:      19
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $mux                            3
+     $not                            1
+
+=== SB_LUT4(LUT_INIT=16'b1100010011110101) ===
+
+   Number of wires:                  8
+   Number of wire bits:             17
+   Number of public wires:           8
+   Number of public wire bits:      17
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $mux                            3
+     $not                            1
+
+=== SB_LUT4(LUT_INIT=16'b1110000110000111) ===
+
+   Number of wires:                  8
+   Number of wire bits:             18
+   Number of public wires:           8
+   Number of public wire bits:      18
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $mux                            3
+     $not                            1
+
+=== SB_LUT4(LUT_INIT=16'b1111000000000000) ===
+
+   Number of wires:                  8
+   Number of wire bits:             19
+   Number of public wires:           8
+   Number of public wire bits:      19
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $mux                            3
+
+=== SB_LUT4(LUT_INIT=16'b1111000000001111) ===
+
+   Number of wires:                  8
+   Number of wire bits:             19
+   Number of public wires:           8
+   Number of public wire bits:      19
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $mux                            3
+     $not                            1
+
+=== SB_LUT4(LUT_INIT=16'b1111001111001100) ===
+
+   Number of wires:                  8
+   Number of wire bits:             17
+   Number of public wires:           8
+   Number of public wire bits:      17
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $mux                            3
+     $not                            1
+
+=== SB_LUT4(LUT_INIT=16'b1111110011010100) ===
+
+   Number of wires:                  8
+   Number of wire bits:             17
+   Number of public wires:           8
+   Number of public wire bits:      17
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $mux                            3
+
+=== SB_LUT4(LUT_INIT=16'b1111110011111111) ===
+
+   Number of wires:                  8
+   Number of wire bits:             17
+   Number of public wires:           8
+   Number of public wire bits:      17
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $mux                            3
+     $not                            1
+
+=== counter ===
+
+   Number of wires:                 38
+   Number of wire bits:            117
+   Number of public wires:          38
+   Number of public wire bits:     117
+   Number of ports:                  4
+   Number of port bits:             13
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 63
+     SB_DFFSR                       10
+     SB_LUT4(LUT_INIT=16'b01)        1
+     SB_LUT4(LUT_INIT=16'b01000)      1
+     SB_LUT4(LUT_INIT=16'b0100000000)      1
+     SB_LUT4(LUT_INIT=16'b01000000000000)      1
+     SB_LUT4(LUT_INIT=16'b0100000111)      1
+     SB_LUT4(LUT_INIT=16'b01000100000001)      1
+     SB_LUT4(LUT_INIT=16'b0100010011000100)      1
+     SB_LUT4(LUT_INIT=16'b010101010101010)      1
+     SB_LUT4(LUT_INIT=16'b0101101011011111)      1
+     SB_LUT4(LUT_INIT=16'b0101111101001100)      1
+     SB_LUT4(LUT_INIT=16'b01100)      2
+     SB_LUT4(LUT_INIT=16'b011000000000000)      2
+     SB_LUT4(LUT_INIT=16'b011000000110001)      1
+     SB_LUT4(LUT_INIT=16'b0110101010101001)      1
+     SB_LUT4(LUT_INIT=16'b0111010100000000)      1
+     SB_LUT4(LUT_INIT=16'b01111)      3
+     SB_LUT4(LUT_INIT=16'b011110000)      2
+     SB_LUT4(LUT_INIT=16'b0111100000000)      1
+     SB_LUT4(LUT_INIT=16'b0111100000011)      1
+     SB_LUT4(LUT_INIT=16'b011110011)      1
+     SB_LUT4(LUT_INIT=16'b011110011000011)      1
+     SB_LUT4(LUT_INIT=16'b0111111)      1
+     SB_LUT4(LUT_INIT=16'b011111111)      7
+     SB_LUT4(LUT_INIT=16'b0111111110000)      2
+     SB_LUT4(LUT_INIT=16'b1010010101101010)      1
+     SB_LUT4(LUT_INIT=16'b1010101010100010)      1
+     SB_LUT4(LUT_INIT=16'b1100000000000000)      1
+     SB_LUT4(LUT_INIT=16'b1100001100111100)      1
+     SB_LUT4(LUT_INIT=16'b1100001101101001)      1
+     SB_LUT4(LUT_INIT=16'b1100010011110101)      1
+     SB_LUT4(LUT_INIT=16'b1110000110000111)      1
+     SB_LUT4(LUT_INIT=16'b1111000000000000)      4
+     SB_LUT4(LUT_INIT=16'b1111000000001111)      3
+     SB_LUT4(LUT_INIT=16'b1111001111001100)      1
+     SB_LUT4(LUT_INIT=16'b1111110011010100)      1
+     SB_LUT4(LUT_INIT=16'b1111110011111111)      1
+
+=== design hierarchy ===
+
+   counter                           1
+     SB_DFFSR                       10
+     SB_LUT4(LUT_INIT=16'b01)        1
+     SB_LUT4(LUT_INIT=16'b01000)      1
+     SB_LUT4(LUT_INIT=16'b0100000000)      1
+     SB_LUT4(LUT_INIT=16'b01000000000000)      1
+     SB_LUT4(LUT_INIT=16'b0100000111)      1
+     SB_LUT4(LUT_INIT=16'b01000100000001)      1
+     SB_LUT4(LUT_INIT=16'b0100010011000100)      1
+     SB_LUT4(LUT_INIT=16'b010101010101010)      1
+     SB_LUT4(LUT_INIT=16'b0101101011011111)      1
+     SB_LUT4(LUT_INIT=16'b0101111101001100)      1
+     SB_LUT4(LUT_INIT=16'b01100)      2
+     SB_LUT4(LUT_INIT=16'b011000000000000)      2
+     SB_LUT4(LUT_INIT=16'b011000000110001)      1
+     SB_LUT4(LUT_INIT=16'b0110101010101001)      1
+     SB_LUT4(LUT_INIT=16'b0111010100000000)      1
+     SB_LUT4(LUT_INIT=16'b01111)      3
+     SB_LUT4(LUT_INIT=16'b011110000)      2
+     SB_LUT4(LUT_INIT=16'b0111100000000)      1
+     SB_LUT4(LUT_INIT=16'b0111100000011)      1
+     SB_LUT4(LUT_INIT=16'b011110011)      1
+     SB_LUT4(LUT_INIT=16'b011110011000011)      1
+     SB_LUT4(LUT_INIT=16'b0111111)      1
+     SB_LUT4(LUT_INIT=16'b011111111)      7
+     SB_LUT4(LUT_INIT=16'b0111111110000)      2
+     SB_LUT4(LUT_INIT=16'b1010010101101010)      1
+     SB_LUT4(LUT_INIT=16'b1010101010100010)      1
+     SB_LUT4(LUT_INIT=16'b1100000000000000)      1
+     SB_LUT4(LUT_INIT=16'b1100001100111100)      1
+     SB_LUT4(LUT_INIT=16'b1100001101101001)      1
+     SB_LUT4(LUT_INIT=16'b1100010011110101)      1
+     SB_LUT4(LUT_INIT=16'b1110000110000111)      1
+     SB_LUT4(LUT_INIT=16'b1111000000000000)      4
+     SB_LUT4(LUT_INIT=16'b1111000000001111)      3
+     SB_LUT4(LUT_INIT=16'b1111001111001100)      1
+     SB_LUT4(LUT_INIT=16'b1111110011010100)      1
+     SB_LUT4(LUT_INIT=16'b1111110011111111)      1
+
+   Number of wires:                512
+   Number of wire bits:           1082
+   Number of public wires:         502
+   Number of public wire bits:    1072
+   Number of ports:                309
+   Number of port bits:            318
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                195
+     $dff                           10
+     $mux                          148
+     $not                           37
+
+6.13. Executing CHECK pass (checking for obvious problems).
+Checking module SB_DFFSR...
+Checking module SB_LUT4(LUT_INIT=16'b01)...
+Checking module SB_LUT4(LUT_INIT=16'b01000)...
+Checking module SB_LUT4(LUT_INIT=16'b0100000000)...
+Checking module SB_LUT4(LUT_INIT=16'b01000000000000)...
+Checking module SB_LUT4(LUT_INIT=16'b0100000111)...
+Checking module SB_LUT4(LUT_INIT=16'b01000100000001)...
+Checking module SB_LUT4(LUT_INIT=16'b0100010011000100)...
+Checking module SB_LUT4(LUT_INIT=16'b010101010101010)...
+Checking module SB_LUT4(LUT_INIT=16'b0101101011011111)...
+Checking module SB_LUT4(LUT_INIT=16'b0101111101001100)...
+Checking module SB_LUT4(LUT_INIT=16'b01100)...
+Checking module SB_LUT4(LUT_INIT=16'b011000000000000)...
+Checking module SB_LUT4(LUT_INIT=16'b011000000110001)...
+Checking module SB_LUT4(LUT_INIT=16'b0110101010101001)...
+Checking module SB_LUT4(LUT_INIT=16'b0111010100000000)...
+Checking module SB_LUT4(LUT_INIT=16'b01111)...
+Checking module SB_LUT4(LUT_INIT=16'b011110000)...
+Checking module SB_LUT4(LUT_INIT=16'b0111100000000)...
+Checking module SB_LUT4(LUT_INIT=16'b0111100000011)...
+Checking module SB_LUT4(LUT_INIT=16'b011110011)...
+Checking module SB_LUT4(LUT_INIT=16'b011110011000011)...
+Checking module SB_LUT4(LUT_INIT=16'b0111111)...
+Checking module SB_LUT4(LUT_INIT=16'b011111111)...
+Checking module SB_LUT4(LUT_INIT=16'b0111111110000)...
+Checking module SB_LUT4(LUT_INIT=16'b1010010101101010)...
+Checking module SB_LUT4(LUT_INIT=16'b1010101010100010)...
+Checking module SB_LUT4(LUT_INIT=16'b1100000000000000)...
+Checking module SB_LUT4(LUT_INIT=16'b1100001100111100)...
+Checking module SB_LUT4(LUT_INIT=16'b1100001101101001)...
+Checking module SB_LUT4(LUT_INIT=16'b1100010011110101)...
+Checking module SB_LUT4(LUT_INIT=16'b1110000110000111)...
+Checking module SB_LUT4(LUT_INIT=16'b1111000000000000)...
+Checking module SB_LUT4(LUT_INIT=16'b1111000000001111)...
+Checking module SB_LUT4(LUT_INIT=16'b1111001111001100)...
+Checking module SB_LUT4(LUT_INIT=16'b1111110011010100)...
+Checking module SB_LUT4(LUT_INIT=16'b1111110011111111)...
+Checking module counter...
+Found and reported 0 problems.
+
+7. Executing HIERARCHY pass (managing design hierarchy).
+
+7.1. Analyzing design hierarchy..
+Top module:  \counter
+Used module:     \SB_DFFSR
+Used module:     \SB_LUT4(LUT_INIT=16'b1010010101101010)
+Used module:     \SB_LUT4(LUT_INIT=16'b0110101010101001)
+Used module:     \SB_LUT4(LUT_INIT=16'b1111000000001111)
+Used module:     \SB_LUT4(LUT_INIT=16'b0111111110000)
+Used module:     \SB_LUT4(LUT_INIT=16'b1100001100111100)
+Used module:     \SB_LUT4(LUT_INIT=16'b011110011)
+Used module:     \SB_LUT4(LUT_INIT=16'b1100001101101001)
+Used module:     \SB_LUT4(LUT_INIT=16'b1111000000000000)
+Used module:     \SB_LUT4(LUT_INIT=16'b1111001111001100)
+Used module:     \SB_LUT4(LUT_INIT=16'b01111)
+Used module:     \SB_LUT4(LUT_INIT=16'b011000000000000)
+Used module:     \SB_LUT4(LUT_INIT=16'b011110000)
+Used module:     \SB_LUT4(LUT_INIT=16'b0111111)
+Used module:     \SB_LUT4(LUT_INIT=16'b1111110011010100)
+Used module:     \SB_LUT4(LUT_INIT=16'b1100010011110101)
+Used module:     \SB_LUT4(LUT_INIT=16'b011110011000011)
+Used module:     \SB_LUT4(LUT_INIT=16'b0111100000011)
+Used module:     \SB_LUT4(LUT_INIT=16'b011111111)
+Used module:     \SB_LUT4(LUT_INIT=16'b010101010101010)
+Used module:     \SB_LUT4(LUT_INIT=16'b0101111101001100)
+Used module:     \SB_LUT4(LUT_INIT=16'b1100000000000000)
+Used module:     \SB_LUT4(LUT_INIT=16'b0100000111)
+Used module:     \SB_LUT4(LUT_INIT=16'b1110000110000111)
+Used module:     \SB_LUT4(LUT_INIT=16'b0100000000)
+Used module:     \SB_LUT4(LUT_INIT=16'b01000)
+Used module:     \SB_LUT4(LUT_INIT=16'b0111010100000000)
+Used module:     \SB_LUT4(LUT_INIT=16'b01100)
+Used module:     \SB_LUT4(LUT_INIT=16'b011000000110001)
+Used module:     \SB_LUT4(LUT_INIT=16'b0100010011000100)
+Used module:     \SB_LUT4(LUT_INIT=16'b1010101010100010)
+Used module:     \SB_LUT4(LUT_INIT=16'b0111100000000)
+Used module:     \SB_LUT4(LUT_INIT=16'b01000000000000)
+Used module:     \SB_LUT4(LUT_INIT=16'b01)
+Used module:     \SB_LUT4(LUT_INIT=16'b1111110011111111)
+Used module:     \SB_LUT4(LUT_INIT=16'b0101101011011111)
+Used module:     \SB_LUT4(LUT_INIT=16'b01000100000001)
+
+7.2. Analyzing design hierarchy..
+Top module:  \counter
+Used module:     \SB_DFFSR
+Used module:     \SB_LUT4(LUT_INIT=16'b1010010101101010)
+Used module:     \SB_LUT4(LUT_INIT=16'b0110101010101001)
+Used module:     \SB_LUT4(LUT_INIT=16'b1111000000001111)
+Used module:     \SB_LUT4(LUT_INIT=16'b0111111110000)
+Used module:     \SB_LUT4(LUT_INIT=16'b1100001100111100)
+Used module:     \SB_LUT4(LUT_INIT=16'b011110011)
+Used module:     \SB_LUT4(LUT_INIT=16'b1100001101101001)
+Used module:     \SB_LUT4(LUT_INIT=16'b1111000000000000)
+Used module:     \SB_LUT4(LUT_INIT=16'b1111001111001100)
+Used module:     \SB_LUT4(LUT_INIT=16'b01111)
+Used module:     \SB_LUT4(LUT_INIT=16'b011000000000000)
+Used module:     \SB_LUT4(LUT_INIT=16'b011110000)
+Used module:     \SB_LUT4(LUT_INIT=16'b0111111)
+Used module:     \SB_LUT4(LUT_INIT=16'b1111110011010100)
+Used module:     \SB_LUT4(LUT_INIT=16'b1100010011110101)
+Used module:     \SB_LUT4(LUT_INIT=16'b011110011000011)
+Used module:     \SB_LUT4(LUT_INIT=16'b0111100000011)
+Used module:     \SB_LUT4(LUT_INIT=16'b011111111)
+Used module:     \SB_LUT4(LUT_INIT=16'b010101010101010)
+Used module:     \SB_LUT4(LUT_INIT=16'b0101111101001100)
+Used module:     \SB_LUT4(LUT_INIT=16'b1100000000000000)
+Used module:     \SB_LUT4(LUT_INIT=16'b0100000111)
+Used module:     \SB_LUT4(LUT_INIT=16'b1110000110000111)
+Used module:     \SB_LUT4(LUT_INIT=16'b0100000000)
+Used module:     \SB_LUT4(LUT_INIT=16'b01000)
+Used module:     \SB_LUT4(LUT_INIT=16'b0111010100000000)
+Used module:     \SB_LUT4(LUT_INIT=16'b01100)
+Used module:     \SB_LUT4(LUT_INIT=16'b011000000110001)
+Used module:     \SB_LUT4(LUT_INIT=16'b0100010011000100)
+Used module:     \SB_LUT4(LUT_INIT=16'b1010101010100010)
+Used module:     \SB_LUT4(LUT_INIT=16'b0111100000000)
+Used module:     \SB_LUT4(LUT_INIT=16'b01000000000000)
+Used module:     \SB_LUT4(LUT_INIT=16'b01)
+Used module:     \SB_LUT4(LUT_INIT=16'b1111110011111111)
+Used module:     \SB_LUT4(LUT_INIT=16'b0101101011011111)
+Used module:     \SB_LUT4(LUT_INIT=16'b01000100000001)
+Removed 0 unused modules.
+
+8. Executing jny backend.
+
+9. Executing RTLIL backend.
+Output filename: ../model/design.il
+
+Warnings: 1 unique messages, 1 total
+End of script. Logfile hash: e423db921a, CPU: user 0.15s system 0.01s, MEM: 37.88 MB peak
+Yosys 0.45 (git sha1 9ed031ddd, clang++ 14.0.0-1ubuntu1.1 -fPIC -O3)
+Time spent: 32% 5x verific (0 sec), 21% 5x opt_expr (0 sec), ...

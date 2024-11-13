@@ -3,24 +3,181 @@
 (* cells_not_processed =  1  *)
 (* src = "counter.v:1.1-39.10" *)
 module counter(clk, rst, mode, cnt);
-  (* src = "counter.v:36.20-36.33" *)
-  wire [9:0] _00_;
+  wire [4:0] _000_;
+  wire [1:0] _001_;
+  wire _002_;
+  wire [4:0] _003_;
+  wire [1:0] _004_;
+  wire _005_;
+  wire [4:0] _006_;
+  wire [1:0] _007_;
+  wire _008_;
+  wire [4:0] _009_;
+  wire [1:0] _010_;
+  wire _011_;
+  wire [4:0] _012_;
+  wire [1:0] _013_;
+  wire _014_;
+  wire [4:0] _015_;
+  wire [1:0] _016_;
+  wire _017_;
   (* src = "counter.v:10.5-30.8" *)
   (* unused_bits = "0 1 2 3 4 5 6 7 8" *)
-  wire [9:0] _01_;
+  wire [9:0] _018_;
   (* src = "counter.v:10.5-30.8" *)
   (* unused_bits = "0 1 2 3 4 5 6 7 8" *)
-  wire [9:0] _02_;
+  wire [9:0] _019_;
   (* src = "counter.v:22.17-22.31" *)
-  wire _03_;
+  wire _020_;
   (* src = "counter.v:10.5-30.8" *)
   (* unused_bits = "0 1 3 4 5 6 7 8 9" *)
-  wire [9:0] _04_;
+  wire [9:0] _021_;
   (* src = "counter.v:10.5-30.8" *)
   (* unused_bits = "0 1 2 4 5 6 7 8 9" *)
-  wire [9:0] _05_;
+  wire [9:0] _022_;
   (* src = "counter.v:13.17-13.32" *)
-  wire _06_;
+  wire _023_;
+  (* force_downto = 32'd1 *)
+  (* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:274.23-274.25" *)
+  (* unused_bits = "9" *)
+  wire [9:0] _024_;
+  (* force_downto = 32'd1 *)
+  (* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:270.23-270.24" *)
+  wire [9:0] _025_;
+  (* force_downto = 32'd1 *)
+  (* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:270.26-270.27" *)
+  wire [9:0] _026_;
+  (* force_downto = 32'd1 *)
+  (* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:214.23-214.24" *)
+  (* unused_bits = "9" *)
+  wire [9:0] _027_;
+  (* force_downto = 32'd1 *)
+  (* src = "counter.v:23.21-23.37|counter.v:26.26-26.42|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.21-279.23" *)
+  wire [9:0] _028_;
+  (* force_downto = 32'd1 *)
+  (* src = "counter.v:23.21-23.37|counter.v:26.26-26.42|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:274.23-274.25" *)
+  (* unused_bits = "4 5 6" *)
+  wire [9:0] _029_;
+  (* force_downto = 32'd1 *)
+  (* src = "counter.v:23.21-23.37|counter.v:26.26-26.42|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:270.26-270.27" *)
+  (* unused_bits = "3 4 5 6 7 8" *)
+  wire [9:0] _030_;
+  wire _031_;
+  wire _032_;
+  wire _033_;
+  (* force_downto = 32'd1 *)
+  (* src = "counter.v:26.26-26.42|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:274.23-274.25" *)
+  (* unused_bits = "2 4 5 6" *)
+  wire [9:0] _034_;
+  (* force_downto = 32'd1 *)
+  (* src = "counter.v:26.26-26.42|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:270.26-270.27" *)
+  (* unused_bits = "1 2 3 4 5 6 7 8" *)
+  wire [9:0] _035_;
+  wire _036_;
+  wire _037_;
+  wire _038_;
+  (* force_downto = 32'd1 *)
+  (* src = "counter.v:14.21-14.36|counter.v:17.26-17.41|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:274.23-274.25" *)
+  (* unused_bits = "2 4 5 6" *)
+  wire [9:0] _039_;
+  (* force_downto = 32'd1 *)
+  (* src = "counter.v:14.21-14.36|counter.v:17.26-17.41|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:270.26-270.27" *)
+  (* unused_bits = "1 2 3 4 5 6 7 8" *)
+  wire [9:0] _040_;
+  wire _041_;
+  wire _042_;
+  wire _043_;
+  wire _044_;
+  wire _045_;
+  (* force_downto = 32'd1 *)
+  (* src = "counter.v:17.26-17.41|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:274.23-274.25" *)
+  (* unused_bits = "2 4 5 6" *)
+  wire [9:0] _046_;
+  (* force_downto = 32'd1 *)
+  (* src = "counter.v:17.26-17.41|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:270.26-270.27" *)
+  (* unused_bits = "2 3 4 5 6 7 8" *)
+  wire [9:0] _047_;
+  wire _048_;
+  wire _049_;
+  wire _050_;
+  wire _051_;
+  wire _052_;
+  (* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
+  wire _053_;
+  (* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
+  wire _054_;
+  (* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
+  wire _055_;
+  (* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
+  wire _056_;
+  (* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
+  wire _057_;
+  (* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
+  wire _058_;
+  (* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
+  wire _059_;
+  (* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:241.12-241.34" *)
+  wire _060_;
+  (* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:241.12-241.34" *)
+  wire _061_;
+  (* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:241.12-241.34" *)
+  wire _062_;
+  (* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:241.12-241.34" *)
+  wire _063_;
+  (* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)
+  wire _064_;
+  (* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)
+  wire _065_;
+  (* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)
+  wire _066_;
+  (* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)
+  wire _067_;
+  (* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)
+  wire _068_;
+  (* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)
+  wire _069_;
+  (* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)
+  wire _070_;
+  (* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)
+  wire _071_;
+  (* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)
+  wire _072_;
+  (* src = "counter.v:23.21-23.37|counter.v:26.26-26.42|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
+  wire _073_;
+  (* src = "counter.v:23.21-23.37|counter.v:26.26-26.42|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
+  wire _074_;
+  (* src = "counter.v:23.21-23.37|counter.v:26.26-26.42|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
+  wire _075_;
+  (* src = "counter.v:23.21-23.37|counter.v:26.26-26.42|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)
+  wire _076_;
+  (* src = "counter.v:23.21-23.37|counter.v:26.26-26.42|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)
+  wire _077_;
+  (* src = "counter.v:23.21-23.37|counter.v:26.26-26.42|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)
+  wire _078_;
+  (* src = "counter.v:26.26-26.42|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
+  wire _079_;
+  (* src = "counter.v:26.26-26.42|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
+  wire _080_;
+  (* src = "counter.v:26.26-26.42|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)
+  wire _081_;
+  (* src = "counter.v:26.26-26.42|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)
+  wire _082_;
+  (* src = "counter.v:26.26-26.42|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)
+  wire _083_;
+  (* src = "counter.v:14.21-14.36|counter.v:17.26-17.41|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
+  wire _084_;
+  (* src = "counter.v:14.21-14.36|counter.v:17.26-17.41|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
+  wire _085_;
+  (* src = "counter.v:14.21-14.36|counter.v:17.26-17.41|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
+  wire _086_;
+  (* src = "counter.v:14.21-14.36|counter.v:17.26-17.41|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
+  wire _087_;
+  (* src = "counter.v:14.21-14.36|counter.v:17.26-17.41|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)
+  wire _088_;
+  (* src = "counter.v:14.21-14.36|counter.v:17.26-17.41|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)
+  wire _089_;
+  (* src = "counter.v:17.26-17.41|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)
+  wire _090_;
   (* src = "counter.v:3.17-3.20" *)
   input clk;
   wire clk;
@@ -47,20 +204,235 @@ module counter(clk, rst, mode, cnt);
   wire rst;
   (* src = "counter.v:8.22-8.29" *)
   wire [9:0] summand;
-  assign _00_ = $signed(cnt) + (* src = "counter.v:36.20-36.33" *) $signed({ summand[9], summand[9], summand[9], summand[9], summand[9], summand[4:0] });
   (* src = "counter.v:32.5-38.8" *)
   always @(posedge clk)
-    if (rst) cnt <= 10'h3ce;
-    else cnt <= _00_;
-  assign _01_[9] = $signed(cnt) >= (* src = "counter.v:23.21-23.37" *) $signed(10'h323);
-  assign _02_[9] = $signed(cnt) >= (* src = "counter.v:26.26-26.42" *) $signed(10'h32c);
-  assign _03_ = $signed(cnt) != (* src = "counter.v:22.17-22.31" *) $signed(10'h3fe);
-  assign { \decrement.n1 [3], \decrement.n1 [9], \decrement.n1 [4] } = _03_ ? (* full_case = 32'd1 *) (* src = "counter.v:22.17-22.31|counter.v:22.13-28.16" *) { 1'h0, _01_[9], _01_[9] } : { _02_[9], _02_[9], 1'h0 };
-  assign _04_[2] = $signed(cnt) <= (* src = "counter.v:14.21-14.36" *) $signed(10'h0e6);
-  assign _05_[3] = $signed(cnt) <= (* src = "counter.v:17.26-17.41" *) $signed(10'h0e1);
-  assign _06_ = $signed(cnt) != (* src = "counter.v:13.17-13.32" *) $signed(10'h3f0);
-  assign \increment.n1 [3:2] = _06_ ? (* full_case = 32'd1 *) (* src = "counter.v:13.17-13.32|counter.v:13.13-19.16" *) { 1'h0, _04_[2] } : { _05_[3], 1'h0 };
-  assign { summand[9], summand[4:0] } = mode ? (* full_case = 32'd1 *) (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *) { 2'h0, \increment.n1 [3:2], \increment.n1 [3:2] } : { \decrement.n1 [9], \decrement.n1 [4:3], \decrement.n1 [9], \decrement.n1 [9], \decrement.n1 [4] };
+    if (rst) cnt[0] <= 1'h0;
+    else cnt[0] <= _025_[0];
+  (* src = "counter.v:32.5-38.8" *)
+  always @(posedge clk)
+    if (rst) cnt[1] <= 1'h1;
+    else cnt[1] <= _026_[1];
+  (* src = "counter.v:32.5-38.8" *)
+  always @(posedge clk)
+    if (rst) cnt[2] <= 1'h1;
+    else cnt[2] <= _026_[2];
+  (* src = "counter.v:32.5-38.8" *)
+  always @(posedge clk)
+    if (rst) cnt[3] <= 1'h1;
+    else cnt[3] <= _026_[3];
+  (* src = "counter.v:32.5-38.8" *)
+  always @(posedge clk)
+    if (rst) cnt[4] <= 1'h0;
+    else cnt[4] <= _026_[4];
+  (* src = "counter.v:32.5-38.8" *)
+  always @(posedge clk)
+    if (rst) cnt[5] <= 1'h0;
+    else cnt[5] <= _026_[5];
+  (* src = "counter.v:32.5-38.8" *)
+  always @(posedge clk)
+    if (rst) cnt[6] <= 1'h1;
+    else cnt[6] <= _026_[6];
+  (* src = "counter.v:32.5-38.8" *)
+  always @(posedge clk)
+    if (rst) cnt[7] <= 1'h1;
+    else cnt[7] <= _026_[7];
+  (* src = "counter.v:32.5-38.8" *)
+  always @(posedge clk)
+    if (rst) cnt[8] <= 1'h1;
+    else cnt[8] <= _026_[8];
+  (* src = "counter.v:32.5-38.8" *)
+  always @(posedge clk)
+    if (rst) cnt[9] <= 1'h1;
+    else cnt[9] <= _026_[9];
+  assign _028_[9] = ~cnt[9];
+  assign _000_[0] = cnt[0] |(* src = "counter.v:22.17-22.31" *)  _028_[1];
+  assign _000_[1] = _028_[2] |(* src = "counter.v:22.17-22.31" *)  _028_[3];
+  assign _001_[0] = _000_[0] |(* src = "counter.v:22.17-22.31" *)  _000_[1];
+  assign _002_ = _001_[0] |(* src = "counter.v:22.17-22.31" *)  _001_[1];
+  assign _020_ = _002_ |(* src = "counter.v:22.17-22.31" *)  _000_[4];
+  assign _003_[0] = cnt[0] |(* src = "counter.v:13.17-13.32" *)  cnt[1];
+  assign _003_[1] = cnt[2] |(* src = "counter.v:13.17-13.32" *)  cnt[3];
+  assign _000_[2] = _028_[4] |(* src = "counter.v:13.17-13.32" *)  _028_[5];
+  assign _000_[3] = _028_[6] |(* src = "counter.v:13.17-13.32" *)  _028_[7];
+  assign _000_[4] = _028_[8] |(* src = "counter.v:13.17-13.32" *)  _028_[9];
+  assign _004_[0] = _003_[0] |(* src = "counter.v:13.17-13.32" *)  _003_[1];
+  assign _001_[1] = _000_[2] |(* src = "counter.v:13.17-13.32" *)  _000_[3];
+  assign _005_ = _004_[0] |(* src = "counter.v:13.17-13.32" *)  _001_[1];
+  assign _023_ = _005_ |(* src = "counter.v:13.17-13.32" *)  _000_[4];
+  assign _008_ = _007_[0] &(* src = "counter.v:26.26-26.42" *)  _007_[1];
+  assign _036_ = _008_ &(* src = "counter.v:26.26-26.42" *)  _006_[4];
+  assign _022_[3] = _048_ |(* src = {0{1'b0}} *)  _049_;
+  assign _019_[9] = _038_ |(* src = {0{1'b0}} *)  _036_;
+  assign _010_[0] = _009_[0] &(* src = "counter.v:14.21-14.36|counter.v:17.26-17.41" *)  _009_[1];
+  assign _011_ = _010_[0] &(* src = "counter.v:14.21-14.36|counter.v:17.26-17.41" *)  _010_[1];
+  assign _042_ = _011_ &(* src = "counter.v:14.21-14.36|counter.v:17.26-17.41" *)  _009_[4];
+  assign _021_[2] = _041_ |(* src = {0{1'b0}} *)  _042_;
+  assign _012_[0] = cnt[0] &(* src = "counter.v:23.21-23.37|counter.v:26.26-26.42" *)  cnt[1];
+  assign _013_[0] = _012_[0] &(* src = "counter.v:23.21-23.37|counter.v:26.26-26.42" *)  _029_[3];
+  assign _014_ = _013_[0] &(* src = "counter.v:23.21-23.37|counter.v:26.26-26.42" *)  _007_[1];
+  assign _031_ = _014_ &(* src = "counter.v:23.21-23.37|counter.v:26.26-26.42" *)  _006_[4];
+  assign _018_[9] = _033_ |(* src = {0{1'b0}} *)  _031_;
+  assign _015_[0] = cnt[0] &(* src = "counter.v:17.26-17.41" *)  _028_[1];
+  assign _016_[0] = _015_[0] &(* src = "counter.v:17.26-17.41" *)  _029_[3];
+  assign _010_[1] = _006_[2] &(* src = "counter.v:17.26-17.41" *)  _009_[3];
+  assign _017_ = _016_[0] &(* src = "counter.v:17.26-17.41" *)  _010_[1];
+  assign _049_ = _017_ &(* src = "counter.v:17.26-17.41" *)  _009_[4];
+  assign \decrement.n1 [4] = _020_ &(* src = "counter.v:22.17-22.31|counter.v:22.13-28.16" *)  _018_[9];
+  assign \decrement.n1 [9] = _020_ ? (* src = "counter.v:22.17-22.31|counter.v:22.13-28.16" *) _018_[9] : _019_[9];
+  assign \decrement.n1 [3] = _020_ ? (* src = "counter.v:22.17-22.31|counter.v:22.13-28.16" *) 1'h0 : _019_[9];
+  assign \increment.n1 [2] = _023_ &(* src = "counter.v:13.17-13.32|counter.v:13.13-19.16" *)  _021_[2];
+  assign \increment.n1 [3] = _023_ ? (* src = "counter.v:13.17-13.32|counter.v:13.13-19.16" *) 1'h0 : _022_[3];
+  assign summand[0] = mode ? (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *) \increment.n1 [2] : \decrement.n1 [4];
+  assign summand[1] = mode ? (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *) \increment.n1 [3] : \decrement.n1 [9];
+  assign summand[2] = mode ? (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *) \increment.n1 [2] : \decrement.n1 [9];
+  assign summand[3] = mode ? (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *) \increment.n1 [3] : \decrement.n1 [3];
+  assign summand[4] = mode ? (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *) 1'h0 : \decrement.n1 [4];
+  assign summand[9] = mode ? (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *) 1'h0 : \decrement.n1 [9];
+  assign _048_ = ~(* src = "counter.v:17.26-17.41" *) _050_;
+  assign _041_ = ~(* src = "counter.v:14.21-14.36|counter.v:17.26-17.41" *) _043_;
+  assign _028_[0] = ~(* src = "counter.v:26.26-26.42|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.31-279.37" *) cnt[0];
+  assign _028_[1] = ~(* src = "counter.v:26.26-26.42|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.31-279.37" *) cnt[1];
+  assign _028_[2] = ~(* src = "counter.v:26.26-26.42|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.31-279.37" *) cnt[2];
+  assign _028_[3] = ~(* src = "counter.v:26.26-26.42|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.31-279.37" *) cnt[3];
+  assign _028_[4] = ~(* src = "counter.v:26.26-26.42|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.31-279.37" *) cnt[4];
+  assign _028_[5] = ~(* src = "counter.v:26.26-26.42|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.31-279.37" *) cnt[5];
+  assign _028_[6] = ~(* src = "counter.v:26.26-26.42|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.31-279.37" *) cnt[6];
+  assign _028_[7] = ~(* src = "counter.v:26.26-26.42|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.31-279.37" *) cnt[7];
+  assign _028_[8] = ~(* src = "counter.v:26.26-26.42|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:279.31-279.37" *) cnt[8];
+  assign _038_ = _037_ ^(* src = {0{1'b0}} *)  _035_[9];
+  assign _033_ = _032_ ^(* src = {0{1'b0}} *)  _030_[9];
+  assign _043_ = _045_ |(* src = {0{1'b0}} *)  _042_;
+  assign _045_ = _044_ ^(* src = {0{1'b0}} *)  _040_[9];
+  assign _044_ = _039_[9] ^(* src = {0{1'b0}} *)  _039_[8];
+  assign _032_ = _029_[9] ^(* src = {0{1'b0}} *)  _029_[8];
+  assign _037_ = _034_[9] ^(* src = {0{1'b0}} *)  _034_[8];
+  assign _051_ = _046_[9] ^(* src = {0{1'b0}} *)  _046_[8];
+  assign _052_ = _051_ ^(* src = {0{1'b0}} *)  _047_[9];
+  assign _050_ = _052_ |(* src = {0{1'b0}} *)  _049_;
+  assign _024_[0] = summand[0] &(* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.42-286.49" *)  cnt[0];
+  assign _027_[1] = summand[1] &(* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.42-286.49" *)  cnt[1];
+  assign _027_[2] = summand[2] &(* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.42-286.49" *)  cnt[2];
+  assign _027_[3] = summand[3] &(* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.42-286.49" *)  cnt[3];
+  assign _027_[4] = summand[4] &(* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.42-286.49" *)  cnt[4];
+  assign _027_[5] = summand[9] &(* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.42-286.49" *)  cnt[5];
+  assign _027_[6] = summand[9] &(* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.42-286.49" *)  cnt[6];
+  assign _027_[7] = summand[9] &(* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.42-286.49" *)  cnt[7];
+  assign _027_[8] = summand[9] &(* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.42-286.49" *)  cnt[8];
+  assign _026_[1] = _025_[1] ^(* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:289.13-289.25" *)  _024_[0];
+  assign _026_[2] = _025_[2] ^(* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:289.13-289.25" *)  _024_[1];
+  assign _026_[3] = _025_[3] ^(* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:289.13-289.25" *)  _024_[2];
+  assign _026_[4] = _025_[4] ^(* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:289.13-289.25" *)  _024_[3];
+  assign _026_[5] = _025_[5] ^(* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:289.13-289.25" *)  _024_[4];
+  assign _026_[6] = _025_[6] ^(* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:289.13-289.25" *)  _024_[5];
+  assign _026_[7] = _025_[7] ^(* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:289.13-289.25" *)  _024_[6];
+  assign _026_[8] = _025_[8] ^(* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:289.13-289.25" *)  _024_[7];
+  assign _026_[9] = _025_[9] ^(* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:289.13-289.25" *)  _024_[8];
+  assign _047_[9] = _028_[9] ^(* src = "counter.v:17.26-17.41|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:289.13-289.25" *)  _046_[8];
+  assign _035_[9] = cnt[9] ^(* src = "counter.v:26.26-26.42|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:289.13-289.25" *)  _034_[8];
+  assign _025_[0] = summand[0] ^(* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:288.13-288.20" *)  cnt[0];
+  assign _025_[1] = summand[1] ^(* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:288.13-288.20" *)  cnt[1];
+  assign _025_[2] = summand[2] ^(* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:288.13-288.20" *)  cnt[2];
+  assign _025_[3] = summand[3] ^(* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:288.13-288.20" *)  cnt[3];
+  assign _025_[4] = summand[4] ^(* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:288.13-288.20" *)  cnt[4];
+  assign _025_[5] = summand[9] ^(* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:288.13-288.20" *)  cnt[5];
+  assign _025_[6] = summand[9] ^(* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:288.13-288.20" *)  cnt[6];
+  assign _025_[7] = summand[9] ^(* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:288.13-288.20" *)  cnt[7];
+  assign _025_[8] = summand[9] ^(* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:288.13-288.20" *)  cnt[8];
+  assign _025_[9] = summand[9] ^(* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:288.13-288.20" *)  cnt[9];
+  assign _030_[9] = cnt[9] ^(* src = "counter.v:23.21-23.37|counter.v:26.26-26.42|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:289.13-289.25" *)  _029_[8];
+  assign _040_[9] = _028_[9] ^(* src = "counter.v:14.21-14.36|counter.v:17.26-17.41|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:289.13-289.25" *)  _039_[8];
+  assign _009_[3] = cnt[7] &(* src = "counter.v:17.26-17.41|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:241.12-241.34" *)  cnt[6];
+  assign _056_ = _025_[7] &(* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)  _027_[6];
+  assign _059_ = _063_ &(* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)  _024_[3];
+  assign _024_[7] = _072_ |(* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)  _059_;
+  assign _054_ = _025_[3] &(* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)  _027_[2];
+  assign _058_ = _062_ &(* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)  _070_;
+  assign _066_ = _025_[4] &(* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)  _024_[3];
+  assign _065_ = _025_[2] &(* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)  _024_[1];
+  assign _053_ = _025_[1] &(* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)  _024_[0];
+  assign _024_[3] = _069_ |(* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)  _057_;
+  assign _060_ = _025_[3] &(* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:241.12-241.34" *)  _025_[2];
+  assign _067_ = _025_[6] &(* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)  _024_[5];
+  assign _068_ = _025_[8] &(* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)  _024_[7];
+  assign _071_ = _027_[7] |(* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)  _056_;
+  assign _069_ = _027_[3] |(* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)  _054_;
+  assign _024_[1] = _027_[1] |(* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)  _053_;
+  assign _061_ = _025_[5] &(* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:241.12-241.34" *)  _025_[4];
+  assign _070_ = _027_[5] |(* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)  _055_;
+  assign _057_ = _060_ &(* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)  _024_[1];
+  assign _072_ = _071_ |(* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)  _058_;
+  assign _024_[8] = _027_[8] |(* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.12-248.41" *)  _068_;
+  assign _024_[4] = _027_[4] |(* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.12-248.41" *)  _066_;
+  assign _024_[2] = _027_[2] |(* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.12-248.41" *)  _065_;
+  assign _024_[5] = _070_ |(* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.12-248.41" *)  _064_;
+  assign _024_[6] = _027_[6] |(* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.12-248.41" *)  _067_;
+  assign _046_[9] = _009_[4] &(* src = "counter.v:17.26-17.41|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)  _046_[7];
+  assign _062_ = _025_[7] &(* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:241.12-241.34" *)  _025_[6];
+  assign _064_ = _061_ &(* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)  _024_[3];
+  assign _055_ = _025_[5] &(* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)  _027_[4];
+  assign _063_ = _062_ &(* src = "counter.v:36.20-36.33|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:241.12-241.34" *)  _061_;
+  assign _090_ = _010_[1] &(* src = "counter.v:17.26-17.41|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)  _046_[3];
+  assign _009_[4] = _028_[9] &(* src = "counter.v:17.26-17.41|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:241.12-241.34" *)  _028_[8];
+  assign _046_[3] = _029_[3] &(* src = "counter.v:17.26-17.41|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)  _028_[1];
+  assign _046_[8] = _028_[8] &(* src = "counter.v:17.26-17.41|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)  _046_[7];
+  assign _084_ = cnt[7] &(* src = "counter.v:17.26-17.41|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)  _028_[6];
+  assign _046_[7] = _089_ |(* src = "counter.v:17.26-17.41|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)  _090_;
+  assign _034_[1] = _028_[1] &(* src = "counter.v:26.26-26.42|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)  _028_[0];
+  assign _079_ = cnt[3] &(* src = "counter.v:26.26-26.42|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)  _028_[2];
+  assign _073_ = cnt[9] &(* src = "counter.v:26.26-26.42|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)  _028_[8];
+  assign _007_[0] = _006_[1] &(* src = "counter.v:26.26-26.42|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)  _034_[1];
+  assign _080_ = _007_[1] &(* src = "counter.v:26.26-26.42|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)  _034_[3];
+  assign _006_[1] = cnt[3] &(* src = "counter.v:26.26-26.42|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:241.12-241.34" *)  cnt[2];
+  assign _006_[2] = cnt[5] &(* src = "counter.v:26.26-26.42|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:241.12-241.34" *)  _028_[4];
+  assign _006_[3] = _028_[7] &(* src = "counter.v:26.26-26.42|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:241.12-241.34" *)  _028_[6];
+  assign _006_[4] = cnt[9] &(* src = "counter.v:26.26-26.42|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:241.12-241.34" *)  cnt[8];
+  assign _007_[1] = _006_[3] &(* src = "counter.v:26.26-26.42|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:241.12-241.34" *)  _006_[2];
+  assign _081_ = _006_[4] &(* src = "counter.v:26.26-26.42|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)  _034_[7];
+  assign _082_ = cnt[8] &(* src = "counter.v:26.26-26.42|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)  _034_[7];
+  assign _083_ = _028_[3] |(* src = "counter.v:26.26-26.42|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)  _079_;
+  assign _034_[3] = _083_ |(* src = "counter.v:26.26-26.42|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)  _007_[0];
+  assign _034_[7] = _074_ |(* src = "counter.v:26.26-26.42|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)  _080_;
+  assign _034_[9] = _078_ |(* src = "counter.v:26.26-26.42|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.12-248.41" *)  _081_;
+  assign _034_[8] = _028_[8] |(* src = "counter.v:26.26-26.42|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.12-248.41" *)  _082_;
+  assign _074_ = _006_[3] &(* src = "counter.v:23.21-23.37|counter.v:26.26-26.42|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)  _028_[5];
+  assign _075_ = _007_[1] &(* src = "counter.v:23.21-23.37|counter.v:26.26-26.42|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)  _029_[3];
+  assign _029_[3] = _028_[3] &(* src = "counter.v:23.21-23.37|counter.v:26.26-26.42|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:241.12-241.34" *)  _028_[2];
+  assign _076_ = _006_[4] &(* src = "counter.v:23.21-23.37|counter.v:26.26-26.42|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)  _029_[7];
+  assign _077_ = cnt[8] &(* src = "counter.v:23.21-23.37|counter.v:26.26-26.42|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)  _029_[7];
+  assign _078_ = _028_[9] |(* src = "counter.v:23.21-23.37|counter.v:26.26-26.42|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)  _073_;
+  assign _029_[7] = _074_ |(* src = "counter.v:23.21-23.37|counter.v:26.26-26.42|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)  _075_;
+  assign _029_[9] = _078_ |(* src = "counter.v:23.21-23.37|counter.v:26.26-26.42|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.12-248.41" *)  _076_;
+  assign _029_[8] = _028_[8] |(* src = "counter.v:23.21-23.37|counter.v:26.26-26.42|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.12-248.41" *)  _077_;
+  assign _009_[0] = cnt[1] &(* src = "counter.v:14.21-14.36|counter.v:17.26-17.41|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)  _028_[0];
+  assign _085_ = _009_[1] &(* src = "counter.v:14.21-14.36|counter.v:17.26-17.41|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)  _039_[1];
+  assign _086_ = _009_[3] &(* src = "counter.v:14.21-14.36|counter.v:17.26-17.41|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)  _028_[5];
+  assign _087_ = _010_[1] &(* src = "counter.v:14.21-14.36|counter.v:17.26-17.41|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.19-240.41" *)  _039_[3];
+  assign _009_[1] = _028_[3] &(* src = "counter.v:14.21-14.36|counter.v:17.26-17.41|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:241.12-241.34" *)  cnt[2];
+  assign _039_[9] = _009_[4] &(* src = "counter.v:14.21-14.36|counter.v:17.26-17.41|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)  _039_[7];
+  assign _039_[8] = _028_[8] &(* src = "counter.v:14.21-14.36|counter.v:17.26-17.41|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:248.19-248.41" *)  _039_[7];
+  assign _039_[1] = _028_[1] |(* src = "counter.v:14.21-14.36|counter.v:17.26-17.41|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)  _009_[0];
+  assign _088_ = _028_[7] |(* src = "counter.v:14.21-14.36|counter.v:17.26-17.41|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)  _084_;
+  assign _039_[3] = _029_[3] |(* src = "counter.v:14.21-14.36|counter.v:17.26-17.41|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)  _085_;
+  assign _089_ = _088_ |(* src = "counter.v:14.21-14.36|counter.v:17.26-17.41|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)  _086_;
+  assign _039_[7] = _089_ |(* src = "counter.v:14.21-14.36|counter.v:17.26-17.41|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:286.27-286.69|/home/lukas/tabby-linux-x64-20240903/tabby/lib/../share/yosys/techmap.v:240.12-240.41" *)  _087_;
+  assign _003_[4:2] = _000_[4:2];
+  assign _004_[1] = _001_[1];
+  assign _006_[0] = _034_[1];
+  assign _009_[2] = _006_[2];
+  assign _012_[4:1] = { _006_[4:2], _029_[3] };
+  assign _013_[1] = _007_[1];
+  assign _015_[4:1] = { _009_[4:3], _006_[2], _029_[3] };
+  assign _016_[1] = _010_[1];
+  assign _026_[0] = _025_[0];
+  assign _027_[0] = _024_[0];
+  assign _029_[2:0] = { _028_[2], 2'h3 };
+  assign _030_[2:0] = { cnt[2], _028_[1:0] };
+  assign _034_[0] = _028_[0];
+  assign _035_[0] = cnt[0];
+  assign _039_[0] = _028_[0];
+  assign _040_[0] = cnt[0];
+  assign _046_[1:0] = { _028_[1], 1'h1 };
+  assign _047_[1:0] = { cnt[1], _028_[0] };
   assign \decrement.cnt  = cnt;
   assign { \decrement.n1 [8:5], \decrement.n1 [2:0] } = 7'hxx;
   assign \increment.cnt  = cnt;

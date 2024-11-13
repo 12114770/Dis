@@ -9,22 +9,16 @@ select -set modeswitch w:\mode %co w:\mode %d
 
 
 # Select only the logic that connects to the multiplexer’s ’B’ input and name it ’inc’
-select -set inc counter/$procmux$63 %ci:+[B] @modeswitch %d %cie* 
+select -set inc @modeswitch %ci:+[B] @modeswitch %d %cie* 
 
-# ^ 
-# |
-#code like in lecture did not work, chose multiplexer manually
-# |
-# v 
 
 # Select only the logic that connects to the multiplexer’s ’A’ input and name it ’dec’
-select -set dec counter/$procmux$63 %ci:+[A] @modeswitch %d %cie*
+select -set dec @modeswitch %ci:+[A] @modeswitch %d %cie*
 
 
 # Create submodules
 submod -name increment @inc
 submod -name decrement @dec
-clean
 
 
 flatten 
@@ -46,8 +40,8 @@ cd ..
  
 cd counter 
 
-cd increment
 write_verilog -selected counter_submod.v
+cd ..
 
 
 
@@ -67,3 +61,4 @@ opt -full
 
 # Write the counter to file
 write_verilog counter_gl.v
+

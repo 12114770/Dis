@@ -3,11 +3,11 @@
 (* cells_not_processed =  1  *)
 (* src = "counter.v:1.1-39.10" *)
 module counter(clk, rst, mode, cnt);
-  (* src = "counter.v:10.5-30.8" *)
+  (* src = "counter.v:32.5-38.8" *)
   wire [9:0] _00_;
   (* src = "counter.v:10.5-30.8" *)
   wire [9:0] _01_;
-  (* src = "counter.v:10.5-30.8" *)
+  (* src = "counter.v:6.29-6.43" *)
   wire [9:0] _02_;
   (* src = "counter.v:10.5-30.8" *)
   wire [9:0] _03_;
@@ -15,12 +15,64 @@ module counter(clk, rst, mode, cnt);
   wire [9:0] _04_;
   (* src = "counter.v:10.5-30.8" *)
   wire [9:0] _05_;
-  (* src = "counter.v:36.20-36.33" *)
+  (* src = "counter.v:10.5-30.8" *)
   wire [9:0] _06_;
+  (* src = "counter.v:10.5-30.8" *)
+  wire [9:0] _07_;
+  (* src = "counter.v:10.5-30.8" *)
+  wire [9:0] _08_;
+  (* src = "counter.v:10.5-30.8" *)
+  wire [9:0] _09_;
+  (* src = "counter.v:36.20-36.33" *)
+  wire [9:0] _10_;
+  (* src = "counter.v:23.21-23.37" *)
+  wire _11_;
+  (* src = "counter.v:26.26-26.42" *)
+  wire _12_;
+  (* src = "counter.v:14.21-14.36" *)
+  wire _13_;
+  (* src = "counter.v:17.26-17.41" *)
+  wire _14_;
   (* src = "counter.v:13.17-13.32" *)
-  wire _07_;
+  wire _15_;
   (* src = "counter.v:22.17-22.31" *)
-  wire _08_;
+  wire _16_;
+  wire [9:0] _17_;
+  wire _18_;
+  wire [9:0] _19_;
+  wire _20_;
+  wire [9:0] _21_;
+  wire _22_;
+  wire [9:0] _23_;
+  wire _24_;
+  wire [9:0] _25_;
+  wire _26_;
+  wire [9:0] _27_;
+  wire _28_;
+  wire [9:0] _29_;
+  wire _30_;
+  wire [9:0] _31_;
+  wire _32_;
+  wire [9:0] _33_;
+  wire _34_;
+  wire [9:0] _35_;
+  wire _36_;
+  wire [9:0] _37_;
+  wire _38_;
+  wire [9:0] _39_;
+  wire _40_;
+  wire [9:0] _41_;
+  wire _42_;
+  wire [9:0] _43_;
+  wire _44_;
+  wire [9:0] _45_;
+  wire _46_;
+  wire [9:0] _47_;
+  wire _48_;
+  wire [9:0] _49_;
+  wire _50_;
+  wire [9:0] _51_;
+  wire _52_;
   (* src = "counter.v:3.17-3.20" *)
   input clk;
   wire clk;
@@ -43,22 +95,10 @@ module counter(clk, rst, mode, cnt);
     .B_SIGNED(32'd1),
     .B_WIDTH(32'd10),
     .Y_WIDTH(32'd10)
-  ) _09_ (
+  ) _53_ (
     .A(cnt),
-    .B({ summand[9], summand[9], summand[9], summand[9], summand[9], summand[4:0] }),
-    .Y(_06_)
-  );
-  (* src = "counter.v:32.5-38.8" *)
-  \$sdff  #(
-    .CLK_POLARITY(32'd1),
-    .SRST_POLARITY(32'd1),
-    .SRST_VALUE(10'h3ce),
-    .WIDTH(32'd10)
-  ) _10_ (
-    .CLK(clk),
-    .D(_06_),
-    .Q(cnt),
-    .SRST(rst)
+    .B(summand),
+    .Y(_10_)
   );
   (* src = "counter.v:23.21-23.37" *)
   \$ge  #(
@@ -67,10 +107,10 @@ module counter(clk, rst, mode, cnt);
     .B_SIGNED(32'd1),
     .B_WIDTH(32'd10),
     .Y_WIDTH(32'd1)
-  ) _11_ (
+  ) _54_ (
     .A(cnt),
     .B(10'h323),
-    .Y(_04_[9])
+    .Y(_11_)
   );
   (* src = "counter.v:26.26-26.42" *)
   \$ge  #(
@@ -79,10 +119,10 @@ module counter(clk, rst, mode, cnt);
     .B_SIGNED(32'd1),
     .B_WIDTH(32'd10),
     .Y_WIDTH(32'd1)
-  ) _12_ (
+  ) _55_ (
     .A(cnt),
     .B(10'h32c),
-    .Y(_05_[9])
+    .Y(_12_)
   );
   (* src = "counter.v:14.21-14.36" *)
   \$le  #(
@@ -91,10 +131,10 @@ module counter(clk, rst, mode, cnt);
     .B_SIGNED(32'd1),
     .B_WIDTH(32'd10),
     .Y_WIDTH(32'd1)
-  ) _13_ (
+  ) _56_ (
     .A(cnt),
     .B(10'h0e6),
-    .Y(_01_[2])
+    .Y(_13_)
   );
   (* src = "counter.v:17.26-17.41" *)
   \$le  #(
@@ -103,10 +143,10 @@ module counter(clk, rst, mode, cnt);
     .B_SIGNED(32'd1),
     .B_WIDTH(32'd10),
     .Y_WIDTH(32'd1)
-  ) _14_ (
+  ) _57_ (
     .A(cnt),
     .B(10'h0e1),
-    .Y(_02_[3])
+    .Y(_14_)
   );
   (* src = "counter.v:13.17-13.32" *)
   \$ne  #(
@@ -115,10 +155,10 @@ module counter(clk, rst, mode, cnt);
     .B_SIGNED(32'd1),
     .B_WIDTH(32'd10),
     .Y_WIDTH(32'd1)
-  ) _15_ (
+  ) _58_ (
     .A(cnt),
     .B(10'h3f0),
-    .Y(_07_)
+    .Y(_15_)
   );
   (* src = "counter.v:22.17-22.31" *)
   \$ne  #(
@@ -127,46 +167,227 @@ module counter(clk, rst, mode, cnt);
     .B_SIGNED(32'd1),
     .B_WIDTH(32'd10),
     .Y_WIDTH(32'd1)
-  ) _16_ (
+  ) _59_ (
     .A(cnt),
     .B(10'h3fe),
-    .Y(_08_)
+    .Y(_16_)
+  );
+  (* src = "counter.v:32.5-38.8" *)
+  \$dff  #(
+    .CLK_POLARITY(1'h1),
+    .WIDTH(32'd10)
+  ) _60_ (
+    .CLK(clk),
+    .D(_17_),
+    .Q(cnt)
+  );
+  (* full_case = 32'd1 *)
+  (* src = "counter.v:33.13-33.16|counter.v:33.9-37.12" *)
+  \$mux  #(
+    .WIDTH(32'd10)
+  ) _61_ (
+    .A(_10_),
+    .B(10'h3ce),
+    .S(_18_),
+    .Y(_17_)
+  );
+  (* full_case = 32'd1 *)
+  (* src = "counter.v:26.26-26.42|counter.v:26.22-28.16" *)
+  \$mux  #(
+    .WIDTH(32'd10)
+  ) _62_ (
+    .A(10'h000),
+    .B(10'h3ee),
+    .S(_20_),
+    .Y(_19_)
   );
   (* full_case = 32'd1 *)
   (* src = "counter.v:22.17-22.31|counter.v:22.13-28.16" *)
   \$mux  #(
-    .WIDTH(32'd3)
-  ) _17_ (
-    .A({ _05_[9], _05_[9], 1'h0 }),
-    .B({ 1'h0, _04_[9], _04_[9] }),
-    .S(_08_),
-    .Y({ _03_[3], _03_[9], _03_[4] })
-  );
-  (* full_case = 32'd1 *)
-  (* src = "counter.v:13.17-13.32|counter.v:13.13-19.16" *)
-  \$mux  #(
-    .WIDTH(32'd2)
-  ) _18_ (
-    .A({ _02_[3], 1'h0 }),
-    .B({ 1'h0, _01_[2] }),
-    .S(_07_),
-    .Y(_00_[3:2])
+    .WIDTH(32'd10)
+  ) _63_ (
+    .A(_19_),
+    .B(10'hxxx),
+    .S(_22_),
+    .Y(_21_)
   );
   (* full_case = 32'd1 *)
   (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
   \$mux  #(
-    .WIDTH(32'd6)
-  ) _19_ (
-    .A({ _03_[9], _03_[4:3], _03_[9], _03_[9], _03_[4] }),
-    .B({ 2'h0, _00_[3:2], _00_[3:2] }),
-    .S(mode),
-    .Y({ summand[9], summand[4:0] })
+    .WIDTH(32'd10)
+  ) _64_ (
+    .A(_21_),
+    .B(10'hxxx),
+    .S(_24_),
+    .Y(_23_)
   );
-  assign { _00_[9:4], _00_[1:0] } = { 6'h00, _00_[3:2] };
-  assign { _01_[9:3], _01_[1:0] } = { 8'h00, _01_[2] };
-  assign { _02_[9:4], _02_[2:0] } = { 7'h00, _02_[3], 1'h0 };
-  assign { _03_[8:5], _03_[2:0] } = { _03_[9], _03_[9], _03_[9], _03_[9], _03_[9], _03_[9], _03_[4] };
-  assign _04_[8:0] = { _04_[9], _04_[9], _04_[9], _04_[9], _04_[9], 1'h0, _04_[9], _04_[9], _04_[9] };
-  assign _05_[8:0] = { _05_[9], _05_[9], _05_[9], _05_[9], 1'h0, _05_[9], _05_[9], _05_[9], 1'h0 };
-  assign summand[8:5] = { summand[9], summand[9], summand[9], summand[9] };
+  (* full_case = 32'd1 *)
+  (* src = "counter.v:23.21-23.37|counter.v:23.17-25.20" *)
+  \$mux  #(
+    .WIDTH(32'd10)
+  ) _65_ (
+    .A(10'h000),
+    .B(10'h3f7),
+    .S(_26_),
+    .Y(_25_)
+  );
+  (* full_case = 32'd1 *)
+  (* src = "counter.v:22.17-22.31|counter.v:22.13-28.16" *)
+  \$mux  #(
+    .WIDTH(32'd10)
+  ) _66_ (
+    .A(10'hxxx),
+    .B(_25_),
+    .S(_28_),
+    .Y(_27_)
+  );
+  (* full_case = 32'd1 *)
+  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
+  \$mux  #(
+    .WIDTH(32'd10)
+  ) _67_ (
+    .A(_27_),
+    .B(10'hxxx),
+    .S(_30_),
+    .Y(_29_)
+  );
+  (* full_case = 32'd1 *)
+  (* src = "counter.v:22.17-22.31|counter.v:22.13-28.16" *)
+  \$mux  #(
+    .WIDTH(32'd10)
+  ) _68_ (
+    .A(_09_),
+    .B(_08_),
+    .S(_32_),
+    .Y(_31_)
+  );
+  (* full_case = 32'd1 *)
+  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
+  \$mux  #(
+    .WIDTH(32'd10)
+  ) _69_ (
+    .A(_31_),
+    .B(10'hxxx),
+    .S(_34_),
+    .Y(_33_)
+  );
+  (* full_case = 32'd1 *)
+  (* src = "counter.v:17.26-17.41|counter.v:17.22-19.16" *)
+  \$mux  #(
+    .WIDTH(32'd10)
+  ) _70_ (
+    .A(10'h000),
+    .B(10'h00a),
+    .S(_36_),
+    .Y(_35_)
+  );
+  (* full_case = 32'd1 *)
+  (* src = "counter.v:13.17-13.32|counter.v:13.13-19.16" *)
+  \$mux  #(
+    .WIDTH(32'd10)
+  ) _71_ (
+    .A(_35_),
+    .B(10'hxxx),
+    .S(_38_),
+    .Y(_37_)
+  );
+  (* full_case = 32'd1 *)
+  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
+  \$mux  #(
+    .WIDTH(32'd10)
+  ) _72_ (
+    .A(10'hxxx),
+    .B(_37_),
+    .S(_40_),
+    .Y(_39_)
+  );
+  (* full_case = 32'd1 *)
+  (* src = "counter.v:14.21-14.36|counter.v:14.17-16.20" *)
+  \$mux  #(
+    .WIDTH(32'd10)
+  ) _73_ (
+    .A(10'h000),
+    .B(10'h005),
+    .S(_42_),
+    .Y(_41_)
+  );
+  (* full_case = 32'd1 *)
+  (* src = "counter.v:13.17-13.32|counter.v:13.13-19.16" *)
+  \$mux  #(
+    .WIDTH(32'd10)
+  ) _74_ (
+    .A(10'hxxx),
+    .B(_41_),
+    .S(_44_),
+    .Y(_43_)
+  );
+  (* full_case = 32'd1 *)
+  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
+  \$mux  #(
+    .WIDTH(32'd10)
+  ) _75_ (
+    .A(10'hxxx),
+    .B(_43_),
+    .S(_46_),
+    .Y(_45_)
+  );
+  (* full_case = 32'd1 *)
+  (* src = "counter.v:13.17-13.32|counter.v:13.13-19.16" *)
+  \$mux  #(
+    .WIDTH(32'd10)
+  ) _76_ (
+    .A(_06_),
+    .B(_05_),
+    .S(_48_),
+    .Y(_47_)
+  );
+  (* full_case = 32'd1 *)
+  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
+  \$mux  #(
+    .WIDTH(32'd10)
+  ) _77_ (
+    .A(10'hxxx),
+    .B(_47_),
+    .S(_50_),
+    .Y(_49_)
+  );
+  (* full_case = 32'd1 *)
+  (* src = "counter.v:12.13-12.17|counter.v:12.9-29.12" *)
+  \$mux  #(
+    .WIDTH(32'd10)
+  ) _78_ (
+    .A(_07_),
+    .B(_04_),
+    .S(_52_),
+    .Y(_51_)
+  );
+  assign _02_ = 10'h3ce;
+  assign _01_ = _03_;
+  assign _18_ = rst;
+  assign _00_ = _17_;
+  assign _20_ = _12_;
+  assign _22_ = _16_;
+  assign _24_ = mode;
+  assign _09_ = _23_;
+  assign _26_ = _11_;
+  assign _28_ = _16_;
+  assign _30_ = mode;
+  assign _08_ = _29_;
+  assign _32_ = _16_;
+  assign _34_ = mode;
+  assign _07_ = _33_;
+  assign _36_ = _14_;
+  assign _38_ = _15_;
+  assign _40_ = mode;
+  assign _06_ = _39_;
+  assign _42_ = _13_;
+  assign _44_ = _15_;
+  assign _46_ = mode;
+  assign _05_ = _45_;
+  assign _48_ = _15_;
+  assign _50_ = mode;
+  assign _04_ = _49_;
+  assign _52_ = mode;
+  assign _03_ = _51_;
+  assign summand = _51_;
 endmodule
