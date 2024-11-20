@@ -1,0 +1,53 @@
+read_verilog counter.v
+proc
+opt -full
+
+
+design -save 1
+design -save A
+design -save B
+design -save C
+
+design -load B
+techmap; opt -full;
+design -save B
+design -save 2
+
+design -load C
+techmap -map map.v; opt -full
+design -save C
+design -save D
+design -save 3
+
+design -load D
+techmap; opt -full
+design -save D
+design -save 4
+
+design -load 1
+synth_ice40 
+write_verilog -noexpr synths/1.v
+write_json synths/1.json
+design -save 1
+
+design -load 2
+synth_ice40 
+write_verilog -noexpr synths/2.v
+write_json synths/2.json
+design -save 2
+
+design -load 3
+synth_ice40 
+write_verilog -noexpr synths/3.v
+write_json synths/3.json
+design -save 3
+
+design -load 4
+synth_ice40 
+write_verilog -noexpr synths/4.v
+write_json synths/4.json
+design -save 4
+
+plugin -i stat-csv.so
+stat_csv synths/counter.csv
+
