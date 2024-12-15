@@ -1,0 +1,20 @@
+set_io rst 18
+set_io clk 19
+
+set_io mode 20
+
+
+
+set_io limit 11
+set_io skip 37
+
+set_io cnt[0] 21
+set_io cnt[1] 23
+set_io cnt[2] 25
+set_io cnt[3] 27
+set_io cnt[4] 47
+set_io cnt[5] 2
+set_io cnt[6] 3
+set_io cnt[7] 4
+set_io cnt[8] 46
+set_io cnt[9] 48

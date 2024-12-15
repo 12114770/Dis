@@ -1,0 +1,1 @@
+ export YOSYSHQ_LICENSE=/home/lukas/tabby-linux-x64-20240903/tabby/yosyshq.lic

@@ -1,0 +1,5177 @@
+{
+  "$schema": "https://raw.githubusercontent.com/YosysHQ/yosys/main/misc/jny.schema.json",
+  "generator": "Yosys 0.45 (git sha1 9ed031ddd, clang++ 14.0.0-1ubuntu1.1 -fPIC -O3)",
+  "version": "0.0.1",
+  "invocation": "write_jny -no-connections ../model/design.json ",
+  "features": ["attributes", "properties"],
+  "modules": [
+      {
+        "name": "\\$_AND_",
+        "cell_sorts": [
+          {
+            "type": "$and",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$verific$i4$simcells.v:78$963",
+                  "attributes": {
+                    "src": "simcells.v:78.12-78.17"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          }
+        ],
+        "attributes": {
+            "library": "work",
+            "hdlname": "$_AND_",
+            "src": "simcells.v:75.8-75.16"
+        }
+      },
+      {
+        "name": "\\$_MUX_",
+        "cell_sorts": [
+          {
+            "type": "$mux",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "S",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$verific$i4$simcells.v:228$966",
+                  "attributes": {
+                    "src": "simcells.v:228.12-228.21"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          }
+        ],
+        "attributes": {
+            "library": "work",
+            "hdlname": "$_MUX_",
+            "src": "simcells.v:225.8-225.16"
+        }
+      },
+      {
+        "name": "\\$_NOT_",
+        "cell_sorts": [
+          {
+            "type": "$not",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$verific$i4$simcells.v:59$969",
+                  "attributes": {
+                    "src": "simcells.v:59.12-59.14"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          }
+        ],
+        "attributes": {
+            "library": "work",
+            "hdlname": "$_NOT_",
+            "src": "simcells.v:56.8-56.16"
+        }
+      },
+      {
+        "name": "\\$_OR_",
+        "cell_sorts": [
+          {
+            "type": "$or",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$verific$i4$simcells.v:116$972",
+                  "attributes": {
+                    "src": "simcells.v:116.12-116.17"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          }
+        ],
+        "attributes": {
+            "library": "work",
+            "hdlname": "$_OR_",
+            "src": "simcells.v:113.8-113.15"
+        }
+      },
+      {
+        "name": "\\$_SDFFE_PP0P__0",
+        "cell_sorts": [
+          {
+            "type": "$mux",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "S",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$verific$i10$simcells.v:2703$985",
+                  "attributes": {
+                    "src": "simcells.v:2700.2-2703.10"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$verific$i9$simcells.v:2703$984",
+                  "attributes": {
+                    "src": "simcells.v:2702.7-2703.10"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$dff",
+            "ports": [
+                {
+                  "name": "CLK",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "D",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Q",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$verific$Q_reg$simcells.v:2704$986",
+                  "attributes": {
+                    "src": "simcells.v:2699.8-2704.4"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "00000000000000000000000000000001",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          }
+        ],
+        "attributes": {
+            "library": "work",
+            "hdlname": "$_SDFFE_PP0P_",
+            "src": "simcells.v:2696.8-2696.23"
+        }
+      },
+      {
+        "name": "\\$_SDFFE_PP0P__1",
+        "cell_sorts": [
+          {
+            "type": "$mux",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "S",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$verific$i10$simcells.v:2703$998",
+                  "attributes": {
+                    "src": "simcells.v:2700.2-2703.10"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$verific$i9$simcells.v:2703$997",
+                  "attributes": {
+                    "src": "simcells.v:2702.7-2703.10"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$dff",
+            "ports": [
+                {
+                  "name": "CLK",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "D",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Q",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$verific$Q_reg$simcells.v:2704$999",
+                  "attributes": {
+                    "src": "simcells.v:2699.8-2704.4"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "00000000000000000000000000000001",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          }
+        ],
+        "attributes": {
+            "library": "work",
+            "hdlname": "$_SDFFE_PP0P_",
+            "src": "simcells.v:2696.8-2696.23"
+        }
+      },
+      {
+        "name": "\\$_SDFFE_PP0P__2",
+        "cell_sorts": [
+          {
+            "type": "$mux",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "S",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$verific$i10$simcells.v:2703$1011",
+                  "attributes": {
+                    "src": "simcells.v:2700.2-2703.10"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$verific$i9$simcells.v:2703$1010",
+                  "attributes": {
+                    "src": "simcells.v:2702.7-2703.10"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$dff",
+            "ports": [
+                {
+                  "name": "CLK",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "D",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Q",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$verific$Q_reg$simcells.v:2704$1012",
+                  "attributes": {
+                    "src": "simcells.v:2699.8-2704.4"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "00000000000000000000000000000001",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          }
+        ],
+        "attributes": {
+            "library": "work",
+            "hdlname": "$_SDFFE_PP0P_",
+            "src": "simcells.v:2696.8-2696.23"
+        }
+      },
+      {
+        "name": "\\$_SDFFE_PP1P__0",
+        "cell_sorts": [
+          {
+            "type": "$mux",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "S",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$verific$i10$simcells.v:2751$1026",
+                  "attributes": {
+                    "src": "simcells.v:2748.2-2751.10"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$verific$i9$simcells.v:2751$1025",
+                  "attributes": {
+                    "src": "simcells.v:2750.7-2751.10"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$dff",
+            "ports": [
+                {
+                  "name": "CLK",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "D",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Q",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$verific$Q_reg$simcells.v:2752$1027",
+                  "attributes": {
+                    "src": "simcells.v:2747.8-2752.4"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "00000000000000000000000000000001",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          }
+        ],
+        "attributes": {
+            "library": "work",
+            "hdlname": "$_SDFFE_PP1P_",
+            "src": "simcells.v:2744.8-2744.23"
+        }
+      },
+      {
+        "name": "\\$_SDFFE_PP1P__1",
+        "cell_sorts": [
+          {
+            "type": "$mux",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "S",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$verific$i10$simcells.v:2751$1041",
+                  "attributes": {
+                    "src": "simcells.v:2748.2-2751.10"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$verific$i9$simcells.v:2751$1040",
+                  "attributes": {
+                    "src": "simcells.v:2750.7-2751.10"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$dff",
+            "ports": [
+                {
+                  "name": "CLK",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "D",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Q",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$verific$Q_reg$simcells.v:2752$1042",
+                  "attributes": {
+                    "src": "simcells.v:2747.8-2752.4"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "00000000000000000000000000000001",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          }
+        ],
+        "attributes": {
+            "library": "work",
+            "hdlname": "$_SDFFE_PP1P_",
+            "src": "simcells.v:2744.8-2744.23"
+        }
+      },
+      {
+        "name": "\\$_SDFFE_PP1P__2",
+        "cell_sorts": [
+          {
+            "type": "$mux",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "S",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$verific$i10$simcells.v:2751$1056",
+                  "attributes": {
+                    "src": "simcells.v:2748.2-2751.10"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$verific$i9$simcells.v:2751$1055",
+                  "attributes": {
+                    "src": "simcells.v:2750.7-2751.10"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$dff",
+            "ports": [
+                {
+                  "name": "CLK",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "D",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Q",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$verific$Q_reg$simcells.v:2752$1057",
+                  "attributes": {
+                    "src": "simcells.v:2747.8-2752.4"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "00000000000000000000000000000001",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          }
+        ],
+        "attributes": {
+            "library": "work",
+            "hdlname": "$_SDFFE_PP1P_",
+            "src": "simcells.v:2744.8-2744.23"
+        }
+      },
+      {
+        "name": "\\$_SDFFE_PP1P__3",
+        "cell_sorts": [
+          {
+            "type": "$mux",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "S",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$verific$i10$simcells.v:2751$1071",
+                  "attributes": {
+                    "src": "simcells.v:2748.2-2751.10"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$verific$i9$simcells.v:2751$1070",
+                  "attributes": {
+                    "src": "simcells.v:2750.7-2751.10"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$dff",
+            "ports": [
+                {
+                  "name": "CLK",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "D",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Q",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$verific$Q_reg$simcells.v:2752$1072",
+                  "attributes": {
+                    "src": "simcells.v:2747.8-2752.4"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "00000000000000000000000000000001",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          }
+        ],
+        "attributes": {
+            "library": "work",
+            "hdlname": "$_SDFFE_PP1P_",
+            "src": "simcells.v:2744.8-2744.23"
+        }
+      },
+      {
+        "name": "\\$_SDFFE_PP1P__4",
+        "cell_sorts": [
+          {
+            "type": "$mux",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "S",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$verific$i10$simcells.v:2751$1086",
+                  "attributes": {
+                    "src": "simcells.v:2748.2-2751.10"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$verific$i9$simcells.v:2751$1085",
+                  "attributes": {
+                    "src": "simcells.v:2750.7-2751.10"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$dff",
+            "ports": [
+                {
+                  "name": "CLK",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "D",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Q",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$verific$Q_reg$simcells.v:2752$1087",
+                  "attributes": {
+                    "src": "simcells.v:2747.8-2752.4"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "00000000000000000000000000000001",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          }
+        ],
+        "attributes": {
+            "library": "work",
+            "hdlname": "$_SDFFE_PP1P_",
+            "src": "simcells.v:2744.8-2744.23"
+        }
+      },
+      {
+        "name": "\\$_SDFFE_PP1P__5",
+        "cell_sorts": [
+          {
+            "type": "$mux",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "S",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$verific$i10$simcells.v:2751$1101",
+                  "attributes": {
+                    "src": "simcells.v:2748.2-2751.10"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$verific$i9$simcells.v:2751$1100",
+                  "attributes": {
+                    "src": "simcells.v:2750.7-2751.10"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$dff",
+            "ports": [
+                {
+                  "name": "CLK",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "D",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Q",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$verific$Q_reg$simcells.v:2752$1102",
+                  "attributes": {
+                    "src": "simcells.v:2747.8-2752.4"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "00000000000000000000000000000001",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          }
+        ],
+        "attributes": {
+            "library": "work",
+            "hdlname": "$_SDFFE_PP1P_",
+            "src": "simcells.v:2744.8-2744.23"
+        }
+      },
+      {
+        "name": "\\$_SDFFE_PP1P__6",
+        "cell_sorts": [
+          {
+            "type": "$mux",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "S",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$verific$i10$simcells.v:2751$1116",
+                  "attributes": {
+                    "src": "simcells.v:2748.2-2751.10"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$verific$i9$simcells.v:2751$1115",
+                  "attributes": {
+                    "src": "simcells.v:2750.7-2751.10"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$dff",
+            "ports": [
+                {
+                  "name": "CLK",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "D",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Q",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$verific$Q_reg$simcells.v:2752$1117",
+                  "attributes": {
+                    "src": "simcells.v:2747.8-2752.4"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "00000000000000000000000000000001",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          }
+        ],
+        "attributes": {
+            "library": "work",
+            "hdlname": "$_SDFFE_PP1P_",
+            "src": "simcells.v:2744.8-2744.23"
+        }
+      },
+      {
+        "name": "\\$_XOR_",
+        "cell_sorts": [
+          {
+            "type": "$xor",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$verific$i4$simcells.v:154$1119",
+                  "attributes": {
+                    "src": "simcells.v:154.12-154.17"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          }
+        ],
+        "attributes": {
+            "library": "work",
+            "hdlname": "$_XOR_",
+            "src": "simcells.v:151.8-151.16"
+        }
+      },
+      {
+        "name": "assertions",
+        "cell_sorts": [
+          {
+            "type": "$sub",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [11, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [11, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [11, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$verific$sub_46$tb_counter.sv:55$1201",
+                  "attributes": {
+                    "src": "tb_counter.sv:55.13-55.31"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000001011",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000001011",
+                    "Y_WIDTH": "00000000000000000000000000001011"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$ne",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [10, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [10, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$verific$not_equal_26$tb_counter.sv:46$1185",
+                  "attributes": {
+                    "src": "tb_counter.sv:46.11-46.21"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000001010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000001010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$verific$not_equal_40$tb_counter.sv:54$1197",
+                  "attributes": {
+                    "src": "tb_counter.sv:54.24-54.41"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000001010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000001010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$verific$not_equal_43$tb_counter.sv:54$1199",
+                  "attributes": {
+                    "src": "tb_counter.sv:54.45-54.64"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000001010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000001010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$and",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$verific$i38$tb_counter.sv:48$1194",
+                  "attributes": {
+                    "src": "tb_counter.sv:48.8-48.36"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$verific$i42$tb_counter.sv:54$1198",
+                  "attributes": {
+                    "src": "tb_counter.sv:54.9-54.41"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$verific$i45$tb_counter.sv:54$1200",
+                  "attributes": {
+                    "src": "tb_counter.sv:54.9-54.64"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$assume",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "EN",
+                  "direction": "io",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "_witness_.assume_auto_verificsva_cc_1732_import_1282",
+                  "attributes": {
+                    "hdlname": "_witness_ assume_auto_verificsva_cc_1732_import_1282",
+                    "src": "tb_counter.sv:33.8-33.21"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_witness_.assume_auto_verificsva_cc_1732_import_1293",
+                  "attributes": {
+                    "hdlname": "_witness_ assume_auto_verificsva_cc_1732_import_1293",
+                    "src": "tb_counter.sv:32.13-32.25"
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$assert",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "EN",
+                  "direction": "io",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "_witness_.assert_auto_verificsva_cc_1732_import_1216",
+                  "attributes": {
+                    "hdlname": "_witness_ assert_auto_verificsva_cc_1732_import_1216",
+                    "src": "tb_counter.sv:58.6-58.39"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_witness_.assert_auto_verificsva_cc_1732_import_1227",
+                  "attributes": {
+                    "hdlname": "_witness_ assert_auto_verificsva_cc_1732_import_1227",
+                    "src": "tb_counter.sv:55.6-55.37"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_witness_.assert_auto_verificsva_cc_1732_import_1238",
+                  "attributes": {
+                    "hdlname": "_witness_ assert_auto_verificsva_cc_1732_import_1238",
+                    "src": "tb_counter.sv:47.4-47.25"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_witness_.assert_auto_verificsva_cc_1732_import_1249",
+                  "attributes": {
+                    "hdlname": "_witness_ assert_auto_verificsva_cc_1732_import_1249",
+                    "src": "tb_counter.sv:46.4-46.23"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_witness_.assert_auto_verificsva_cc_1732_import_1260",
+                  "attributes": {
+                    "hdlname": "_witness_ assert_auto_verificsva_cc_1732_import_1260",
+                    "src": "tb_counter.sv:45.4-45.24"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_witness_.assert_auto_verificsva_cc_1732_import_1271",
+                  "attributes": {
+                    "hdlname": "_witness_ assert_auto_verificsva_cc_1732_import_1271",
+                    "src": "tb_counter.sv:41.4-41.24"
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$eq",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [10, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [10, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$verific$equal_16$tb_counter.sv:41$1177",
+                  "attributes": {
+                    "src": "tb_counter.sv:41.12-41.22"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000001010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000001010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$verific$equal_47$tb_counter.sv:55$1202",
+                  "attributes": {
+                    "src": "tb_counter.sv:55.13-55.35"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000001011",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000011",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$verific$equal_52$tb_counter.sv:57$1206",
+                  "attributes": {
+                    "src": "tb_counter.sv:57.15-57.25"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000001010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000001010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$verific$equal_56$tb_counter.sv:58$1208",
+                  "attributes": {
+                    "src": "tb_counter.sv:58.13-58.37"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000001011",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000100",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$mux",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "S",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$verific$i18$tb_counter.sv:41$1178",
+                  "attributes": {
+                    "src": "tb_counter.sv:41.4-41.24"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$verific$i24$tb_counter.sv:45$1182",
+                  "attributes": {
+                    "src": "tb_counter.sv:45.4-45.24"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$verific$i28$tb_counter.sv:46$1186",
+                  "attributes": {
+                    "src": "tb_counter.sv:46.4-46.23"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$verific$i32$tb_counter.sv:47$1190",
+                  "attributes": {
+                    "src": "tb_counter.sv:47.4-47.25"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$verific$i49$tb_counter.sv:55$1203",
+                  "attributes": {
+                    "src": "tb_counter.sv:55.6-55.37"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$verific$i5$tb_counter.sv:32$1168",
+                  "attributes": {
+                    "src": "tb_counter.sv:32.13-32.25"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$verific$i58$tb_counter.sv:58$1209",
+                  "attributes": {
+                    "src": "tb_counter.sv:58.6-58.39"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$verific$i64$tb_counter.sv:81$1212",
+                  "attributes": {
+                    "src": "tb_counter.sv:48.4-81.7"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$verific$i65$tb_counter.sv:81$1213",
+                  "attributes": {
+                    "src": "tb_counter.sv:48.4-81.7"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$verific$i69$tb_counter.sv:82$1214",
+                  "attributes": {
+                    "src": "tb_counter.sv:44.3-82.6"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$verific$i70$tb_counter.sv:82$1215",
+                  "attributes": {
+                    "src": "tb_counter.sv:44.3-82.6"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$verific$i9$tb_counter.sv:33$1172",
+                  "attributes": {
+                    "src": "tb_counter.sv:33.8-33.21"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$le",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [31, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [32, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$verific$LessThan_22$tb_counter.sv:45$1181",
+                  "attributes": {
+                    "src": "tb_counter.sv:45.12-45.22"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000011111",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000100000",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$verific$LessThan_30$tb_counter.sv:47$1189",
+                  "attributes": {
+                    "src": "tb_counter.sv:47.12-47.23"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000100000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000100000",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$verific$LessThan_38$tb_counter.sv:54$1195",
+                  "attributes": {
+                    "src": "tb_counter.sv:54.9-54.19"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000011111",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000100000",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$dff",
+            "ports": [
+                {
+                  "name": "CLK",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "D",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Q",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$auto$verificsva.cc:1819:import$1225",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "00000000000000000000000000000001",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$verificsva.cc:1819:import$1236",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "00000000000000000000000000000001",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$verificsva.cc:1819:import$1247",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "00000000000000000000000000000001",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$verificsva.cc:1819:import$1258",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "00000000000000000000000000000001",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$verificsva.cc:1819:import$1269",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "00000000000000000000000000000001",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$verificsva.cc:1819:import$1280",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "00000000000000000000000000000001",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$verificsva.cc:1819:import$1291",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "00000000000000000000000000000001",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$verificsva.cc:1819:import$1302",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "00000000000000000000000000000001",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$verificsva.cc:1820:import$1226",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "00000000000000000000000000000001",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$verificsva.cc:1820:import$1237",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "00000000000000000000000000000001",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$verificsva.cc:1820:import$1248",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "00000000000000000000000000000001",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$verificsva.cc:1820:import$1259",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "00000000000000000000000000000001",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$verificsva.cc:1820:import$1270",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "00000000000000000000000000000001",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$verificsva.cc:1820:import$1281",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "00000000000000000000000000000001",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$verificsva.cc:1820:import$1292",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "00000000000000000000000000000001",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$verificsva.cc:1820:import$1303",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "00000000000000000000000000000001",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$verific$dff_39$tb_counter.sv:54$1196",
+                  "attributes": {
+                    "src": "tb_counter.sv:54.24-54.34"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "00000000000000000000000000000001",
+                    "WIDTH": "00000000000000000000000000001010"
+                  }
+                },
+                {
+                  "name": "$verific$i35$tb_counter.sv:48$1193",
+                  "attributes": {
+                    "src": "tb_counter.sv:48.8-48.19"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "00000000000000000000000000000001",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$verific$i54$tb_counter.sv:57$1207",
+                  "attributes": {
+                    "src": "tb_counter.sv:57.9-57.26"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "00000000000000000000000000000001",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$verific$init_reg$tb_counter.sv:35$1176",
+                  "attributes": {
+                    "src": "tb_counter.sv:31.9-35.5"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "00000000000000000000000000000001",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$not",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$auto$verificsva.cc:1611:parse_property$1217",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$verificsva.cc:1611:parse_property$1228",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$verificsva.cc:1611:parse_property$1239",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$verificsva.cc:1611:parse_property$1250",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$verificsva.cc:1611:parse_property$1261",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$verificsva.cc:1611:parse_property$1272",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$verificsva.cc:1611:parse_property$1283",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$verificsva.cc:1611:parse_property$1294",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$verific$i8$tb_counter.sv:33$1171",
+                  "attributes": {
+                    "src": "tb_counter.sv:33.15-33.19"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          }
+        ],
+        "attributes": {
+            "keep": "00000000000000000000000000000001",
+            "library": "work",
+            "hdlname": "assertions",
+            "src": "tb_counter.sv:22.8-22.18"
+        }
+      },
+      {
+        "name": "counter_0",
+        "cell_sorts": [
+          {
+            "type": "assertions",
+            "ports": [
+                {
+                  "name": "clk",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "cnt",
+                  "direction": "io",
+                  "range": [10, 0]
+                },
+                {
+                  "name": "mode",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "rst",
+                  "direction": "io",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "tb",
+                  "attributes": {
+                    "src": "tb_counter.sv:17.22-17.29"
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          },
+          {
+            "type": "\\$_SDFFE_PP1P__0",
+            "ports": [
+                {
+                  "name": "C",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "D",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "E",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Q",
+                  "direction": "",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "R",
+                  "direction": "io",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "cnt_reg[9]",
+                  "attributes": {
+                    "src": "counter-0.v:236.19-242.4"
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          },
+          {
+            "type": "\\$_SDFFE_PP1P__6",
+            "ports": [
+                {
+                  "name": "C",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "D",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "E",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Q",
+                  "direction": "",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "R",
+                  "direction": "io",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "cnt_reg[8]",
+                  "attributes": {
+                    "src": "counter-0.v:228.19-234.4"
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          },
+          {
+            "type": "\\$_NOT_",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "_162_",
+                  "attributes": {
+                    "src": "counter-0.v:244.12-247.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_163_",
+                  "attributes": {
+                    "src": "counter-0.v:248.12-251.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_164_",
+                  "attributes": {
+                    "src": "counter-0.v:252.12-255.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_165_",
+                  "attributes": {
+                    "src": "counter-0.v:256.12-259.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_166_",
+                  "attributes": {
+                    "src": "counter-0.v:260.12-263.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_167_",
+                  "attributes": {
+                    "src": "counter-0.v:264.12-267.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_168_",
+                  "attributes": {
+                    "src": "counter-0.v:268.12-271.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_169_",
+                  "attributes": {
+                    "src": "counter-0.v:272.12-275.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_170_",
+                  "attributes": {
+                    "src": "counter-0.v:276.12-279.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_171_",
+                  "attributes": {
+                    "src": "counter-0.v:280.12-283.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_172_",
+                  "attributes": {
+                    "src": "counter-0.v:284.12-287.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_173_",
+                  "attributes": {
+                    "src": "counter-0.v:288.12-291.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_174_",
+                  "attributes": {
+                    "src": "counter-0.v:292.12-295.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_175_",
+                  "attributes": {
+                    "src": "counter-0.v:296.12-299.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_176_",
+                  "attributes": {
+                    "src": "counter-0.v:300.12-303.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_177_",
+                  "attributes": {
+                    "src": "counter-0.v:304.12-307.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_178_",
+                  "attributes": {
+                    "src": "counter-0.v:308.12-311.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_179_",
+                  "attributes": {
+                    "src": "counter-0.v:312.12-315.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_180_",
+                  "attributes": {
+                    "src": "counter-0.v:316.12-319.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_181_",
+                  "attributes": {
+                    "src": "counter-0.v:320.12-323.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_182_",
+                  "attributes": {
+                    "src": "counter-0.v:324.12-327.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_183_",
+                  "attributes": {
+                    "src": "counter-0.v:328.12-331.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_184_",
+                  "attributes": {
+                    "src": "counter-0.v:332.12-335.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_185_",
+                  "attributes": {
+                    "src": "counter-0.v:336.12-339.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_263_",
+                  "attributes": {
+                    "src": "counter-0.v:752.12-755.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_264_",
+                  "attributes": {
+                    "src": "counter-0.v:756.12-759.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_265_",
+                  "attributes": {
+                    "src": "counter-0.v:760.12-763.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_266_",
+                  "attributes": {
+                    "src": "counter-0.v:764.12-767.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_267_",
+                  "attributes": {
+                    "src": "counter-0.v:768.12-771.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_268_",
+                  "attributes": {
+                    "src": "counter-0.v:772.12-775.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_269_",
+                  "attributes": {
+                    "src": "counter-0.v:776.12-779.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_270_",
+                  "attributes": {
+                    "src": "counter-0.v:780.12-783.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_271_",
+                  "attributes": {
+                    "src": "counter-0.v:784.12-787.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_272_",
+                  "attributes": {
+                    "src": "counter-0.v:788.12-791.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_273_",
+                  "attributes": {
+                    "src": "counter-0.v:792.12-795.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_274_",
+                  "attributes": {
+                    "src": "counter-0.v:796.12-799.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_275_",
+                  "attributes": {
+                    "src": "counter-0.v:800.12-803.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_276_",
+                  "attributes": {
+                    "src": "counter-0.v:804.12-807.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_277_",
+                  "attributes": {
+                    "src": "counter-0.v:808.12-811.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_278_",
+                  "attributes": {
+                    "src": "counter-0.v:812.12-815.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_279_",
+                  "attributes": {
+                    "src": "counter-0.v:816.12-819.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_280_",
+                  "attributes": {
+                    "src": "counter-0.v:820.12-823.4"
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          },
+          {
+            "type": "\\$_OR_",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "_186_",
+                  "attributes": {
+                    "src": "counter-0.v:340.11-344.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_187_",
+                  "attributes": {
+                    "src": "counter-0.v:345.11-349.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_190_",
+                  "attributes": {
+                    "src": "counter-0.v:360.11-364.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_191_",
+                  "attributes": {
+                    "src": "counter-0.v:365.11-369.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_192_",
+                  "attributes": {
+                    "src": "counter-0.v:370.11-374.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_193_",
+                  "attributes": {
+                    "src": "counter-0.v:375.11-379.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_194_",
+                  "attributes": {
+                    "src": "counter-0.v:380.11-384.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_195_",
+                  "attributes": {
+                    "src": "counter-0.v:385.11-389.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_196_",
+                  "attributes": {
+                    "src": "counter-0.v:390.11-394.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_197_",
+                  "attributes": {
+                    "src": "counter-0.v:395.11-399.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_198_",
+                  "attributes": {
+                    "src": "counter-0.v:400.11-404.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_199_",
+                  "attributes": {
+                    "src": "counter-0.v:405.11-409.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_200_",
+                  "attributes": {
+                    "src": "counter-0.v:410.11-414.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_201_",
+                  "attributes": {
+                    "src": "counter-0.v:415.11-419.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_202_",
+                  "attributes": {
+                    "src": "counter-0.v:420.11-424.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_203_",
+                  "attributes": {
+                    "src": "counter-0.v:425.11-429.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_204_",
+                  "attributes": {
+                    "src": "counter-0.v:430.11-434.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_205_",
+                  "attributes": {
+                    "src": "counter-0.v:435.11-439.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_206_",
+                  "attributes": {
+                    "src": "counter-0.v:440.11-444.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_207_",
+                  "attributes": {
+                    "src": "counter-0.v:445.11-449.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_208_",
+                  "attributes": {
+                    "src": "counter-0.v:450.11-454.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_209_",
+                  "attributes": {
+                    "src": "counter-0.v:455.11-459.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_210_",
+                  "attributes": {
+                    "src": "counter-0.v:460.11-464.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_211_",
+                  "attributes": {
+                    "src": "counter-0.v:465.11-469.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_212_",
+                  "attributes": {
+                    "src": "counter-0.v:470.11-474.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_213_",
+                  "attributes": {
+                    "src": "counter-0.v:475.11-479.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_219_",
+                  "attributes": {
+                    "src": "counter-0.v:505.11-509.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_222_",
+                  "attributes": {
+                    "src": "counter-0.v:520.11-524.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_227_",
+                  "attributes": {
+                    "src": "counter-0.v:545.11-549.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_235_",
+                  "attributes": {
+                    "src": "counter-0.v:585.11-589.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_282_",
+                  "attributes": {
+                    "src": "counter-0.v:829.11-833.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_283_",
+                  "attributes": {
+                    "src": "counter-0.v:834.11-838.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_284_",
+                  "attributes": {
+                    "src": "counter-0.v:839.11-843.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_299_",
+                  "attributes": {
+                    "src": "counter-0.v:914.11-918.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_300_",
+                  "attributes": {
+                    "src": "counter-0.v:919.11-923.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_301_",
+                  "attributes": {
+                    "src": "counter-0.v:924.11-928.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_302_",
+                  "attributes": {
+                    "src": "counter-0.v:929.11-933.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_303_",
+                  "attributes": {
+                    "src": "counter-0.v:934.11-938.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_304_",
+                  "attributes": {
+                    "src": "counter-0.v:939.11-943.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_305_",
+                  "attributes": {
+                    "src": "counter-0.v:944.11-948.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_306_",
+                  "attributes": {
+                    "src": "counter-0.v:949.11-953.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_307_",
+                  "attributes": {
+                    "src": "counter-0.v:954.11-958.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_308_",
+                  "attributes": {
+                    "src": "counter-0.v:959.11-963.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_309_",
+                  "attributes": {
+                    "src": "counter-0.v:964.11-968.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_321_",
+                  "attributes": {
+                    "src": "counter-0.v:1024.11-1028.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_322_",
+                  "attributes": {
+                    "src": "counter-0.v:1029.11-1033.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_323_",
+                  "attributes": {
+                    "src": "counter-0.v:1034.11-1038.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_324_",
+                  "attributes": {
+                    "src": "counter-0.v:1039.11-1043.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_325_",
+                  "attributes": {
+                    "src": "counter-0.v:1044.11-1048.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_337_",
+                  "attributes": {
+                    "src": "counter-0.v:1104.11-1108.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_338_",
+                  "attributes": {
+                    "src": "counter-0.v:1109.11-1113.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_339_",
+                  "attributes": {
+                    "src": "counter-0.v:1114.11-1118.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_340_",
+                  "attributes": {
+                    "src": "counter-0.v:1119.11-1123.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_341_",
+                  "attributes": {
+                    "src": "counter-0.v:1124.11-1128.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_342_",
+                  "attributes": {
+                    "src": "counter-0.v:1129.11-1133.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_343_",
+                  "attributes": {
+                    "src": "counter-0.v:1134.11-1138.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_344_",
+                  "attributes": {
+                    "src": "counter-0.v:1139.11-1143.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_345_",
+                  "attributes": {
+                    "src": "counter-0.v:1144.11-1148.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_346_",
+                  "attributes": {
+                    "src": "counter-0.v:1149.11-1153.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_355_",
+                  "attributes": {
+                    "src": "counter-0.v:1194.11-1198.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_356_",
+                  "attributes": {
+                    "src": "counter-0.v:1199.11-1203.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_357_",
+                  "attributes": {
+                    "src": "counter-0.v:1204.11-1208.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_358_",
+                  "attributes": {
+                    "src": "counter-0.v:1209.11-1213.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_359_",
+                  "attributes": {
+                    "src": "counter-0.v:1214.11-1218.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_360_",
+                  "attributes": {
+                    "src": "counter-0.v:1219.11-1223.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_361_",
+                  "attributes": {
+                    "src": "counter-0.v:1224.11-1228.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_411_",
+                  "attributes": {
+                    "src": "counter-0.v:1474.11-1478.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_412_",
+                  "attributes": {
+                    "src": "counter-0.v:1479.11-1483.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_423_",
+                  "attributes": {
+                    "src": "counter-0.v:1534.11-1538.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_424_",
+                  "attributes": {
+                    "src": "counter-0.v:1539.11-1543.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_425_",
+                  "attributes": {
+                    "src": "counter-0.v:1544.11-1548.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_426_",
+                  "attributes": {
+                    "src": "counter-0.v:1549.11-1553.4"
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          },
+          {
+            "type": "\\$_AND_",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "_188_",
+                  "attributes": {
+                    "src": "counter-0.v:350.12-354.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_189_",
+                  "attributes": {
+                    "src": "counter-0.v:355.12-359.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_214_",
+                  "attributes": {
+                    "src": "counter-0.v:480.12-484.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_215_",
+                  "attributes": {
+                    "src": "counter-0.v:485.12-489.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_216_",
+                  "attributes": {
+                    "src": "counter-0.v:490.12-494.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_217_",
+                  "attributes": {
+                    "src": "counter-0.v:495.12-499.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_218_",
+                  "attributes": {
+                    "src": "counter-0.v:500.12-504.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_220_",
+                  "attributes": {
+                    "src": "counter-0.v:510.12-514.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_221_",
+                  "attributes": {
+                    "src": "counter-0.v:515.12-519.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_223_",
+                  "attributes": {
+                    "src": "counter-0.v:525.12-529.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_224_",
+                  "attributes": {
+                    "src": "counter-0.v:530.12-534.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_225_",
+                  "attributes": {
+                    "src": "counter-0.v:535.12-539.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_226_",
+                  "attributes": {
+                    "src": "counter-0.v:540.12-544.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_228_",
+                  "attributes": {
+                    "src": "counter-0.v:550.12-554.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_229_",
+                  "attributes": {
+                    "src": "counter-0.v:555.12-559.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_230_",
+                  "attributes": {
+                    "src": "counter-0.v:560.12-564.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_231_",
+                  "attributes": {
+                    "src": "counter-0.v:565.12-569.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_232_",
+                  "attributes": {
+                    "src": "counter-0.v:570.12-574.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_233_",
+                  "attributes": {
+                    "src": "counter-0.v:575.12-579.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_234_",
+                  "attributes": {
+                    "src": "counter-0.v:580.12-584.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_281_",
+                  "attributes": {
+                    "src": "counter-0.v:824.12-828.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_285_",
+                  "attributes": {
+                    "src": "counter-0.v:844.12-848.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_286_",
+                  "attributes": {
+                    "src": "counter-0.v:849.12-853.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_287_",
+                  "attributes": {
+                    "src": "counter-0.v:854.12-858.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_288_",
+                  "attributes": {
+                    "src": "counter-0.v:859.12-863.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_289_",
+                  "attributes": {
+                    "src": "counter-0.v:864.12-868.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_290_",
+                  "attributes": {
+                    "src": "counter-0.v:869.12-873.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_291_",
+                  "attributes": {
+                    "src": "counter-0.v:874.12-878.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_292_",
+                  "attributes": {
+                    "src": "counter-0.v:879.12-883.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_293_",
+                  "attributes": {
+                    "src": "counter-0.v:884.12-888.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_294_",
+                  "attributes": {
+                    "src": "counter-0.v:889.12-893.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_295_",
+                  "attributes": {
+                    "src": "counter-0.v:894.12-898.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_296_",
+                  "attributes": {
+                    "src": "counter-0.v:899.12-903.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_297_",
+                  "attributes": {
+                    "src": "counter-0.v:904.12-908.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_298_",
+                  "attributes": {
+                    "src": "counter-0.v:909.12-913.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_310_",
+                  "attributes": {
+                    "src": "counter-0.v:969.12-973.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_311_",
+                  "attributes": {
+                    "src": "counter-0.v:974.12-978.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_312_",
+                  "attributes": {
+                    "src": "counter-0.v:979.12-983.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_313_",
+                  "attributes": {
+                    "src": "counter-0.v:984.12-988.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_314_",
+                  "attributes": {
+                    "src": "counter-0.v:989.12-993.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_315_",
+                  "attributes": {
+                    "src": "counter-0.v:994.12-998.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_316_",
+                  "attributes": {
+                    "src": "counter-0.v:999.12-1003.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_317_",
+                  "attributes": {
+                    "src": "counter-0.v:1004.12-1008.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_318_",
+                  "attributes": {
+                    "src": "counter-0.v:1009.12-1013.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_319_",
+                  "attributes": {
+                    "src": "counter-0.v:1014.12-1018.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_320_",
+                  "attributes": {
+                    "src": "counter-0.v:1019.12-1023.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_326_",
+                  "attributes": {
+                    "src": "counter-0.v:1049.12-1053.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_327_",
+                  "attributes": {
+                    "src": "counter-0.v:1054.12-1058.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_328_",
+                  "attributes": {
+                    "src": "counter-0.v:1059.12-1063.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_329_",
+                  "attributes": {
+                    "src": "counter-0.v:1064.12-1068.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_330_",
+                  "attributes": {
+                    "src": "counter-0.v:1069.12-1073.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_331_",
+                  "attributes": {
+                    "src": "counter-0.v:1074.12-1078.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_332_",
+                  "attributes": {
+                    "src": "counter-0.v:1079.12-1083.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_333_",
+                  "attributes": {
+                    "src": "counter-0.v:1084.12-1088.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_334_",
+                  "attributes": {
+                    "src": "counter-0.v:1089.12-1093.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_335_",
+                  "attributes": {
+                    "src": "counter-0.v:1094.12-1098.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_336_",
+                  "attributes": {
+                    "src": "counter-0.v:1099.12-1103.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_347_",
+                  "attributes": {
+                    "src": "counter-0.v:1154.12-1158.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_348_",
+                  "attributes": {
+                    "src": "counter-0.v:1159.12-1163.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_349_",
+                  "attributes": {
+                    "src": "counter-0.v:1164.12-1168.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_350_",
+                  "attributes": {
+                    "src": "counter-0.v:1169.12-1173.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_351_",
+                  "attributes": {
+                    "src": "counter-0.v:1174.12-1178.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_352_",
+                  "attributes": {
+                    "src": "counter-0.v:1179.12-1183.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_353_",
+                  "attributes": {
+                    "src": "counter-0.v:1184.12-1188.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_354_",
+                  "attributes": {
+                    "src": "counter-0.v:1189.12-1193.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_398_",
+                  "attributes": {
+                    "src": "counter-0.v:1409.12-1413.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_399_",
+                  "attributes": {
+                    "src": "counter-0.v:1414.12-1418.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_400_",
+                  "attributes": {
+                    "src": "counter-0.v:1419.12-1423.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_401_",
+                  "attributes": {
+                    "src": "counter-0.v:1424.12-1428.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_402_",
+                  "attributes": {
+                    "src": "counter-0.v:1429.12-1433.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_403_",
+                  "attributes": {
+                    "src": "counter-0.v:1434.12-1438.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_404_",
+                  "attributes": {
+                    "src": "counter-0.v:1439.12-1443.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_405_",
+                  "attributes": {
+                    "src": "counter-0.v:1444.12-1448.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_406_",
+                  "attributes": {
+                    "src": "counter-0.v:1449.12-1453.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_407_",
+                  "attributes": {
+                    "src": "counter-0.v:1454.12-1458.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_408_",
+                  "attributes": {
+                    "src": "counter-0.v:1459.12-1463.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_409_",
+                  "attributes": {
+                    "src": "counter-0.v:1464.12-1468.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_410_",
+                  "attributes": {
+                    "src": "counter-0.v:1469.12-1473.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_413_",
+                  "attributes": {
+                    "src": "counter-0.v:1484.12-1488.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_414_",
+                  "attributes": {
+                    "src": "counter-0.v:1489.12-1493.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_415_",
+                  "attributes": {
+                    "src": "counter-0.v:1494.12-1498.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_416_",
+                  "attributes": {
+                    "src": "counter-0.v:1499.12-1503.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_417_",
+                  "attributes": {
+                    "src": "counter-0.v:1504.12-1508.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_418_",
+                  "attributes": {
+                    "src": "counter-0.v:1509.12-1513.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_419_",
+                  "attributes": {
+                    "src": "counter-0.v:1514.12-1518.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_420_",
+                  "attributes": {
+                    "src": "counter-0.v:1519.12-1523.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_421_",
+                  "attributes": {
+                    "src": "counter-0.v:1524.12-1528.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_422_",
+                  "attributes": {
+                    "src": "counter-0.v:1529.12-1533.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_427_",
+                  "attributes": {
+                    "src": "counter-0.v:1554.12-1558.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_428_",
+                  "attributes": {
+                    "src": "counter-0.v:1559.12-1563.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_429_",
+                  "attributes": {
+                    "src": "counter-0.v:1564.12-1568.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_430_",
+                  "attributes": {
+                    "src": "counter-0.v:1569.12-1573.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_431_",
+                  "attributes": {
+                    "src": "counter-0.v:1574.12-1578.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_432_",
+                  "attributes": {
+                    "src": "counter-0.v:1579.12-1583.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_433_",
+                  "attributes": {
+                    "src": "counter-0.v:1584.12-1588.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_434_",
+                  "attributes": {
+                    "src": "counter-0.v:1589.12-1593.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_435_",
+                  "attributes": {
+                    "src": "counter-0.v:1594.12-1598.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_436_",
+                  "attributes": {
+                    "src": "counter-0.v:1599.12-1603.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_437_",
+                  "attributes": {
+                    "src": "counter-0.v:1604.12-1608.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_438_",
+                  "attributes": {
+                    "src": "counter-0.v:1609.12-1613.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_439_",
+                  "attributes": {
+                    "src": "counter-0.v:1614.12-1618.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_440_",
+                  "attributes": {
+                    "src": "counter-0.v:1619.12-1623.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_441_",
+                  "attributes": {
+                    "src": "counter-0.v:1624.12-1628.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_442_",
+                  "attributes": {
+                    "src": "counter-0.v:1629.12-1633.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_443_",
+                  "attributes": {
+                    "src": "counter-0.v:1634.12-1638.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_444_",
+                  "attributes": {
+                    "src": "counter-0.v:1639.12-1643.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_445_",
+                  "attributes": {
+                    "src": "counter-0.v:1644.12-1648.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_446_",
+                  "attributes": {
+                    "src": "counter-0.v:1649.12-1653.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_447_",
+                  "attributes": {
+                    "src": "counter-0.v:1654.12-1658.4"
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          },
+          {
+            "type": "\\$_MUX_",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "S",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "_236_",
+                  "attributes": {
+                    "src": "counter-0.v:590.12-595.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_237_",
+                  "attributes": {
+                    "src": "counter-0.v:596.12-601.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_238_",
+                  "attributes": {
+                    "src": "counter-0.v:602.12-607.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_239_",
+                  "attributes": {
+                    "src": "counter-0.v:608.12-613.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_240_",
+                  "attributes": {
+                    "src": "counter-0.v:614.12-619.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_241_",
+                  "attributes": {
+                    "src": "counter-0.v:620.12-625.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_242_",
+                  "attributes": {
+                    "src": "counter-0.v:626.12-631.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_243_",
+                  "attributes": {
+                    "src": "counter-0.v:632.12-637.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_244_",
+                  "attributes": {
+                    "src": "counter-0.v:638.12-643.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_245_",
+                  "attributes": {
+                    "src": "counter-0.v:644.12-649.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_246_",
+                  "attributes": {
+                    "src": "counter-0.v:650.12-655.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_247_",
+                  "attributes": {
+                    "src": "counter-0.v:656.12-661.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_248_",
+                  "attributes": {
+                    "src": "counter-0.v:662.12-667.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_249_",
+                  "attributes": {
+                    "src": "counter-0.v:668.12-673.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_250_",
+                  "attributes": {
+                    "src": "counter-0.v:674.12-679.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_251_",
+                  "attributes": {
+                    "src": "counter-0.v:680.12-685.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_252_",
+                  "attributes": {
+                    "src": "counter-0.v:686.12-691.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_253_",
+                  "attributes": {
+                    "src": "counter-0.v:692.12-697.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_254_",
+                  "attributes": {
+                    "src": "counter-0.v:698.12-703.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_255_",
+                  "attributes": {
+                    "src": "counter-0.v:704.12-709.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_256_",
+                  "attributes": {
+                    "src": "counter-0.v:710.12-715.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_257_",
+                  "attributes": {
+                    "src": "counter-0.v:716.12-721.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_258_",
+                  "attributes": {
+                    "src": "counter-0.v:722.12-727.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_259_",
+                  "attributes": {
+                    "src": "counter-0.v:728.12-733.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_260_",
+                  "attributes": {
+                    "src": "counter-0.v:734.12-739.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_261_",
+                  "attributes": {
+                    "src": "counter-0.v:740.12-745.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_262_",
+                  "attributes": {
+                    "src": "counter-0.v:746.12-751.4"
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          },
+          {
+            "type": "\\$_XOR_",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "_362_",
+                  "attributes": {
+                    "src": "counter-0.v:1229.12-1233.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_363_",
+                  "attributes": {
+                    "src": "counter-0.v:1234.12-1238.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_364_",
+                  "attributes": {
+                    "src": "counter-0.v:1239.12-1243.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_365_",
+                  "attributes": {
+                    "src": "counter-0.v:1244.12-1248.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_366_",
+                  "attributes": {
+                    "src": "counter-0.v:1249.12-1253.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_367_",
+                  "attributes": {
+                    "src": "counter-0.v:1254.12-1258.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_368_",
+                  "attributes": {
+                    "src": "counter-0.v:1259.12-1263.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_369_",
+                  "attributes": {
+                    "src": "counter-0.v:1264.12-1268.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_370_",
+                  "attributes": {
+                    "src": "counter-0.v:1269.12-1273.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_371_",
+                  "attributes": {
+                    "src": "counter-0.v:1274.12-1278.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_372_",
+                  "attributes": {
+                    "src": "counter-0.v:1279.12-1283.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_373_",
+                  "attributes": {
+                    "src": "counter-0.v:1284.12-1288.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_374_",
+                  "attributes": {
+                    "src": "counter-0.v:1289.12-1293.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_375_",
+                  "attributes": {
+                    "src": "counter-0.v:1294.12-1298.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_376_",
+                  "attributes": {
+                    "src": "counter-0.v:1299.12-1303.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_377_",
+                  "attributes": {
+                    "src": "counter-0.v:1304.12-1308.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_378_",
+                  "attributes": {
+                    "src": "counter-0.v:1309.12-1313.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_379_",
+                  "attributes": {
+                    "src": "counter-0.v:1314.12-1318.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_380_",
+                  "attributes": {
+                    "src": "counter-0.v:1319.12-1323.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_381_",
+                  "attributes": {
+                    "src": "counter-0.v:1324.12-1328.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_382_",
+                  "attributes": {
+                    "src": "counter-0.v:1329.12-1333.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_383_",
+                  "attributes": {
+                    "src": "counter-0.v:1334.12-1338.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_384_",
+                  "attributes": {
+                    "src": "counter-0.v:1339.12-1343.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_385_",
+                  "attributes": {
+                    "src": "counter-0.v:1344.12-1348.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_386_",
+                  "attributes": {
+                    "src": "counter-0.v:1349.12-1353.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_387_",
+                  "attributes": {
+                    "src": "counter-0.v:1354.12-1358.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_388_",
+                  "attributes": {
+                    "src": "counter-0.v:1359.12-1363.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_389_",
+                  "attributes": {
+                    "src": "counter-0.v:1364.12-1368.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_390_",
+                  "attributes": {
+                    "src": "counter-0.v:1369.12-1373.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_391_",
+                  "attributes": {
+                    "src": "counter-0.v:1374.12-1378.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_392_",
+                  "attributes": {
+                    "src": "counter-0.v:1379.12-1383.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_393_",
+                  "attributes": {
+                    "src": "counter-0.v:1384.12-1388.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_394_",
+                  "attributes": {
+                    "src": "counter-0.v:1389.12-1393.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_395_",
+                  "attributes": {
+                    "src": "counter-0.v:1394.12-1398.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_396_",
+                  "attributes": {
+                    "src": "counter-0.v:1399.12-1403.4"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_397_",
+                  "attributes": {
+                    "src": "counter-0.v:1404.12-1408.4"
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          },
+          {
+            "type": "\\$_SDFFE_PP0P__1",
+            "ports": [
+                {
+                  "name": "C",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "D",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "E",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Q",
+                  "direction": "",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "R",
+                  "direction": "io",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "cnt_reg[0]",
+                  "attributes": {
+                    "src": "counter-0.v:164.19-170.4"
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          },
+          {
+            "type": "\\$_SDFFE_PP1P__1",
+            "ports": [
+                {
+                  "name": "C",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "D",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "E",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Q",
+                  "direction": "",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "R",
+                  "direction": "io",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "cnt_reg[1]",
+                  "attributes": {
+                    "src": "counter-0.v:172.19-178.4"
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          },
+          {
+            "type": "\\$_SDFFE_PP1P__4",
+            "ports": [
+                {
+                  "name": "C",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "D",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "E",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Q",
+                  "direction": "",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "R",
+                  "direction": "io",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "cnt_reg[6]",
+                  "attributes": {
+                    "src": "counter-0.v:212.19-218.4"
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          },
+          {
+            "type": "\\$_SDFFE_PP1P__2",
+            "ports": [
+                {
+                  "name": "C",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "D",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "E",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Q",
+                  "direction": "",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "R",
+                  "direction": "io",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "cnt_reg[2]",
+                  "attributes": {
+                    "src": "counter-0.v:180.19-186.4"
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          },
+          {
+            "type": "\\$_SDFFE_PP1P__3",
+            "ports": [
+                {
+                  "name": "C",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "D",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "E",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Q",
+                  "direction": "",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "R",
+                  "direction": "io",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "cnt_reg[3]",
+                  "attributes": {
+                    "src": "counter-0.v:188.19-194.4"
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          },
+          {
+            "type": "\\$_SDFFE_PP0P__2",
+            "ports": [
+                {
+                  "name": "C",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "D",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "E",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Q",
+                  "direction": "",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "R",
+                  "direction": "io",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "cnt_reg[4]",
+                  "attributes": {
+                    "src": "counter-0.v:196.19-202.4"
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          },
+          {
+            "type": "\\$_SDFFE_PP1P__5",
+            "ports": [
+                {
+                  "name": "C",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "D",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "E",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Q",
+                  "direction": "",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "R",
+                  "direction": "io",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "cnt_reg[7]",
+                  "attributes": {
+                    "src": "counter-0.v:220.19-226.4"
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          },
+          {
+            "type": "\\$_SDFFE_PP0P__0",
+            "ports": [
+                {
+                  "name": "C",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "D",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "E",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Q",
+                  "direction": "",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "R",
+                  "direction": "io",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "cnt_reg[5]",
+                  "attributes": {
+                    "src": "counter-0.v:204.19-210.4"
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          }
+        ],
+        "attributes": {
+            "keep": "00000000000000000000000000000001",
+            "library": "work",
+            "hdlname": "counter",
+            "src": "counter-0.v:3.8-3.15"
+        }
+      },
+      {
+        "name": "tb_counter",
+        "cell_sorts": [
+          {
+            "type": "counter_0",
+            "ports": [
+                {
+                  "name": "clk",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "cnt",
+                  "direction": "",
+                  "range": [10, 0]
+                },
+                {
+                  "name": "mode",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "rst",
+                  "direction": "io",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "dut",
+                  "attributes": {
+                    "src": "tb_counter.sv:9.13-14.6"
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          }
+        ],
+        "attributes": {
+            "keep": "00000000000000000000000000000001",
+            "top": "00000000000000000000000000000001",
+            "library": "work",
+            "hdlname": "tb_counter",
+            "src": "tb_counter.sv:1.8-1.18"
+        }
+      }
+  ]
+}

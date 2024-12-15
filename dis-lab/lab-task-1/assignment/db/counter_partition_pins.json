@@ -1,0 +1,69 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "limit",
+					"strict" : false
+				},
+				{
+					"name" : "skip",
+					"strict" : false
+				},
+				{
+					"name" : "cnt[0]",
+					"strict" : false
+				},
+				{
+					"name" : "cnt[1]",
+					"strict" : false
+				},
+				{
+					"name" : "cnt[2]",
+					"strict" : false
+				},
+				{
+					"name" : "cnt[3]",
+					"strict" : false
+				},
+				{
+					"name" : "cnt[4]",
+					"strict" : false
+				},
+				{
+					"name" : "cnt[5]",
+					"strict" : false
+				},
+				{
+					"name" : "cnt[6]",
+					"strict" : false
+				},
+				{
+					"name" : "cnt[7]",
+					"strict" : false
+				},
+				{
+					"name" : "cnt[8]",
+					"strict" : false
+				},
+				{
+					"name" : "cnt[9]",
+					"strict" : false
+				},
+				{
+					"name" : "mode",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "rst",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

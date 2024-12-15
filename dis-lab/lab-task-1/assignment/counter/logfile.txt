@@ -1,0 +1,28 @@
+SBY 14:11:31 [counter] Removing directory '/home/lukas/OneDrive/Dokumente/Uni/DIS/dis-lab/lab-task-1/assignment/counter'.
+SBY 14:11:31 [counter] Copy '/home/lukas/OneDrive/Dokumente/Uni/DIS/dis-lab/lab-task-1/assignment/counter.v' to '/home/lukas/OneDrive/Dokumente/Uni/DIS/dis-lab/lab-task-1/assignment/counter/src/counter.v'.
+SBY 14:11:31 [counter] engine_0: aiger suprove
+SBY 14:11:31 [counter] base: starting process "cd counter/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY 14:11:31 [counter] base: Academic/educational license for ICT / TU-Vienna.
+SBY 14:11:31 [counter] base: Do not redistribute without permission.
+SBY 14:11:31 [counter] base: Do not use for commercial purposes.
+SBY 14:11:31 [counter] base: Warning: wire '\limit' is assigned in a block at counter.v:39.17-39.27.
+SBY 14:11:31 [counter] base: Warning: wire '\limit' is assigned in a block at counter.v:41.17-41.27.
+SBY 14:11:31 [counter] base: finished (returncode=0)
+SBY 14:11:31 [counter] prep: starting process "cd counter/model; yosys -ql design_prep.log design_prep.ys"
+SBY 14:11:31 [counter] prep: Academic/educational license for ICT / TU-Vienna.
+SBY 14:11:31 [counter] prep: Do not redistribute without permission.
+SBY 14:11:31 [counter] prep: Do not use for commercial purposes.
+SBY 14:11:31 [counter] prep: finished (returncode=0)
+SBY 14:11:31 [counter] aig: starting process "cd counter/model; yosys -ql design_aiger.log design_aiger.ys"
+SBY 14:11:31 [counter] aig: Academic/educational license for ICT / TU-Vienna.
+SBY 14:11:31 [counter] aig: Do not redistribute without permission.
+SBY 14:11:31 [counter] aig: Do not use for commercial purposes.
+SBY 14:11:31 [counter] aig: finished (returncode=0)
+SBY 14:11:31 [counter] engine_0: starting process "cd counter; suprove model/design_aiger.aig"
+SBY 14:11:31 [counter] engine_0: finished (returncode=0)
+SBY 14:11:31 [counter] engine_0: Status returned by engine: PASS
+SBY 14:11:31 [counter] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 14:11:31 [counter] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 14:11:31 [counter] summary: engine_0 (aiger suprove) returned PASS
+SBY 14:11:31 [counter] summary: engine_0 did not produce any traces
+SBY 14:11:31 [counter] DONE (PASS, rc=0)

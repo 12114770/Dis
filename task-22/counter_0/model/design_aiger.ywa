@@ -1,0 +1,42 @@
+{
+  "version": "Yosys Witness Aiger map",
+  "gennerator": "Yosys 0.45 (git sha1 9ed031ddd, clang++ 14.0.0-1ubuntu1.1 -fPIC -O3)",
+  "latch_count": 36,
+  "input_count": 15,
+  "clocks": [
+    {"edge": "posedge", "input": 0, "offset": 0, "path": ["\\clk"]}
+  ],
+  "inputs": [
+    {"input": 0, "offset": 0, "path": ["\\clk"]},
+    {"input": 1, "offset": 0, "path": ["\\mode"]},
+    {"input": 2, "offset": 0, "path": ["\\rst"]}
+  ],
+  "seqs": [],
+  "inits": [
+    {"input": 14, "offset": 0, "path": ["\\dut", "\\tb", "\\_witness_", "\\anyinit_verific_i54_tb_counter_sv_57_1207"]},
+    {"input": 13, "offset": 0, "path": ["\\dut", "\\tb", "\\_witness_", "\\anyinit_verific_i35_tb_counter_sv_48_1193"]},
+    {"input": 12, "offset": 9, "path": ["\\dut", "\\tb", "\\_witness_", "\\anyinit_verific_dff_39_tb_counter_sv_54_1196"]},
+    {"input": 11, "offset": 8, "path": ["\\dut", "\\tb", "\\_witness_", "\\anyinit_verific_dff_39_tb_counter_sv_54_1196"]},
+    {"input": 10, "offset": 7, "path": ["\\dut", "\\tb", "\\_witness_", "\\anyinit_verific_dff_39_tb_counter_sv_54_1196"]},
+    {"input": 9, "offset": 6, "path": ["\\dut", "\\tb", "\\_witness_", "\\anyinit_verific_dff_39_tb_counter_sv_54_1196"]},
+    {"input": 8, "offset": 5, "path": ["\\dut", "\\tb", "\\_witness_", "\\anyinit_verific_dff_39_tb_counter_sv_54_1196"]},
+    {"input": 7, "offset": 4, "path": ["\\dut", "\\tb", "\\_witness_", "\\anyinit_verific_dff_39_tb_counter_sv_54_1196"]},
+    {"input": 6, "offset": 3, "path": ["\\dut", "\\tb", "\\_witness_", "\\anyinit_verific_dff_39_tb_counter_sv_54_1196"]},
+    {"input": 5, "offset": 2, "path": ["\\dut", "\\tb", "\\_witness_", "\\anyinit_verific_dff_39_tb_counter_sv_54_1196"]},
+    {"input": 4, "offset": 1, "path": ["\\dut", "\\tb", "\\_witness_", "\\anyinit_verific_dff_39_tb_counter_sv_54_1196"]},
+    {"input": 3, "offset": 0, "path": ["\\dut", "\\tb", "\\_witness_", "\\anyinit_verific_dff_39_tb_counter_sv_54_1196"]}
+  ],
+  "asserts": [
+    ["\\dut", "\\tb", "\\_witness_", "\\assert_auto_verificsva_cc_1732_import_1216"],
+    ["\\dut", "\\tb", "\\_witness_", "\\assert_auto_verificsva_cc_1732_import_1227"],
+    ["\\dut", "\\tb", "\\_witness_", "\\assert_auto_verificsva_cc_1732_import_1238"],
+    ["\\dut", "\\tb", "\\_witness_", "\\assert_auto_verificsva_cc_1732_import_1249"],
+    ["\\dut", "\\tb", "\\_witness_", "\\assert_auto_verificsva_cc_1732_import_1260"],
+    ["\\dut", "\\tb", "\\_witness_", "\\assert_auto_verificsva_cc_1732_import_1271"]
+  ],
+  "assumes": [
+    ["$flatten\\dut.$auto$formalff.cc:758:execute$1381"],
+    ["\\dut", "\\tb", "\\_witness_", "\\assume_auto_verificsva_cc_1732_import_1282"],
+    ["\\dut", "\\tb", "\\_witness_", "\\assume_auto_verificsva_cc_1732_import_1293"]
+  ]
+}

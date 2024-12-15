@@ -1,0 +1,14 @@
+read_verilog counter.v
+
+proc
+opt -full
+
+design -save 1
+design -load 1
+
+
+
+write_verilog counter_pareto.v
+synth_ice40
+write_json counter.json
+
